@@ -78,28 +78,4 @@ def save_high_score(score):
 # Start the game
 play_game()
 
-def save_feedback_with_name():
-    name = input("Enter your name: ")
-    feedback = input("Please provide your feedback: ")
-    with open("feedback.txt", "a") as file:
-        file.write(name + ": " + feedback +' :master_mind' + "\n")
-def display_previous_feedbacks():
-    print("Previous Feedbacks:")
-    with open("feedback.txt", "r") as file:
-        for line in file:
-            print(line.strip())
-filename = "feedback.txt"
-new_filename = "suggestion.txt"
-save_feedback_with_name()
-display_previous_feedbacks()
-suggestion_input = input("Would you like to provide any suggestions? (yes/no): ")
-if suggestion_input.lower() == "yes":
-    suggestion_text = input("Enter your suggestions: ")
-    with open(new_filename, "a") as suggestion_file:
-        suggestion_file.write(suggestion_text + ' :master_mind \n')
-print("Ok, hope you liked our master mind game. Goodbye! MRayanasim")
-text = "MRayanasim made this master mind game thanks for using"
-formatted_text = "** " + text.upper() + " **"
-print("*" * len(formatted_text))
-print(formatted_text)
-print("*" * len(formatted_text))
+
