@@ -27,7 +27,7 @@ def countdown_timer(seconds):
 
     # Print "Start" and start playing the sound
     print("Start")
-    sound_file = input("Enter the path of the sound file") #enter sound file path
+    sound_file = r"" #enter sound file path
     sound_thread = threading.Thread(target=play_sound, args=(sound_file,))
     sound_thread.start()
 
