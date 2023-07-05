@@ -39,17 +39,16 @@ You can find detailed information and documentation for each project within thei
 
 ### Game
 
-- Project  1: [ 2048 game (without GUI) ]
-- Project  2: [ snake game (with GUI)  ]
-- Project  3: [ Hangman ]
-- Project  4: [ Master Mind ]
-- Project  5: [ A number details (prime, odd, co-prime and etc)]
-- Project  6: [ Tick cross ]
-- Project  7: [ 21 or 20 plus game ]
-- Project  8: [ star patterns (7 types of patterns) ]
-- Project  9: [ Roller Coaster (without GUI only with sound effects) ]
-- Project  10: [ Dice rolling  (With user guess without GUI)  ]
-- Project  11- [ Number guessing game ]
+- Project  1: [ 2048 game (without GUI) ](https://github.com/drik493/python_projects/blob/main/Game/2048.py)
+- Project  2: [ snake game (with GUI)  ](https://github.com/drik493/python_projects/blob/main/Game/snake_game.py)
+- Project  3: [ Hangman ](https://github.com/drik493/python_projects/blob/main/Game/hangman.py)
+- Project  4: [ Master Mind ](https://github.com/drik493/python_projects/blob/main/Game/master_mid.py)
+- Project  5: [ A number details (prime, odd, co-prime and etc)](https://github.com/drik493/python_projects/blob/main/Game/number_details.py)
+- Project  6: [ Tick cross ](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py)
+- Project  7: [ 21 or 20 plus game ](https://github.com/drik493/python_projects/blob/main/Game/21.py)
+- Project  8: [ star patterns (7 types of patterns) ](https://github.com/drik493/python_projects/blob/main/Game/star.py)
+- Project  9: [ Dice rolling  (With user guess without GUI)  ](https://github.com/drik493/python_projects/blob/main/Game/dice.py)
+- Project  10- [ Number guessing game ](https://github.com/drik493/python_projects/blob/main/Game/number_guessing.py)
 
 ### Utilities
 
