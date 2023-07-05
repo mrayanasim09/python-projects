@@ -26,7 +26,7 @@ You can find detailed information and documentation for each project in their fo
 ### calculator
 
 - Project  1: [ Quadratic Equation (with graph) ](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py)
-- Project  2: [ A mega calculator with all operations ](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py)_
+- Project  2: [ A mega calculator with all operations ](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py)
 - Project  3: [ Number base converter ](https://github.com/drik493/python_projects/blob/main/Calculator/number_base.py)
 - Project  4: [ Integration and differentiation ](https://github.com/drik493/python_projects/blob/main/Calculator/int_diff.py)
 - Project  5: [ BMI calculator ](https://github.com/drik493/python_projects/blob/main/Calculator/bmi.py)
