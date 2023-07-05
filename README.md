@@ -19,9 +19,9 @@ You can find detailed information and documentation for each project within thei
 
 ### GUI
 
-- Project  1: [ Form ]
-- Project  2: [ A basic GUI calculator ]
-- Project  3: [ Notepad ]
+- Project  1: [ Form ](https://github.com/drik493/python_projects/blob/main/GUI/Form.py)
+- Project  2: [ A basic GUI calculator ](https://github.com/drik493/python_projects/blob/main/GUI/A_basic_gui_calculator.py)
+- Project  3: [ Notepad ](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py)
 
 ### calculator
 
