@@ -297,13 +297,6 @@ if not ask_continue(s):
     print(formatted_text)
     print("*" * len(formatted_text))
 
-    pygame.mixer.init()
-    pygame.mixer.music.load(r"C:\Users\Muhammad Asim Hanif\Downloads\dad-says-bye-bye-113119.wav")
-    pygame.mixer.music.play()
-    input("Press Enter to quit...")
-    pygame.mixer.music.stop()
-    pygame.mixer.quit()
-    quit()
 
 
 def is_even(number):
@@ -468,13 +461,6 @@ if not ask_continue(s):
     print(formatted_text)
     print("*" * len(formatted_text))
 
-    pygame.mixer.init()
-    pygame.mixer.music.load(r"C:\Users\Muhammad Asim Hanif\Downloads\dad-says-bye-bye-113119.wav")
-    pygame.mixer.music.play()
-    input("Press Enter to quit...")
-    pygame.mixer.music.stop()
-    pygame.mixer.quit()
-    quit()
 
 w = input(
     "Do you want to continue with the old values you entered: " + str(x) + ", " + str(y) + ", " + str(z) + ", " + str(
@@ -559,13 +545,6 @@ if not ask_continue(s):
     print(formatted_text)
     print("*" * len(formatted_text))
 
-    pygame.mixer.init()
-    pygame.mixer.music.load(r"C:\Users\Muhammad Asim Hanif\Downloads\dad-says-bye-bye-113119.wav")
-    pygame.mixer.music.play()
-    input("Press Enter to quit...")
-    pygame.mixer.music.stop()
-    pygame.mixer.quit()
-    quit()
 
 while True:
     try:
@@ -665,11 +644,5 @@ print("*" * len(formatted_text))
 print(formatted_text)
 print("*" * len(formatted_text))
 
-pygame.mixer.init()
-pygame.mixer.music.load(r"C:\Users\Muhammad Asim Hanif\Downloads\dad-says-bye-bye-113119.wav")
-pygame.mixer.music.play()
-input("Press Enter to quit...")
-pygame.mixer.music.stop()
-pygame.mixer.quit()
-quit()
+
 
