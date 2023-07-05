@@ -1,10 +1,10 @@
 # Python Projects by MRayan Asim
 
-This repository showcases a collection of Python projects developed by MRayan Asim. It serves as a resource hub for developers of all levels, from beginners to advanced, seeking inspiration, guidance, and code examples for their Python-based projects. The projects cover various categories and aim to provide practical solutions to real-world problems.
+This repository showcases a collection of Python projects developed by MRayan Asim. It is a resource hub for developers of all levels, from beginners to advanced, seeking inspiration, guidance, and code examples for their Python-based projects. The projects cover various categories and aim to provide practical solutions to real-world problems.
 
 ## Repository Structure
 
-The repository is organized into folders based on different project categories. Each category contains subfolders representing individual projects. This structure helps users easily navigate and find relevant projects based on their interests. Additionally, projects are tagged with appropriate labels to further assist users in identifying projects suitable for their skill level.
+The repository is organized into folders based on different project categories. Each category contains subfolders representing individual projects. This structure helps users easily navigate and find relevant tasks based on their interests. Additionally, projects are tagged with appropriate labels to further assist users in identifying projects suitable for their skill level.
 
 ## Categories
 
@@ -15,7 +15,7 @@ The repository is organized into folders based on different project categories. 
 
 ## Projects
 
-You can find detailed information and documentation for each project within their respective folders. Below is a list of projects in each category:
+You can find detailed information and documentation for each project in their folders. Below is a list of projects in each category:
 
 ### GUI
 
@@ -45,23 +45,24 @@ You can find detailed information and documentation for each project within thei
 - Project  4: [ Master Mind ](https://github.com/drik493/python_projects/blob/main/Game/master_mid.py)
 - Project  5: [ A number details (prime, odd, co-prime and etc)](https://github.com/drik493/python_projects/blob/main/Game/number_details.py)
 - Project  6: [ Tick cross ](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py)
-- Project  7: [ 21 or 20 plus game ](https://github.com/drik493/python_projects/blob/main/Game/21.py)
-- Project  8: [ star patterns (7 types of patterns) ](https://github.com/drik493/python_projects/blob/main/Game/star.py)
-- Project  9: [ Dice rolling  (With user guess without GUI)  ](https://github.com/drik493/python_projects/blob/main/Game/dice.py)
-- Project  10- [ Number guessing game ](https://github.com/drik493/python_projects/blob/main/Game/number_guessing.py)
+- Project  7: [ Rock, paper, and scissors (without GUI)](https://github.com/drik493/python_projects/blob/main/Game/rock,paper,scissors.py)
+- Project  8: [ 21 or 20 plus game ](https://github.com/drik493/python_projects/blob/main/Game/21.py)
+- Project  9: [ star patterns (7 types of patterns) ](https://github.com/drik493/python_projects/blob/main/Game/star.py)
+- Project  10: [ Dice rolling  (With user guess without GUI)  ](https://github.com/drik493/python_projects/blob/main/Game/dice.py)
+- Project  11- [ Number guessing game ](https://github.com/drik493/python_projects/blob/main/Game/number_guessing.py)
 
 ### Utilities
 
-- Project  1: [ Count down (timer) ]
-- Project  2: [ Network passwords (only for the networks you have been connected to) ]
-- Project  3: [ Transfer file  (it will generate the QR code for the file you want and you can access it anywhere) ]
-- Project  4: [ Google search (From terminal ]
-- Project  5: [ URL shorter and  QR code generator ] 
-- Project  6: [ Secret code generator (you can also decode it ) ]
-- Project  7: [ Transfer file  (it will generate the QR code for the file you want and you can access it anywhere) ]
-- Project  8: [ Password to hash form (md5 and sha1 both) ]
-- Project  9: [ Hash password cracking (using rockyou.txt only md5)  ]
-- Project  10: [  Birth Day Finder  ]
+- Project  1: [ Count down (timer) ](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py)
+- Project  2: [ Network passwords (only for the networks you have been connected to) ](https://github.com/drik493/python_projects/blob/main/Utilities/network.py)
+- Project  3: [ Transfer file  (it will generate the QR code for the file you want and you can access it anywhere) ](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py)
+- Project  4: [ Google search (From terminal ](https://github.com/drik493/python_projects/blob/main/Utilities/google.py)
+- Project  5: [ URL shorter and  QR code generator ](https://github.com/drik493/python_projects/blob/main/Utilities/url.py)
+- Project  6: [ Secret code generator (you can also decode it ) ](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py)
+- Project  7: [ Password to hash form (md5) ](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py)
+- Project  8: [ Hash password cracking (using rockyou.txt only md5)  ](https://github.com/drik493/python_projects/blob/main/Utilities/password.py)
+- Project  9: [  password generator  ](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py)
+- Project  10: [  Birth Day Finder  ](https://github.com/drik493/python_projects/blob/main/Utilities/birthday.py)
 
 
 ## Skill Level Tag:
