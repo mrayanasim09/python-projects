@@ -131,6 +131,4 @@ print("*" * len(formatted_text))
 print(formatted_text)
 print("*" * len(formatted_text))
 
-sound_filename = r"C:\Users\Muhammad Asim Hanif\Downloads\dad-says-bye-bye-113119.wav"
-play_sound_file(sound_filename)
 
