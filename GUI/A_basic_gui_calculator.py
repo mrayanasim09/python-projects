@@ -1,4 +1,6 @@
 #This code is make by MRayan Asim
+#to install the packages:
+#pip install tkinter
 from tkinter import *
 
 expression = ""
