@@ -112,26 +112,6 @@ def calculator_10(number_3):
 def calculator_11(number_1, number_2, number_3):
     return number_1 // number_2 // number_3
 
-
-def save_feedback_with_name():
-    name = input("Enter your name: ")
-    feedback = input("Please provide your feedback: ")
-    with open("feedback.txt", "a") as file:
-        file.write(name + ": " + feedback + 'mega_calculator' +"\n")
-
-
-def display_previous_feedbacks():
-    print("Previous Feedbacks:")
-    with open("feedback.txt", "r") as file:
-        for line in file:
-            print(line.strip())
-
-
-def ask_continue(prompt):
-    response = input(prompt + " (yes/no): ")
-    return response.lower() == "yes"
-
-
 def round_to_3_decimal_places(value):
     return round(value, 3)
 
@@ -273,32 +253,6 @@ print(f"{z} in Binary: {binary}")
 print(f"{z} in Octal: {octal}")
 print(f"{z} in Hexadecimal: {hexadecimal}")
 
-filename = "feedback.txt"
-new_filename = "suggestion.txt"
-s = input("Do you want to continue? ")
-if not ask_continue(s):
-    save_feedback_with_name()
-    display_previous_feedbacks()
-    suggestion_input = input("Would you like to provide any suggestions? (yes/no): ")
-    if suggestion_input.lower() == "yes":
-        suggestion_text = input("Enter your suggestions: ")
-        with open(new_filename, "a") as suggestion_file:
-            suggestion_file.write(suggestion_text  + 'mega_calculator' +"\n")
-    time.sleep(1)
-    end_time = time.time()
-    runtime = end_time - start_time
-    print("Code finished executing.")
-    print("Total runtime: {:.2f} seconds".format(runtime))
-
-    print("Ok, hope you liked our calculator. Goodbye! MRayanasim")
-    text = "MRayanasim made this calculator thanks for using"
-    formatted_text = "** " + text.upper() + " **"
-    print("*" * len(formatted_text))
-    print(formatted_text)
-    print("*" * len(formatted_text))
-
-
-
 def is_even(number):
     return number % 2 == 0
 
@@ -435,32 +389,6 @@ except ValueError:
 print(round(math.log(r), 3), ", the answer of natural logarithm")
 print(round(math.log10(r), 3), ", the answer of logarithm with the base of 10")
 
-filename = "feedback.txt"
-new_filename = "suggestion.txt"
-s = input("Do you want to continue? ")
-
-if not ask_continue(s):
-    save_feedback_with_name()
-    display_previous_feedbacks()
-    suggestion_input = input("Would you like to provide any suggestions? (yes/no): ")
-    if suggestion_input.lower() == "yes":
-        suggestion_text = input("Enter your suggestions: ")
-        with open(new_filename, "a") as suggestion_file:
-            suggestion_file.write(suggestion_text  + 'mega_calculator' +"\n")
-
-    time.sleep(1)
-    end_time = time.time()
-    runtime = end_time - start_time
-    print("Code finished executing.")
-    print("Total runtime: {:.2f} seconds".format(runtime))
-
-    print("Ok, hope you liked our calculator. Goodbye! MRayanasim")
-    text = "MRayanasim made this calculator thanks for using"
-    formatted_text = "** " + text.upper() + " **"
-    print("*" * len(formatted_text))
-    print(formatted_text)
-    print("*" * len(formatted_text))
-
 
 w = input(
     "Do you want to continue with the old values you entered: " + str(x) + ", " + str(y) + ", " + str(z) + ", " + str(
@@ -519,31 +447,6 @@ else:
     print(round(1 / math.cosh(h), 3), ", the answer of cosh")
     print(round(1 / math.tanh(h), 3), ", the answer of tanh")
 
-filename = "feedback.txt"
-new_filename = "suggestion.txt"
-s = input("Do you want to continue? ")
-
-if not ask_continue(s):
-    save_feedback_with_name()
-    display_previous_feedbacks()
-    suggestion_input = input("Would you like to provide any suggestions? (yes/no): ")
-    if suggestion_input.lower() == "yes":
-        suggestion_text = input("Enter your suggestions: ")
-        with open(new_filename, "a") as suggestion_file:
-            suggestion_file.write(suggestion_text  + 'mega_calculator' +"\n")
-
-    time.sleep(1)
-    end_time = time.time()
-    runtime = end_time - start_time
-    print("Code finished executing.")
-    print("Total runtime: {:.2f} seconds".format(runtime))
-
-    print("Ok, hope you liked our calculator. Goodbye! MRayanasim")
-    text = "MRayanasim made this calculator thanks for using"
-    formatted_text = "** " + text.upper() + " **"
-    print("*" * len(formatted_text))
-    print(formatted_text)
-    print("*" * len(formatted_text))
 
 
 while True:
@@ -620,29 +523,5 @@ if g.lower() == "function" or g.lower() == "both":
     integrated_equation, result = integrate_equation(p, var, lower, upper)
     print(f"The integral of {p} with respect to x is {integrated_equation}")
     print(f"The integral of {p} from {lower} to {upper} is {result}")
-
-time.sleep(1)
-end_time = time.time()
-runtime = end_time - start_time
-print("Code finished executing.")
-print("Total runtime: {:.2f} seconds".format(runtime))
-
-filename = "feedback.txt"
-new_filename = "suggestion.txt"
-save_feedback_with_name()
-display_previous_feedbacks()
-suggestion_input = input("Would you like to provide any suggestions? (yes/no): ")
-if suggestion_input.lower() == "yes":
-    suggestion_text = input("Enter your suggestions: ")
-    with open(new_filename, "a") as suggestion_file:
-        suggestion_file.write(suggestion_text  + 'mega_calculator' +"\n")
-
-print("Ok, hope you liked our calculator. Goodbye! MRayanasim")
-text = "MRayanasim made this calculator thanks for using"
-formatted_text = "** " + text.upper() + " **"
-print("*" * len(formatted_text))
-print(formatted_text)
-print("*" * len(formatted_text))
-
 
 
