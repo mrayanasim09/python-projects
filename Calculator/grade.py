@@ -37,50 +37,7 @@ def get_valid_integer_input(prompt, min_val=0, max_val=None):
             else:
                 return val
         except ValueError:
-            print("Invalid input. Please enter a valid integer.")
-
-def get_feedback_from_user():
-    name = input("Enter your name: ")
-    feedback = input("Please provide your feedback: ")
-    return f"{name}: {feedback} :grade_calculator"
-
-def save_feedback_to_file(feedback_text, filename):
-    with open(filename, "a") as file:
-        file.write(  feedback_text + "\n")
-
-def display_feedback_from_file(filename):
-    if not os.path.isfile(filename):
-        print("No previous feedback found.")
-        return
-
-    print("Previous Feedbacks:")
-    with open(filename, "r") as file:
-        for line in file:
-            print(line.strip())
-
-def get_suggestion_from_user():
-    suggestion_input = input("Would you like to provide any suggestions? (yes/no): ")
-    if suggestion_input.lower() == "yes":
-        suggestion_text = input("Enter your suggestions: ")
-        return suggestion_text
-    else:
-        return None
-
-def save_suggestion_to_file(suggestion_text, filename):
-    with open(filename, "a") as suggestion_file:
-        suggestion_file.write(suggestion_text + ' :grade_calculator \n')
-
-def play_sound_file(sound_filename):
-    try:
-        pygame.mixer.init()
-        pygame.mixer.music.load(sound_filename)
-        pygame.mixer.music.play()
-        input("Press Enter to quit...")
-        pygame.mixer.music.stop()
-    except pygame.error as e:
-        print(f"Error playing sound: {e}")
-    finally:
-        pygame.mixer.quit()
+            print("Invalid input. Please enter a valid integer."
 
 print("Hello! This program of grade calculator is made by MRayan Asim. Hope you will like this! 😊")
 time.sleep(3)
@@ -114,21 +71,5 @@ overall_grade = calculate_grade(total_obtained_marks, sum(total_marks))
 print("\nOverall Grade:")
 print(f"Grade: {overall_grade}")
 print(f"Percentage: {overall_percentage:.2f}%")
-
-feedback_text = get_feedback_from_user()
-save_feedback_to_file(feedback_text, "feedback.txt")
-
-display_feedback_from_file("feedback.txt")
-
-suggestion_text = get_suggestion_from_user()
-if suggestion_text is not None:
-    save_suggestion_to_file(suggestion_text, "suggestion.txt")
-
-print("Ok, hope you liked our grade calculator. Goodbye! MRayanasim")
-text = "MRayanasim made this grade calculator thanks for using"
-formatted_text = "** " + text.upper() + " **"
-print("*" * len(formatted_text))
-print(formatted_text)
-print("*" * len(formatted_text))
 
 
