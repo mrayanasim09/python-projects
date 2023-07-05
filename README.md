@@ -25,16 +25,16 @@ You can find detailed information and documentation for each project within thei
 
 ### calculator
 
-- Project  1: [ Quadratic Equation (with graph) ]
-- Project  2: [ A mega calculator with all operations ]
-- Project  3: [ Number base converter ]
-- Project  4: [ Integration and differentiation ]
-- Project  5: [ BMI calculator ]
-- Project  6: [ Collatz Conjecture (3x+1) (with GUI) ]
-- Project  7: [ Fibonacci sequence ]
-- Project  8: [ Graph calculator from equation  (with graph) ]
-- Project  9: [ Grade calculator ]
-- Project  10: [ Sudoku solver ]
+- Project  1: [ Quadratic Equation (with graph) ](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py)
+- Project  2: [ A mega calculator with all operations ](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py)_
+- Project  3: [ Number base converter ](https://github.com/drik493/python_projects/blob/main/Calculator/number_base.py)
+- Project  4: [ Integration and differentiation ](https://github.com/drik493/python_projects/blob/main/Calculator/int_diff.py)
+- Project  5: [ BMI calculator ](https://github.com/drik493/python_projects/blob/main/Calculator/bmi.py)
+- Project  6: [ Collatz Conjecture (3x+1) (with GUI) ](https://github.com/drik493/python_projects/blob/main/Calculator/conject.py)
+- Project  7: [ Fibonacci sequence ](https://github.com/drik493/python_projects/blob/main/Calculator/sequence.py)
+- Project  8: [ Graph calculator from equation  (with graph) ](https://github.com/drik493/python_projects/blob/main/Calculator/graph.py)
+- Project  9: [ Grade calculator ](https://github.com/drik493/python_projects/blob/main/Calculator/grade.py)
+- Project  10: [ Sudoku solver ](https://github.com/drik493/python_projects/blob/main/Calculator/sudukko.py)
 
 
 ### Game
