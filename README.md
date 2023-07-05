@@ -8,10 +8,10 @@ The repository is organized into folders based on different project categories. 
 
 ## Categories
 
-- GUI
-- calculator
-- Games
-- Utilities
+- [GUI](https://github.com/drik493/python_projects/tree/main/GUI)
+- [calculator](https://github.com/drik493/python_projects/tree/main/Calculator)
+- [Games](https://github.com/drik493/python_projects/tree/main/Game)
+- [Utilities](https://github.com/drik493/python_projects/tree/main/Utilities)
 
 ## Projects
 
