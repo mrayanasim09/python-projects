@@ -1,6 +1,6 @@
 # Python Projects by MRayan Asim
 
-This repository showcases a collection of Python projects developed by MRayan Asim. It is a resource hub for developers of all levels, from beginners to advanced, seeking inspiration, guidance, and code examples for their Python-based projects. The projects cover various categories and aim to provide practical solutions to real-world problems.
+This repository showcases a collection of Python projects developed by MRayan Asim. It is a resource hub for developers of all levels, from beginners to advanced, seeking inspiration, guidance, and code examples for their Python-based projects. The projects cover various categories and aim to provide practical solutions to real-world problems. If there is an issue you can easily contact I will reply to you as fast as I could.
 
 ## Repository Structure
 
