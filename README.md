@@ -59,7 +59,7 @@ You can find detailed information and documentation for each project in their fo
 - Project  4: [ Google search (From terminal ](https://github.com/drik493/python_projects/blob/main/Utilities/google.py)
 - Project  5: [ URL shorter and  QR code generator ](https://github.com/drik493/python_projects/blob/main/Utilities/url.py)
 - Project  6: [ Secret code generator (you can also decode it will also need to  download the secret_code.txt with it) ](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) <br>
-  [The text file for secret code](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/secret_code.txt)
+     [      The text file for secret code](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/secret_code.txt)
 - Project  7: [ Password to hash form (md5) ](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py)
 - Project  8: [ Hash password cracking (using rockyou.txt only md5)  ](https://github.com/drik493/python_projects/blob/main/Utilities/password.py)
 - Project  9: [  password generator  ](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py)
