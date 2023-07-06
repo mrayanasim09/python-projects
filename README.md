@@ -77,7 +77,7 @@ Projects are tagged with the following labels to help users identify their appro
 ## Installation
 
 You can also see the second line of every code if there is writen Packages needed then you have to download the velocity package(s) . You can also copy the commands from the file which I have been listed and you should know that you have to add the file path where I have comment to do . Do it in the brackets () <br>
-To run the code in this repository, you'll need to have the following packages installed:
+<br> To run the code in this repository, you'll need to have the following packages installed:
 
 - Pygame
 - Tkinter
