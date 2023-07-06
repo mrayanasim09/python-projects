@@ -58,7 +58,7 @@ You can find detailed information and documentation for each project in their fo
 - Project  3: [ Transfer file  (it will generate the QR code for the file you want and you can access it anywhere) ](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py)
 - Project  4: [ Google search (From terminal ](https://github.com/drik493/python_projects/blob/main/Utilities/google.py)
 - Project  5: [ URL shorter and  QR code generator ](https://github.com/drik493/python_projects/blob/main/Utilities/url.py)
-- Project  6: [ Secret code generator (you can also decode it also download the secret_code.txt with it) ](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py)
+- Project  6: [ Secret code generator (you can also decode it will also need to  download the secret_code.txt with it) ](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py)
 - Project  7: [ Password to hash form (md5) ](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py)
 - Project  8: [ Hash password cracking (using rockyou.txt only md5)  ](https://github.com/drik493/python_projects/blob/main/Utilities/password.py)
 - Project  9: [  password generator  ](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py)
