@@ -73,6 +73,24 @@ Projects are tagged with the following labels to help users identify their appro
 - Intermediate: Projects that require a moderate level of Python programming knowledge.
 - Advanced: Projects that involve advanced concepts and techniques in Python.
 
+## Installation
+
+To run the code in this repository, you'll need to have the following packages installed:
+
+- Pygame
+- Tkinter
+- GoogleSearch
+- qrcode
+- Matplotlib
+- hashlib
+
+You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
+- pip install pygame
+- pip install tkinter
+- pip install googlesearch-python
+- pip install qrcode
+- pip install matplotlib
+
 ## About the Author
 
 This repository is maintained by MRayan Asim. As a Python enthusiast, MRayan Asim is passionate about developing practical and innovative projects. Whether you are a beginner or an experienced developer, MRayan Asim is dedicated to providing projects that cater to different skill levels. If you have any questions or suggestions regarding the projects in this repository, feel free to reach out.
