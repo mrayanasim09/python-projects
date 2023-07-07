@@ -13,7 +13,7 @@ The repository is organized into folders based on different project categories. 
 - [Games](https://github.com/drik493/python_projects/tree/main/Game)
 - [Utilities](https://github.com/drik493/python_projects/tree/main/Utilities)
 
-## Projects
+## Projects 🔥
 
 You can find detailed information and documentation for each project in their folders. Below is a list of projects in each category:
 
