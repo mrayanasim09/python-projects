@@ -30,6 +30,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Number base converter](https://github.com/drik493/python_projects/blob/main/Calculator/number_base.py) 🔢
 - [Integration and differentiation](https://github.com/drik493/python_projects/blob/main/Calculator/int_diff.py) ∫
 - [BMI calculator](https://github.com/drik493/python_projects/blob/main/Calculator/bmi.py) 🏋️
+- [Roman number convertor to decimal number](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/roman_number.py) 🧠
 - [Collatz Conjecture (3x+1) (with GUI)](https://github.com/drik493/python_projects/blob/main/Calculator/conject.py) 📐
 - [Fibonacci sequence](https://github.com/drik493/python_projects/blob/main/Calculator/sequence.py) 🐇
 - [Graph calculator from equation (with graph)](https://github.com/drik493/python_projects/blob/main/Calculator/graph.py) 📊
