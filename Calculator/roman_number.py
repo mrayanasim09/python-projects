@@ -6,7 +6,7 @@ tallies = {
     'C': 100,
     'D': 500,
     'M': 1000,
-    # specify more numerals if you wish
+    # add more numerals if necessary
 }
 
 def RomanNumeralToDecimal(romanNumeral):
@@ -20,3 +20,12 @@ def RomanNumeralToDecimal(romanNumeral):
             sum += tallies[left]
     sum += tallies[romanNumeral[-1]]
     return sum
+
+# Get user input
+roman_numeral = input("Enter a Roman numeral: ")
+
+# Convert to decimal
+decimal_numeral = RomanNumeralToDecimal(roman_numeral)
+
+# Print the result
+print("Decimal equivalent:", decimal_numeral)
