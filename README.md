@@ -21,6 +21,7 @@ Explore the projects in each category to find detailed information, documentatio
 
 - [Form](https://github.com/drik493/python_projects/blob/main/GUI/Form.py) 📝
 - [A basic GUI calculator](https://github.com/drik493/python_projects/blob/main/GUI/A_basic_gui_calculator.py) 🧮
+- [Tick cross (with GUI) ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/tick_cross.py) ✔️❌
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷ 
 
