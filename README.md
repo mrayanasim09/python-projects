@@ -100,6 +100,7 @@ pip install tkinter
 pip install googlesearch-python
 pip install qrcode
 pip install matplotlib
+pip install tkcalendar
  ```
 
 
