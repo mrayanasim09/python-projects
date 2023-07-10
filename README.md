@@ -24,7 +24,9 @@ Explore the projects in each category to find detailed information, documentatio
 - [A working GUI clock ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clock.py) 🕤
 - [Tick cross (with GUI) ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/tick_cross.py) ✔️❌
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
-- [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷ 
+- [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
+- [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
+- [ A GUI calendar ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clender.py) 📅
 
 ### Calculator 🧮
 
@@ -56,16 +58,20 @@ Explore the projects in each category to find detailed information, documentatio
 
 ### Utilities 🛠️
 
-- [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
 - [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python_projects/blob/main/Utilities/network.py) 🔐
+- [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
+- [Tells basic information of an Instagram account only from user name](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/inta.py) 📸
 - [Transfer file (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
-- [URL shortener and QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
+- [bitcoin mining simulator](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/btc.py) ₿
+- [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
 - [Secret code generator (with decoding support)](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) 🤐
 - [Password to hash form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
 - [Hash password cracking (md5 only, using rockyou.txt)](https://github.com/drik493/python_projects/blob/main/Utilities/password.py) 🚫🔍
 - [Password generator](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py) 🔐🔢
+- [A language detector ](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/lang_dect.py) 🔍🌐
 - [Birth Day Finder](https://github.com/drik493/python_projects/blob/main/Utilities/birthday.py) 🎂🎉
+- [A program to make short forms for the entered words](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/short_form.py) 🔤🔄
 
 ## Skill Level Tags ⭐
 
