@@ -21,7 +21,7 @@ Explore the projects in each category to find detailed information, documentatio
 
 - [Form](https://github.com/drik493/python_projects/blob/main/GUI/Form.py) 📝
 - [A basic GUI calculator](https://github.com/drik493/python_projects/blob/main/GUI/A_basic_gui_calculator.py) 🧮
-- [A working GUI clock ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clock.py) 🕤
+- [A working GUI clock also download the clock image](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clock.py) 🕤
 - [Tick cross (with GUI) ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/tick_cross.py) ✔️❌
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
 - [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/snake_ladder.py) image [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/ezgif-5-ad15f112d4.gif) 🐍🪜
@@ -57,7 +57,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A number details (prime, odd, co-prime, etc)](https://github.com/drik493/python_projects/blob/main/Game/number_details.py) 🔢
 - Tick cross [(with GUI)](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py) or [(without GUI)](https://github.com/mrayanasim09/python-projects/blob/main/Game/tick_cross_gui.py) ❌⭕
 - [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python_projects/blob/main/Game/rock,paper,scissors.py) ✊🖐✌️
-- [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/Game/snake_ladder.py)  image [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/Game/ezgif-5-ad15f112d4.gif) 🐍🪜
+- [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/Game/snake_ladder.py)  and [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/Game/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [21 or 20 plus game](https://github.com/drik493/python_projects/blob/main/Game/21.py) 🃏
 - [ Typing speed test](https://github.com/mrayanasim09/python-projects/blob/main/Game/typing_speed.py) 🎮
 - [Star patterns (7 types of patterns)](https://github.com/drik493/python_projects/blob/main/Game/star.py) ✨
@@ -73,7 +73,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
 - [bitcoin mining simulator](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/btc.py) ₿
 - [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
-- [Github repository details finder (only with username and name of repository)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/github.py) :octocat:
+- [Github repository details finder (only with username and name of the repository)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/github.py) :octocat:
 - [Secret code generator (with decoding support)](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) 🤐
 - [Password to hash form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
 - [Hash password cracking (md5 only, using rockyou.txt)](https://github.com/drik493/python_projects/blob/main/Utilities/password.py) 🚫🔍
@@ -101,6 +101,25 @@ To run the code in this repository, you'll need to have the following packages i
 - qrcode 📷
 - Matplotlib 📊
 - yfinance 💵📈
+- Turtle 🐢
+- Random 🎲
+- Time ⏰
+- Pillow 🖼️
+- NumPy 🔢
+- openpyxl 📄
+- Datetime ⌚
+- math ➗
+- requests 🌐
+- hijri_converter 🌙
+- threading 🧵
+- instaloader 📥
+- string 🔡
+- hashlib 🔒
+- socketserver 🖧
+- socket 🧦
+- http.server 🌐
+- os 🖥️
+- langdetect 🌍
 
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -112,6 +131,13 @@ pip install qrcode
 pip install matplotlib
 pip install tkcalendar
 pip install yfinance
+pip install pillow
+pip install openpyxl
+pip install sympy
+pip install hijri_converter
+pip install requests
+pip install instaloader
+pip install langdetect
  ```
 
 
