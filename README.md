@@ -27,6 +27,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
 - [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
+- [Pikachu using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Pikachu.py) (っ◔◡◔)っ
 - [ Doraemon using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/doramon.py)🐱‍🚀
 - [ A GUI calendar ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clender.py) 📅
 
