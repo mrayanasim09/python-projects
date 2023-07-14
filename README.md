@@ -24,7 +24,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A working GUI clock ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clock.py) 🕤
 - [Tick cross (with GUI) ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/tick_cross.py) ✔️❌
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
-- [A snake and ladder game (also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/snake_ladder.py) 🐍🪜
+- [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/snake_ladder.py) image [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
 - [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
@@ -57,7 +57,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A number details (prime, odd, co-prime, etc)](https://github.com/drik493/python_projects/blob/main/Game/number_details.py) 🔢
 - Tick cross [(with GUI)](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py) or [(without GUI)](https://github.com/mrayanasim09/python-projects/blob/main/Game/tick_cross_gui.py) ❌⭕
 - [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python_projects/blob/main/Game/rock,paper,scissors.py) ✊🖐✌️
-- [A snake ladder game (also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/Game/snake_ladder.py)🐍🪜
+- [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/Game/snake_ladder.py)  image [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/Game/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [21 or 20 plus game](https://github.com/drik493/python_projects/blob/main/Game/21.py) 🃏
 - [ Typing speed test](https://github.com/mrayanasim09/python-projects/blob/main/Game/typing_speed.py) 🎮
 - [Star patterns (7 types of patterns)](https://github.com/drik493/python_projects/blob/main/Game/star.py) ✨
