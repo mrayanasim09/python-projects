@@ -29,6 +29,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
 - [Pikachu using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Pikachu.py) (っ◔◡◔)っ
 - [ Doraemon using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/doramon.py)🐱‍🚀
+- [A happy birthday message to the user with its name](https://github.com/mrayanasim09/python-projects/blob/main/GUI/happy_birth_day.py)🎂
 - [ A GUI calendar ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clender.py) 📅
 
 ### Calculator 🧮
