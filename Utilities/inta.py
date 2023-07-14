@@ -1,4 +1,6 @@
 #This program is made by MRayan Asim
+#Packages needed:
+#pip install instaloader
 import instaloader
 
 # Create an instance of Instaloader class
