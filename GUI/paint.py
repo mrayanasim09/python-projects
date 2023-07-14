@@ -1,7 +1,7 @@
 #This code is made by MRayan Asim
 #Packages needed:
 #pip install tkinter
-#pip install  PIL.ImageGrab
+#pip install  pillow
 # Drawing Application Using Python
 
 #importing all the necessary Libraries
