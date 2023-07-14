@@ -74,6 +74,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Password generator](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py) 🔐🔢
 - [A language detector ](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/lang_dect.py) 🔍🌐
 - [Birth Day Finder](https://github.com/drik493/python_projects/blob/main/Utilities/birthday.py) 🎂🎉
+- [ words and letter count of given text](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/word_count.py) 🔢🔄️
 - [A program to make short forms for the entered words](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/short_form.py) 🔤🔄
 
 ## Skill Level Tags ⭐
