@@ -32,6 +32,7 @@ Explore the projects in each category to find detailed information, documentatio
 
 - [Quadratic Equation (with graph)](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py) 📈
 - [A mega calculator with all operations](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py) 🖩
+- [A stock analyzer with its short form](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/stock.py) 💵📊📈
 - [Number base converter](https://github.com/drik493/python_projects/blob/main/Calculator/number_base.py) 🔢
 - [Integration and differentiation](https://github.com/drik493/python_projects/blob/main/Calculator/int_diff.py) ∫
 - [BMI calculator](https://github.com/drik493/python_projects/blob/main/Calculator/bmi.py) 🏋️
@@ -91,7 +92,7 @@ To run the code in this repository, you'll need to have the following packages i
 - GoogleSearch 🔍
 - qrcode 📷
 - Matplotlib 📊
-- hashlib 🔒
+- yfinance 💵📈
 
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -102,6 +103,7 @@ pip install googlesearch-python
 pip install qrcode
 pip install matplotlib
 pip install tkcalendar
+pip install yfinance
  ```
 
 
