@@ -50,7 +50,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Hangman](https://github.com/drik493/python_projects/blob/main/Game/hangman.py) 🪓
 - [Master Mind](https://github.com/drik493/python_projects/blob/main/Game/master_mid.py) 🔐
 - [A number details (prime, odd, co-prime, etc)](https://github.com/drik493/python_projects/blob/main/Game/number_details.py) 🔢
-- Tick cross [with GUI](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py) or [without GUI](https://github.com/mrayanasim09/python-projects/blob/main/Game/tick_cross_gui.py) ❌⭕
+- Tick cross [(with GUI)](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py) or [(without GUI)](https://github.com/mrayanasim09/python-projects/blob/main/Game/tick_cross_gui.py) ❌⭕
 - [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python_projects/blob/main/Game/rock,paper,scissors.py) ✊🖐✌️
 - [21 or 20 plus game](https://github.com/drik493/python_projects/blob/main/Game/21.py) 🃏
 - [ Typing speed test](https://github.com/mrayanasim09/python-projects/blob/main/Game/typing_speed.py) 🎮
@@ -67,7 +67,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
 - [bitcoin mining simulator](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/btc.py) ₿
 - [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
-- [Github repository details finder (only with username and name of repository)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/github.py) 
+- [Github repository details finder (only with username and name of repository)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/github.py) :octocat:
 - [Secret code generator (with decoding support)](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) 🤐
 - [Password to hash form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
 - [Hash password cracking (md5 only, using rockyou.txt)](https://github.com/drik493/python_projects/blob/main/Utilities/password.py) 🚫🔍
