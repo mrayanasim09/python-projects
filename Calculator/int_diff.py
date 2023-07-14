@@ -1,4 +1,7 @@
 #This is made by MRayan Asim
+#Packages needed:
+#pip install sympy
+import sympy
 def differentiate_equation(equation, x):
     x = sympy.Symbol('x')
     derivative_equation = sympy.diff(equation, x)
