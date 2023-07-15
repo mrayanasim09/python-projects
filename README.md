@@ -147,7 +147,7 @@ If you encounter any issues running the code, please feel free to report an issu
 ## About the Author 👤
 
 This repository is maintained by MRayan Asim. As a passionate Python enthusiast, MRayan Asim is dedicated to developing practical and innovative projects. Whether you're a beginner or an experienced developer, MRayan Asim strives to provide projects that cater to various skill levels. If you have any questions or suggestions regarding the projects in this repository, feel free to reach out. 🚀
-[![Join our Discord](https://img.shields.io/discord/1089165034493595781?color=7289DA&logo=discord&logoColor=white)](https://discord.gg/uRfXYjub)
+[![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discord.gg/uRfXYjub)
 
 ## License 📝
 
