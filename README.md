@@ -150,6 +150,7 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 <br>[![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discord.gg/uRfXYjub)
 [![Email](https://img.shields.io/badge/Email-mrayanasim09%40gmail.com-%23D14836?logo=gmail)](mailto:mrayanasim09@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-View%20Profile-blue?logo=linkedin)](https://www.linkedin.com/in/mrayan-asim-044836275/)
+[![GitHub](https://img.shields.io/badge/GitHub-mrayanasim09-blue?logo=github)](https://github.com/mrayanasim09)
 
 ## License 📝
 
