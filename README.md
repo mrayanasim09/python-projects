@@ -133,8 +133,8 @@ To run the code in this repository, you'll need to have the following packages i
 - opencv 📷👁️
 - langdetect 🌍
 - sys 🔄💻
-- json 🧩📄
-
+- json 🧩📄🔍
+- panda 🐼🎉🐾
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
 ```shell
