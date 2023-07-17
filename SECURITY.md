@@ -21,7 +21,7 @@ Tell them where to go, how often they can expect to get an update on a reported 
 
 Use this section to instruct people on how to report a vulnerability.
 
-If you discover a security vulnerability in the "python-projects" repository owned by "mrayanasim", please report it to us by creating a new issue [here](https://github.com/mrayanasim/python-projects/issues) and including detailed information about the vulnerability. We appreciate your responsible disclosure and will address the issue as quickly as possible.
+If you discover a security vulnerability in the "python-projects" repository owned by "mrayanasim", please report it to us by creating a new issue [here](https://github.com/mrayanasim09/python-projects/issues) and including detailed information about the vulnerability. We appreciate your responsible disclosure and will address the issue as quickly as possible.
 
 When reporting a vulnerability, please include the following information:
 
