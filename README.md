@@ -60,6 +60,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [2048 game (without GUI)](https://github.com/drik493/python_projects/blob/main/Game/2048.py) 🎲
 - [Snake game (with GUI)](https://github.com/drik493/python_projects/blob/main/Game/snake_game.py) 🐍
 - [Hangman](https://github.com/drik493/python_projects/blob/main/Game/hangman.py) 🪓
+- [Colox (a box colliding game with GUI)](https://github.com/mrayanasim09/python-projects/blob/main/Game/colox.py) 📦❄️
 - [Master Mind](https://github.com/drik493/python_projects/blob/main/Game/master_mid.py) 🔐
 - [A number details (prime, odd, co-prime, etc)](https://github.com/drik493/python_projects/blob/main/Game/number_details.py) 🔢
 - Tick cross [(with GUI)](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py) or [(without GUI)](https://github.com/mrayanasim09/python-projects/blob/main/Game/tick_cross_gui.py) ❌⭕
