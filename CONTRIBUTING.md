@@ -4,7 +4,7 @@ Welcome to python-projects! We appreciate your interest in contributing to this 
 
 ## Issues
 
-If you encounter any issues or have ideas for improvements, please submit an issue in the [issue tracker](https://github.com/mrayanasim/python-projects/issues). When submitting an issue, provide a clear and detailed description of the problem or suggestion. This will help us understand and address it more effectively.
+If you encounter any issues or have ideas for improvements, please submit an issue in the [issue tracker](https://github.com/mrayanasim09/python-projects/issues). When submitting an issue, provide a clear and detailed description of the problem or suggestion. This will help us understand and address it more effectively.
 
 ## Pull Requests
 
@@ -31,7 +31,7 @@ We expect all contributors to adhere to the [Code of Conduct](CODE_OF_CONDUCT.md
 
 ## License
 
-By contributing to the python-projects repository, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing to the python-projects repository, you agree that your contributions will be licensed under the [MIT License](https://github.com/mrayanasim09/python-projects/blob/main/LICENSE).
 
 Thank you for considering contributing to python-projects. Your efforts are greatly appreciated!
 
