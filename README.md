@@ -2,6 +2,13 @@
 
 Welcome to the Python Projects repository by MRayan Asim! This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥
 
+<p align="center">
+  <a href="https://forms.gle/VUymGzKQejj41VoS6">
+    <img src="https://img.shields.io/badge/Google%20Forms-Give%20Your%20Feedback-red?style=for-the-badge&logo=google-forms" alt="Give me your feedback">
+  </a>
+</p>
+
+
 ## Repository Structure 📂
 
 The repository is organized into different categories, each containing specific project folders. This structure allows for easy navigation and helps you find projects that align with your interests. Each project is tagged with appropriate labels to indicate the recommended skill level. Let's take a look at the categories available: 
@@ -153,7 +160,7 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-View%20Profile-blue?logo=linkedin)](https://www.linkedin.com/in/mrayan-asim-044836275/)
 [![GitHub](https://img.shields.io/badge/GitHub-mrayanasim09-blue?logo=github)](https://github.com/mrayanasim09)
 
-## If you are thinking how to start learning programming so you can check out my [roadmap on medium](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa)
+## If you are thinking about how to start learning programming so you can check out my [roadmap on medium](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa)
 
 ## License 📝
 
