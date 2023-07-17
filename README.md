@@ -33,6 +33,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
 - [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/snake_ladder.py) and [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
+- [ A sketch maker of image ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/sketch.py) 🖌️
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
 - [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
 - [Pikachu using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Pikachu.py) (っ◔◡◔)っ
