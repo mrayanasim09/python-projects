@@ -30,6 +30,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A basic GUI calculator](https://github.com/drik493/python_projects/blob/main/GUI/A_basic_gui_calculator.py) 🧮
 - [A working GUI clock also download the clock image](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clock.py) 🕤
 - [Tick cross (with GUI) ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/tick_cross.py) ✔️❌
+- [ Todo list (with GUI)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/todo.py) ✅📝
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
 - [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/snake_ladder.py) and [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
