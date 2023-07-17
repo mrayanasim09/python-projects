@@ -164,7 +164,7 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 
 ## License 📝
 
-This repository is open-source and available under the [MIT License](https://github.com/mrayanasim09/python-projects/blob/main/LICENSE). Please review the license file for more information on permissions and limitations.
+This repository is open-source and available under the   [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mrayanasim09/python-projects/blob/main/LICENSE)   . Please review the license file for more information on permissions and limitations.
 
 ## Note 📌
 
