@@ -130,7 +130,10 @@ To run the code in this repository, you'll need to have the following packages i
 - socket 🧦
 - http.server 🌐
 - os 🖥️
+- opencv 📷👁️
 - langdetect 🌍
+- sys 🔄💻
+- json 🧩📄
 
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -148,6 +151,7 @@ pip install sympy
 pip install hijri_converter
 pip install requests
 pip install instaloader
+pip install opencv-python
 pip install langdetect
  ```
 
