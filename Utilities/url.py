@@ -3,13 +3,31 @@
 #pip install pyshorteners
 #pip install requests
 #pip install qrcode
+import re
 import pyshorteners
 import requests
 import qrcode
 import time
 
-print("This Url code is made by MRayan Asim hope you will like this! 😊")
-time.sleep(3)
+def validate_url(url):
+    # Regular expression pattern for URL validation
+    pattern = re.compile(
+        r'^https?://'  # http:// or https://
+        r'([A-Za-z0-9.-]+)'  # domain
+        r'(:\d+)?'  # optional port number
+        r'(/[A-Za-z0-9_\.-]*)*?$'  # optional path
+    )
+    if re.match(pattern, url):
+        return True
+    else:
+        return False
+
+def analyze_url(url):
+    if validate_url(url):
+        print("URL is valid.")
+        # Perform further analysis or processing here
+    else:
+        print("Invalid URL.")
 
 def shorten_url(url):
     # Initialize the URL shortener
@@ -28,6 +46,9 @@ def is_valid_url(url):
     except requests.exceptions.RequestException:
         return False
 
+print("This URL code is made by MRayan Asim. Hope you will like this! 😊")
+time.sleep(3)
+
 # Prompt the user to enter a URL
 url = input("Enter a URL: ")
 
@@ -39,20 +60,19 @@ if is_valid_url(url):
 else:
     print("Invalid URL")
 
+# Analyze the URL
+analyze_url(url)
 
 # Data to encode
 data = url
 
 # Creating an instance of QRCode class
-qr = qrcode.QRCode(version = 1,
-				box_size = 10,
-				border = 5)
+qr = qrcode.QRCode(version=1, box_size=10, border=5)
 
 # Adding data to the instance 'qr'
 qr.add_data(data)
 
-qr.make(fit = True)
-img = qr.make_image(fill_color = 'red',
-					back_color = 'white')
-print("the qr code image is saved to your device by the name of the : 'QRCode.png'")
+qr.make(fit=True)
+img = qr.make_image(fill_color='red', back_color='white')
+print("The QR code image is saved to your device with the name 'QRCode.png'")
 img.save('QRCode.png')
