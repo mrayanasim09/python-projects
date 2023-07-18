@@ -134,6 +134,8 @@ we used these packages in our repository:
 - langdetect 🌍
 - sys 🔄💻
 - json 🧩📄🔍
+- re 🧩
+- pyshorteners: 🧹
 - panda 🐼🎉🐾
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
@@ -154,6 +156,7 @@ pip install requests
 pip install instaloader
 pip install opencv-python
 pip install langdetect
+pip install pyshorteners
  ```
 
 
