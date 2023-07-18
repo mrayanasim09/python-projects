@@ -78,6 +78,7 @@ Explore the projects in each category to find detailed information, documentatio
 ### Utilities 🛠️
 
 - [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python_projects/blob/main/Utilities/network.py) 🔐
+- [Your own browser](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/browser.py) 🌐 
 - [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
 - [Tells basic information of an Instagram account only from user name](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/inta.py) 📸
 - [Transfer file (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
@@ -136,7 +137,9 @@ we used these packages in our repository:
 - json 🧩📄🔍
 - re 🧩
 - pyshorteners: 🧹
-- panda 🐼🎉🐾
+- PyQt5: 🐍🖼️🔌
+- PyQtWebEngine: 🕸️🖼️🔌
+- Panda: 🐼🎉🐾
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -147,6 +150,8 @@ pip install googlesearch-python
 pip install qrcode
 pip install matplotlib
 pip install tkcalendar
+pip install pyqt5
+pip install pyqtwebengine
 pip install yfinance
 pip install pillow
 pip install openpyxl
