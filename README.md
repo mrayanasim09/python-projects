@@ -104,7 +104,7 @@ Projects are labeled with the following tags to help you identify their recommen
 
 ## Installation ⚙️
 
-To run the code in this repository, you'll need to have the following packages installed:
+we used these packages in our repository:
 
 - Pygame 🎮
 - Tkinter 🖼️
