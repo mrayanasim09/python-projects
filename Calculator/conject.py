@@ -1,6 +1,5 @@
 #This calculator is made by MRayan Asim
 #Packages needed:
-#pip install tkinter
 import tkinter as tk
 
 def collatz(n):
