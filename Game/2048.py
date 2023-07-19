@@ -1,4 +1,4 @@
-#This code is made by MRaan Asim
+#This code is made by MRayan Asim
 import random
 def start_game():
     mat = [[0] * 4 for _ in range(4)]
