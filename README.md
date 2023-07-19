@@ -37,6 +37,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
 - [A file explorer](https://github.com/mrayanasim09/python-projects/blob/main/GUI/file_explorer.py) 📂🔎 
 - [ A sketch maker of image ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/sketch.py) 🖌️
+- [Youtube video downloader](https://github.com/mrayanasim09/python-projects/blob/main/GUI/youtube_download.py) 📺🔽💾
 - [spelling correction](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spelling.py) 🔤📏🔍
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
 - [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
@@ -147,6 +148,7 @@ we used these packages in our repository:
 - textblob 📝📊🔍 
 - vaderSentiment 🤖💭📈
 -  winapps 👁️📂
+-  pytube 📼
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -164,6 +166,7 @@ pip install yfinance
 pip install pillow
 pip install openpyxl
 pip install sympy
+pip install pytube
 pip install hijri_converter
 pip install requests
 pip install instaloader
