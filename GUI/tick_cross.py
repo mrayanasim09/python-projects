@@ -1,3 +1,6 @@
+#This code is made by MRayan Asim
+#Packages needed:
+#pip install numpy
 from tkinter import *
 import numpy as np
 
