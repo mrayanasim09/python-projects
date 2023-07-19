@@ -161,7 +161,6 @@ You can install these packages using pip, the Python package manager. Open your 
 
 ```shell
 pip install pygame
-pip install tkinter
 pip install googlesearch-python
 pip install qrcode
 pip install pyttsx3
