@@ -1,6 +1,5 @@
 #This program is made by MRayan Asim
 #Packages needed:
-#pip install tkinter
 #pip install tkcalendar
 import tkinter as tk
 from tkinter import ttk
