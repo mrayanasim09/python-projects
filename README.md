@@ -84,7 +84,8 @@ Explore the projects in each category to find detailed information, documentatio
 ### Utilities 🛠️
 
 - [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python_projects/blob/main/Utilities/network.py) 🔐
-- [Your own browser](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/browser.py) 🌐 
+- [Your own browser](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/browser.py) 🌐
+- [Brightness controller with your hand](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/brightness_controllor.py) 🌞💡🎛️
 - [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
 - [Tells basic information of an Instagram account only from user name](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/inta.py) 📸
 - [Transfer file (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
@@ -152,6 +153,8 @@ we used these packages in our repository:
 - pyttsx3 🔊🗣️
 -  winapps 👁️📂
 -  pytube 📼
+-  screen-brightness-control 🌞🖥️🔆
+-  mediapipe  🎥📡🤝
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -178,6 +181,9 @@ pip install opencv-python
 pip install textblob
 pip install vaderSentiment
 pip install langdetect
+pip install screen-brightness-control
+pip install numpy
+pip install mediapipe  
 pip install pyshorteners
  ```
 
