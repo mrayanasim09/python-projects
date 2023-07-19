@@ -1,6 +1,5 @@
 #This code is made by MRayan Asim
 #Packages needed:
-#pip install tkinter
 #pip install pytube
 import tkinter as tk
 from tkinter import *
