@@ -1,6 +1,7 @@
 #This code is made by MRayan Asim
 #Packages needed:
 #pip install opencv-python
+#pip install mediapipe  
 #pip install screen-brightness-control
 #pip install numpy
 import cv2
