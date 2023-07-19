@@ -1,6 +1,7 @@
 #This code is made by MRayan Asim
 #Packages needed:
 #pip install pygame
+#pip install threading
 import threading
 import time
 import pygame
