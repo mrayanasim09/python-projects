@@ -32,6 +32,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Tick cross (with GUI) ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/tick_cross.py) ✔️❌
 - [ Todo list (with GUI)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/todo.py) ✅📝
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
+- [A sentiments checker](https://github.com/mrayanasim09/python-projects/blob/main/GUI/sentiments.py) 🤔💬💭 
 - [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/snake_ladder.py) and [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
 - [A file explorer](https://github.com/mrayanasim09/python-projects/blob/main/GUI/file_explorer.py) 📂🔎 
@@ -141,6 +142,7 @@ we used these packages in our repository:
 - PyQt5: 🐍🖼️🔌
 - PyQtWebEngine: 🕸️🖼️🔌
 - Panda: 🐼🎉🐾
+- vaderSentiment 🤖💭📈 
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -161,6 +163,7 @@ pip install hijri_converter
 pip install requests
 pip install instaloader
 pip install opencv-python
+pip install vaderSentiment
 pip install langdetect
 pip install pyshorteners
  ```
