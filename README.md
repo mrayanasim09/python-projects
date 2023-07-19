@@ -91,6 +91,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
 - [bitcoin mining simulator](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/btc.py) ₿
 - [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
+- [Text to speech](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/text_to_speech.py) 🔤🔉
 - [Github repository details finder (only with username and name of the repository)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/github.py) :octocat:
 - [Secret code generator (with decoding support)](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) 🤐
 - [Password to hash form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
@@ -148,6 +149,7 @@ we used these packages in our repository:
 - Panda: 🐼🎉🐾
 - textblob 📝📊🔍 
 - vaderSentiment 🤖💭📈
+- pyttsx3 🔊🗣️
 -  winapps 👁️📂
 -  pytube 📼
   
@@ -158,6 +160,7 @@ pip install pygame
 pip install tkinter
 pip install googlesearch-python
 pip install qrcode
+pip install pyttsx3
 pip install winapps
 pip install matplotlib
 pip install tkcalendar
