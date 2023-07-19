@@ -1,7 +1,6 @@
 #This code is made by MRayan Asim
 #to install these packages:
 #pip install openpyxl
-#pip install tkinter
 import openpyxl
 from tkinter import *
 from tkinter.messagebox import *
