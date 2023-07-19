@@ -37,6 +37,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
 - [A file explorer](https://github.com/mrayanasim09/python-projects/blob/main/GUI/file_explorer.py) 📂🔎 
 - [ A sketch maker of image ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/sketch.py) 🖌️
+- [spelling correction](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spelling.py) 🔤📏🔍
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
 - [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
 - [Pikachu using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Pikachu.py) (っ◔◡◔)っ
@@ -142,6 +143,7 @@ we used these packages in our repository:
 - PyQt5: 🐍🖼️🔌
 - PyQtWebEngine: 🕸️🖼️🔌
 - Panda: 🐼🎉🐾
+- textblob 📝📊🔍 
 - vaderSentiment 🤖💭📈 
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
@@ -163,6 +165,7 @@ pip install hijri_converter
 pip install requests
 pip install instaloader
 pip install opencv-python
+pip install textblob
 pip install vaderSentiment
 pip install langdetect
 pip install pyshorteners
