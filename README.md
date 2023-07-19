@@ -87,6 +87,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Your own browser](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/browser.py) 🌐
 - [Brightness controller with your hand](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/brightness_controllor.py) 🌞💡🎛️
 - [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
+- [Eye blink detection (also download the .XML files)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/eye_blink.py) 👁️🔍😴
 - [Tells basic information of an Instagram account only from user name](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/inta.py) 📸
 - [Transfer file (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
