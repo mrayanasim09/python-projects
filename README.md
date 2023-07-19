@@ -145,8 +145,8 @@ we used these packages in our repository:
 - sys 🔄💻
 - json 🧩📄🔍
 - re 🧩
-- pyshorteners: 🧹
-- PyQt5: 🐍🖼️🔌
+- pyshorteners 🧹
+- PyQt5 🐍🖼️🔌
 - PyQtWebEngine: 🕸️🖼️🔌
 - Panda: 🐼🎉🐾
 - textblob 📝📊🔍 
