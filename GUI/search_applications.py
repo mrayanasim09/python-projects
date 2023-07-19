@@ -1,6 +1,5 @@
 #This code is made by MRayan Asim
 #Packages needed:
-#pip install tkinter
 #pip install winapps
 from tkinter import *
 import winapps
