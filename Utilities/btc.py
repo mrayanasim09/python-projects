@@ -1,5 +1,6 @@
 #This program is made by MRayan Asim
-
+#Packages needed:
+#pip install hashlib
 import hashlib
 
 def mine_block(previous_block_hash, transactions, difficulty):
