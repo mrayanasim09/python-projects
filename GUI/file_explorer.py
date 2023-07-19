@@ -1,6 +1,4 @@
 #This code is made by MRayan Asim
-#Packages needed:
-#pip install tkinter
 from tkinter import *
 from tkinter import filedialog
 
