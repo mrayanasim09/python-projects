@@ -44,6 +44,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [ Doraemon using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/doramon.py)🐱‍🚀
 - [ Rainbow with turtle ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/rainbow.py)🌈
 - [A happy birthday message to the user with its name](https://github.com/mrayanasim09/python-projects/blob/main/GUI/happy_birth_day.py)🎂
+- [A installed application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/search_applications.py) 🔍
 - [ A GUI calendar ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clender.py) 📅
 
 ### Calculator 🧮
@@ -144,7 +145,8 @@ we used these packages in our repository:
 - PyQtWebEngine: 🕸️🖼️🔌
 - Panda: 🐼🎉🐾
 - textblob 📝📊🔍 
-- vaderSentiment 🤖💭📈 
+- vaderSentiment 🤖💭📈
+-  winapps 👁️📂
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -153,6 +155,7 @@ pip install pygame
 pip install tkinter
 pip install googlesearch-python
 pip install qrcode
+pip install winapps
 pip install matplotlib
 pip install tkcalendar
 pip install pyqt5
