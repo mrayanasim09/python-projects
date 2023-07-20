@@ -1,3 +1,7 @@
+#This code is made by MRayan Asim
+#Packages needed:
+#pip install opencv-python
+#pip install numpy
 import cv2
 import numpy as np
 ip_address = input("Enter the ip address: ")
