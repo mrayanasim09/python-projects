@@ -1,3 +1,4 @@
+#This code is made by MRayan Asim
 # Function to convert the date format
 def convert24(str1):
     # Checking if last two elements of time
