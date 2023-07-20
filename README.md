@@ -60,6 +60,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Collatz Conjecture (3x+1) (with GUI)](https://github.com/drik493/python_projects/blob/main/Calculator/conject.py) 📐
 - [Fibonacci sequence](https://github.com/drik493/python_projects/blob/main/Calculator/sequence.py) 🐇
 - [Graph calculator from equation (with graph)](https://github.com/drik493/python_projects/blob/main/Calculator/graph.py) 📊
+- [ 12 hour time into 24 hour time](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/12_to_24.py)  🕰️🕛
 - [Grade calculator](https://github.com/drik493/python_projects/blob/main/Calculator/grade.py) 🎓
 - [Sudoku solver](https://github.com/drik493/python_projects/blob/main/Calculator/sudukko.py) 🧩
 - [A program to find the acii value of characters](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/ASCII%20.py) 💻🔧
