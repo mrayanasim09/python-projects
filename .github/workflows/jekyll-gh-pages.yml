@@ -23,13 +23,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Add custom styles
+        run: bundle exec jekyll build
+      - name: Process SCSS and Generate CSS
         run: |
-          echo -e "---\n---\n@import \"your-theme\";\n@import \"style\";" > ./_sass/style.scss
+          sass ./style.css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
