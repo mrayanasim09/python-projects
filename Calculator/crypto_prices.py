@@ -1,3 +1,11 @@
+#This code is made by MRayan Asim
+#Packages needed:
+#pip install pandas 
+#pip install numpy
+#pip install matplotlib
+#pip install yfinance
+#pip install seaborn
+#pip install prophet
 import pandas as pd
 import numpy as np
 import yfinance as yf
