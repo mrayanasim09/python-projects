@@ -1,16 +1,13 @@
-name: Python Linting
+name: Python CI/CD
 
 on:
   push:
     branches:
-      - main    # Adjust the branch name as needed
-  pull_request:
-    branches:
-      - main
+      - main         # Adjust the branch name as needed
 
 jobs:
-  lint:
-    name: Python Linting and Auto-fix
+  code-rating:
+    name: Code Rating
     runs-on: ubuntu-latest
 
     steps:
@@ -22,35 +19,68 @@ jobs:
       with:
         python-version: '3.x'   # Choose the appropriate Python version
 
-    - name: Upgrade pip to 23.2.1
-      run: pip install --upgrade pip==23.2.1
-
-    - name: Cache Python dependencies
-      uses: actions/cache@v2
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-
     - name: Install Dependencies
       run: |
-        pip install flake8 autopep8
-        pip install -r requirements.txt || true
+        pip install flake8
+        pip install autopep8
 
-    - name: Lint Code
-      run: flake8 . --extend-ignore=E501
-
-    - name: Auto-fix with autopep8
+    - name: Run Flake8 and Autopep8
       run: |
-        autopep8 --in-place --recursive --aggressive --aggressive .
+        # Run flake8 to check for style and syntax issues
+        flake8
 
-    - name: Commit Changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -A
-        git diff-index --quiet HEAD || git commit -m "Auto-fix linting issues [skip ci]"
+        # Auto-fix code style issues with autopep8
+        autopep8 --in-place --recursive .
 
-    - name: Push Changes
-      uses: ad-m/github-push-action@master
+      continue-on-error: true   # Continue to the next step even if there are style errors
+
+  tests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    needs: code-rating          # Wait for the 'code-rating' job to complete
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python and Pip
+      uses: actions/setup-python@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        python-version: '3.x'   # Choose the appropriate Python version
+        pip: '23.2.1'           # Specify the desired version of pip for this job
+
+    - name: Update pip
+      run: pip install --upgrade pip  # This step will update pip to the latest version (23.2.1)
+
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run Unit Tests
+      run: pytest tests/        # Assumes your tests are in a 'tests' directory
+
+    - name: Generate Coverage Report
+      run: pytest --cov-report xml --cov=my_app tests/   # Replace 'my_app' with your app's name
+
+    - name: Upload Coverage Report
+      uses: codecov/codecov-action@v2.1.0
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}   # Add CODECOV_TOKEN as a secret in your repository
+
+  deployment:
+    name: Deploy to Server
+    runs-on: ubuntu-latest
+
+    needs: tests                # Wait for the 'tests' job to complete
+
+    steps:
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /path/to/your/app
+          git pull origin main
+          # Additional deployment steps here, such as restarting the server
