@@ -29,10 +29,13 @@ jobs:
     - name: Show Formatted Files
       run: git diff --name-only
 
-    - name: Commit and Push Changes
+    - name: Configure Git
       run: |
         git config --global user.name "mrayanasim09"
         git config --global user.email "mrayanasim09@gmail.com"
+
+    - name: Commit Changes
+      run: |
         git add -A
-        git commit -m "Apply Black formatting"
+        git commit -m "Apply Black formatting" --allow-empty
         git push
