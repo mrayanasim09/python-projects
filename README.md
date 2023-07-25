@@ -100,6 +100,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [bitcoin mining simulator](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/btc.py) ₿
 - [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
 - [Text to speech](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/text_to_speech.py) 🔤🔉
+- [Wattsapp spam messages sender (you should click on the message bar of WhatsApp after running it)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/whatsapp_spam.py) 📧🔁📧🔁📧🔁
 - [Github repository details finder (only with username and name of the repository)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/github.py) :octocat:
 - [Secret code generator (with decoding support)](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) 🤐
 - [Password to hash form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
@@ -154,14 +155,17 @@ we used these packages in our repository:
 - pyshorteners 🧹
 - PyQt5 🐍🖼️🔌
 - PyQtWebEngine: 🕸️🖼️🔌
-- Panda: 🐼🎉🐾
+- Panda 🐼🎉🐾
 - textblob 📝📊🔍 
 - vaderSentiment 🤖💭📈
 - pyttsx3 🔊🗣️
 -  winapps 👁️📂
 -  pytube 📼
 -  screen-brightness-control 🌞🖥️🔆
+-  pyautogui 📦🔧💻🐍
 -  mediapipe  🎥📡🤝
+-  prophet 🔮📈
+-  seaborn 📊🌈
   
 You can install these packages using pip, the Python package manager. Open your terminal or command prompt and run the following commands:
 
@@ -169,6 +173,7 @@ You can install these packages using pip, the Python package manager. Open your 
 pip install pygame
 pip install googlesearch-python
 pip install qrcode
+pip install pyautogui
 pip install pyttsx3
 pip install winapps
 pip install matplotlib
@@ -189,6 +194,8 @@ pip install vaderSentiment
 pip install langdetect
 pip install screen-brightness-control
 pip install numpy
+pip install prophet
+pip install seaborn
 pip install mediapipe  
 pip install pyshorteners
  ```
