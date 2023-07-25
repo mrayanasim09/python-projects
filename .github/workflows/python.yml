@@ -1,4 +1,4 @@
-name: Python Formatting
+name: Python Code Formatting
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   format:
-    name: Format Python Files
+    name: Format Python Code
     runs-on: ubuntu-latest
 
     steps:
@@ -19,13 +19,20 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install Python Dependencies
+    - name: Install Black
       run: pip install black
 
     - name: Format Python Files
-      run: |
-        # Find all Python files in the repository and format them using Black
-        find . -name "*.py" -exec black {} +
-
-      # Use `|| true` to prevent the script from exiting with a non-zero code if some files fail to reformat
+      run: black . --check --diff
       continue-on-error: true
+
+    - name: Show Formatted Files
+      run: git diff --name-only
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "Your Name"
+        git config --global user.email "your.email@example.com"
+        git add -A
+        git commit -m "Apply Black formatting"
+        git push
