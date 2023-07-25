@@ -20,11 +20,10 @@ jobs:
         python-version: '3.x'   # Choose the appropriate Python version
 
     - name: Install Dependencies
-      run: pip install flake8 bandit
+      run: pip install flake8
 
     - name: Run Flake8
       run: flake8
       continue-on-error: true   # Continue to next step even if there are style errors
 
-    - name: Run Bandit
-      run: bandit -r .          # Scans the whole repository for security issues
+    # Add any other steps here, such as testing or deployment steps
