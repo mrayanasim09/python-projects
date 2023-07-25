@@ -66,11 +66,12 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install GitHub CLI
-      run: |
-        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-        sudo apt-add-repository https://cli.github.com/packages
-        sudo apt update
-        sudo apt install gh
+  run: |
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+    sudo add-apt-repository "deb [arch=amd64] https://cli.github.com/packages focal main"
+    sudo apt update
+    sudo apt install gh
+
 
     - name: Authenticate with GitHub CLI
       run: |
