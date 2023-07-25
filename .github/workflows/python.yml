@@ -1,4 +1,4 @@
-name: Python Code Formatting
+name: Python CI/CD
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  format:
-    name: Format Python Code
+  code-rating:
+    name: Code Rating
     runs-on: ubuntu-latest
 
     steps:
@@ -19,23 +19,37 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install Dependencies
+      run: pip install flake8
+
+    - name: Run Flake8
+      run: flake8
+      continue-on-error: true
+
+  format-code:
+    name: Format Code
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python and Pip
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
     - name: Install Black
       run: pip install black
 
-    - name: Format Python Files
-      run: black . --check --diff
-      continue-on-error: true
-
-    - name: Show Formatted Files
-      run: git diff --name-only
-
-    - name: Configure Git
-      run: |
-        git config --global user.name "mrayanasim09"
-        git config --global user.email "mrayanasim09@gmail.com"
+    - name: Run Black
+      run: black . --exclude=venv
 
     - name: Commit Changes
       run: |
+        git config --global user.name "mrayanasim09"
+        git config --global user.email "mrayanasim09@gmail.com"  # Replace with your email
         git add -A
-        git commit -m "Apply Black formatting" --allow-empty
-        git push
+        git commit -m "Apply Black formatting"
+        git push origin main
+
