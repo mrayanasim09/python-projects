@@ -45,18 +45,16 @@ jobs:
     - name: Run Black
       run: black . --exclude=venv || true
 
-    - name: Configure Git
+    - name: Ask for Manual Commit
       run: |
-        git config --global user.name "mrayanasim09"
-        git config --global user.email "mrayanasim09@gmail.com"
-
-    - name: Commit Changes
-      run: |
-        git add .
-        git commit -m "Apply Black formatting" || echo "No changes to commit"
-
-    - name: Push Changes
-      run: git push origin main
+        echo "-------------------------------------------------------------"
+        echo "Code formatting is complete. Please review the changes."
+        echo "If you are satisfied with the changes, run the following commands to commit and push:"
+        echo ""
+        echo "git add ."
+        echo "git commit -m 'Apply Black formatting'"
+        echo "git push origin main"
+        echo "-------------------------------------------------------------"
 
   create-pull-request:
     name: Create Pull Request
@@ -75,8 +73,9 @@ jobs:
         sudo apt install gh
 
     - name: Authenticate with GitHub CLI
-      run: echo "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" | gh auth login --with-token
+      run: |
+        echo "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" | gh auth login --with-token
 
     - name: Create Pull Request
       run: |
-        gh pr create --title "Apply Black formatting" --body "This is an auto-generated pull request to apply Black formatting." --base main
+        gh pr create --title "Apply Black formatting" --body "This is an auto-generated pull request to apply Black formatting." --base main || true
