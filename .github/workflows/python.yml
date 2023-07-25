@@ -56,9 +56,27 @@ jobs:
         git commit -m "Apply Black formatting" || echo "No changes to commit"
 
     - name: Push Changes
-      env:
-        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: git push origin main
+
+  create-pull-request:
+    name: Create Pull Request
+    needs: format-code
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Install GitHub CLI
       run: |
-        git push origin main
-        echo $ACCESS_TOKEN | gh auth login --with-token
+        sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+        sudo apt-add-repository https://cli.github.com/packages
+        sudo apt update
+        sudo apt install gh
+
+    - name: Authenticate with GitHub CLI
+      run: echo "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" | gh auth login --with-token
+
+    - name: Create Pull Request
+      run: |
         gh pr create --title "Apply Black formatting" --body "This is an auto-generated pull request to apply Black formatting." --base main
