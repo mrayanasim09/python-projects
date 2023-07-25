@@ -1,3 +1,6 @@
+#This code is made by MRayan Asim
+#Packages to install:
+#pip install pyautogui
 import pyautogui as pt
 import time
 
