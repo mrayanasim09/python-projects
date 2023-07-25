@@ -14,18 +14,17 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v2
 
-    - name: Set up Python and Pip
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'   # Choose the appropriate Python version
-        pip: '23.2'             # Specify the desired version of pip
 
     - name: Install Dependencies
       run: pip install flake8
 
     - name: Run Flake8
       run: flake8
-      continue-on-error: true   # Continue to next step even if there are style errors
+      continue-on-error: true   # Continue to the next step even if there are style errors
 
   tests:
     name: Run Tests
@@ -41,7 +40,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'   # Choose the appropriate Python version
-        pip: '23.2'             # Specify the desired version of pip
+        pip: '23.2.1'           # Specify the desired version of pip for this job
 
     - name: Install Dependencies
       run: pip install -r requirements.txt
