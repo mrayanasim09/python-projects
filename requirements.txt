@@ -198,6 +198,7 @@ pyttsx3==2.90
 pytube==15.0.0
 pytweening==1.0.7
 pytz==2023.3
+pywin32
 pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==25.1.0
@@ -279,3 +280,4 @@ xmltodict==0.13.0
 yarl==1.9.2
 yfinance==0.2.23
 zope.interface==6.0
+
