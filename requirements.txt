@@ -172,7 +172,7 @@ PyMeeus==0.5.12
 pymongo==4.4.1
 PyMsgBox==1.0.9
 pynput==1.7.6
-pyOpenSSL==23.2.1  # Updated version
+pyOpenSSL==23.2.0
 pyparsing==3.0.9
 pyperclip==1.8.2
 pypiwin32==223
