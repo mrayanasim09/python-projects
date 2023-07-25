@@ -1,0 +1,55 @@
+name: Python Linting
+
+on:
+  push:
+    branches:
+      - main    # Adjust the branch name as needed
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Python Linting and Auto-fix
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'   # Choose the appropriate Python version
+
+    - name: Cache Python dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+
+    - name: Install Dependencies
+      run: |
+        pip install flake8 autopep8
+        pip install -r requirements.txt || true
+
+    - name: Lint Code
+      run: flake8 . --extend-ignore=E501
+
+    - name: Auto-fix with autopep8
+      run: |
+        autopep8 --in-place --recursive --aggressive --aggressive .
+
+    - name: Commit Changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git diff-index --quiet HEAD || git commit -m "Auto-fix linting issues [skip ci]"
+
+    - name: Push Changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+
