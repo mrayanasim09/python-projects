@@ -31,8 +31,8 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        git config --global user.name "Your Name"
-        git config --global user.email "your.email@example.com"
+        git config --global user.name "mrayanasim09"
+        git config --global user.email "mrayanasim09@gmail.com"
         git add -A
         git commit -m "Apply Black formatting"
         git push
