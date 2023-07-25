@@ -53,6 +53,8 @@ Explore the projects in each category to find detailed information, documentatio
 - [Quadratic Equation (with graph)](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py) 📈
 - [A mega calculator with all operations](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py) 🖩
 - [A stock analyzer with its short form](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/stock.py) 💵📊📈
+- [Gold price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/gold_price.py) 💰🪙
+- [Crypto price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/crypto_prices.py) 🚀🌕
 - [Number base converter](https://github.com/drik493/python_projects/blob/main/Calculator/number_base.py) 🔢
 - [Integration and differentiation](https://github.com/drik493/python_projects/blob/main/Calculator/int_diff.py) ∫
 - [BMI calculator](https://github.com/drik493/python_projects/blob/main/Calculator/bmi.py) 🏋️
