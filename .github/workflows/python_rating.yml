@@ -1,0 +1,30 @@
+name: Python Code Rating
+
+on:
+  push:
+    branches:
+      - main         # Adjust the branch name as needed
+
+jobs:
+  code-rating:
+    name: Code Rating
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'   # Choose the appropriate Python version
+
+    - name: Install Dependencies
+      run: pip install flake8 bandit
+
+    - name: Run Flake8
+      run: flake8
+      continue-on-error: true   # Continue to next step even if there are style errors
+
+    - name: Run Bandit
+      run: bandit -r .          # Scans the whole repository for security issues
