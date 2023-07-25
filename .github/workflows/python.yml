@@ -1,0 +1,31 @@
+name: Python Formatting
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  format:
+    name: Format Python Files
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install Python Dependencies
+      run: pip install black
+
+    - name: Format Python Files
+      run: |
+        # Find all Python files in the repository and format them using Black
+        find . -name "*.py" -exec black {} +
+
+      # Use `|| true` to prevent the script from exiting with a non-zero code if some files fail to reformat
+      continue-on-error: true
