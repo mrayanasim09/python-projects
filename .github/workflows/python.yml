@@ -43,13 +43,22 @@ jobs:
       run: pip install black
 
     - name: Run Black
-      run: black . --exclude=venv
+      run: black . --exclude=venv || true
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "mrayanasim09"
+        git config --global user.email "mrayanasim09@gmail.com"
 
     - name: Commit Changes
       run: |
-        git config --global user.name "mrayanasim09"
-        git config --global user.email "mrayanasim09@gmail.com"  # Replace with your email
-        git add -A
-        git commit -m "Apply Black formatting"
-        git push origin main
+        git add .
+        git commit -m "Apply Black formatting" || echo "No changes to commit"
 
+    - name: Push Changes
+      env:
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git push origin main
+        echo $ACCESS_TOKEN | gh auth login --with-token
+        gh pr create --title "Apply Black formatting" --body "This is an auto-generated pull request to apply Black formatting." --base main
