@@ -13,9 +13,14 @@ jobs:
       pull-requests: write
     steps:
       - name: Greet the User
-        uses: actions/first-interaction@v1
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: "Hello, @{github.actor}! 👋 Thank you for creating your first issue in our repository. We appreciate your contribution!"
-          pr-message: "Hello, @{github.actor}! 👋 Thank you for submitting your first pull request to our repository. We appreciate your contribution!"
+        run: |
+          echo "Hello, ${{ github.actor }}! 👋 Thank you for creating your first issue or pull request in our repository. We appreciate your contribution!"
+        shell: bash
 
+      - name: Comment Greeting
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueComment = `Hello, @${{ github.actor }}! 👋 Thank you for creating your first issue or pull request in our repository. We appreciate your contribution!`;
+            console.log(issueComment);
