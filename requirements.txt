@@ -172,7 +172,7 @@ PyMeeus==0.5.12
 pymongo==4.4.1
 PyMsgBox==1.0.9
 pynput==1.7.6
-pyOpenSSL==23.2.0
+pyOpenSSL==23.2.1  # Updated version
 pyparsing==3.0.9
 pyperclip==1.8.2
 pypiwin32==223
@@ -198,8 +198,7 @@ pyttsx3==2.90
 pytube==15.0.0
 pytweening==1.0.7
 pytz==2023.3
-pywhatkit==5.4
-pywin32==306
+pywin32==306  # Updated version
 pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==25.1.0
