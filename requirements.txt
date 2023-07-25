@@ -7,6 +7,7 @@ appdirs==1.4.4
 args==0.1.0
 astrology==0.0.1.dev0
 astropy==5.3.1
+pip==23.2.1
 asttokens==2.2.1
 async-generator==1.10
 async-timeout==4.0.2
