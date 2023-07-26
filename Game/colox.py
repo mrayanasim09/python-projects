@@ -2,7 +2,6 @@
 #Packages needed:
 # pip install pygame
 import pygame
-import sys
 import random
 
 # initialize the constructor

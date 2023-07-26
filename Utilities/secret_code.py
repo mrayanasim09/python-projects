@@ -3,7 +3,6 @@
 #pip install pygame
 import random
 import time
-import pygame
 
 # Function to encode a word
 def encode_word(word):

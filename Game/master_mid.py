@@ -2,7 +2,6 @@
 #Packages needed:
 #pip install pygame
 import random
-import pygame
 import time
 print("This master mind game is made by MRayan Asim hope you will like this! 😊")
 time.sleep(3)

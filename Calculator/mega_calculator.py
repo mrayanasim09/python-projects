@@ -5,9 +5,8 @@
 #pip install sympy
 import math
 import matplotlib.pyplot as plt
-import pygame
 import time
-from sympy import symbols, solve
+from sympy import symbols
 import sympy
 
 print("Hello! This calculator is made by MRayan Asim. Hope you will like this! 😊")
