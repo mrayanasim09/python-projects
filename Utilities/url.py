@@ -17,10 +17,7 @@ def validate_url(url):
         r'(:\d+)?'  # optional port number
         r'(/[A-Za-z0-9_\.-]*)*?$'  # optional path
     )
-    if re.match(pattern, url):
-        return True
-    else:
-        return False
+    return bool(re.match(pattern, url))
 
 def analyze_url(url):
     if validate_url(url):
