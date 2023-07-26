@@ -6,14 +6,14 @@ sentence = input("Enter the text: ")
 def count_letters_in_sentence(sentence):
     # Remove any punctuation marks and split the sentence into words
     words = sentence.replace(",", "").replace(".", "").split()
-    
+
     # Initialize the letter count
     count = 0
-    
+
     # Iterate over each word and count the letters
     for word in words:
         count += len(word)
-    
+
     # Return the total count of letters
     return count
 

@@ -8,11 +8,11 @@ def browseFiles():
                                           title="Select a File",
                                           filetypes=(("Text files", "*.txt*"),
                                                      ("all files", "*.*")))
-	
+
     # Change label contents
     label_file_explorer.configure(text="File Opened: "+filename)
-	
-	
+
+
 # Create the root window
 window = Tk()
 

@@ -28,7 +28,7 @@ def print_diamond(rows):
     for i in range(rows):
         print(" " * (rows - i - 1), end="")
         print("*" * (2*i + 1))
-    
+
     for i in range(rows-2, -1, -1):
         print(" " * (rows - i - 1), end="")
         print("*" * (2*i + 1))
@@ -43,7 +43,7 @@ def print_butterfly(rows):
         for j in range(i+1):
             print("*", end="")
         print()
-    
+
     for i in range(rows-1, -1, -1):
         for j in range(i+1):
             print("*", end="")

@@ -13,12 +13,12 @@ timeleft = 30
 
 # function that will start the game.
 def startGame(event):
-	
+
 	if timeleft == 30:
-		
+
 		# start the countdown timer.
 		countdown()
-		
+
 	# run the function to
 	# choose the next colour.
 	nextColour()
@@ -41,18 +41,18 @@ def nextColour():
 		# if the colour typed is equal
 		# to the colour of the text
 		if e.get().lower() == colours[1].lower():
-			
+
 			score += 1
 
 		# clear the text entry box.
 		e.delete(0, tkinter.END)
-		
+
 		random.shuffle(colours)
-		
+
 		# change the colour to type, by changing the
 		# text _and_ the colour to a random colour value
 		label.config(fg = str(colours[1]), text = str(colours[0]))
-		
+
 		# update the score.
 		scoreLabel.config(text = "Score: " + str(score))
 
@@ -67,11 +67,11 @@ def countdown():
 
 		# decrement the timer.
 		timeleft -= 1
-		
+
 		# update the time left label
 		timeLabel.config(text = "Time left: "
 							+ str(timeleft))
-								
+
 		# run the function again after 1 second.
 		timeLabel.after(1000, countdown)
 
@@ -101,7 +101,7 @@ scoreLabel.pack()
 # add a time left label
 timeLabel = tkinter.Label(root, text = "Time left: " +
 			str(timeleft), font = ('Helvetica', 12))
-			
+
 timeLabel.pack()
 
 # add a label for displaying the colours

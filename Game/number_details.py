@@ -54,4 +54,4 @@ else:
             print("There are no co-prime numbers.")
     else:
         print(num, "is a prime number")
-        
+

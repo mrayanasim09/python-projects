@@ -6,24 +6,24 @@ import requests
 def analyze_github_repository(owner, repo):
     # API endpoint for GitHub repository
     repo_url = f"https://api.github.com/repos/{owner}/{repo}"
-    
+
     # Send GET request to fetch repository data
     response = requests.get(repo_url)
-    
+
     if response.status_code == 200:
         # Parse JSON response
         repository = response.json()
-        
+
         # Extract desired information
         name = repository.get('name')
         description = repository.get('description')
         stars = repository.get('stargazers_count')
         forks = repository.get('forks_count')
         watchers = repository.get('subscribers_count')
-        
+
         # API endpoint for repository views
         views_url = f"https://api.github.com/repos/{owner}/{repo}/traffic/views"
-        
+
         # Send GET request to fetch repository views
         views_response = requests.get(views_url)
         if views_response.status_code == 200:
@@ -31,7 +31,7 @@ def analyze_github_repository(owner, repo):
             views = views_data.get('count')
         else:
             views = 'N/A'
-        
+
         # Print repository information
         print(f"Repository: {name}")
         print(f"Description: {description}")

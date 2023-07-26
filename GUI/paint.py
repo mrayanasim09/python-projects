@@ -21,13 +21,13 @@ class Draw():
 #         self.root.geometry("810x530")
         self.root.configure(background="white")
 #         self.root.resizable(0,0)
- 
+
 #variables for pointer and Eraser   
         self.pointer= "black"
         self.erase="white"
 
 #Widgets for Tkinter Window
-    
+
 # Configure the alignment , font size and color of the text
         text=Text(root)
         text.tag_configure("tag_name", justify='center', font=('arial',25),background='#292826',foreground='orange')
@@ -38,7 +38,7 @@ class Draw():
 # Add the tag for following given text
         text.tag_add("tag_name", "1.0", "end")
         text.pack()
-        
+
 # Pick a color for drawing from color pannel
         self.pick_color = LabelFrame(self.root,text='Colors',font =('arial',15),bd=5,relief=RIDGE,bg="white")
         self.pick_color.place(x=0,y=40,width=90,height=185)
@@ -130,7 +130,7 @@ class Draw():
 
         except:
             print("Error in saving the screenshot")
-            
+
 if __name__ =="__main__":
     root = Tk()
     p= Draw(root)
