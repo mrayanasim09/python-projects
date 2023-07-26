@@ -24,7 +24,7 @@ def countdown_timer(seconds):
         remaining_seconds = int(seconds - (time.time() - start_time))
         print(f"{remaining_seconds} seconds left | Current Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         time.sleep(1)
-    
+
 
     # Print "Start" and start playing the sound
     print("Start")

@@ -43,7 +43,7 @@ class Main(Tkinter.Tk):
         t = time.strptime(str(now.tm_hour), "%H")
         hour = int(time.strftime("%I", t)) * 5
         now = (hour, now.tm_min, now.tm_sec)
-        
+
         for n, i in enumerate(now):
             x, y = self.canvas.coords(self.sticks[n])[0:2]
             cr = [x, y]

@@ -104,7 +104,7 @@ while not game_over:
 
     # Clear the game window
     window.fill(background_color)
-    
+
 
     # Draw the snake's body
     for segment in snake_segments:
