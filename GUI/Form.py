@@ -82,7 +82,6 @@ def clear():
     address_field.delete(0, END)
 
 def insert(file_path):
-    global name_field, course_field, sem_field, form_no_field, contact_no_field, email_id_field, address_field
 
     # if user does not fill any entry, show a message box with an error
     if (
