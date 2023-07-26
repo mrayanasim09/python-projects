@@ -30,9 +30,7 @@ def check_winner(board):
 def get_empty_cells(board):
     empty_cells = []
     for i in range(3):
-        for j in range(3):
-            if board[i][j] == " ":
-                empty_cells.append((i, j))
+        empty_cells.extend((i, j) for j in range(3) if board[i][j] == " ")
     return empty_cells
 
 def make_human_move(board):
@@ -47,35 +45,30 @@ def make_human_move(board):
             print("Invalid move. Try again.")
 
 def make_computer_move(board, difficulty):
-    empty_cells = get_empty_cells(board)
-    if empty_cells:
-        if difficulty == "easy":
-            row, col = random.choice(empty_cells)
-        elif difficulty == "medium":
-            # Check for winning moves
+    if not (empty_cells := get_empty_cells(board)):
+        return
+    if difficulty == "easy" or difficulty != "medium":
+        row, col = random.choice(empty_cells)
+    else:
+        # Check for winning moves
+        for cell in empty_cells:
+            temp_board = [row[:] for row in board]  # Create a temporary board for simulation
+            temp_board[cell[0]][cell[1]] = "O"
+            if check_winner(temp_board) == "O":
+                row, col = cell
+                break
+        else:
+            # Check for blocking moves
             for cell in empty_cells:
                 temp_board = [row[:] for row in board]  # Create a temporary board for simulation
-                temp_board[cell[0]][cell[1]] = "O"
-                if check_winner(temp_board) == "O":
+                temp_board[cell[0]][cell[1]] = "X"
+                if check_winner(temp_board) == "X":
                     row, col = cell
                     break
             else:
-                # Check for blocking moves
-                for cell in empty_cells:
-                    temp_board = [row[:] for row in board]  # Create a temporary board for simulation
-                    temp_board[cell[0]][cell[1]] = "X"
-                    if check_winner(temp_board) == "X":
-                        row, col = cell
-                        break
-                else:
-                    row, col = random.choice(empty_cells)
-        else:
-            # Choose the best move using a more advanced algorithm (e.g., Minimax)
-            # Implementation of Minimax is beyond the scope of this example
-            row, col = random.choice(empty_cells)
-
-        time.sleep(1)  # Add a delay of 1 second before computer's move
-        board[row][col] = "✓"  # Use tick symbol instead of "O"
+                row, col = random.choice(empty_cells)
+    time.sleep(1)  # Add a delay of 1 second before computer's move
+    board[row][col] = "✓"  # Use tick symbol instead of "O"
 
 def play_again():
     response = input("Do you want to play again? (yes/no): ")
@@ -105,11 +98,7 @@ def play_game():
                 make_computer_move(board, difficulty)
 
             winner = check_winner(board)
-            if current_player == "X":
-                current_player = "O"
-            else:
-                current_player = "X"
-
+            current_player = "O" if current_player == "X" else "X"
         print_board(board)
         if winner:
             if winner == "X":

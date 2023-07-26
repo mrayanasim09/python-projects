@@ -18,14 +18,12 @@ def aankha():
     tracer(False)
     a = 2.5
     for i in range(120):
+        lt(3)
         if 0 <= i < 30 or 60 <= i < 90:
             a -= 0.05
-            lt(3)
-            fd(a)
         else:
             a += 0.05
-            lt(3)
-            fd(a)
+        fd(a)
     tracer(True)
     end_fill()
 

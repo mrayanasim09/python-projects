@@ -10,14 +10,10 @@ def hangman():
 
     while attempts > 0:
         print("\nAttempts left:", attempts)
-        hidden_word = ''
-
-        for letter in word:
-            if letter in guessed_letters:
-                hidden_word += letter + ' '
-            else:
-                hidden_word += '_ '
-
+        hidden_word = ''.join(
+            f'{letter} ' if letter in guessed_letters else '_ '
+            for letter in word
+        )
         print(hidden_word)
 
         if hidden_word == word:

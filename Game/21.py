@@ -5,11 +5,7 @@ print("This 21 game is made by MRayan Asim hope you will like this! 😊")
 time.sleep(3)
 
 def nearestMultiple(num):
-    if num >= 4:
-        near = num + (4 - (num % 4))
-    else:
-        near = 4
-    return near
+    return num + (4 - (num % 4)) if num >= 4 else 4
 
 
 def lose1():
@@ -19,12 +15,7 @@ def lose1():
 
 
 def check(xyz):
-    i = 1
-    while i < len(xyz):
-        if (xyz[i] - xyz[i - 1]) != 1:
-            return False
-        i = i + 1
-    return True
+    return all(xyz[i] - xyz[i - 1] == 1 for i in range(1, len(xyz)))
 
 
 def start1():
@@ -58,7 +49,7 @@ def start1():
                         a = input('> ')
                         a = int(a)
                         xyz.append(a)
-                        i = i + 1
+                        i += 1
 
                     last = xyz[-1]
 
@@ -71,7 +62,7 @@ def start1():
                         else:
                             while j <= comp:
                                 xyz.append(last + j)
-                                j = j + 1
+                                j += 1
                             print("Order of inputs after computer's turn is: ")
                             print(xyz)
                             last = xyz[-1]
@@ -79,7 +70,6 @@ def start1():
                         print("\nYou did not input consecutive integers.")
                         lose1()
 
-        # player takes the second chance
         elif chance == "S":
             comp = 1
             last = 0
@@ -87,7 +77,7 @@ def start1():
                 j = 1
                 while j <= comp:
                     xyz.append(last + j)
-                    j = j + 1
+                    j += 1
                 print("Order of inputs after computer's turn is:")
                 print(xyz)
                 if xyz[-1] == 20:
@@ -100,19 +90,13 @@ def start1():
                     if inp > 10:
                         print("You entered more than 10 numbers. You are disqualified from the game.")
                         lose1()
-                    i = 1
                     print("Enter your values")
-                    while i <= inp:
-                        xyz.append(int(input('> ')))
-                        i = i + 1
+                    xyz.extend(int(input('> ')) for _ in range(1, inp + 1))
                     last = xyz[-1]
                     if check(xyz) == True:
                         near = nearestMultiple(last)
                         comp = near - last
-                        if comp == 4:
-                            comp = 3
-                        else:
-                            comp = comp
+                        comp = 3 if comp == 4 else comp
                     else:
                         print("\nYou did not input consecutive integers.")
                         lose1()
@@ -125,7 +109,7 @@ def start1():
 
 
 game = True
-while game == True:
+while game:
     print("Player 2 is Computer.")
     print("Do you want to play the 21 number game? (Yes / No)")
     ans = input('> ')

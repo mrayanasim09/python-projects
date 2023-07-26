@@ -4,8 +4,7 @@
 import sympy
 def differentiate_equation(equation, x):
     x = sympy.Symbol('x')
-    derivative_equation = sympy.diff(equation, x)
-    return derivative_equation
+    return sympy.diff(equation, x)
 
 def integrate_equation(equation, var, lower, upper):
     integrated_equation = sympy.integrate(equation, var)

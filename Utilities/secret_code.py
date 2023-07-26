@@ -7,21 +7,19 @@ import pygame
 
 # Function to encode a word
 def encode_word(word):
-    encoded_word = ''.join(random.sample(word, len(word)))
-    return encoded_word
+    return ''.join(random.sample(word, len(word)))
 
 # Function to save a secret code and word pair
 def save_secret_code(secret_word, secret_code):
     with open("secret_code.txt", "a") as file:
-        file.write(secret_code + ":" + secret_word + "\n")
+        file.write(f"{secret_code}:{secret_word}" + "\n")
 
 # Function to load secret codes and words from file
 def load_secret_codes():
     secret_codes = {}
     with open("secret_code.txt", "r") as file:
         for line in file:
-            line = line.strip()
-            if line:
+            if line := line.strip():
                 parts = line.split(":")
                 if len(parts) == 2:
                     code, word = parts

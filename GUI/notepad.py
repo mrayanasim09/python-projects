@@ -137,14 +137,11 @@ class Notepad:
 
             # Try to open the file
             # set the window title
-            self.__root.title(os.path.basename(self.__file) + " - Notepad")
+            self.__root.title(f"{os.path.basename(self.__file)} - Notepad")
             self.__thisTextArea.delete(1.0, END)
 
-            file = open(self.__file, "r")
-
-            self.__thisTextArea.insert(1.0, file.read())
-
-            file.close()
+            with open(self.__file, "r") as file:
+                self.__thisTextArea.insert(1.0, file.read())
 
     def __newFile(self):
         self.__root.title("Untitled - Notepad")
@@ -153,7 +150,7 @@ class Notepad:
 
     def __saveFile(self):
 
-        if self.__file == None:
+        if self.__file is None:
             # Save as new file
             self.__file = asksaveasfilename(initialfile='Untitled.txt',
                                             defaultextension=".txt",
@@ -164,19 +161,15 @@ class Notepad:
                 self.__file = None
             else:
 
-                # Try to save the file
-                file = open(self.__file, "w")
-                file.write(self.__thisTextArea.get(1.0, END))
-                file.close()
-
+                with open(self.__file, "w") as file:
+                    file.write(self.__thisTextArea.get(1.0, END))
                 # Change the window title
-                self.__root.title(os.path.basename(self.__file) + " - Notepad")
+                self.__root.title(f"{os.path.basename(self.__file)} - Notepad")
 
 
         else:
-            file = open(self.__file, "w")
-            file.write(self.__thisTextArea.get(1.0, END))
-            file.close()
+            with open(self.__file, "w") as file:
+                file.write(self.__thisTextArea.get(1.0, END))
 
     def __cut(self):
         self.__thisTextArea.event_generate("<<Cut>>")

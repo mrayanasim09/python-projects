@@ -13,9 +13,7 @@ def start_game():
 def add_new_2(mat):
     empty_cells = []
     for i in range(4):
-        for j in range(4):
-            if mat[i][j] == 0:
-                empty_cells.append((i, j))
+        empty_cells.extend((i, j) for j in range(4) if mat[i][j] == 0)
     if empty_cells:
         i, j = random.choice(empty_cells)
         mat[i][j] = 2
@@ -31,15 +29,15 @@ def get_current_state(mat):
                 return 'GAME NOT OVER'
     for i in range(3):
         for j in range(3):
-            if mat[i][j] == mat[i + 1][j] or mat[i][j] == mat[i][j + 1]:
+            if mat[i][j] in [mat[i + 1][j], mat[i][j + 1]]:
                 return 'GAME NOT OVER'
     for j in range(3):
         if mat[3][j] == mat[3][j + 1]:
             return 'GAME NOT OVER'
-    for i in range(3):
-        if mat[i][3] == mat[i + 1][3]:
-            return 'GAME NOT OVER'
-    return 'LOST'
+    return next(
+        ('GAME NOT OVER' for i in range(3) if mat[i][3] == mat[i + 1][3]),
+        'LOST',
+    )
 
 def compress(mat):
     changed = False
@@ -65,14 +63,10 @@ def merge(mat):
     return mat, changed
 
 def reverse(mat):
-    new_mat = []
-    for i in range(4):
-        new_mat.append(mat[i][::-1])
-    return new_mat
+    return [mat[i][::-1] for i in range(4)]
 
 def transpose(mat):
-    new_mat = [[mat[j][i] for j in range(4)] for i in range(4)]
-    return new_mat
+    return [[mat[j][i] for j in range(4)] for i in range(4)]
 
 def move_left(grid):
     new_grid, changed1 = compress(grid)

@@ -8,8 +8,7 @@ import time
 
 # Function for generating a random number on the dice
 def dice_roll():
-    dice_number = random.randrange(1, 7, 1)
-    return dice_number
+    return random.randrange(1, 7, 1)
 
 # Function for creating a pawn for each player
 def create_pawn(self, x, y, r, **kwargs):
@@ -82,9 +81,7 @@ class GameBoard:
 
     # Function for moving the player pieces
     def start_game(self):
-        if self.num_player == "Players":
-            pass
-        else:
+        if self.num_player != "Players":
             # Screen
             self.canvas.create_rectangle(810, 150, 760, 100, fill='white', outline='black')
             self.canvas.pack(fill=BOTH, expand=1)
@@ -123,7 +120,7 @@ class GameBoard:
 
     # Function for moving the player pieces on the board
     def player_pieces(self, dice_number, turn):
-        for i in range(dice_number, 0, -1):
+        for _ in range(dice_number, 0, -1):
             self.x = self.x + 120 * self.m[turn]
 
             if self.x > 665 and turn < 3:
@@ -142,9 +139,7 @@ class GameBoard:
                 self.x = 100
                 self.y -= 120
                 self.m[turn] = 1
-            if self.y < 30:
-                self.y = 30
-
+            self.y = max(self.y, 30)
             # Code for the animation of the piece
             self.canvas.delete(self.player[turn])
             self.player[turn] = self.canvas.create_circle(self.x, self.y, 15, fill=self.color[turn], outline=self.color[turn])
@@ -188,7 +183,7 @@ class GameBoard:
             print("Won", self.turn + 1)
             top = Toplevel()
             top.title("Snake and Ladder")
-            message = "Player " + str(self.turn + 1) + " Won"
+            message = f"Player {str(self.turn + 1)} Won"
             msg = Message(top, text=message)
             top.geometry("%dx%d%+d%+d" % (100, 100, 250, 125))
             msg.pack()

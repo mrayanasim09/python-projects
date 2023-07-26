@@ -25,7 +25,7 @@ hostname = socket.gethostname()
 # Get the IP address of the PC
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("8.8.8.8", 80))
-IP = "http://" + s.getsockname()[0] + ":" + str(PORT)
+IP = f"http://{s.getsockname()[0]}:{PORT}"
 link = IP
 
 # Generate the QR code

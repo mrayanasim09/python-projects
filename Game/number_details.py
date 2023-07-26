@@ -10,11 +10,7 @@ def gcd(a, b):
         a, b = b, a % b
     return a
 def find_coprimes(num):
-    coprimes = []
-    for i in range(2, num):
-        if gcd(num, i) == 1:
-            coprimes.append(i)
-    return coprimes
+    return [i for i in range(2, num) if gcd(num, i) == 1]
 
 while True:
     try:
@@ -47,8 +43,7 @@ else:
     if flag:
         print(num, "is not a prime number")
         print("Factors:", factors)
-        coprimes = find_coprimes(num)
-        if coprimes:
+        if coprimes := find_coprimes(num):
             print("Co-prime numbers:", coprimes)
         else:
             print("There are no co-prime numbers.")

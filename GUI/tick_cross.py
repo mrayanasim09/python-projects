@@ -100,9 +100,9 @@ class Tic_Tac_Toe():
         self.canvas.create_text(size_of_board / 2, 5 * size_of_board / 8, font="cmr 40 bold", fill=Green_color,
                                 text=score_text)
 
-        score_text = 'Player 1 (X) : ' + str(self.X_score) + '\n'
-        score_text += 'Player 2 (O): ' + str(self.O_score) + '\n'
-        score_text += 'Tie                    : ' + str(self.tie_score)
+        score_text = f'Player 1 (X) : {str(self.X_score)}' + '\n'
+        score_text += f'Player 2 (O): {str(self.O_score)}' + '\n'
+        score_text += f'Tie                    : {str(self.tie_score)}'
         self.canvas.create_text(size_of_board / 2, 3 * size_of_board / 4, font="cmr 30 bold", fill=Green_color,
                                 text=score_text)
         self.reset_board = True
@@ -125,10 +125,7 @@ class Tic_Tac_Toe():
         return np.array(grid_position // (size_of_board / 3), dtype=int)
 
     def is_grid_occupied(self, logical_position):
-        if self.board_status[logical_position[0]][logical_position[1]] == 0:
-            return False
-        else:
-            return True
+        return self.board_status[logical_position[0]][logical_position[1]] != 0
 
     def is_winner(self, player):
 
@@ -145,19 +142,17 @@ class Tic_Tac_Toe():
         if self.board_status[0][0] == self.board_status[1][1] == self.board_status[2][2] == player:
             return True
 
-        if self.board_status[0][2] == self.board_status[1][1] == self.board_status[2][0] == player:
-            return True
-
-        return False
+        return (
+            self.board_status[0][2]
+            == self.board_status[1][1]
+            == self.board_status[2][0]
+            == player
+        )
 
     def is_tie(self):
 
         r, c = np.where(self.board_status == 0)
-        tie = False
-        if len(r) == 0:
-            tie = True
-
-        return tie
+        return len(r) == 0
 
     def is_gameover(self):
         # Either someone wins or all grid occupied
@@ -193,11 +188,10 @@ class Tic_Tac_Toe():
                     self.draw_X(logical_position)
                     self.board_status[logical_position[0]][logical_position[1]] = -1
                     self.player_X_turns = not self.player_X_turns
-            else:
-                if not self.is_grid_occupied(logical_position):
-                    self.draw_O(logical_position)
-                    self.board_status[logical_position[0]][logical_position[1]] = 1
-                    self.player_X_turns = not self.player_X_turns
+            elif not self.is_grid_occupied(logical_position):
+                self.draw_O(logical_position)
+                self.board_status[logical_position[0]][logical_position[1]] = 1
+                self.player_X_turns = not self.player_X_turns
 
             # Check if game is concluded
             if self.is_gameover():

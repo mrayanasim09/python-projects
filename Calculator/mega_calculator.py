@@ -217,11 +217,7 @@ print(round(z * (math.pi / 180), 3), ", the answer of the third number in radian
 
 
 def calculate_factors(number):
-    factors = []
-    for i in range(1, number + 1):
-        if number % i == 0:
-            factors.append(i)
-    return factors
+    return [i for i in range(1, number + 1) if number % i == 0]
 
 
 factors_x = calculate_factors(x)
@@ -260,10 +256,7 @@ def is_even(number):
 def is_prime(number):
     if number < 2:
         return False
-    for i in range(2, int(number ** 0.5) + 1):
-        if number % i == 0:
-            return False
-    return True
+    return all(number % i != 0 for i in range(2, int(number ** 0.5) + 1))
 
 
 def is_composite(number):
@@ -308,17 +301,12 @@ def gcd(a, b):
 
 
 def get_coprime_numbers(num):
-    coprimes = []
-    for i in range(1, num):
-        if gcd(num, i) == 1:
-            coprimes.append(i)
-    return coprimes
+    return [i for i in range(1, num) if gcd(num, i) == 1]
 
 
 def print_coprimes(co_primes, variable):
     if max(co_primes) >= 100:
         print(f"The entered number for {variable} is greater than 100.")
-        pass
     else:
         print(f"The coprime numbers for {variable} are:")
         print(co_primes)
@@ -391,9 +379,9 @@ print(round(math.log10(r), 3), ", the answer of logarithm with the base of 10")
 
 
 w = input(
-    "Do you want to continue with the old values you entered: " + str(x) + ", " + str(y) + ", " + str(z) + ", " + str(
-        r) + ":")
-if w == "yes" or w == "Yes":
+    f"Do you want to continue with the old values you entered: {str(x)}, {str(y)}, {str(z)}, {str(r)}:"
+)
+if w in ["yes", "Yes"]:
     print("Ok")
     try:
         print(round(math.asin(e), 3), ", the answer of arcsin in radians")
@@ -430,9 +418,6 @@ else:
         z = int(input("Enter your third number: "))
         h = int(input("Enter the number in degree:"))
 
-    else:
-        pass
-
     try:
         print(round(math.asin(h), 3), ", the answer of arcsin in radians")
         print(round(math.acos(h), 3), ", the answer of arccos in radians")
@@ -458,7 +443,7 @@ while True:
     except ValueError:
         print("Please enter a valid option.")
 
-if g.lower() == "graph" or g.lower() == "both":
+if g.lower() in ["graph", "both"]:
     equation = input("Enter an equation using 'x' variable for graph: ")
     try:
         x_values = input("Enter x-values (comma-separated): ")
@@ -467,7 +452,7 @@ if g.lower() == "graph" or g.lower() == "both":
         plt.plot(x_values, y_values, color='red')
         plt.xlabel('X-axis')
         plt.ylabel('Y-axis')
-        plt.title('Graph of ' + equation)
+        plt.title(f'Graph of {equation}')
         plt.scatter(x_values, y_values, color='red')
         plt.show()
     except (SyntaxError, NameError, TypeError, ZeroDivisionError):
@@ -498,8 +483,7 @@ if g.lower() == "function" or g.lower() == "both":
 
     def differentiate_equation(equation, x):
         x = sympy.Symbol('x')
-        derivative_equation = sympy.diff(equation, x)
-        return derivative_equation
+        return sympy.diff(equation, x)
 
 
     def integrate_equation(equation, var, lower, upper):

@@ -77,7 +77,7 @@ class Cartoon:
         l2 = []
         t.seth(190)
         a = 0.7
-        for i in range(28):
+        for _ in range(28):
             a += 0.1
             t.right(3)
             t.fd(a)
@@ -87,7 +87,7 @@ class Cartoon:
 
         t.seth(10)
         a = 0.7
-        for i in range(28):
+        for _ in range(28):
             a += 0.1
             t.left(3)
             t.fd(a)
@@ -137,14 +137,12 @@ class Cartoon:
         t.begin_fill()
         a = 2.3
         for i in range(120):
+            t.lt(3)
             if 0 <= i < 30 or 60 <= i < 90:
                 a -= 0.05
-                t.lt(3)
-                t.fd(a)
             else:
                 a += 0.05
-                t.lt(3)
-                t.fd(a)
+            t.fd(a)
         t.end_fill()
         turtle.tracer(True)
 
@@ -157,14 +155,12 @@ class Cartoon:
         t.begin_fill()
         a = 2.3
         for i in range(120):
+            t.lt(3)
             if 0 <= i < 30 or 60 <= i < 90:
                 a -= 0.05
-                t.lt(3)
-                t.fd(a)
             else:
                 a += 0.05
-                t.lt(3)
-                t.fd(a)
+            t.fd(a)
         t.end_fill()
         turtle.tracer(True)
 

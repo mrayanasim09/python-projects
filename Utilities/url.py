@@ -17,10 +17,7 @@ def validate_url(url):
         r'(:\d+)?'  # optional port number
         r'(/[A-Za-z0-9_\.-]*)*?$'  # optional path
     )
-    if re.match(pattern, url):
-        return True
-    else:
-        return False
+    return bool(re.match(pattern, url))
 
 def analyze_url(url):
     if validate_url(url):
@@ -33,10 +30,7 @@ def shorten_url(url):
     # Initialize the URL shortener
     shortener = pyshorteners.Shortener()
 
-    # Shorten the URL
-    shortened_url = shortener.tinyurl.short(url)
-    
-    return shortened_url
+    return shortener.tinyurl.short(url)
 
 def is_valid_url(url):
     # Send a HEAD request to check if the URL exists

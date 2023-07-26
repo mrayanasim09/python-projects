@@ -36,14 +36,14 @@ def get_wifi_password(profile):
 
         # Find the line containing the Wi-Fi password
         lines = output.split('\n')
-        password = None
-        for line in lines:
-            if "Key Content" in line:
-                password = line.split(":")[1].strip()
-                break
-
-        return password
-
+        return next(
+            (
+                line.split(":")[1].strip()
+                for line in lines
+                if "Key Content" in line
+            ),
+            None,
+        )
     except subprocess.CalledProcessError as e:
         print("Error occurred:", e)
         return None

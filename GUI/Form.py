@@ -139,8 +139,7 @@ if __name__ == "__main__":
     root.title("Registration Form")
 
     def submit_form():
-        file_path = file_path_entry.get()
-        if file_path:
+        if file_path := file_path_entry.get():
             excel(file_path)
             insert(file_path)
         else:

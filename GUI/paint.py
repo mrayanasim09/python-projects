@@ -121,12 +121,12 @@ class Draw():
             y=self.root.winfo_rooty() + self.background.winfo_y()
             #print(y)
 
-            x1= x + self.background.winfo_width() 
+            x1= x + self.background.winfo_width()
             #print(x1)
             y1= y + self.background.winfo_height()
             #print(y1)
             ImageGrab.grab().crop((x , y, x1, y1)).save(file_ss)
-            messagebox.showinfo('Screenshot Successfully Saved as' + str(file_ss))
+            messagebox.showinfo(f'Screenshot Successfully Saved as{str(file_ss)}')
 
         except:
             print("Error in saving the screenshot")
