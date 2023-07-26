@@ -3,7 +3,6 @@
 #pip install opencv-python
 #pip install numpy
 import cv2
-import numpy as np
 ip_address = input("Enter the ip address: ")
 port = input("Enter the port number: ")
 # Replace this with the IP address and port number from the camera app

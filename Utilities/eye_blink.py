@@ -2,7 +2,6 @@
 #Packages needed:
 #pip install opencv-python
 #pip install numpy
-import numpy as np
 import cv2
 
 # Initializing the face and eye cascade classifiers from xml files

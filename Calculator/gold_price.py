@@ -6,8 +6,6 @@
 #pip install yfinance
 #pip install seaborn
 #pip install prophet
-import pandas as pd
-import numpy as np
 import yfinance as yf
 import matplotlib.pyplot as plt
 import seaborn as sns

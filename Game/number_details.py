@@ -1,5 +1,4 @@
 #This code is made by MRayan Asim
-import math
 import time 
 
 print("Hello this number checker program is made by MRayan Asim hope you will like it 😊")

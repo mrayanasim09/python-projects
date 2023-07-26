@@ -1,5 +1,4 @@
 #This code is made by MRayan Asim
-import tkinter
 import os
 from tkinter import *
 from tkinter.messagebox import *

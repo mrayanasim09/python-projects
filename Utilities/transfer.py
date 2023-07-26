@@ -1,7 +1,6 @@
 #This code is made by MRayan Asim
 #Packages needed :
 #pip install pygame
-import pygame
 import http.server
 import socket
 import socketserver

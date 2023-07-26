@@ -1,5 +1,5 @@
 #This code is made by MRayan Asim
-from tkinter import Tk, Label, Entry, Button, Listbox, Scrollbar, StringVar, END, Toplevel, messagebox
+from tkinter import Tk, Label, Entry, Button, Listbox, Scrollbar, END, Toplevel, messagebox
 import json
 
 class Task:
