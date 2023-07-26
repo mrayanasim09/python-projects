@@ -3,7 +3,6 @@ from time import time
 
 # calculate the accuracy of the input prompt
 def typingErrors(prompt):
-    global iwords
 
     words = prompt.split()
     errors = 0
@@ -26,7 +25,6 @@ def typingErrors(prompt):
 
 # calculate the speed in words per minute
 def typingSpeed(iprompt, stime, etime):
-    global time
     global iwords
 
     iwords = iprompt.split()

@@ -30,7 +30,6 @@ def nextColour():
 	# use the globally declared 'score'
 	# and 'play' variables above.
 	global score
-	global timeleft
 
 	# if a game is currently in play
 	if timeleft > 0:
