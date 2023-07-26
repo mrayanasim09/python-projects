@@ -1,4 +1,3 @@
-<meta name="google-site-verification" content="JeJvFWqBPTWfOGVuzDCKs3trzB_E20tphan2BJ5-K6g" />
 # Python Projects by MRayan Asim 🐍🚀
 
 Welcome to the Python Projects repository by MRayan Asim! This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥
