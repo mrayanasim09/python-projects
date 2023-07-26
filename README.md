@@ -1,6 +1,6 @@
 # Python Projects by MRayan Asim 🐍🚀
 
-Welcome to the Python Projects repository by MRayan Asim! This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥
+Welcome to the **Python Projects repository by MRayan Asim!** This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥
 
 <p align="center">
   <a href="https://forms.gle/SzJ4VA1zWZ3ehqGC6">
