@@ -8,7 +8,6 @@ Welcome to the **Python Projects repository by MRayan Asim!** This collection sh
   </a>
 </p>
 
-
 ## Repository Structure 📂
 
 The repository is organized into different categories, each containing specific project folders. This structure allows for easy navigation and helps you find projects that align with your interests. Each project is tagged with appropriate labels to indicate the recommended skill level. Let's take a look at the categories available: 
