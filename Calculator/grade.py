@@ -37,7 +37,7 @@ def get_valid_integer_input(prompt, min_val=0, max_val=None):
             else:
                 return val
         except ValueError:
-            print("Invalid input. Please enter a valid integer."
+            print("Invalid input. Please enter a valid integer.")
 
 print("Hello! This program of grade calculator is made by MRayan Asim. Hope you will like this! 😊")
 time.sleep(3)
@@ -71,5 +71,3 @@ overall_grade = calculate_grade(total_obtained_marks, sum(total_marks))
 print("\nOverall Grade:")
 print(f"Grade: {overall_grade}")
 print(f"Percentage: {overall_percentage:.2f}%")
-
-
