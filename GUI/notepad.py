@@ -119,7 +119,8 @@ class Notepad:
         self.__root.destroy()
         # exit()
 
-    def __showAbout(self):
+    @staticmethod
+    def __showAbout():
         showinfo("Notepad", "made by mrayanasim notepad 1.0")
 
     def __openFile(self):
