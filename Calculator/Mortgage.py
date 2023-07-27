@@ -1,3 +1,4 @@
+#This code is made by MRayan Asim
 def calculate_monthly_mortgage(initial_amount, annual_interest_rate, number_of_months):
     monthly_interest_rate = annual_interest_rate / (12 * 100)  # Convert annual rate to monthly rate
     monthly_payments = initial_amount * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_months) / ((1 + monthly_interest_rate) ** number_of_months - 1)
