@@ -1,8 +1,5 @@
 #This code is made by MRayan Asim
-#Packages needed:
-#pip install os
 import time
-import os
 
 def calculate_grade(marks, total_mark):
     percentage = (marks / total_mark) * 100
