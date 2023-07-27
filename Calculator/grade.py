@@ -1,11 +1,7 @@
 #This code is made by MRayan Asim
 #Packages needed:
-#pip install pygame
 #pip install os
-#pip install matplotlib.pyplot
-import matplotlib.pyplot as plt
 import time
-import pygame
 import os
 
 def calculate_grade(marks, total_mark):
