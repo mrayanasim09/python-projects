@@ -116,11 +116,13 @@ class Tic_Tac_Toe():
     # The modules required to carry out game logic
     # ------------------------------------------------------------------
 
-    def convert_logical_to_grid_position(self, logical_position):
+    @staticmethod
+    def convert_logical_to_grid_position(logical_position):
         logical_position = np.array(logical_position, dtype=int)
         return (size_of_board / 3) * logical_position + size_of_board / 6
 
-    def convert_grid_to_logical_position(self, grid_position):
+    @staticmethod
+    def convert_grid_to_logical_position(grid_position):
         grid_position = np.array(grid_position)
         return np.array(grid_position // (size_of_board / 3), dtype=int)
 

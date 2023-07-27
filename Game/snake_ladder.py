@@ -18,7 +18,8 @@ Canvas.create_circle = create_pawn
 
 # Class for matching the dice number with the snake and ladder
 class MatchingPosition:
-    def find_snake_or_ladder(self, block, turn, position):
+    @staticmethod
+    def find_snake_or_ladder(block, turn, position):
         x = 35 * (turn >= 3)
         y = (turn % 3) * 35
         if block == 3:
