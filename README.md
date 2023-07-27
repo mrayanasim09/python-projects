@@ -201,7 +201,6 @@ pip install pyshorteners
  ```
 
 
-
 If you encounter any issues running the code, please feel free to report an issue, and I will respond as quickly as possible. 🐞
 
 ## About the Author 👤
