@@ -1,6 +1,10 @@
 #This code is made by MRayan Asim
 #Packages needed:
 #pip install cryptography
+#Tou use follow the 3 steps:
+# 1-When you run this code it will asks for master key you can find the key in the master_password.txt whcih will created when you run the code
+# 2-copy and enter the key and add password with the website name then username or email and at last enter the password 
+# 3- the password woulld save in passwrods.json they will be coded so tyo decode go to get passwords option on the code for this you need to remmenber the name of the website you want to get the password 
 import json
 import os
 import getpass
