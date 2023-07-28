@@ -92,11 +92,12 @@ Explore the projects in each category to find detailed information, documentatio
 - [Your own browser](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/browser.py) 🌐
 - [Brightness controller with your hand](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/brightness_controllor.py) 🌞💡🎛️
 - [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
-- [Eye blink detection (also download the .XML files)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/eye_blink.py) 👁️🔍😴
+- [Eye blink detection (also download the . XML files)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/eye_blink.py) 👁️🔍😴
 - [Your phone camera on your PC ](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/camera.py) you can check more about it [here](https://www.makeuseof.com/tag/ip-webcam-android-phone-as-a-web-cam/) 📱💻📸
 - [Tells basic information of an Instagram account only from user name](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/inta.py) 📸
 - [Transfer file (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
+- [A password manager with a master key and encryption and decryption of passwords](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/password_manager.py) 🔐
 - [bitcoin mining simulator](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/btc.py) ₿
 - [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
 - [Text to speech](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/text_to_speech.py) 🔤🔉
