@@ -1,4 +1,5 @@
 #This code is make by MRayan Asim
+import ast
 from tkinter import *
 
 expression = ""
@@ -11,7 +12,7 @@ def press(num):
 def calculate():
     try:
         global expression
-        total = str(eval(expression))
+        total = str(ast.literal_eval(expression))
         equation.set(total)
         expression = ""
     except:
@@ -21,7 +22,7 @@ def calculate():
 def calculate_percentage():
     try:
         global expression
-        total = str(eval(expression) / 100)
+        total = str(ast.literal_eval(expression) / 100)
         equation.set(total)
         expression = ""
     except:
