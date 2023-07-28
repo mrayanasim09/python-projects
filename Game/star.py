@@ -56,7 +56,7 @@ def print_butterfly(rows):
 # Hollow Square
 def print_hollow_square(rows):
     for i in range(rows):
-        if i == 0 or i == rows - 1:
+        if i in (0, rows - 1):
             print("*" * rows)
         else:
             print("*" + " " * (rows - 2) + "*")
