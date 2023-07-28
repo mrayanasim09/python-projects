@@ -392,7 +392,7 @@ print(round(math.log10(r), 3), ", the answer of logarithm with the base of 10")
 w = input(
     "Do you want to continue with the old values you entered: " + str(x) + ", " + str(y) + ", " + str(z) + ", " + str(
         r) + ":")
-if w == "yes" or w == "Yes":
+if w in ("yes", "Yes"):
     print("Ok")
     try:
         print(round(math.asin(e), 3), ", the answer of arcsin in radians")
