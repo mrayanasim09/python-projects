@@ -3,6 +3,7 @@
 #pip install pygame
 #pip install matplotlib.pyplot 
 #pip install sympy
+import ast
 import math
 import matplotlib.pyplot as plt
 import time
@@ -462,7 +463,7 @@ if g.lower() == "graph" or g.lower() == "both":
     try:
         x_values = input("Enter x-values (comma-separated): ")
         x_values = [float(x) for x in x_values.split(",")]
-        y_values = [eval(equation, {"math": math, "x": x}) for x in x_values]
+        y_values = [ast.literal_eval(equation, {"math": math, "x": x}) for x in x_values]
         plt.plot(x_values, y_values, color='red')
         plt.xlabel('X-axis')
         plt.ylabel('Y-axis')
@@ -478,7 +479,7 @@ if g.lower() == "function" or g.lower() == "both":
         x_values = input("Enter values of x for the function (comma-separated): ")
         x_values = [float(x) for x in x_values.split(",")]
         x = symbols('x')
-        y_values = [eval(p, {"math": math, "x": x, "sin": math.sin}) for x in x_values]
+        y_values = [ast.literal_eval(p, {"math": math, "x": x, "sin": math.sin}) for x in x_values]
         plt.plot(x_values, y_values, color='blue')
         plt.xlabel('X-axis')
         plt.ylabel('Y-axis')
@@ -487,7 +488,7 @@ if g.lower() == "function" or g.lower() == "both":
         plt.show()
 
         eval_x = float(input("Enter the value of x to evaluate the function at: "))
-        eval_result = eval(p, {"math": math, "x": eval_x, "sin": math.sin})
+        eval_result = ast.literal_eval(p, {"math": math, "x": eval_x, "sin": math.sin})
         print(f"The value of the function at x = {eval_x} is: {eval_result}")
     except (SyntaxError, NameError, TypeError, ZeroDivisionError):
         print("Invalid function or input. Please try again.")

@@ -2,6 +2,7 @@
 #packages needed:
 #pip install numpy
 #pip install  matplotlib.pyplot
+import ast
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -22,7 +23,7 @@ x_start = float(input("Enter the starting value of x of which you make the graph
 x_end = float(input("Enter the ending value of x of which you make the graph of: "))
 
 x_values = np.linspace(x_start, x_end, num=100)
-y_values = [eval(equation) for x in x_values]
+y_values = [ast.literal_eval(equation) for x in x_values]
 
 plt.plot(x_values, y_values)
 plt.xlabel('X-axis')
