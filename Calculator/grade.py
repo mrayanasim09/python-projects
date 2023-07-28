@@ -44,10 +44,10 @@ total_marks = []
 for i in range(1, num_subjects + 1):
     subject_name = input(f"Enter the name of subject {i}: ")
     subjects.append(subject_name)
-    
+
     total_mark = get_valid_integer_input(f"Enter the total marks for subject {subject_name}: ", min_val=1)
     total_marks.append(total_mark)
-    
+
     obtained_marks = get_valid_integer_input(f"Enter marks obtained for subject {subject_name}: ", min_val=0, max_val=total_mark)
     marks.append(obtained_marks)
 
