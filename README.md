@@ -17,6 +17,7 @@ The repository is organized into different categories, each containing specific 
 - [GUI](https://github.com/drik493/python_projects/tree/main/GUI) 🖥️
 - [Calculator](https://github.com/drik493/python_projects/tree/main/Calculator) 🧮
 - [Games](https://github.com/drik493/python_projects/tree/main/Game) 🎮
+- [Machine learning](https://github.com/mrayanasim09/python-projects/tree/main/machine_learning) 🤖📚🧠
 - [Utilities](https://github.com/drik493/python_projects/tree/main/Utilities) 🛠️
 
 ## Projects 🔥
@@ -31,11 +32,9 @@ Explore the projects in each category to find detailed information, documentatio
 - [Tick cross (with GUI) ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/tick_cross.py) ✔️❌
 - [ Todo list (with GUI)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/todo.py) ✅📝
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
-- [A sentiments checker](https://github.com/mrayanasim09/python-projects/blob/main/GUI/sentiments.py) 🤔💬💭 
 - [A snake and ladder game ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/snake_ladder.py) and [(also download the images with it)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [A paint application](https://github.com/mrayanasim09/python-projects/blob/main/GUI/paint.py)🖌️🎨
 - [A file explorer](https://github.com/mrayanasim09/python-projects/blob/main/GUI/file_explorer.py) 📂🔎 
-- [ A sketch maker of image ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/sketch.py) 🖌️
 - [Youtube video downloader](https://github.com/mrayanasim09/python-projects/blob/main/GUI/youtube_download.py) 📺🔽💾
 - [spelling correction](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spelling.py) 🔤📏🔍
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
@@ -52,8 +51,6 @@ Explore the projects in each category to find detailed information, documentatio
 - [Quadratic Equation (with graph)](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py) 📈
 - [A mega calculator with all operations](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py) 🖩
 - [A stock analyzer with its short form](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/stock.py) 💵📊📈
-- [Gold price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/gold_price.py) 💰🪙
-- [Crypto price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/crypto_prices.py) 🚀🌕
 - [Number base converter](https://github.com/drik493/python_projects/blob/main/Calculator/number_base.py) 🔢
 - [Integration and differentiation](https://github.com/drik493/python_projects/blob/main/Calculator/int_diff.py) ∫
 - [BMI calculator](https://github.com/drik493/python_projects/blob/main/Calculator/bmi.py) 🏋️
@@ -86,28 +83,35 @@ Explore the projects in each category to find detailed information, documentatio
 - [Dice rolling (With user guess without GUI)](https://github.com/drik493/python_projects/blob/main/Game/dice.py) 🎲
 - [Number guessing game](https://github.com/drik493/python_projects/blob/main/Game/number_guessing.py) 🔢❓
 
+### Machine Learning 🤖📚🧠
+
+- [Brightness controller with your hand](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/brightness_controllor.py) 🌞💡🎛️
+- [Eye blink detection (also download the . XML files)](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/eye_blink.py) 👁️🔍😴
+- [Text to speech](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/text_to_speech.py) 🔤🔉
+- [A language detector ](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/lang_dect.py) 🔍🌐
+- [Crypto price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/crypto_prices.py) 🚀🌕
+- [Gold price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/gold_price.py) 💰🪙
+- [Your phone camera on your PC ](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/camera.py) you can check more about it [here](https://www.makeuseof.com/tag/ip-webcam-android-phone-as-a-web-cam/) 📱💻📸
+- [A sentiments checker](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/sentiments.py) 🤔💬💭
+- [ A sketch maker of image ](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/sketch.py) 🖌️
+
 ### Utilities 🛠️
 
 - [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python_projects/blob/main/Utilities/network.py) 🔐
 - [Your own browser](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/browser.py) 🌐
-- [Brightness controller with your hand](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/brightness_controllor.py) 🌞💡🎛️
 - [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
-- [Eye blink detection (also download the . XML files)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/eye_blink.py) 👁️🔍😴
-- [Your phone camera on your PC ](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/camera.py) you can check more about it [here](https://www.makeuseof.com/tag/ip-webcam-android-phone-as-a-web-cam/) 📱💻📸
 - [Tells basic information of an Instagram account only from user name](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/inta.py) 📸
 - [Transfer file (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
 - [A password manager with a master key and encryption and decryption of passwords](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/password_manager.py) 🔐
 - [bitcoin mining simulator](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/btc.py) ₿
 - [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
-- [Text to speech](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/text_to_speech.py) 🔤🔉
 - [Wattsapp spam messages sender (you should click on the message bar of WhatsApp after running it)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/whatsapp_spam.py) 📧🔁📧🔁📧🔁
 - [Github repository details finder (only with username and name of the repository)](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/github.py) :octocat:
 - [Secret code generator (with decoding support)](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) 🤐
 - [Password to hash form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
 - [Hash password cracking (md5 only, using rockyou.txt)](https://github.com/drik493/python_projects/blob/main/Utilities/password.py) 🚫🔍
 - [Password generator](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py) 🔐🔢
-- [A language detector ](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/lang_dect.py) 🔍🌐
 - [Birth Day Finder (also zodiac sign, life path number, your birth date according to Islam and birthstone and birth flower)](https://github.com/drik493/python_projects/blob/main/Utilities/birthday.py) 🎂🎉
 - [ words and letter count of given text](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/word_count.py) 🔢🔄️
 - [A program to make short forms for the entered words](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/short_form.py) 🔤🔄
