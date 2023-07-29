@@ -1,4 +1,5 @@
 name: Python Indentation Check
+
 on:
   push:
     branches:
@@ -15,10 +16,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.11'
+          python-version: '3.x'  # Replace with the version of Python used in your repository
 
-      - name: Install dependencies
+      - name: Install flake8
         run: pip install flake8
 
-      - name: Run flake8
-        run: flake8 --count --show-source --statistics .
+      - name: Run flake8 for Indentation Errors
+        run: flake8 --select=E --show-source .
+
