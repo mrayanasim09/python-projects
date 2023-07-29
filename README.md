@@ -242,7 +242,3 @@ Remember, the world of coding is full of wonders, and your journey starts right 
 ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)
 &nbsp;&nbsp;
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects&label=Views&countColor=%23555555&style=flat-square)
-
-
-
-
