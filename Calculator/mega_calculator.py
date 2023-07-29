@@ -459,7 +459,7 @@ else:
         z = int(input("Enter your third number: "))
         h = int(input("Enter the number in degree:"))
 
-    if type(x) == str or type(y) == str or type(z) == str or type(h) == str:
+    if type(x) is str or type(y) is str or type(z) is str or type(h) is str:
         print("You entered a invalid number please enter them again")
         x = int(input("Enter the first number: "))
         y = int(input("Enter your second number: "))
