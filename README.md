@@ -39,7 +39,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Youtube video downloader](https://github.com/mrayanasim09/python-projects/blob/main/GUI/youtube_download.py) 📺🔽💾
 - [spelling correction](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spelling.py) 🔤📏🔍
 - [Figet spinner (use it on windows with space bar)](https://github.com/mrayanasim09/python-projects/blob/main/GUI/spinner.py) ߷
-- [ A beautiful design using a turtle](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/graphics.py) 🐢🎨
+- [ A beautiful design using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/graphics.py) 🐢🎨
 - [Pikachu using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Pikachu.py) (っ◔◡◔)っ
 - [ Doraemon using turtle](https://github.com/mrayanasim09/python-projects/blob/main/GUI/doramon.py)🐱‍🚀
 - [ Rainbow with turtle ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/rainbow.py)🌈
