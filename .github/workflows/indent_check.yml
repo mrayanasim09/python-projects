@@ -1,4 +1,4 @@
-name: Python Indentation Check
+name: Python Indentation Check and Pull Request
 
 on:
   push:
@@ -6,8 +6,8 @@ on:
       - main  # Change this to your main branch name if different
 
 jobs:
-  indent_check:
-    name: Indentation Check
+  indent_check_and_pr:
+    name: Indentation Check and Pull Request
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -26,7 +26,16 @@ jobs:
           if flake8 --select=E --show-source --quiet .; then
             echo "No indentation errors found."
           else
-            echo "Indentation errors found. Creating a pull request with the changes..."
+            echo "Indentation errors found. Fixing the errors..."
+            autopep8 --in-place --recursive .
+          fi
+
+      - name: Create and Push Fix Branch
+        run: |
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit."
+          else
+            echo "Changes found. Creating a pull request with the changes..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git checkout -b fix-indentation-errors
