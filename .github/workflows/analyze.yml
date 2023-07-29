@@ -50,4 +50,4 @@ jobs:
           commit-message: "Apply code formatting and linting fixes"
           title: "Code Quality Improvement"
           body: "This pull request applies code formatting and linting fixes to improve code quality."
-          branch: "code-quality-improvement"
+          branch: "main"  # Change this to the base branch you want to create the pull request against
