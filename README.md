@@ -243,4 +243,5 @@ Ready to make your mark on our projects? Check out our [**How to Contribute**](h
 ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)
 &nbsp;&nbsp;
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects&label=Views&countColor=%23555555&style=flat-square)
-
+&nbsp;&nbsp;
+[![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main)
