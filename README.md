@@ -24,7 +24,7 @@ The repository is organized into different categories, each containing specific 
 
 Explore the projects in each category to find detailed information, documentation, and code examples. Here's a glimpse of the projects available within each category:
 
-### GUI 🖥️
+### *GUI 🖥️*
 
 - [Form](https://github.com/drik493/python_projects/blob/main/GUI/Form.py) 📝
 - [A basic GUI calculator](https://github.com/drik493/python_projects/blob/main/GUI/A_basic_gui_calculator.py) 🧮
@@ -46,7 +46,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Search installed applications](https://github.com/mrayanasim09/python-projects/blob/main/GUI/search_applications.py) 🔍
 - [ A GUI calendar ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/clender.py) 📅
 
-### Calculator 🧮
+### *Calculator 🧮*
 
 - [Quadratic Equation (with graph)](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py) 📈
 - [A mega calculator with all operations](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py) 🖩
@@ -65,7 +65,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Sudoku solver](https://github.com/drik493/python_projects/blob/main/Calculator/sudukko.py) 🧩
 - [A program to find the ASCII value of characters](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/ASCII%20.py) 💻🔧
 
-### Games 🎮
+### *Games 🎮*
 
 - [2048 game (without GUI)](https://github.com/drik493/python_projects/blob/main/Game/2048.py) 🎲
 - [Snake game (with GUI)](https://github.com/drik493/python_projects/blob/main/Game/snake_game.py) 🐍
@@ -83,7 +83,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Dice rolling (With user guess without GUI)](https://github.com/drik493/python_projects/blob/main/Game/dice.py) 🎲
 - [Number guessing game](https://github.com/drik493/python_projects/blob/main/Game/number_guessing.py) 🔢❓
 
-### Machine Learning 🤖📚🧠
+### *Machine Learning 🤖📚🧠*
 
 - [Brightness controller with your hand](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/brightness_controllor.py) 🌞💡🎛️
 - [Eye blink detection (also download the . XML files)](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/eye_blink.py) 👁️🔍😴
@@ -96,7 +96,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A sentiments checker](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/sentiments.py) 🤔💬💭
 - [ A sketch maker of image ](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/sketch.py) 🖌️
 
-### Utilities 🛠️
+### *Utilities 🛠️*
 
 - [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python_projects/blob/main/Utilities/network.py) 🔐
 - [Your own browser](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/browser.py) 🌐
