@@ -28,14 +28,13 @@ jobs:
 
       - name: Check flake8 status
         run: |
-          if [ ${{ steps.lint.outcome }} == 'success' ]; then
-            echo "No indentation errors found."
-            exit 0
-          else
+          if [ ${{ steps.lint.outcome }} == 'failure' ]; then
             echo "Indentation errors found. Creating a pull request with the changes..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git checkout -b fix-indentation-errors
             git commit -a -m "Fix Python indentation errors"
             git push origin fix-indentation-errors
+          else
+            echo "No indentation errors found."
           fi
