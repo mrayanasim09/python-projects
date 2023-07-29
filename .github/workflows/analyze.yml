@@ -1,14 +1,13 @@
-name: Code Quality Check
+name: Code Quality Check and Pull Request
 
 on:
-  pull_request:
-    types:
-      - synchronize
-      - opened
+  push:
+    branches:
+      - main  # Change this to your main branch name if different
 
 jobs:
-  code_quality:
-    name: Code Quality Check
+  code_quality_and_pr:
+    name: Code Quality Check and Pull Request
     runs-on: ubuntu-latest
 
     steps:
@@ -30,15 +29,16 @@ jobs:
       - name: Lint code with flake8
         run: flake8 .
 
-      - name: Commit changes
+      - name: Create a new branch
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git checkout -b code-quality-improvement
           git add -A
           git commit -m "Apply code formatting and linting fixes"
 
-      - name: Push changes to branch
-        run: git push origin ${{ github.head_ref }}
+      - name: Push changes to the new branch
+        run: git push origin code-quality-improvement
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
