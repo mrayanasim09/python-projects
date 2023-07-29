@@ -200,7 +200,7 @@ pip install seaborn
 pip install mediapipe  
 pip install pyshorteners
  ```
-
+### *To view more details that how to use this repository you can go [here](https://github.com/mrayanasim09/python-projects/blob/main/How_to_use.md)*
 
 If you encounter any issues running the code, please feel free to report an issue, and I will respond as quickly as possible. 🐞
 
