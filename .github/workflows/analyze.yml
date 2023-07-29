@@ -32,6 +32,9 @@ jobs:
       - name: Check if any issues found by flake8
         run: test -s flake8_output.txt || exit 0
 
+      - name: Remove untracked file before rebase
+        run: git clean -f
+
       - name: Create a new branch
         run: |
           git config --local user.email "action@github.com"
