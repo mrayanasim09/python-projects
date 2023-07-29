@@ -1,0 +1,31 @@
+name: Analyze Code Changes
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name if different
+
+jobs:
+  analyze_changes:
+    name: Analyze Changes in Last Commit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: List changed files in last commit
+        run: |
+          git diff --name-only HEAD^..HEAD > changed_files.txt
+          cat changed_files.txt
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace with the version of Python you want to use
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # Replace with your project's dependencies file
+
+      - name: Run analysis on changed files
+        run: python analyze_changes.py
