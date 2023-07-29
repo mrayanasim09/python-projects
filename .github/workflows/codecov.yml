@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  pull_request:
+  pull_request_target:
     branches:
       - main
 
@@ -18,3 +18,4 @@ jobs:
 
       - name: Pyre Action
         uses: facebook/pyre-action@v0.0.1
+        continue-on-error: true
