@@ -89,6 +89,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Eye blink detection (also download the . XML files)](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/eye_blink.py) 👁️🔍😴
 - [Text to speech](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/text_to_speech.py) 🔤🔉
 - [A language detector ](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/lang_dect.py) 🔍🌐
+- [A spam message delectation using machine learning ](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/spam_dect.py)  🎁🎉🎈
 - [Crypto price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/crypto_prices.py) 🚀🌕
 - [Gold price predictions (for days ahead of days entered by the user)](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/gold_price.py) 💰🪙
 - [Your phone camera on your PC ](https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/camera.py) you can check more about it [here](https://www.makeuseof.com/tag/ip-webcam-android-phone-as-a-web-cam/) 📱💻📸
