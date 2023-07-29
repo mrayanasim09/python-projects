@@ -227,3 +227,17 @@ Feeling inspired to be a part of our dynamic community? Begin your journey by fa
 Ready to make your mark on our projects? Check out our [**How to Contribute**](https://github.com/mrayanasim09/python-projects/blob/main/CONTRIBUTING.md) guide, and embark on your coding adventure with us!
 
 Remember, the world of coding is full of wonders, and your journey starts right here! 🌟
+<br>
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects)
+&nbsp;&nbsp;
+![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects)
+&nbsp;&nbsp;
+![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects)
+&nbsp;&nbsp;
+![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)
+&nbsp;&nbsp;
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects&label=Views&countColor=%23555555&style=flat-square)
+
+
+
+
