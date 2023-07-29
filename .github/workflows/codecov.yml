@@ -1,18 +1,17 @@
-name: Upload coverage reports to Codecov
+name: Pyre Action
+
 on:
   push:
     branches:
       - main
 
 jobs:
-  upload-coverage:
-    name: Upload Coverage Reports
+  pyre-analysis:
+    name: Pyre Analysis
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - name: Pyre Action
+        uses: facebook/pyre-action@v0.0.1
