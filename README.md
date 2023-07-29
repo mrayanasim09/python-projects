@@ -222,9 +222,9 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 
 ## License 📝
 
-### *⚠️ DISCLAIMER: For educational purposes only. Code provided under  [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mrayanasim09/python-projects/blob/main/LICENSE). ⚖️*
+### *⚠️ DISCLAIMER: For educational purposes only. Code provided under  [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mrayanasim09/python-projects/blob/main/LICENSE). ⚖️*<br> 
 
-## **Note 📌**
+# **Note 📌**
 Do you have an eagerness to contribute and make a mark in the coding community? Fantastic! We embrace and celebrate collaboration. You can contribute in various ways, whether it's enhancing our documentation or optimizing the code itself.
 
 Feeling inspired to be a part of our dynamic community? Begin your journey by familiarizing yourself with our [**Code of Conduct**](https://github.com/mrayanasim09/python-projects/blob/main/CODE_OF_CONDUCT.md). We believe in a supportive and inclusive environment where everyone can thrive.
