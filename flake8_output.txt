@@ -1,0 +1,630 @@
+./Calculator/Mortgage.py:2:80: E501 line too long (87 > 79 characters)
+./Calculator/Mortgage.py:8:80: E501 line too long (83 > 79 characters)
+./Calculator/Mortgage.py:37:80: E501 line too long (82 > 79 characters)
+./Calculator/Quadratic_Equation.py:57:1: F821 undefined name 'time'
+./Calculator/Quadratic_Equation.py:169:1: F821 undefined name 'time'
+./Calculator/conject.py:31:80: E501 line too long (88 > 79 characters)
+./Calculator/conject.py:38:80: E501 line too long (84 > 79 characters)
+./Calculator/conject.py:48:80: E501 line too long (80 > 79 characters)
+./Calculator/grade.py:30:80: E501 line too long (92 > 79 characters)
+./Calculator/grade.py:34:80: E501 line too long (89 > 79 characters)
+./Calculator/grade.py:43:80: E501 line too long (96 > 79 characters)
+./Calculator/grade.py:47:80: E501 line too long (83 > 79 characters)
+./Calculator/grade.py:69:80: E501 line too long (81 > 79 characters)
+./Calculator/graph.py:9:80: E501 line too long (88 > 79 characters)
+./Calculator/graph.py:22:80: E501 line too long (88 > 79 characters)
+./Calculator/graph.py:23:80: E501 line too long (84 > 79 characters)
+./Calculator/int_diff.py:15:80: E501 line too long (88 > 79 characters)
+./Calculator/int_diff.py:28:80: E501 line too long (85 > 79 characters)
+./Calculator/int_diff.py:34:80: E501 line too long (81 > 79 characters)
+./Calculator/int_diff.py:35:80: E501 line too long (83 > 79 characters)
+./Calculator/mega_calculator.py:13:80: E501 line too long (82 > 79 characters)
+./Calculator/mega_calculator.py:168:80: E501 line too long (117 > 79 characters)
+./Calculator/mega_calculator.py:172:80: E501 line too long (101 > 79 characters)
+./Calculator/mega_calculator.py:178:80: E501 line too long (118 > 79 characters)
+./Calculator/mega_calculator.py:182:80: E501 line too long (102 > 79 characters)
+./Calculator/mega_calculator.py:188:80: E501 line too long (117 > 79 characters)
+./Calculator/mega_calculator.py:192:80: E501 line too long (101 > 79 characters)
+./Calculator/mega_calculator.py:233:80: E501 line too long (88 > 79 characters)
+./Calculator/mega_calculator.py:240:80: E501 line too long (88 > 79 characters)
+./Calculator/mega_calculator.py:242:80: E501 line too long (83 > 79 characters)
+./Calculator/mega_calculator.py:243:80: E501 line too long (84 > 79 characters)
+./Calculator/mega_calculator.py:244:80: E501 line too long (83 > 79 characters)
+./Calculator/mega_calculator.py:502:80: E501 line too long (80 > 79 characters)
+./Calculator/mega_calculator.py:516:80: E501 line too long (82 > 79 characters)
+./Calculator/mega_calculator.py:530:80: E501 line too long (83 > 79 characters)
+./Calculator/mega_calculator.py:531:80: E501 line too long (87 > 79 characters)
+./Calculator/mega_calculator.py:545:80: E501 line too long (81 > 79 characters)
+./Calculator/sequence.py:24:80: E501 line too long (96 > 79 characters)
+./Calculator/sequence.py:47:1: F821 undefined name 'time'
+./Calculator/sudoku.py:5:1: F821 undefined name 'time'
+./GUI/A_basic_gui_calculator.py:3:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/A_basic_gui_calculator.py:20:5: E722 do not use bare 'except'
+./GUI/A_basic_gui_calculator.py:31:5: E722 do not use bare 'except'
+./GUI/A_basic_gui_calculator.py:43:11: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./GUI/A_basic_gui_calculator.py:48:16: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/A_basic_gui_calculator.py:49:24: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./GUI/A_basic_gui_calculator.py:49:80: E501 line too long (84 > 79 characters)
+./GUI/A_basic_gui_calculator.py:62:26: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/A_basic_gui_calculator.py:74:26: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/A_basic_gui_calculator.py:86:20: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/A_basic_gui_calculator.py:98:20: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/Form.py:5:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/Form.py:6:1: F403 'from tkinter.messagebox import *' used; unable to detect undefined names
+./GUI/Form.py:84:26: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:85:28: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:86:25: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:87:29: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:88:32: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:89:30: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:90:29: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:104:9: F405 'showerror' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:117:80: E501 line too long (100 > 79 characters)
+./GUI/Form.py:125:80: E501 line too long (80 > 79 characters)
+./GUI/Form.py:141:12: F405 'Tk' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:155:13: F405 'showerror' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:158:23: F405 'Label' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:162:23: F405 'Entry' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:166:14: F405 'Button' may be undefined, or defined from star imports: tkinter, tkinter.messagebox
+./GUI/Form.py:166:80: E501 line too long (83 > 79 characters)
+./GUI/clender.py:95:80: E501 line too long (81 > 79 characters)
+./GUI/clender.py:100:80: E501 line too long (85 > 79 characters)
+./GUI/clender.py:124:80: E501 line too long (81 > 79 characters)
+./GUI/clock.py:26:80: E501 line too long (206 > 79 characters)
+./GUI/clock.py:59:80: E501 line too long (87 > 79 characters)
+./GUI/clock.py:62:80: E501 line too long (87 > 79 characters)
+./GUI/clock.py:74:80: E501 line too long (81 > 79 characters)
+./GUI/doraemon.py:5:1: F403 'from turtle import *' used; unable to detect undefined names
+./GUI/doraemon.py:10:5: F405 'penup' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:11:5: F405 'goto' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:12:5: F405 'pendown' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:16:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:17:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:19:5: F405 'tracer' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:24:13: F405 'lt' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:25:13: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:28:13: F405 'lt' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:29:13: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:30:5: F405 'tracer' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:31:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:36:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:37:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:40:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:41:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:44:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:45:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:48:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:49:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:52:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:53:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:56:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:57:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:62:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:63:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:64:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:65:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:66:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:67:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:71:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:72:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:73:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:74:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:75:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:76:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:77:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:78:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:79:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:80:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:81:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:82:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:87:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:88:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:89:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:90:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:91:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:95:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:97:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:98:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:99:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:100:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:102:5: F405 'pensize' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:104:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:105:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:106:5: F405 'pensize' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:109:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:110:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:111:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:112:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:113:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:118:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:119:5: F405 'lt' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:120:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:121:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:122:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:123:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:125:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:126:5: F405 'pendown' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:127:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:128:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:129:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:131:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:133:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:134:5: F405 'penup' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:135:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:136:5: F405 'pendown' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:137:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:139:5: F405 'penup' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:140:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:141:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:145:5: F405 'penup' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:146:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:147:5: F405 'pendown' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:148:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:149:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:150:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:151:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:169:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:170:5: F405 'penup' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:171:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:172:5: F405 'pendown' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:173:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:174:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:175:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:176:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:178:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:179:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:181:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:182:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:183:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:184:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:185:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:186:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:190:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:191:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:192:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:193:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:194:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:195:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:198:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:199:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:201:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:202:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:203:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:204:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:208:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:209:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:210:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:211:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:212:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:213:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:214:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:215:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:216:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:217:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:218:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:219:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:220:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:221:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:223:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:224:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:225:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:226:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:227:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:230:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:231:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:232:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:233:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:234:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:235:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:236:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:237:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:238:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:241:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:242:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:243:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:244:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:245:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:246:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:247:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:248:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:249:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:252:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:253:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:254:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:255:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:256:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:260:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:261:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:262:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:263:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:264:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:265:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:268:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:269:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:270:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:271:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:272:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:273:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:276:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:277:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:278:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:280:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:281:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:282:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:283:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:284:5: F405 'fillcolor' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:285:5: F405 'begin_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:286:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:287:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:288:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:289:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:290:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:291:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:292:5: F405 'end_fill' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:293:5: F405 'goto' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:294:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:295:5: F405 'circle' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:296:5: F405 'seth' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:297:5: F405 'fd' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:298:5: F405 'dot' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:305:5: F405 'screensize' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:306:5: F405 'pensize' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:307:5: F405 'speed' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:310:5: F405 'write' may be undefined, or defined from star imports: turtle
+./GUI/doraemon.py:311:5: F405 'done' may be undefined, or defined from star imports: turtle
+./GUI/file_explorer.py:2:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/file_explorer.py:19:10: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./GUI/file_explorer.py:42:23: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/file_explorer.py:52:18: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/file_explorer.py:66:15: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/graphics.py:24:80: E501 line too long (80 > 79 characters)
+./GUI/graphics.py:28:80: E501 line too long (82 > 79 characters)
+./GUI/graphics.py:32:80: E501 line too long (80 > 79 characters)
+./GUI/happy_birth_day.py:2:80: E501 line too long (94 > 79 characters)
+./GUI/happy_birth_day.py:168:80: E501 line too long (87 > 79 characters)
+./GUI/happy_birth_day.py:204:80: E501 line too long (81 > 79 characters)
+./GUI/notepad.py:3:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/notepad.py:4:1: F403 'from tkinter.messagebox import *' used; unable to detect undefined names
+./GUI/notepad.py:5:1: F403 'from tkinter.filedialog import *' used; unable to detect undefined names
+./GUI/notepad.py:9:14: F405 'Tk' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:14:22: F405 'Text' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:15:21: F405 'Menu' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:16:22: F405 'Menu' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:17:22: F405 'Menu' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:18:22: F405 'Menu' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:21:23: F405 'Scrollbar' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:28:9: E722 do not use bare 'except'
+./GUI/notepad.py:66:41: F405 'N' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:66:45: F405 'E' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:66:49: F405 'S' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:66:53: F405 'W' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:79:80: E501 line too long (85 > 79 characters)
+./GUI/notepad.py:95:80: E501 line too long (88 > 79 characters)
+./GUI/notepad.py:100:40: F405 'RIGHT' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:100:52: F405 'Y' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:112:9: F405 'showinfo' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:115:23: F405 'askopenfilename' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:127:45: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:138:41: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:141:24: E711 comparison to None should be 'if cond is None:'
+./GUI/notepad.py:143:27: F405 'asksaveasfilename' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:154:57: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/notepad.py:162:53: F405 'END' may be undefined, or defined from star imports: tkinter, tkinter.filedialog, tkinter.messagebox
+./GUI/paint.py:8:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/paint.py:31:16: F405 'Text' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:48:27: F405 'LabelFrame' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:49:72: F405 'RIDGE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:49:80: E501 line too long (88 > 79 characters)
+./GUI/paint.py:69:13: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:73:24: F405 'RIDGE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:83:27: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:90:20: F405 'RIDGE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:95:29: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:102:20: F405 'RIDGE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:107:25: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:114:20: F405 'RIDGE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:119:23: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:126:20: F405 'RIDGE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:131:30: F405 'LabelFrame' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:137:20: F405 'RIDGE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:142:40: F405 'VERTICAL' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:148:27: F405 'Canvas' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:149:49: F405 'GROOVE' may be undefined, or defined from star imports: tkinter
+./GUI/paint.py:203:80: E501 line too long (82 > 79 characters)
+./GUI/paint.py:205:9: E722 do not use bare 'except'
+./GUI/paint.py:210:12: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./GUI/rainbow.py:2:80: E501 line too long (93 > 79 characters)
+./GUI/search_applications.py:4:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/search_applications.py:20:10: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:24:8: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:25:11: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:26:16: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:27:13: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:28:20: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:33:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:33:77: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:34:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:34:67: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:35:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:35:69: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:36:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:36:74: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:37:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:37:71: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:38:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:38:78: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:43:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:44:29: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:46:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:47:29: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:49:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:50:29: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:52:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:53:29: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:55:1: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:56:29: F405 'W' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:60:5: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:64:5: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/search_applications.py:74:1: F405 'mainloop' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:5:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/snake_ladder.py:21:1: F405 'Canvas' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:57:23: F405 'Canvas' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:57:80: E501 line too long (88 > 79 characters)
+./GUI/snake_ladder.py:64:47: F405 'NW' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:64:80: E501 line too long (80 > 79 characters)
+./GUI/snake_ladder.py:79:20: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:81:13: F405 'OptionMenu' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:87:27: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:105:35: F405 'BOTH' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:107:29: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:127:22: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:175:80: E501 line too long (83 > 79 characters)
+./GUI/snake_ladder.py:181:80: E501 line too long (83 > 79 characters)
+./GUI/snake_ladder.py:223:19: F405 'Toplevel' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:226:19: F405 'Message' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:229:22: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:234:14: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./GUI/snake_ladder.py:237:80: E501 line too long (160 > 79 characters)
+./GUI/snake_ladder.py:238:5: F841 local variable 'x' is assigned to but never used
+./GUI/spelling.py:4:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/spelling.py:12:27: F405 'END' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:13:27: F405 'END' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:37:12: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:49:17: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:50:80: E501 line too long (81 > 79 characters)
+./GUI/spelling.py:54:14: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:57:14: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:69:19: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:70:19: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:79:15: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:79:80: E501 line too long (87 > 79 characters)
+./GUI/spelling.py:85:15: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/spelling.py:85:80: E501 line too long (80 > 79 characters)
+./GUI/spinner.py:2:1: F403 'from turtle import *' used; unable to detect undefined names
+./GUI/spinner.py:8:5: F405 'clear' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:10:5: F405 'right' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:11:5: F405 'forward' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:12:5: F405 'dot' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:13:5: F405 'back' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:14:5: F405 'right' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:15:5: F405 'forward' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:16:5: F405 'dot' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:17:5: F405 'back' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:18:5: F405 'right' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:19:5: F405 'forward' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:20:5: F405 'dot' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:21:5: F405 'back' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:22:5: F405 'right' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:23:5: F405 'update' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:31:5: F405 'ontimer' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:38:1: F405 'setup' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:39:1: F405 'hideturtle' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:40:1: F405 'tracer' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:41:1: F405 'width' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:42:1: F405 'onkey' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:43:1: F405 'listen' may be undefined, or defined from star imports: turtle
+./GUI/spinner.py:45:1: F405 'done' may be undefined, or defined from star imports: turtle
+./GUI/tick_cross.py:4:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/tick_cross.py:20:23: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./GUI/tick_cross.py:22:23: F405 'Canvas' may be undefined, or defined from star imports: tkinter
+./GUI/tick_cross.py:22:80: E501 line too long (84 > 79 characters)
+./GUI/tick_cross.py:255:80: E501 line too long (84 > 79 characters)
+./GUI/tick_cross.py:260:80: E501 line too long (83 > 79 characters)
+./GUI/todo.py:57:80: E501 line too long (80 > 79 characters)
+./GUI/todo.py:60:80: E501 line too long (83 > 79 characters)
+./GUI/todo.py:63:80: E501 line too long (84 > 79 characters)
+./GUI/todo.py:66:80: E501 line too long (83 > 79 characters)
+./GUI/todo.py:183:80: E501 line too long (87 > 79 characters)
+./GUI/todo.py:207:80: E501 line too long (190 > 79 characters)
+./GUI/todo.py:225:80: E501 line too long (149 > 79 characters)
+./GUI/todo.py:273:80: E501 line too long (84 > 79 characters)
+./GUI/youtube_download.py:5:1: F403 'from tkinter import *' used; unable to detect undefined names
+./GUI/youtube_download.py:13:18: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:24:18: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:24:80: E501 line too long (80 > 79 characters)
+./GUI/youtube_download.py:27:21: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:27:80: E501 line too long (83 > 79 characters)
+./GUI/youtube_download.py:30:25: F405 'Label' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:30:80: E501 line too long (86 > 79 characters)
+./GUI/youtube_download.py:33:28: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:38:16: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:39:76: F405 'GROOVE' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:39:80: E501 line too long (81 > 79 characters)
+./GUI/youtube_download.py:43:18: F405 'Button' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:51:16: F405 'GROOVE' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:100:80: E501 line too long (86 > 79 characters)
+./GUI/youtube_download.py:115:14: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./GUI/youtube_download.py:116:17: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./Game/21.py:52:80: E501 line too long (81 > 79 characters)
+./Game/21.py:66:35: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+./Game/21.py:71:80: E501 line too long (103 > 79 characters)
+./Game/21.py:105:80: E501 line too long (99 > 79 characters)
+./Game/21.py:114:35: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+./Game/21.py:133:12: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+./Game/color_guessing.py:102:80: E501 line too long (85 > 79 characters)
+./Game/colox.py:105:80: E501 line too long (82 > 79 characters)
+./Game/colox.py:114:80: E501 line too long (81 > 79 characters)
+./Game/colox.py:116:80: E501 line too long (81 > 79 characters)
+./Game/colox.py:145:9: F841 local variable 'rect' is assigned to but never used
+./Game/colox.py:195:80: E501 line too long (82 > 79 characters)
+./Game/colox.py:220:80: E501 line too long (82 > 79 characters)
+./Game/colox.py:236:80: E501 line too long (84 > 79 characters)
+./Game/colox.py:265:80: E501 line too long (88 > 79 characters)
+./Game/dice.py:5:80: E501 line too long (86 > 79 characters)
+./Game/dice.py:72:80: E501 line too long (80 > 79 characters)
+./Game/hangman.py:64:80: E501 line too long (83 > 79 characters)
+./Game/master_mid.py:7:80: E501 line too long (80 > 79 characters)
+./Game/master_mid.py:51:80: E501 line too long (86 > 79 characters)
+./Game/master_mid.py:71:80: E501 line too long (80 > 79 characters)
+./Game/number_details.py:5:80: E501 line too long (86 > 79 characters)
+./Game/number_guessing.py:6:80: E501 line too long (88 > 79 characters)
+./Game/rock,paper,scissors.py:4:80: E501 line too long (87 > 79 characters)
+./Game/snake_game.py:23:1: F821 undefined name 'pygame'
+./Game/snake_game.py:26:10: F821 undefined name 'pygame'
+./Game/snake_game.py:27:1: F821 undefined name 'pygame'
+./Game/snake_game.py:29:9: F821 undefined name 'pygame'
+./Game/snake_game.py:32:14: F821 undefined name 'pygame'
+./Game/snake_game.py:32:31: F821 undefined name 'pygame'
+./Game/snake_game.py:33:15: F821 undefined name 'pygame'
+./Game/snake_game.py:33:32: F821 undefined name 'pygame'
+./Game/snake_game.py:34:14: F821 undefined name 'pygame'
+./Game/snake_game.py:34:31: F821 undefined name 'pygame'
+./Game/snake_game.py:37:13: F821 undefined name 'pygame'
+./Game/snake_game.py:62:18: F821 undefined name 'pygame'
+./Game/snake_game.py:63:26: F821 undefined name 'pygame'
+./Game/snake_game.py:65:28: F821 undefined name 'pygame'
+./Game/snake_game.py:66:29: F821 undefined name 'pygame'
+./Game/snake_game.py:69:31: F821 undefined name 'pygame'
+./Game/snake_game.py:69:80: E501 line too long (80 > 79 characters)
+./Game/snake_game.py:72:31: F821 undefined name 'pygame'
+./Game/snake_game.py:75:31: F821 undefined name 'pygame'
+./Game/snake_game.py:90:80: E501 line too long (86 > 79 characters)
+./Game/snake_game.py:91:80: E501 line too long (87 > 79 characters)
+./Game/snake_game.py:118:9: F821 undefined name 'pygame'
+./Game/snake_game.py:119:80: E501 line too long (85 > 79 characters)
+./Game/snake_game.py:123:5: F821 undefined name 'pygame'
+./Game/snake_game.py:123:80: E501 line too long (86 > 79 characters)
+./Game/snake_game.py:126:80: E501 line too long (83 > 79 characters)
+./Game/snake_game.py:130:5: F821 undefined name 'pygame'
+./Game/snake_game.py:152:80: E501 line too long (82 > 79 characters)
+./Game/snake_game.py:153:80: E501 line too long (87 > 79 characters)
+./Game/snake_game.py:157:1: F821 undefined name 'pygame'
+./Game/snake_game.py:162:18: F821 undefined name 'pygame'
+./Game/snake_game.py:163:26: F821 undefined name 'pygame'
+./Game/snake_game.py:164:29: F821 undefined name 'pygame'
+./Game/snake_game.py:174:80: E501 line too long (82 > 79 characters)
+./Game/snake_game.py:178:80: E501 line too long (83 > 79 characters)
+./Game/snake_game.py:182:31: F821 undefined name 'pygame'
+./Game/snake_game.py:183:17: F821 undefined name 'pygame'
+./Game/snake_game.py:191:1: F821 undefined name 'pygame'
+./Game/snake_ladder.py:5:1: F403 'from tkinter import *' used; unable to detect undefined names
+./Game/snake_ladder.py:21:1: F405 'Canvas' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:57:23: F405 'Canvas' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:57:80: E501 line too long (88 > 79 characters)
+./Game/snake_ladder.py:64:47: F405 'NW' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:64:80: E501 line too long (80 > 79 characters)
+./Game/snake_ladder.py:79:20: F405 'StringVar' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:81:13: F405 'OptionMenu' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:87:27: F405 'Button' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:105:35: F405 'BOTH' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:107:29: F405 'Button' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:127:22: F405 'Label' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:175:80: E501 line too long (83 > 79 characters)
+./Game/snake_ladder.py:181:80: E501 line too long (83 > 79 characters)
+./Game/snake_ladder.py:223:19: F405 'Toplevel' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:226:19: F405 'Message' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:229:22: F405 'Button' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:234:14: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./Game/snake_ladder.py:237:80: E501 line too long (155 > 79 characters)
+./Game/snake_ladder.py:238:5: F841 local variable 'x' is assigned to but never used
+./Game/star.py:5:80: E501 line too long (104 > 79 characters)
+./Game/tick_cross.py:82:80: E501 line too long (82 > 79 characters)
+./Game/tick_cross_gui.py:2:1: F403 'from tkinter import *' used; unable to detect undefined names
+./Game/tick_cross_gui.py:18:23: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./Game/tick_cross_gui.py:20:23: F405 'Canvas' may be undefined, or defined from star imports: tkinter
+./Game/tick_cross_gui.py:20:80: E501 line too long (84 > 79 characters)
+./Game/tick_cross_gui.py:253:80: E501 line too long (84 > 79 characters)
+./Game/tick_cross_gui.py:258:80: E501 line too long (83 > 79 characters)
+./Game/typing_speed.py:18:80: E501 line too long (85 > 79 characters)
+./Utilities/birthday.py:15:80: E501 line too long (81 > 79 characters)
+./Utilities/birthday.py:22:80: E501 line too long (83 > 79 characters)
+./Utilities/birthday.py:30:80: E501 line too long (81 > 79 characters)
+./Utilities/birthday.py:36:80: E501 line too long (82 > 79 characters)
+./Utilities/birthday.py:39:80: E501 line too long (81 > 79 characters)
+./Utilities/birthday.py:119:80: E501 line too long (86 > 79 characters)
+./Utilities/birthday.py:126:80: E501 line too long (108 > 79 characters)
+./Utilities/browser.py:6:1: F403 'from PyQt5.QtCore import *' used; unable to detect undefined names
+./Utilities/browser.py:7:1: F403 'from PyQt5.QtWidgets import *' used; unable to detect undefined names
+./Utilities/browser.py:8:1: F403 'from PyQt5.QtWebEngineWidgets import *' used; unable to detect undefined names
+./Utilities/browser.py:11:18: F405 'QMainWindow' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:14:24: F405 'QWebEngineView' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:15:29: F405 'QUrl' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:20:18: F405 'QToolBar' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:23:20: F405 'QAction' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:27:23: F405 'QAction' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:31:22: F405 'QAction' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:35:20: F405 'QAction' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:39:24: F405 'QLineEdit' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:46:29: F405 'QUrl' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:46:80: E501 line too long (84 > 79 characters)
+./Utilities/browser.py:50:29: F405 'QUrl' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:56:7: F405 'QApplication' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/browser.py:57:1: F405 'QApplication' may be undefined, or defined from star imports: PyQt5.QtCore, PyQt5.QtWebEngineWidgets, PyQt5.QtWidgets
+./Utilities/btc.py:20:80: E501 line too long (88 > 79 characters)
+./Utilities/count_down.py:10:80: E501 line too long (80 > 79 characters)
+./Utilities/count_down.py:29:80: E501 line too long (110 > 79 characters)
+./Utilities/github.py:26:80: E501 line too long (80 > 79 characters)
+./Utilities/network.py:6:80: E501 line too long (89 > 79 characters)
+./Utilities/network.py:15:80: E501 line too long (81 > 79 characters)
+./Utilities/password.py:25:80: E501 line too long (88 > 79 characters)
+./Utilities/password_manager.py:5:80: E501 line too long (145 > 79 characters)
+./Utilities/password_manager.py:6:80: E501 line too long (119 > 79 characters)
+./Utilities/password_manager.py:7:80: E501 line too long (200 > 79 characters)
+./Utilities/password_manager.py:10:80: E501 line too long (143 > 79 characters)
+./Utilities/password_manager.py:11:80: E501 line too long (117 > 79 characters)
+./Utilities/password_manager.py:11:118: W291 trailing whitespace
+./Utilities/password_manager.py:12:80: E501 line too long (198 > 79 characters)
+./Utilities/password_manager.py:12:199: W291 trailing whitespace
+./Utilities/password_manager.py:15:1: E402 module level import not at top of file
+./Utilities/password_manager.py:16:1: E402 module level import not at top of file
+./Utilities/password_manager.py:17:1: E402 module level import not at top of file
+./Utilities/password_manager.py:18:1: E402 module level import not at top of file
+./Utilities/passwrd_generator.py:5:80: E501 line too long (80 > 79 characters)
+./Utilities/secret_code.py:36:80: E501 line too long (88 > 79 characters)
+./machine_learning/crypto_prices.py:60:80: E501 line too long (80 > 79 characters)
+./machine_learning/crypto_prices.py:91:80: E501 line too long (86 > 79 characters)
+./machine_learning/crypto_prices.py:107:80: E501 line too long (83 > 79 characters)
+./machine_learning/eye_blink.py:26:80: E501 line too long (84 > 79 characters)
+./machine_learning/eye_blink.py:33:30: E203 whitespace before ':'
+./machine_learning/eye_blink.py:33:41: E203 whitespace before ':'
+./machine_learning/eye_blink.py:34:33: E203 whitespace before ':'
+./machine_learning/eye_blink.py:34:44: E203 whitespace before ':'
+./machine_learning/eye_blink.py:35:80: E501 line too long (83 > 79 characters)
+./machine_learning/eye_blink.py:61:80: E501 line too long (82 > 79 characters)
+./machine_learning/gold_price.py:18:80: E501 line too long (85 > 79 characters)
+./machine_learning/gold_price.py:74:80: E501 line too long (82 > 79 characters)
+./machine_learning/sentiments.py:7:1: F403 'from tkinter import *' used; unable to detect undefined names
+./machine_learning/sentiments.py:15:29: F405 'END' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:16:28: F405 'END' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:17:29: F405 'END' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:18:28: F405 'END' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:21:26: F405 'END' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:63:11: F405 'Tk' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:75:17: F405 'Label' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:80:16: F405 'Text' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:85:13: F405 'Button' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:86:80: E501 line too long (83 > 79 characters)
+./machine_learning/sentiments.py:90:16: F405 'Label' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:93:15: F405 'Label' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:96:16: F405 'Label' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:99:15: F405 'Label' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:102:21: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:105:20: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:108:21: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:111:20: F405 'Entry' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:116:13: F405 'Button' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:121:12: F405 'Button' may be undefined, or defined from star imports: tkinter
+./machine_learning/sentiments.py:128:52: F405 'W' may be undefined, or defined from star imports: tkinter
+./machine_learning/sketch.py:20:80: E501 line too long (88 > 79 characters)
+./machine_learning/sketch.py:27:80: E501 line too long (81 > 79 characters)
+./machine_learning/spam_dect.py:12:80: E501 line too long (87 > 79 characters)
