@@ -1,9 +1,6 @@
 name: Pyre Action
 
 on:
-  push:
-    branches:
-      - main
   pull_request_target:
     branches:
       - main
@@ -18,4 +15,26 @@ jobs:
 
       - name: Pyre Action
         uses: facebook/pyre-action@v0.0.1
-        continue-on-error: true
+
+      - name: Check for errors and create pull request
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const { data: runsData } = await github.actions.listWorkflowRuns({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: context.workflow,
+              branch: context.payload.pull_request.head.ref
+            });
+            const erroredRun = runsData.find((run) => run.conclusion === 'failure');
+            if (erroredRun) {
+              const { data: prData } = await github.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: 'Fix errors found by Pyre analysis',
+                head: context.payload.pull_request.head.ref,
+                base: context.payload.pull_request.base.ref,
+                body: 'Errors were found during Pyre analysis. Please review and fix the issues.',
+              });
+              core.info(`Pull request created: ${prData.html_url}`);
+            }
