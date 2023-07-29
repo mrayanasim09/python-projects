@@ -1,21 +1,24 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 import random
 
 print("this rock paper scissors game is made by MRayan Asim hope you will like this!😊")
+
+
 def play_game(player_choice, computer_choice):
     if player_choice == computer_choice:
-        return 'tie'
+        return "tie"
     elif (
-        (player_choice == 'rock' and computer_choice == 'scissors') or
-        (player_choice == 'paper' and computer_choice == 'rock') or
-        (player_choice == 'scissors' and computer_choice == 'paper')
+        (player_choice == "rock" and computer_choice == "scissors")
+        or (player_choice == "paper" and computer_choice == "rock")
+        or (player_choice == "scissors" and computer_choice == "paper")
     ):
-        return 'player'
+        return "player"
     else:
-        return 'computer'
+        return "computer"
+
 
 def rock_paper_scissors():
-    choices = ['rock', 'paper', 'scissors']
+    choices = ["rock", "paper", "scissors"]
     player_score = 0
     computer_score = 0
 
@@ -41,9 +44,9 @@ def rock_paper_scissors():
 
         result = play_game(choices[player_choice], choices[computer_choice])
 
-        if result == 'tie':
+        if result == "tie":
             print("It's a tie!")
-        elif result == 'player':
+        elif result == "player":
             print("You win!")
             player_score += 1
         else:
@@ -57,5 +60,6 @@ def rock_paper_scissors():
     print("Total scores:")
     print("Player score:", player_score)
     print("Computer score:", computer_score)
+
 
 rock_paper_scissors()

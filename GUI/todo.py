@@ -1,6 +1,17 @@
-#This code is made by MRayan Asim
-from tkinter import Tk, Label, Entry, Button, Listbox, Scrollbar, END, Toplevel, messagebox
+# This code is made by MRayan Asim
+from tkinter import (
+    Tk,
+    Label,
+    Entry,
+    Button,
+    Listbox,
+    Scrollbar,
+    END,
+    Toplevel,
+    messagebox,
+)
 import json
+
 
 class Task:
     def __init__(self, title, category, details, due_date, priority):
@@ -9,6 +20,7 @@ class Task:
         self.details = details
         self.due_date = due_date
         self.priority = priority
+
 
 class TaskManagerGUI:
     def __init__(self, root):
@@ -41,11 +53,21 @@ class TaskManagerGUI:
         self.scrollbar = Scrollbar(root)
 
         # Buttons
-        self.add_button = Button(root, text="Add Task", command=self.add_task, bg="green", fg="white")
-        self.edit_button = Button(root, text="Edit Task", command=self.edit_task, bg="orange", fg="white")
-        self.delete_button = Button(root, text="Delete Task", command=self.delete_task, bg="red", fg="white")
-        self.view_button = Button(root, text="View Tasks", command=self.view_tasks, bg="blue", fg="white")
-        self.save_button = Button(root, text="Save", command=self.save_tasks, bg="purple", fg="white")
+        self.add_button = Button(
+            root, text="Add Task", command=self.add_task, bg="green", fg="white"
+        )
+        self.edit_button = Button(
+            root, text="Edit Task", command=self.edit_task, bg="orange", fg="white"
+        )
+        self.delete_button = Button(
+            root, text="Delete Task", command=self.delete_task, bg="red", fg="white"
+        )
+        self.view_button = Button(
+            root, text="View Tasks", command=self.view_tasks, bg="blue", fg="white"
+        )
+        self.save_button = Button(
+            root, text="Save", command=self.save_tasks, bg="purple", fg="white"
+        )
 
         # Grid layout
         self.title_label.grid(row=0, column=0, padx=5, pady=5, sticky="w")
@@ -59,7 +81,9 @@ class TaskManagerGUI:
         self.priority_label.grid(row=4, column=0, padx=5, pady=5, sticky="w")
         self.priority_entry.grid(row=4, column=1, padx=5, pady=5)
 
-        self.task_listbox.grid(row=0, column=2, rowspan=5, padx=5, pady=5, sticky="nsew")
+        self.task_listbox.grid(
+            row=0, column=2, rowspan=5, padx=5, pady=5, sticky="nsew"
+        )
         self.scrollbar.grid(row=0, column=3, rowspan=5, sticky="ns")
 
         self.add_button.grid(row=5, column=0, padx=5, pady=5)
@@ -94,7 +118,9 @@ class TaskManagerGUI:
             self.clear_entry_fields()
             self.display_tasks()
         else:
-            messagebox.showwarning("Incomplete Fields", "Please fill in all the task details.")
+            messagebox.showwarning(
+                "Incomplete Fields", "Please fill in all the task details."
+            )
 
     def edit_task(self):
         selected_task_index = self.task_listbox.curselection()
@@ -102,7 +128,9 @@ class TaskManagerGUI:
             task = self.tasks[selected_task_index[0]]
             edit_window = Toplevel(self.root)
             edit_window.title("Edit Task")
-            edit_window.geometry("+%d+%d" % (self.root.winfo_x() + 50, self.root.winfo_y() + 50))
+            edit_window.geometry(
+                "+%d+%d" % (self.root.winfo_x() + 50, self.root.winfo_y() + 50)
+            )
 
             title_label = Label(edit_window, text="Title:", fg="blue")
             title_label.grid(row=0, column=0, padx=5, pady=5, sticky="w")
@@ -134,13 +162,29 @@ class TaskManagerGUI:
             priority_entry.insert(END, task.priority)
             priority_entry.grid(row=4, column=1, padx=5, pady=5)
 
-            update_button = Button(edit_window, text="Update", command=lambda: self.update_task(task, title_entry.get(), category_entry.get(), details_entry.get(), due_date_entry.get(), priority_entry.get(), edit_window), bg="green", fg="white")
+            update_button = Button(
+                edit_window,
+                text="Update",
+                command=lambda: self.update_task(
+                    task,
+                    title_entry.get(),
+                    category_entry.get(),
+                    details_entry.get(),
+                    due_date_entry.get(),
+                    priority_entry.get(),
+                    edit_window,
+                ),
+                bg="green",
+                fg="white",
+            )
             update_button.grid(row=5, column=0, columnspan=2, padx=5, pady=5)
 
         else:
             messagebox.showwarning("No Task Selected", "Please select a task to edit.")
 
-    def update_task(self, task, title, category, details, due_date, priority, edit_window):
+    def update_task(
+        self, task, title, category, details, due_date, priority, edit_window
+    ):
         if title and category and details and due_date and priority:
             task.title = title
             task.category = category
@@ -150,18 +194,25 @@ class TaskManagerGUI:
             edit_window.destroy()
             self.display_tasks()
         else:
-            messagebox.showwarning("Incomplete Fields", "Please fill in all the task details.")
+            messagebox.showwarning(
+                "Incomplete Fields", "Please fill in all the task details."
+            )
 
     def delete_task(self):
         selected_task_index = self.task_listbox.curselection()
         if selected_task_index:
             task = self.tasks[selected_task_index[0]]
-            confirmation = messagebox.askyesno("Confirm Deletion", f"Are you sure you want to delete the task:\n\nTitle: {task.title}\nCategory: {task.category}\nDetails: {task.details}\nDue Date: {task.due_date}\nPriority: {task.priority}")
+            confirmation = messagebox.askyesno(
+                "Confirm Deletion",
+                f"Are you sure you want to delete the task:\n\nTitle: {task.title}\nCategory: {task.category}\nDetails: {task.details}\nDue Date: {task.due_date}\nPriority: {task.priority}",
+            )
             if confirmation:
                 self.tasks.pop(selected_task_index[0])
                 self.display_tasks()
         else:
-            messagebox.showwarning("No Task Selected", "Please select a task to delete.")
+            messagebox.showwarning(
+                "No Task Selected", "Please select a task to delete."
+            )
 
     def view_tasks(self):
         self.display_tasks()
@@ -169,7 +220,10 @@ class TaskManagerGUI:
     def display_tasks(self):
         self.task_listbox.delete(0, END)
         for task in self.tasks:
-            self.task_listbox.insert(END, f"Title: {task.title} | Category: {task.category} | Details: {task.details} | Due Date: {task.due_date} | Priority: {task.priority}")
+            self.task_listbox.insert(
+                END,
+                f"Title: {task.title} | Category: {task.category} | Details: {task.details} | Due Date: {task.due_date} | Priority: {task.priority}",
+            )
 
     def clear_entry_fields(self):
         self.title_entry.delete(0, END)
@@ -181,31 +235,48 @@ class TaskManagerGUI:
     def save_tasks(self):
         try:
             with open("tasks.json", "w") as file:
-                task_list = [{'title': task.title, 'category': task.category, 'details': task.details, 'due_date': task.due_date, 'priority': task.priority} for task in self.tasks]
+                task_list = [
+                    {
+                        "title": task.title,
+                        "category": task.category,
+                        "details": task.details,
+                        "due_date": task.due_date,
+                        "priority": task.priority,
+                    }
+                    for task in self.tasks
+                ]
                 json.dump(task_list, file)
             messagebox.showinfo("Save Successful", "Tasks saved successfully.")
         except IOError:
-            messagebox.showerror("Error", "An error occurred while saving tasks to file.")
+            messagebox.showerror(
+                "Error", "An error occurred while saving tasks to file."
+            )
 
     def load_tasks(self):
         try:
             with open("tasks.json", "r") as file:
                 task_list = json.load(file)
                 for task_data in task_list:
-                    title = task_data.get('title', '')
-                    category = task_data.get('category', '')
-                    details = task_data.get('details', '')  # Set default value if 'details' key is missing
-                    due_date = task_data.get('due_date', '')
-                    priority = task_data.get('priority', '')
+                    title = task_data.get("title", "")
+                    category = task_data.get("category", "")
+                    details = task_data.get(
+                        "details", ""
+                    )  # Set default value if 'details' key is missing
+                    due_date = task_data.get("due_date", "")
+                    priority = task_data.get("priority", "")
                     task = Task(title, category, details, due_date, priority)
                     self.tasks.append(task)
                 self.display_tasks()
         except IOError:
-            messagebox.showwarning("File Not Found", "Tasks file not found. New file will be created when saving tasks.")
+            messagebox.showwarning(
+                "File Not Found",
+                "Tasks file not found. New file will be created when saving tasks.",
+            )
 
     def exit_application(self):
         self.save_tasks()
         self.root.destroy()
+
 
 root = Tk()
 task_manager = TaskManagerGUI(root)

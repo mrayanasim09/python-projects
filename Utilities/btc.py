@@ -1,7 +1,8 @@
-#This program is made by MRayan Asim
-#Packages needed:
-#pip install hashlib
+# This program is made by MRayan Asim
+# Packages needed:
+# pip install hashlib
 import hashlib
+
 
 def mine_block(previous_block_hash, transactions, difficulty):
     nonce = 0
@@ -13,6 +14,7 @@ def mine_block(previous_block_hash, transactions, difficulty):
             return block_hash
 
         nonce += 1
+
 
 # Example usage
 previous_block_hash = "0000000000000000000000000000000000000000000000000000000000000000"

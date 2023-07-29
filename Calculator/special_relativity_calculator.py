@@ -1,9 +1,10 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 # Function to calculate time dilation
 def time_dilation(time, velocity):
     gamma = 1 / (1 - (velocity**2 / 299792458**2))  # Lorentz factor
     time_dilated = time * gamma
     return time_dilated
+
 
 # Function to calculate length contraction
 def length_contraction(length, velocity):
@@ -11,11 +12,13 @@ def length_contraction(length, velocity):
     length_contracted = length / gamma
     return length_contracted
 
+
 # Function to calculate energy using E=mc^2
 def energy(mass):
     c = 299792458  # Speed of light in m/s
     energy = mass * c**2
     return energy
+
 
 if __name__ == "__main__":
     # Input values

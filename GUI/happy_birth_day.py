@@ -1,6 +1,6 @@
-#This code is made by MRayan Asim
-#Packages needed turtle which is a built in module of python if you still want to install it:
-#pip install Pythonturtle
+# This code is made by MRayan Asim
+# Packages needed turtle which is a built in module of python if you still want to install it:
+# pip install Pythonturtle
 # Importing turtle library to draw "Happy Birthday"
 import turtle
 
@@ -40,6 +40,7 @@ def draw_circle_on_top_of_stick(fill_color, border_color, x, y, radius):
 
     my_turtle_cursor.getscreen().update()
 
+
 def draw_candle_for_cake(fill_color, border_color, x, y):
     my_turtle_cursor.penup()
 
@@ -72,6 +73,7 @@ def draw_candle_for_cake(fill_color, border_color, x, y):
 
     my_turtle_cursor.getscreen().update()
 
+
 # Creating a Function to draw stick on the candle
 def draw_stick_on_candle(fill_color, x, y, cursor_size):
     my_turtle_cursor.penup()
@@ -90,6 +92,7 @@ def draw_stick_on_candle(fill_color, x, y, cursor_size):
     my_turtle_cursor.end_fill()
     my_turtle_cursor.getscreen().update()
 
+
 def write_happy_inside_circle(text_color, x, y):
     my_turtle_cursor.penup()
     # Changing color of our cursor
@@ -104,6 +107,7 @@ def write_happy_inside_circle(text_color, x, y):
 
     my_turtle_cursor.getscreen().update()
 
+
 def write_birthday_inside_circle(text_color, x, y):
     my_turtle_cursor.penup()
     # Changing color of our cursor
@@ -117,6 +121,7 @@ def write_birthday_inside_circle(text_color, x, y):
     my_turtle_cursor.write("Birthday", font=("sans-serif", 26, "bold"))
 
     my_turtle_cursor.getscreen().update()
+
 
 def draw_stick(fill_color, border_color, x, y):
     my_turtle_cursor.penup()
@@ -135,6 +140,7 @@ def draw_stick(fill_color, border_color, x, y):
     my_turtle_cursor.end_fill()
     my_turtle_cursor.getscreen().update()
 
+
 # Function to draw topping of our cake
 def draw_toppings_on_cake(fill_color, border_color, x, y, radius):
     my_turtle_cursor.penup()
@@ -151,11 +157,12 @@ def draw_toppings_on_cake(fill_color, border_color, x, y, radius):
     # Drawing a circle using circle function
     my_turtle_cursor.forward(10)
     my_turtle_cursor.left(90)
-    my_turtle_cursor.circle(radius, extent = 180)
+    my_turtle_cursor.circle(radius, extent=180)
     my_turtle_cursor.left(90)
     my_turtle_cursor.forward(10)
     my_turtle_cursor.end_fill()
     my_turtle_cursor.getscreen().update()
+
 
 # Creating a Function to draw different layers of a cake
 def draw_layer_of_the_cake(fill_color, border_color, cursor_size, x, y, width, height):
@@ -183,6 +190,7 @@ def draw_layer_of_the_cake(fill_color, border_color, cursor_size, x, y, width, h
     my_turtle_cursor.setheading(0)
     my_turtle_cursor.getscreen().update()
 
+
 # Changing the background color of our canvas
 my_turtle_screen.bgcolor("#FFFDD0")
 
@@ -197,7 +205,9 @@ draw_layer_of_the_cake("#FFC0CB", "#000000", 3, -220, y_coordinate - 70, 400, 10
 
 # Drawing different parts of our cake
 for parts in parts_of_cake:
-    draw_layer_of_the_cake(parts[0], parts[1], parts[2], -135, y_coordinate - 60, 240, parts[3])
+    draw_layer_of_the_cake(
+        parts[0], parts[1], parts[2], -135, y_coordinate - 60, 240, parts[3]
+    )
     y_coordinate += parts[3]
 
 

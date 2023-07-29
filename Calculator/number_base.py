@@ -1,15 +1,27 @@
 def decimal_to_binary(decimal):
     return bin(decimal)[2:]
+
+
 def decimal_to_hexadecimal(decimal):
     return hex(decimal)[2:]
+
+
 def decimal_to_octal(decimal):
     return oct(decimal)[2:]
+
+
 def binary_to_decimal(binary):
     return int(binary, 2)
+
+
 def hexadecimal_to_decimal(hexadecimal):
     return int(hexadecimal, 16)
+
+
 def octal_to_decimal(octal):
     return int(octal, 8)
+
+
 def calculator():
     print("Welcome to the number conversion calculator!")
     print("Choose the number type:")
@@ -43,4 +55,6 @@ def calculator():
         print("Hexadecimal:", decimal_to_hexadecimal(decimal))
     else:
         print("Invalid choice. Please select a number type from 1 to 4.")
+
+
 calculator()

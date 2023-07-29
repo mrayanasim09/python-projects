@@ -1,7 +1,8 @@
-#This is made by MRayan Asim
-#packages needed:
-#pip install matplotlib.pyplot
+# This is made by MRayan Asim
+# packages needed:
+# pip install matplotlib.pyplot
 import matplotlib.pyplot as plt
+
 
 def fibonacci_sequence(n):
     sequence = []
@@ -18,7 +19,10 @@ def fibonacci_sequence(n):
             sequence.append(next_number)
     return sequence
 
-print("Hello! This program of Fibonacci series is made by MRayan Asim. Hope you will like this! 😊")
+
+print(
+    "Hello! This program of Fibonacci series is made by MRayan Asim. Hope you will like this! 😊"
+)
 
 # Get user input
 num_terms = int(input("Enter the number of terms in the Fibonacci sequence: "))
@@ -35,10 +39,10 @@ print("Fibonacci sequence:")
 print(fib_str)
 
 # Create the graph
-plt.plot(range(1, num_terms+1), fib_sequence, marker='o')
-plt.xlabel('Number of Terms')
-plt.ylabel('Fibonacci Term Value')
-plt.title('Fibonacci Sequence')
+plt.plot(range(1, num_terms + 1), fib_sequence, marker="o")
+plt.xlabel("Number of Terms")
+plt.ylabel("Fibonacci Term Value")
+plt.title("Fibonacci Sequence")
 plt.grid(True)
 time.sleep(3)
 plt.show()

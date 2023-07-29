@@ -1,19 +1,23 @@
-
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 import subprocess
 import time
 
-print("This network password teller code is made by MRayan Asim hope you will like this !😊")
+print(
+    "This network password teller code is made by MRayan Asim hope you will like this !😊"
+)
 time.sleep(3)
+
 
 def get_wifi_profiles():
     try:
         # Get the Wi-Fi profiles using the 'netsh' command
-        result = subprocess.run(['netsh', 'wlan', 'show', 'profiles'], capture_output=True, text=True)
+        result = subprocess.run(
+            ["netsh", "wlan", "show", "profiles"], capture_output=True, text=True
+        )
         output = result.stdout
 
         # Split the output into lines
-        lines = output.split('\n')
+        lines = output.split("\n")
 
         # Extract the Wi-Fi profile names
         profiles = []
@@ -28,14 +32,19 @@ def get_wifi_profiles():
         print("Error occurred:", e)
         return []
 
+
 def get_wifi_password(profile):
     try:
         # Get the Wi-Fi password for a specific profile
-        result = subprocess.run(['netsh', 'wlan', 'show', 'profile', profile, 'key=clear'], capture_output=True, text=True)
+        result = subprocess.run(
+            ["netsh", "wlan", "show", "profile", profile, "key=clear"],
+            capture_output=True,
+            text=True,
+        )
         output = result.stdout
 
         # Find the line containing the Wi-Fi password
-        lines = output.split('\n')
+        lines = output.split("\n")
         password = None
         for line in lines:
             if "Key Content" in line:
@@ -48,6 +57,7 @@ def get_wifi_password(profile):
         print("Error occurred:", e)
         return None
 
+
 # Get Wi-Fi profiles
 profiles = get_wifi_profiles()
 
@@ -57,4 +67,3 @@ print("-----------------------------------------")
 for profile in profiles:
     password = get_wifi_password(profile)
     print("{:<30} | {:<}".format(profile, password or ""))
-

@@ -1,14 +1,15 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 tallies = {
-    'I': 1,
-    'V': 5,
-    'X': 10,
-    'L': 50,
-    'C': 100,
-    'D': 500,
-    'M': 1000,
+    "I": 1,
+    "V": 5,
+    "X": 10,
+    "L": 50,
+    "C": 100,
+    "D": 500,
+    "M": 1000,
     # add more numerals if necessary
 }
+
 
 def RomanNumeralToDecimal(romanNumeral):
     sum = 0
@@ -21,6 +22,7 @@ def RomanNumeralToDecimal(romanNumeral):
             sum += tallies[left]
     sum += tallies[romanNumeral[-1]]
     return sum
+
 
 # Get user input
 roman_numeral = input("Enter a Roman numeral: ")

@@ -1,6 +1,6 @@
-#This program is made by MRayan Asim
-#Packages needed:
-#pip install instaloader
+# This program is made by MRayan Asim
+# Packages needed:
+# pip install instaloader
 import instaloader
 
 # Create an instance of Instaloader class
@@ -15,4 +15,4 @@ print("User ID: ", profile.userid)
 print("Number of Posts: ", profile.mediacount)
 print("Followers: ", profile.followers)
 print("Followees: ", profile.followees)
-print("Bio: ", profile.biography,profile.external_url)
+print("Bio: ", profile.biography, profile.external_url)

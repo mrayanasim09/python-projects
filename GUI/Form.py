@@ -1,6 +1,6 @@
-#This code is made by MRayan Asim
-#to install these packages:
-#pip install openpyxl
+# This code is made by MRayan Asim
+# to install these packages:
+# pip install openpyxl
 import openpyxl
 from tkinter import *
 from tkinter.messagebox import *
@@ -14,6 +14,7 @@ contact_no_field = None
 email_id_field = None
 address_field = None
 
+
 def excel(file_path):
     # Create or load the workbook
     try:
@@ -23,17 +24,17 @@ def excel(file_path):
 
     # Create or select the active sheet
     sheet = wb.active
-    if sheet.title != 'Form Data':
-        sheet = wb.create_sheet('Form Data')
+    if sheet.title != "Form Data":
+        sheet = wb.create_sheet("Form Data")
 
     # Resize the width of columns in the spreadsheet
-    sheet.column_dimensions['A'].width = 30
-    sheet.column_dimensions['B'].width = 10
-    sheet.column_dimensions['C'].width = 10
-    sheet.column_dimensions['D'].width = 20
-    sheet.column_dimensions['E'].width = 20
-    sheet.column_dimensions['F'].width = 40
-    sheet.column_dimensions['G'].width = 50
+    sheet.column_dimensions["A"].width = 30
+    sheet.column_dimensions["B"].width = 10
+    sheet.column_dimensions["C"].width = 10
+    sheet.column_dimensions["D"].width = 20
+    sheet.column_dimensions["E"].width = 20
+    sheet.column_dimensions["F"].width = 40
+    sheet.column_dimensions["G"].width = 50
 
     # Write given data to the spreadsheet at a particular location
     sheet.cell(row=1, column=1).value = "Name"
@@ -47,29 +48,36 @@ def excel(file_path):
     # Save the workbook
     wb.save(file_path)
 
+
 def focus1(event):
     # set focus on the course_field box
     course_field.focus_set()
+
 
 def focus2(event):
     # set focus on the sem_field box
     sem_field.focus_set()
 
+
 def focus3(event):
     # set focus on the form_no_field box
     form_no_field.focus_set()
+
 
 def focus4(event):
     # set focus on the contact_no_field box
     contact_no_field.focus_set()
 
+
 def focus5(event):
     # set focus on the email_id_field box
     email_id_field.focus_set()
 
+
 def focus6(event):
     # set focus on the address_field box
     address_field.focus_set()
+
 
 def clear():
     # clear the content of text entry boxes
@@ -81,8 +89,8 @@ def clear():
     email_id_field.delete(0, END)
     address_field.delete(0, END)
 
-def insert(file_path):
 
+def insert(file_path):
     # if user does not fill any entry, show a message box with an error
     if (
         name_field.get() == ""
@@ -103,8 +111,8 @@ def insert(file_path):
 
         # Create or select the active sheet
         sheet = wb.active
-        if sheet.title != 'Form Data':
-            sheet = wb.create_sheet('Form Data')
+        if sheet.title != "Form Data":
+            sheet = wb.create_sheet("Form Data")
 
         # Assigning the max row value up to which data is written in the spreadsheet to the variable
         current_row = sheet.max_row
@@ -127,12 +135,13 @@ def insert(file_path):
         # Call the clear() function
         clear()
 
+
 if __name__ == "__main__":
     # Create a GUI window
     root = Tk()
 
     # Set the background color of GUI window
-    root.configure(background='light green')
+    root.configure(background="light green")
 
     # Set the title of GUI window
     root.title("Registration Form")
@@ -159,4 +168,3 @@ if __name__ == "__main__":
 
     # Start the GUI
     root.mainloop()
-

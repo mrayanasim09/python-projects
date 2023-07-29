@@ -1,8 +1,9 @@
-#This code is made by MRayan Asim
-#turtle is installed python module but you can install it by:
-#pip install PythonTurtle
+# This code is made by MRayan Asim
+# turtle is installed python module but you can install it by:
+# pip install PythonTurtle
 
 from turtle import *
+
 
 # Doraemon with Python Turtle
 def ankur(x, y):
@@ -67,7 +68,7 @@ def mukh():
 
 
 def muflar():
-    fillcolor('#e70010')
+    fillcolor("#e70010")
     begin_fill()
     seth(0)
     fd(200)
@@ -84,7 +85,7 @@ def muflar():
 def nak():
     ankur(-10, 158)
     seth(315)
-    fillcolor('#e70010')
+    fillcolor("#e70010")
     begin_fill()
     circle(20)
     end_fill()
@@ -93,7 +94,7 @@ def nak():
 def black_aankha():
     seth(0)
     ankur(-20, 195)
-    fillcolor('#000000')
+    fillcolor("#000000")
     begin_fill()
     circle(13)
     end_fill()
@@ -106,7 +107,7 @@ def black_aankha():
 
     ankur(-17, 200)
     seth(0)
-    fillcolor('#ffffff')
+    fillcolor("#ffffff")
     begin_fill()
     circle(5)
     end_fill()
@@ -116,7 +117,7 @@ def black_aankha():
 def face():
     fd(183)
     lt(45)
-    fillcolor('#ffffff')
+    fillcolor("#ffffff")
     begin_fill()
     circle(120, 100)
     seth(180)
@@ -144,7 +145,7 @@ def taauko():
     penup()
     circle(150, 40)
     pendown()
-    fillcolor('#00a0de')
+    fillcolor("#00a0de")
     begin_fill()
     circle(150, 280)
     end_fill()
@@ -174,7 +175,7 @@ def Doraemon():
     seth(70)
     circle(-30, 270)
 
-    fillcolor('#00a0de')
+    fillcolor("#00a0de")
     begin_fill()
 
     seth(230)
@@ -220,14 +221,14 @@ def Doraemon():
     end_fill()
 
     seth(70)
-    fillcolor('#ffffff')
+    fillcolor("#ffffff")
     begin_fill()
     circle(-30)
     end_fill()
 
     ankur(103.74, -182.59)
     seth(0)
-    fillcolor('#ffffff')
+    fillcolor("#ffffff")
     begin_fill()
     fd(15)
     circle(-15, 180)
@@ -238,7 +239,7 @@ def Doraemon():
 
     ankur(-96.26, -182.59)
     seth(180)
-    fillcolor('#ffffff')
+    fillcolor("#ffffff")
     begin_fill()
     fd(15)
     circle(15, 180)
@@ -249,7 +250,7 @@ def Doraemon():
 
     ankur(-133.97, -91.81)
     seth(50)
-    fillcolor('#ffffff')
+    fillcolor("#ffffff")
     begin_fill()
     circle(30)
     end_fill()
@@ -274,13 +275,13 @@ def Doraemon():
     ankur(-103.42, 15.09)
     fd(90)
     seth(70)
-    fillcolor('#ffd200')
+    fillcolor("#ffd200")
     # print(pos())
     begin_fill()
     circle(-20)
     end_fill()
     seth(170)
-    fillcolor('#ffd200')
+    fillcolor("#ffd200")
     begin_fill()
     circle(-2, 180)
     seth(10)
@@ -300,11 +301,11 @@ def Doraemon():
     black_aankha()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     screensize(1500, 1000, "#f0f0f0")  # Increase width and height values
     pensize(3)
     speed(9)
     Doraemon()
     ankur(100, -300)
-    write('by MRayan Asim', font=("Bradley Hand ITC", 30, "bold"))
+    write("by MRayan Asim", font=("Bradley Hand ITC", 30, "bold"))
     done()

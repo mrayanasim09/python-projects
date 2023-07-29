@@ -1,5 +1,5 @@
-#This code is made by MRayan Asim
-#Packages needed:
+# This code is made by MRayan Asim
+# Packages needed:
 # pip install pygame
 import pygame
 import random
@@ -51,15 +51,15 @@ height1 = 80  # Decreased height of buttons to 80
 enemy_size = 50
 
 # defining a font
-smallfont = pygame.font.SysFont('Corbel', 35)
+smallfont = pygame.font.SysFont("Corbel", 35)
 
 # texts to be rendered on screen
-text = smallfont.render('Start', True, white)
-text1 = smallfont.render('Options', True, white)
-exit1 = smallfont.render('Exit', True, white)
+text = smallfont.render("Start", True, white)
+text1 = smallfont.render("Options", True, white)
+exit1 = smallfont.render("Exit", True, white)
 
 # game title
-colox = smallfont.render('Colox', True, (c3, c2, c1))
+colox = smallfont.render("Colox", True, (c3, c2, c1))
 x1 = random.randint(width // 2, width)
 y1 = random.randint(100, height // 2)
 x2 = 40
@@ -83,17 +83,23 @@ def game_over():
                 pygame.quit()
             if ev.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
-                if 100 < mouse_pos[0] < 140 and height - 100 < mouse_pos[1] < height - 80:
+                if (
+                    100 < mouse_pos[0] < 140
+                    and height - 100 < mouse_pos[1] < height - 80
+                ):
                     pygame.quit()
-                if width - 180 < mouse_pos[0] < width - 100 and height - 100 < mouse_pos[1] < height - 80:
+                if (
+                    width - 180 < mouse_pos[0] < width - 100
+                    and height - 100 < mouse_pos[1] < height - 80
+                ):
                     game(lead_y, lead_x, speed, count)
 
         screen.fill((65, 25, 64))
-        smallfont = pygame.font.SysFont('Corbel', 60)
-        smallfont1 = pygame.font.SysFont('Corbel', 25)
-        game_over_text = smallfont.render('GAME OVER', True, white)
-        game_exit = smallfont1.render('Exit', True, white)
-        restart = smallfont1.render('Restart', True, white)
+        smallfont = pygame.font.SysFont("Corbel", 60)
+        smallfont1 = pygame.font.SysFont("Corbel", 25)
+        game_over_text = smallfont.render("GAME OVER", True, white)
+        game_exit = smallfont1.render("Exit", True, white)
+        restart = smallfont1.render("Restart", True, white)
         mouse_pos = pygame.mouse.get_pos()
 
         if 100 < mouse_pos[0] < 140 and height - 100 < mouse_pos[1] < height - 80:
@@ -101,7 +107,10 @@ def game_over():
         else:
             pygame.draw.rect(screen, startd, [100, height - 100, 40, 20])
 
-        if width - 180 < mouse_pos[0] < width - 100 and height - 100 < mouse_pos[1] < height - 80:
+        if (
+            width - 180 < mouse_pos[0] < width - 100
+            and height - 100 < mouse_pos[1] < height - 80
+        ):
             pygame.draw.rect(screen, startl, [width - 180, height - 100, 80, 20])
         else:
             pygame.draw.rect(screen, startd, [width - 180, height - 100, 80, 20])
@@ -137,8 +146,8 @@ def game(lead_y, lead_X, speed, count):
         pygame.draw.rect(screen, (c1, c2, c3), [0, 0, width, 40])
         pygame.draw.rect(screen, (c3, c2, c1), [0, height - 40, width, 40])
         pygame.draw.rect(screen, startd, [width - 100, 0, 100, 40])
-        smallfont = pygame.font.SysFont('Corbel', 35)
-        exit2 = smallfont.render('Exit', True, white)
+        smallfont = pygame.font.SysFont("Corbel", 35)
+        exit2 = smallfont.render("Exit", True, white)
 
         mouse_pos = pygame.mouse.get_pos()
         if width - 100 < mouse_pos[0] < width and 0 < mouse_pos[1] < 40:
@@ -152,9 +161,13 @@ def game(lead_y, lead_X, speed, count):
         if e_p[0] > 0 and e_p[0] <= width:
             e_p[0] -= 10
         else:
-            if e_p[1] <= 40 or e_p[1] >= height - 80:  # Prevent appearing on top and bottom color banners
+            if (
+                e_p[1] <= 40 or e_p[1] >= height - 80
+            ):  # Prevent appearing on top and bottom color banners
                 e_p[1] = random.randint(40, height - 80)
-            if e1_p[1] <= 40 or e1_p[1] >= height - 80:  # Prevent appearing on top and bottom color banners
+            if (
+                e1_p[1] <= 40 or e1_p[1] >= height - 80
+            ):  # Prevent appearing on top and bottom color banners
                 e1_p[1] = random.randint(40, height - 80)
             e_p[1] = random.randint(enemy_size, height - enemy_size)
             e_p[0] = width
@@ -162,14 +175,19 @@ def game(lead_y, lead_X, speed, count):
         if lead_x <= e_p[0] <= lead_x + 40 and lead_y >= e_p[1] >= lead_y - 40:
             game_over()
 
-        if lead_y <= e_p[1] + enemy_size <= lead_y + 40 and lead_x <= e_p[0] <= lead_x + 40:
+        if (
+            lead_y <= e_p[1] + enemy_size <= lead_y + 40
+            and lead_x <= e_p[0] <= lead_x + 40
+        ):
             game_over()
 
         pygame.draw.rect(screen, red, [e_p[0], e_p[1], enemy_size, enemy_size])
         if e1_p[0] > 0 and e1_p[0] <= width + 100:
             e1_p[0] -= 10
         else:
-            if e1_p[1] <= 40 or e1_p[1] >= height - 80:  # Prevent appearing on top and bottom color banners
+            if (
+                e1_p[1] <= 40 or e1_p[1] >= height - 80
+            ):  # Prevent appearing on top and bottom color banners
                 e1_p[1] = random.randint(40, height - 80)
             e1_p[1] = random.randint(enemy_size, height - 40)
             e1_p[0] = width + 100
@@ -180,7 +198,10 @@ def game(lead_y, lead_X, speed, count):
             count += 1
             speed += 1
 
-        if lead_y <= e1_p[1] + enemy_size <= lead_y + 40 and lead_x <= e1_p[0] <= lead_x + 40:
+        if (
+            lead_y <= e1_p[1] + enemy_size <= lead_y + 40
+            and lead_x <= e1_p[0] <= lead_x + 40
+        ):
             e1_p[0] = width + 100
             e1_p[1] = random.randint(40, height - 40)
             count += 1
@@ -189,13 +210,15 @@ def game(lead_y, lead_X, speed, count):
             if count >= 45:
                 speed = 60
 
-        if lead_y <= 40 or lead_y >= height - 80:  # Prevent going beyond top and bottom boundaries
+        if (
+            lead_y <= 40 or lead_y >= height - 80
+        ):  # Prevent going beyond top and bottom boundaries
             game_over()
         if e1_p[0] <= 0:
             game_over()
 
         pygame.draw.rect(screen, blue, [e1_p[0], e1_p[1], enemy_size, enemy_size])
-        score1 = smallfont.render('Score: ' + str(count), True, white)
+        score1 = smallfont.render("Score: " + str(count), True, white)
         screen.blit(score1, (width - 120, height - 40))
         screen.blit(exit2, (width - 80, 0))
         pygame.display.update()
@@ -212,9 +235,15 @@ def intro(colox_c1, colox_c2, colox, exit1, text1, text):
                 mouse_pos = pygame.mouse.get_pos()
                 if x < mouse_pos[0] < x + width1 and y < mouse_pos[1] < y + height1:
                     game(lead_y, lead_x, speed, count)
-                if x < mouse_pos[0] < x + width1 + 40 and y + 70 < mouse_pos[1] < y + 70 + height1:
+                if (
+                    x < mouse_pos[0] < x + width1 + 40
+                    and y + 70 < mouse_pos[1] < y + 70 + height1
+                ):
                     pygame.quit()
-                if x < mouse_pos[0] < width1 + x and y + 140 < mouse_pos[1] < y + 140 + height1:
+                if (
+                    x < mouse_pos[0] < width1 + x
+                    and y + 140 < mouse_pos[1] < y + 140 + height1
+                ):
                     pygame.quit()
 
         screen.fill((65, 25, 64))
@@ -225,7 +254,10 @@ def intro(colox_c1, colox_c2, colox, exit1, text1, text):
         else:
             pygame.draw.rect(screen, startd, [x, y, width1, height1])
 
-        if x < mouse_pos[0] < x + width1 + 40 and y + 70 < mouse_pos[1] < y + 70 + height1:
+        if (
+            x < mouse_pos[0] < x + width1 + 40
+            and y + 70 < mouse_pos[1] < y + 70 + height1
+        ):
             pygame.draw.rect(screen, startl, [x, y + 70, width1 + 40, height1])
         else:
             pygame.draw.rect(screen, startd, [x, y + 70, width1 + 40, height1])

@@ -1,22 +1,36 @@
-#This code is made by MRaynasim
+# This code is made by MRaynasim
 import random
 import time
 
+
 def hangman():
-    words = ['apple', 'banana', 'cherry', 'orange', 'strawberry', 'watermelon', 'pineapple', 'kiwi', 'mango', 'pear', 'grapefruit', 'blueberry']
+    words = [
+        "apple",
+        "banana",
+        "cherry",
+        "orange",
+        "strawberry",
+        "watermelon",
+        "pineapple",
+        "kiwi",
+        "mango",
+        "pear",
+        "grapefruit",
+        "blueberry",
+    ]
     word = random.choice(words)
     guessed_letters = []
     attempts = 5
 
     while attempts > 0:
         print("\nAttempts left:", attempts)
-        hidden_word = ''
+        hidden_word = ""
 
         for letter in word:
             if letter in guessed_letters:
-                hidden_word += letter + ' '
+                hidden_word += letter + " "
             else:
-                hidden_word += '_ '
+                hidden_word += "_ "
 
         print(hidden_word)
 

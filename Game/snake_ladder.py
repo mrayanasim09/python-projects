@@ -1,20 +1,25 @@
-#This game is made by MRayan Asim
-#Packages needed:
-#pip install pillow
+# This game is made by MRayan Asim
+# Packages needed:
+# pip install pillow
 import random
 from tkinter import *
 from PIL import Image, ImageTk
 import time
+
 
 # Function for generating a random number on the dice
 def dice_roll():
     dice_number = random.randrange(1, 7, 1)
     return dice_number
 
+
 # Function for creating a pawn for each player
 def create_pawn(self, x, y, r, **kwargs):
     return self.create_oval(x - r, y - r, x + r, y + r, **kwargs)
+
+
 Canvas.create_circle = create_pawn
+
 
 # Class for matching the dice number with the snake and ladder
 class MatchingPosition:
@@ -40,6 +45,7 @@ class MatchingPosition:
             return 65 + x, 510 + y, 1
         else:
             return position[0], position[1], block
+
 
 # Class for displaying the snake and ladder game
 class GameBoard:
@@ -75,10 +81,16 @@ class GameBoard:
         w = OptionMenu(self.canvas, variable, *OPTIONS, command=self.choose)
         w.pack()
         w.place(x=740, y=225)
-        w.config(font=('calibri', 10), bg='white', width=5)
+        w.config(font=("calibri", 10), bg="white", width=5)
 
         # Button for starting the game
-        self.start_game = Button(self.canvas, text="Start", background='white', command=self.start_game, font=("Helvetica"))
+        self.start_game = Button(
+            self.canvas,
+            text="Start",
+            background="white",
+            command=self.start_game,
+            font=("Helvetica"),
+        )
         self.start_game.place(x=770, y=400)
 
     # Function for moving the player pieces
@@ -87,11 +99,18 @@ class GameBoard:
             pass
         else:
             # Screen
-            self.canvas.create_rectangle(810, 150, 760, 100, fill='white', outline='black')
+            self.canvas.create_rectangle(
+                810, 150, 760, 100, fill="white", outline="black"
+            )
             self.canvas.pack(fill=BOTH, expand=1)
             # Button
-            self.diceRoll = Button(self.canvas, text="Roll", background='white',
-                                   command=self.play_game, font=("Helvetica"))
+            self.diceRoll = Button(
+                self.canvas,
+                text="Roll",
+                background="white",
+                command=self.play_game,
+                font=("Helvetica"),
+            )
             self.num_player = int(self.num_player)
             self.diceRoll.place(x=770, y=165)
             self.create_piece()
@@ -105,8 +124,12 @@ class GameBoard:
     def rolling_dice(self, position, turn):
         dice_number = dice_roll()
         # Print dice_roll Value to screen
-        dice_value = Label(self.canvas, text=str(dice_number),
-                           background='white', font=("Helvetica", 25))
+        dice_value = Label(
+            self.canvas,
+            text=str(dice_number),
+            background="white",
+            font=("Helvetica", 25),
+        )
         dice_value.pack()
         dice_value.place(x=775, y=105)
 
@@ -148,12 +171,16 @@ class GameBoard:
 
             # Code for the animation of the piece
             self.canvas.delete(self.player[turn])
-            self.player[turn] = self.canvas.create_circle(self.x, self.y, 15, fill=self.color[turn], outline=self.color[turn])
+            self.player[turn] = self.canvas.create_circle(
+                self.x, self.y, 15, fill=self.color[turn], outline=self.color[turn]
+            )
             self.canvas.update()
             time.sleep(0.25)
 
         print(self.x, self.y, self.block[turn])
-        self.x, self.y, self.block[turn] = MatchingPosition().find_snake_or_ladder(self.block[turn], turn, [self.x, self.y])
+        self.x, self.y, self.block[turn] = MatchingPosition().find_snake_or_ladder(
+            self.block[turn], turn, [self.x, self.y]
+        )
 
         if any(self.y == ai for ai in [390, 425, 460, 150, 185, 220]):
             self.m[turn] = -1
@@ -161,7 +188,9 @@ class GameBoard:
             self.m[turn] = 1
         print(self.x, self.y, self.block[turn])
         self.canvas.delete(self.player[turn])
-        self.player[turn] = self.canvas.create_circle(self.x, self.y, 15, fill=self.color[turn], outline="")
+        self.player[turn] = self.canvas.create_circle(
+            self.x, self.y, 15, fill=self.color[turn], outline=""
+        )
 
     # Function for creating the player pieces
     def create_piece(self):
@@ -169,7 +198,11 @@ class GameBoard:
             if i == 3:
                 self.x += 35
                 self.y -= 105
-            self.player.append(self.canvas.create_circle(self.x, self.y, 15, fill=self.color[i], outline=""))
+            self.player.append(
+                self.canvas.create_circle(
+                    self.x, self.y, 15, fill=self.color[i], outline=""
+                )
+            )
             self.position.append([self.x, self.y])
             self.m.append(1)
             self.block.append(1)
@@ -196,13 +229,15 @@ class GameBoard:
             button = Button(top, text="Dismiss", command=top.destroy)
             button.pack()
 
+
 def main():
     master = Tk()
     master.title("Snake and Ladder")
     master.geometry("850x600")
-    img_path = r"" #enter the path of the image you can view it at: https://github.com/mrayanasim09/python-projects/blob/main/Game/ezgif-5-ad15f112d4.gif
+    img_path = r""  # enter the path of the image you can view it at: https://github.com/mrayanasim09/python-projects/blob/main/Game/ezgif-5-ad15f112d4.gif
     x = GameBoard(master, img_path)
     master.mainloop()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

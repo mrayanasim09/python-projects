@@ -1,6 +1,6 @@
-#This code is made by MRayan Asim
-#Packages needed :
-#pip install pygame
+# This code is made by MRayan Asim
+# Packages needed :
+# pip install pygame
 import http.server
 import socket
 import socketserver
@@ -9,7 +9,7 @@ import pyqrcode
 import os
 
 # Set the directory path to the desired location
-directory_path = r"" #enter the path of file for qr code
+directory_path = r""  # enter the path of file for qr code
 
 # Change the current working directory to the desired location
 os.chdir(directory_path)
@@ -32,7 +32,7 @@ url = pyqrcode.create(link)
 # Save the QR code image as SVG
 url.svg("myqr.svg", scale=8)
 # Open the QR code image in the default web browser
-webbrowser.open('myqr.svg')
+webbrowser.open("myqr.svg")
 
 # Start the HTTP server
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
@@ -40,4 +40,3 @@ with socketserver.TCPServer(("", PORT), Handler) as httpd:
     print("Type this in your browser:", IP)
     print("Or use the QR Code")
     httpd.serve_forever()
-
