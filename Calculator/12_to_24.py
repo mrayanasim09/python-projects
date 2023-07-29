@@ -1,4 +1,4 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 # Function to convert the date format
 def convert24(str1):
     # Checking if last two elements of time
@@ -6,7 +6,7 @@ def convert24(str1):
     if str1[-2:] == "AM" and str1[:2] == "12":
         return "00" + str1[2:-2]
 
-    # remove the AM    
+    # remove the AM
     elif str1[-2:] == "AM":
         return str1[:-2]
 
@@ -18,6 +18,7 @@ def convert24(str1):
     else:
         # add 12 to hours and remove PM
         return str(int(str1[:2]) + 12) + str1[2:8]
+
 
 # Driver Code
 time_input = input("Enter time in 12-hour format (hh:mm:ss AM/PM): ")

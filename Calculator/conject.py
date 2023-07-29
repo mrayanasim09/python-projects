@@ -1,5 +1,6 @@
-#This calculator is made by MRayan Asim
+# This calculator is made by MRayan Asim
 import tkinter as tk
+
 
 def collatz(n):
     steps = 0
@@ -13,11 +14,13 @@ def collatz(n):
     output_text.insert(tk.END, "1\n")
     return steps
 
+
 def calculate_collatz():
     number = int(input_entry.get())
     output_text.delete(1.0, tk.END)
     step_count = collatz(number)
     output_text.insert(tk.END, f"Reached 1 in {step_count} steps.")
+
 
 # Create the GUI window
 window = tk.Tk()
@@ -31,7 +34,9 @@ input_label.pack()
 input_entry = tk.Entry(window)
 input_entry.pack()
 
-calculate_button = tk.Button(window, text="Calculate", command=calculate_collatz, fg="white", bg="dark green")
+calculate_button = tk.Button(
+    window, text="Calculate", command=calculate_collatz, fg="white", bg="dark green"
+)
 calculate_button.pack()
 
 output_label = tk.Label(window, text="Sequence:", fg="white", bg="black")
@@ -49,5 +54,3 @@ output_text.configure(yscrollcommand=scrollbar.set)
 
 # Start the GUI event loop
 window.mainloop()
-
-

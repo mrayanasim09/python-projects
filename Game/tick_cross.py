@@ -1,12 +1,14 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 import random
 import time
+
 
 def print_board(board):
     for i in range(3):
         print(" | ".join(board[i]))
         if i < 2:
             print("---------")
+
 
 def check_winner(board):
     # Check rows
@@ -27,6 +29,7 @@ def check_winner(board):
 
     return None
 
+
 def get_empty_cells(board):
     empty_cells = []
     for i in range(3):
@@ -34,6 +37,7 @@ def get_empty_cells(board):
             if board[i][j] == " ":
                 empty_cells.append((i, j))
     return empty_cells
+
 
 def make_human_move(board):
     while True:
@@ -46,6 +50,7 @@ def make_human_move(board):
         else:
             print("Invalid move. Try again.")
 
+
 def make_computer_move(board, difficulty):
     empty_cells = get_empty_cells(board)
     if empty_cells:
@@ -54,7 +59,9 @@ def make_computer_move(board, difficulty):
         elif difficulty == "medium":
             # Check for winning moves
             for cell in empty_cells:
-                temp_board = [row[:] for row in board]  # Create a temporary board for simulation
+                temp_board = [
+                    row[:] for row in board
+                ]  # Create a temporary board for simulation
                 temp_board[cell[0]][cell[1]] = "O"
                 if check_winner(temp_board) == "O":
                     row, col = cell
@@ -62,7 +69,9 @@ def make_computer_move(board, difficulty):
             else:
                 # Check for blocking moves
                 for cell in empty_cells:
-                    temp_board = [row[:] for row in board]  # Create a temporary board for simulation
+                    temp_board = [
+                        row[:] for row in board
+                    ]  # Create a temporary board for simulation
                     temp_board[cell[0]][cell[1]] = "X"
                     if check_winner(temp_board) == "X":
                         row, col = cell
@@ -77,9 +86,11 @@ def make_computer_move(board, difficulty):
         time.sleep(1)  # Add a delay of 1 second before computer's move
         board[row][col] = "✓"  # Use tick symbol instead of "O"
 
+
 def play_again():
     response = input("Do you want to play again? (yes/no): ")
     return response.lower() == "yes"
+
 
 def select_difficulty():
     while True:
@@ -88,6 +99,7 @@ def select_difficulty():
             return difficulty.lower()
         else:
             print("Invalid difficulty level. Try again.")
+
 
 def play_game():
     while True:
@@ -121,5 +133,6 @@ def play_game():
 
         if not play_again():
             break
+
 
 play_game()

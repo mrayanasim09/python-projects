@@ -3,6 +3,7 @@ import string
 
 sentence = input("Enter the text: ")
 
+
 def count_letters_in_sentence(sentence):
     # Remove any punctuation marks and split the sentence into words
     words = sentence.replace(",", "").replace(".", "").split()
@@ -16,7 +17,6 @@ def count_letters_in_sentence(sentence):
 
     # Return the total count of letters
     return count
-
 
 
 # Printing original string

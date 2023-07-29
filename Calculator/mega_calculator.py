@@ -1,8 +1,8 @@
-#This code is made by MRayan Asim
-#Packages needed:
-#pip install pygame
-#pip install matplotlib.pyplot 
-#pip install sympy
+# This code is made by MRayan Asim
+# Packages needed:
+# pip install pygame
+# pip install matplotlib.pyplot
+# pip install sympy
 import ast
 import math
 import matplotlib.pyplot as plt
@@ -56,9 +56,9 @@ def calculator_2(number_1, number_2, number_3):
 
 while True:
     try:
+
         def calculator_3(number_1, number_2, number_3):
             return number_1 / number_2 / number_3
-
 
         result = round(calculator_3(x, y, z), 3)
         break
@@ -80,9 +80,9 @@ def calculator_4(number_2):
 
 while True:
     try:
+
         def calculator_5(number_1, number_2, number_3):
             return number_1 % number_2 % number_3
-
 
         break
     except ZeroDivisionError:
@@ -111,6 +111,7 @@ def calculator_10(number_3):
 
 def calculator_11(number_1, number_2, number_3):
     return number_1 // number_2 // number_3
+
 
 def round_to_3_decimal_places(value):
     return round(value, 3)
@@ -163,22 +164,33 @@ def get_positive_integer(prompt):
 
 try:
     if x < 0:
-        print("The first number which you enter is a negative number so the computer does not calculated the factorial")
+        print(
+            "The first number which you enter is a negative number so the computer does not calculated the factorial"
+        )
     elif x > 25:
-        print("The first entered number is too large so the computer does not calculated the factorial")
+        print(
+            "The first entered number is too large so the computer does not calculated the factorial"
+        )
     else:
         print(factorial(x), "is the factorial of the first number")
     if y < 0:
         print(
-            "The second number which you enter is a negative number so the computer does not calculated the factorial")
+            "The second number which you enter is a negative number so the computer does not calculated the factorial"
+        )
     elif y > 25:
-        print("The second entered number is too large so the computer does not calculated the factorial")
+        print(
+            "The second entered number is too large so the computer does not calculated the factorial"
+        )
     else:
         print(factorial(y), "is the factorial of the second number")
     if z < 0:
-        print("The third number which you enter is a negative number so the computer does not calculated the factorial")
+        print(
+            "The third number which you enter is a negative number so the computer does not calculated the factorial"
+        )
     elif z > 25:
-        print("The third entered number is too large so the computer does not calculated the factorial")
+        print(
+            "The third entered number is too large so the computer does not calculated the factorial"
+        )
     else:
         print(factorial(z), "is the factorial of the third number")
 except ValueError:
@@ -186,7 +198,10 @@ except ValueError:
 
 while True:
     try:
-        print(round_to_3_decimal_places(math.sqrt(x)), ", the square root of the first number")
+        print(
+            round_to_3_decimal_places(math.sqrt(x)),
+            ", the square root of the first number",
+        )
         break
     except ValueError:
         print("We cannot take square root of a negative number")
@@ -194,7 +209,10 @@ while True:
 
 while True:
     try:
-        print(round_to_3_decimal_places(math.sqrt(y)), ", the square root of the second number")
+        print(
+            round_to_3_decimal_places(math.sqrt(y)),
+            ", the square root of the second number",
+        )
         break
     except ValueError:
         print("We cannot take square root of a negative number")
@@ -202,15 +220,25 @@ while True:
 
 while True:
     try:
-        print(round_to_3_decimal_places(math.sqrt(z)), ", the square root of the third number")
+        print(
+            round_to_3_decimal_places(math.sqrt(z)),
+            ", the square root of the third number",
+        )
         break
     except ValueError:
         print("We cannot take square root of a negative number")
         z = int(input("Enter a positive number for the third number: "))
 
-print(round_to_3_decimal_places(math.pow(x, 1 / 3)), ", the cube root of the first number")
-print(round_to_3_decimal_places(math.pow(y, 1 / 3)), ", the cube root of the second number")
-print(round_to_3_decimal_places(math.pow(z, 1 / 3)), ", the cube root of the third number")
+print(
+    round_to_3_decimal_places(math.pow(x, 1 / 3)), ", the cube root of the first number"
+)
+print(
+    round_to_3_decimal_places(math.pow(y, 1 / 3)),
+    ", the cube root of the second number",
+)
+print(
+    round_to_3_decimal_places(math.pow(z, 1 / 3)), ", the cube root of the third number"
+)
 print(round(x * (math.pi / 180), 3), ", the answer of the first number in radians")
 print(round(y * (math.pi / 180), 3), ", the answer of the second number in radians")
 print(round(z * (math.pi / 180), 3), ", the answer of the third number in radians")
@@ -253,6 +281,7 @@ print(f"{z} in Binary: {binary}")
 print(f"{z} in Octal: {octal}")
 print(f"{z} in Hexadecimal: {hexadecimal}")
 
+
 def is_even(number):
     return number % 2 == 0
 
@@ -260,7 +289,7 @@ def is_even(number):
 def is_prime(number):
     if number < 2:
         return False
-    for i in range(2, int(number ** 0.5) + 1):
+    for i in range(2, int(number**0.5) + 1):
         if number % i == 0:
             return False
     return True
@@ -328,9 +357,9 @@ coprimes_x = get_coprime_numbers(x)
 coprimes_y = get_coprime_numbers(y)
 coprimes_z = get_coprime_numbers(z)
 
-print_coprimes(coprimes_x, 'the coprime numbers for the first number are')
-print_coprimes(coprimes_y, 'the coprime numbers for the second number are')
-print_coprimes(coprimes_z, 'the coprime numbers for the third number are')
+print_coprimes(coprimes_x, "the coprime numbers for the first number are")
+print_coprimes(coprimes_y, "the coprime numbers for the second number are")
+print_coprimes(coprimes_z, "the coprime numbers for the third number are")
 
 
 def calculate_lcm(num_1, num_2, num_3):
@@ -362,7 +391,6 @@ print(f"The LCM of {x}, {y}, and {z} is {lcm}")
 print(f"The HCF of {x}, {y}, and {z} is {hcf}")
 
 while True:
-
     try:
         r = int(input("Enter a number you want to use it as your angle: "))
         break
@@ -391,8 +419,16 @@ print(round(math.log10(r), 3), ", the answer of logarithm with the base of 10")
 
 
 w = input(
-    "Do you want to continue with the old values you entered: " + str(x) + ", " + str(y) + ", " + str(z) + ", " + str(
-        r) + ":")
+    "Do you want to continue with the old values you entered: "
+    + str(x)
+    + ", "
+    + str(y)
+    + ", "
+    + str(z)
+    + ", "
+    + str(r)
+    + ":"
+)
 if w in ("yes", "Yes"):
     print("Ok")
     try:
@@ -448,7 +484,6 @@ else:
     print(round(1 / math.tanh(h), 3), ", the answer of tanh")
 
 
-
 while True:
     try:
         g = input("Do you want to enter a function, graph, or both: ")
@@ -463,12 +498,14 @@ if g.lower() == "graph" or g.lower() == "both":
     try:
         x_values = input("Enter x-values (comma-separated): ")
         x_values = [float(x) for x in x_values.split(",")]
-        y_values = [ast.literal_eval(equation, {"math": math, "x": x}) for x in x_values]
-        plt.plot(x_values, y_values, color='red')
-        plt.xlabel('X-axis')
-        plt.ylabel('Y-axis')
-        plt.title('Graph of ' + equation)
-        plt.scatter(x_values, y_values, color='red')
+        y_values = [
+            ast.literal_eval(equation, {"math": math, "x": x}) for x in x_values
+        ]
+        plt.plot(x_values, y_values, color="red")
+        plt.xlabel("X-axis")
+        plt.ylabel("Y-axis")
+        plt.title("Graph of " + equation)
+        plt.scatter(x_values, y_values, color="red")
         plt.show()
     except (SyntaxError, NameError, TypeError, ZeroDivisionError):
         print("Invalid equation or input. Please try again.")
@@ -478,13 +515,16 @@ if g.lower() == "function" or g.lower() == "both":
     try:
         x_values = input("Enter values of x for the function (comma-separated): ")
         x_values = [float(x) for x in x_values.split(",")]
-        x = symbols('x')
-        y_values = [ast.literal_eval(p, {"math": math, "x": x, "sin": math.sin}) for x in x_values]
-        plt.plot(x_values, y_values, color='blue')
-        plt.xlabel('X-axis')
-        plt.ylabel('Y-axis')
-        plt.title('Graph of function ' + p)
-        plt.scatter(x_values, y_values, color='blue')
+        x = symbols("x")
+        y_values = [
+            ast.literal_eval(p, {"math": math, "x": x, "sin": math.sin})
+            for x in x_values
+        ]
+        plt.plot(x_values, y_values, color="blue")
+        plt.xlabel("X-axis")
+        plt.ylabel("Y-axis")
+        plt.title("Graph of function " + p)
+        plt.scatter(x_values, y_values, color="blue")
         plt.show()
 
         eval_x = float(input("Enter the value of x to evaluate the function at: "))
@@ -495,20 +535,19 @@ if g.lower() == "function" or g.lower() == "both":
 
     print("Now we will do the differentiation and integration")
 
-
     def differentiate_equation(equation, x):
-        x = sympy.Symbol('x')
+        x = sympy.Symbol("x")
         derivative_equation = sympy.diff(equation, x)
         return derivative_equation
 
-
     def integrate_equation(equation, var, lower, upper):
         integrated_equation = sympy.integrate(equation, var)
-        result = integrated_equation.subs(var, upper) - integrated_equation.subs(var, lower)
+        result = integrated_equation.subs(var, upper) - integrated_equation.subs(
+            var, lower
+        )
         return integrated_equation, result
 
-
-    var = sympy.Symbol('x')
+    var = sympy.Symbol("x")
 
     x = float(input("Enter the value of x for differentiation : "))
     derivative_equation = differentiate_equation(p, var)
@@ -523,5 +562,3 @@ if g.lower() == "function" or g.lower() == "both":
     integrated_equation, result = integrate_equation(p, var, lower, upper)
     print(f"The integral of {p} with respect to x is {integrated_equation}")
     print(f"The integral of {p} from {lower} to {upper} is {result}")
-
-

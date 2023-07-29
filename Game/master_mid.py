@@ -1,10 +1,12 @@
-#This code is made by MRayan Asim
-#Packages needed:
-#pip install pygame
+# This code is made by MRayan Asim
+# Packages needed:
+# pip install pygame
 import random
 import time
+
 print("This master mind game is made by MRayan Asim hope you will like this! 😊")
 time.sleep(3)
+
 
 def play_game():
     # Generate a random 4-digit number
@@ -48,7 +50,7 @@ def play_game():
         if count != 0:
             print("Not quite the number. But you did get", count, "digit(s) correct!")
             print("Also, these numbers in your input were correct:")
-            print(*correct, sep=' ')
+            print(*correct, sep=" ")
         else:
             print("None of the numbers in your input match.")
 
@@ -57,24 +59,25 @@ def play_game():
 
     print("Thank you for playing!")
 
+
 def get_high_score():
     try:
         with open("highscore.txt", "r") as file:
             high_score = int(file.read())
     except FileNotFoundError:
         # If the file doesn't exist, set the high score to a large value
-        high_score = float('inf')
+        high_score = float("inf")
     except ValueError:
         # If the file contains invalid data, set the high score to a large value
-        high_score = float('inf')
+        high_score = float("inf")
 
     return high_score
+
 
 def save_high_score(score):
     with open("highscore.txt", "w") as file:
         file.write(str(score))
 
+
 # Start the game
 play_game()
-
-

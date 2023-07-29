@@ -1,10 +1,10 @@
-#This is made by MRayan Asim
+# This is made by MRayan Asim
 def calculate_bmi(weight, height):
     """
     Calculates the Body Mass Index (BMI) based on weight and height.
     Returns the calculated BMI value.
     """
-    bmi = weight / (height ** 2)
+    bmi = weight / (height**2)
     return bmi
 
 
@@ -28,8 +28,8 @@ def get_weight_range(height):
     Provides a suggested weight range based on the height.
     Returns a tuple containing the lower and upper weight limits.
     """
-    lower_limit = 18.5 * (height ** 2)
-    upper_limit = 24.9 * (height ** 2)
+    lower_limit = 18.5 * (height**2)
+    upper_limit = 24.9 * (height**2)
     return lower_limit, upper_limit
 
 
@@ -38,8 +38,8 @@ def get_height_range(weight):
     Provides a suggested height range based on the weight.
     Returns a tuple containing the lower and upper height limits.
     """
-    lower_limit = ((weight / 24.9) ** 0.5)
-    upper_limit = ((weight / 18.5) ** 0.5)
+    lower_limit = (weight / 24.9) ** 0.5
+    upper_limit = (weight / 18.5) ** 0.5
     return lower_limit, upper_limit
 
 

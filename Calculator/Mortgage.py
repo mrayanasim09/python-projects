@@ -1,7 +1,13 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 def calculate_monthly_mortgage(initial_amount, annual_interest_rate, number_of_months):
-    monthly_interest_rate = annual_interest_rate / (12 * 100)  # Convert annual rate to monthly rate
-    monthly_payments = initial_amount * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_months) / ((1 + monthly_interest_rate) ** number_of_months - 1)
+    monthly_interest_rate = annual_interest_rate / (
+        12 * 100
+    )  # Convert annual rate to monthly rate
+    monthly_payments = (
+        initial_amount
+        * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_months)
+        / ((1 + monthly_interest_rate) ** number_of_months - 1)
+    )
     return monthly_payments
 
 
@@ -31,7 +37,9 @@ def main():
     annual_interest_rate = get_float_input("Enter the annual interest rate (%): ")
     number_of_months = get_int_input("Enter the loan term in months: ")
 
-    monthly_payment = calculate_monthly_mortgage(initial_amount, annual_interest_rate, number_of_months)
+    monthly_payment = calculate_monthly_mortgage(
+        initial_amount, annual_interest_rate, number_of_months
+    )
 
     print("\nResult:")
     print(f"The monthly mortgage payment is: ${monthly_payment:.2f}")

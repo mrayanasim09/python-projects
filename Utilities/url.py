@@ -1,23 +1,25 @@
-#This code is made by MRayan Asim
-#packages needed:
-#pip install pyshorteners
-#pip install requests
-#pip install qrcode
+# This code is made by MRayan Asim
+# packages needed:
+# pip install pyshorteners
+# pip install requests
+# pip install qrcode
 import re
 import pyshorteners
 import requests
 import qrcode
 import time
 
+
 def validate_url(url):
     # Regular expression pattern for URL validation
     pattern = re.compile(
-        r'^https?://'  # http:// or https://
-        r'([A-Za-z0-9.-]+)'  # domain
-        r'(:\d+)?'  # optional port number
-        r'(/[A-Za-z0-9_\.-]*)*?$'  # optional path
+        r"^https?://"  # http:// or https://
+        r"([A-Za-z0-9.-]+)"  # domain
+        r"(:\d+)?"  # optional port number
+        r"(/[A-Za-z0-9_\.-]*)*?$"  # optional path
     )
     return bool(re.match(pattern, url))
+
 
 def analyze_url(url):
     if validate_url(url):
@@ -26,14 +28,16 @@ def analyze_url(url):
     else:
         print("Invalid URL.")
 
+
 def shorten_url(url):
     # Initialize the URL shortener
     shortener = pyshorteners.Shortener()
 
     # Shorten the URL
     shortened_url = shortener.tinyurl.short(url)
-    
+
     return shortened_url
+
 
 def is_valid_url(url):
     # Send a HEAD request to check if the URL exists
@@ -42,6 +46,7 @@ def is_valid_url(url):
         return response.status_code == requests.codes.ok
     except requests.exceptions.RequestException:
         return False
+
 
 print("This URL code is made by MRayan Asim. Hope you will like this! 😊")
 time.sleep(3)
@@ -70,6 +75,6 @@ qr = qrcode.QRCode(version=1, box_size=10, border=5)
 qr.add_data(data)
 
 qr.make(fit=True)
-img = qr.make_image(fill_color='red', back_color='white')
+img = qr.make_image(fill_color="red", back_color="white")
 print("The QR code image is saved to your device with the name 'QRCode.png'")
-img.save('QRCode.png')
+img.save("QRCode.png")

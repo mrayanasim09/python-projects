@@ -1,7 +1,8 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 import time
-import random  
-x = ("\nhello we welcome you to our snake game hope you will like this 😊")
+import random
+
+x = "\nhello we welcome you to our snake game hope you will like this 😊"
 print(x.upper())
 time.sleep(6.5)
 # Window dimensions
@@ -33,7 +34,9 @@ font_medium = pygame.font.Font(pygame.font.get_default_font(), 36)
 font_small = pygame.font.Font(pygame.font.get_default_font(), 24)
 
 # Load game sounds
-eat_sound = pygame.mixer.Sound('C:/Users/Muhammad Asim Hanif/Downloads/snake-hissing-6092.wav')
+eat_sound = pygame.mixer.Sound(
+    "C:/Users/Muhammad Asim Hanif/Downloads/snake-hissing-6092.wav"
+)
 
 # Snake's head position and initial movement direction
 snake_head_x = window_width / 2
@@ -99,16 +102,22 @@ while not game_over:
         game_over = True
 
     # Check for snake's collision with the walls
-    if snake_head_x < 0 or snake_head_x >= window_width or snake_head_y < 0 or snake_head_y >= window_height:
+    if (
+        snake_head_x < 0
+        or snake_head_x >= window_width
+        or snake_head_y < 0
+        or snake_head_y >= window_height
+    ):
         game_over = True
 
     # Clear the game window
     window.fill(background_color)
 
-
     # Draw the snake's body
     for segment in snake_segments:
-        pygame.draw.rect(window, snake_color, (segment[0], segment[1], segment_size, segment_size))
+        pygame.draw.rect(
+            window, snake_color, (segment[0], segment[1], segment_size, segment_size)
+        )
 
     # Draw the food
     pygame.draw.rect(window, food_color, (food_x, food_y, segment_size, segment_size))
@@ -125,12 +134,18 @@ while not game_over:
 
 # Game over message
 game_over_text = font_large.render("Game Over", True, game_over_color)
-game_over_rect = game_over_text.get_rect(center=(window_width / 2, window_height / 2 - 50))
+game_over_rect = game_over_text.get_rect(
+    center=(window_width / 2, window_height / 2 - 50)
+)
 window.blit(game_over_text, game_over_rect)
 
 # Final score
-final_score_text = font_medium.render(f"Final Score: {snake_length - 1}", True, text_color)
-final_score_rect = final_score_text.get_rect(center=(window_width / 2, window_height / 2 + 10))
+final_score_text = font_medium.render(
+    f"Final Score: {snake_length - 1}", True, text_color
+)
+final_score_rect = final_score_text.get_rect(
+    center=(window_width / 2, window_height / 2 + 10)
+)
 window.blit(final_score_text, final_score_rect)
 
 # Instructions to restart
@@ -155,8 +170,14 @@ while True:
                 snake_segments.clear()
                 snake_length = 1
                 # Spawn new food
-                food_x = round(random.randrange(0, window_width - segment_size) / 20.0) * 20.0
-                food_y = round(random.randrange(0, window_height - segment_size) / 20.0) * 20.0
+                food_x = (
+                    round(random.randrange(0, window_width - segment_size) / 20.0)
+                    * 20.0
+                )
+                food_y = (
+                    round(random.randrange(0, window_height - segment_size) / 20.0)
+                    * 20.0
+                )
                 game_over = False
             elif event.key == pygame.K_ESCAPE:
                 pygame.quit()
@@ -166,5 +187,5 @@ while True:
 
     clock.tick(10)
 
- # Close the game window 
+# Close the game window
 pygame.quit()

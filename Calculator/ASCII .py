@@ -1,7 +1,7 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 print("Enter a String: ", end="")
 text = input()
 textlength = len(text)
 for char in text:
-	ascii = ord(char)
-	print(char, "\t", ascii)
+    ascii = ord(char)
+    print(char, "\t", ascii)

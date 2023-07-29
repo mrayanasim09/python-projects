@@ -1,17 +1,17 @@
-#This code is made by MRayan Asim
-#The turtle is a built-in module of the python but you can install it by:
-#pip install Pythonturtle
+# This code is made by MRayan Asim
+# The turtle is a built-in module of the python but you can install it by:
+# pip install Pythonturtle
 import turtle
 
-class Cartoon:
 
+class Cartoon:
     def __init__(self):
         self.t = turtle.Turtle()
         self.t.speed(0)
         self.t.pensize(3)
         self.screen = turtle.Screen()
         self.screen.screensize(1800, 800)
-        self.screen.title('Cartoon')
+        self.screen.title("Cartoon")
         self.draw_cartoon()
         self.screen.mainloop()
 
@@ -23,26 +23,26 @@ class Cartoon:
     def draw_eye(self, x, y, size, circle_size):
         self.meme(x, y)
         self.t.seth(0)
-        self.t.fillcolor('#333333')
+        self.t.fillcolor("#333333")
         self.t.begin_fill()
         self.t.circle(size)
         self.t.end_fill()
 
         self.meme(x, y + 10)
-        self.t.fillcolor('#000000')
+        self.t.fillcolor("#000000")
         self.t.begin_fill()
         self.t.circle(size - 12)
         self.t.end_fill()
 
         self.meme(x + circle_size, y + 22)
-        self.t.fillcolor('#ffffff')
+        self.t.fillcolor("#ffffff")
         self.t.begin_fill()
         self.t.circle(size - 12)
         self.t.end_fill()
 
     def draw_mouth(self, x, y):
         self.meme(x, y)
-        self.t.fillcolor('#88141D')
+        self.t.fillcolor("#88141D")
         self.t.begin_fill()
 
         l1 = []
@@ -78,7 +78,7 @@ class Cartoon:
         self.t.end_fill()
 
         self.meme(17, 54)
-        self.t.fillcolor('#DD716F')
+        self.t.fillcolor("#DD716F")
         self.t.begin_fill()
         self.t.seth(145)
         self.t.circle(40, 86)
@@ -100,7 +100,7 @@ class Cartoon:
         turtle.tracer(False)
         self.meme(x, y)
         self.t.seth(300)
-        self.t.fillcolor('#DD4D28')
+        self.t.fillcolor("#DD4D28")
         self.t.begin_fill()
         a = 2.3
         for i in range(120):
@@ -118,7 +118,7 @@ class Cartoon:
     def draw_ear(self, x, y):
         self.meme(x, y)
         self.t.seth(60)
-        self.t.fillcolor('#DD4D28')
+        self.t.fillcolor("#DD4D28")
         self.t.begin_fill()
         a = 2.3
         for i in range(120):
@@ -134,7 +134,7 @@ class Cartoon:
 
     def draw_hair(self, x, y):
         self.meme(x, y)
-        self.t.fillcolor('#F6D02F')
+        self.t.fillcolor("#F6D02F")
         self.t.begin_fill()
         self.t.seth(200)
         self.t.circle(400, 7)
@@ -164,7 +164,7 @@ class Cartoon:
         self.t.circle(-80, 98)
 
         self.meme(-126.82, 156.84)
-        self.t.fillcolor('#F6D02F')
+        self.t.fillcolor("#F6D02F")
         self.t.begin_fill()
         self.t.circle(130, 40)
         self.t.circle(100, 105)
@@ -271,7 +271,7 @@ class Cartoon:
         self.t.circle(-5, 160)
         self.t.fd(10)
         self.meme(-30, 280)
-        self.t.fillcolor('#228B22')
+        self.t.fillcolor("#228B22")
         self.t.begin_fill()
         self.t.seth(100)
         self.t.circle(30, 180)
@@ -282,7 +282,7 @@ class Cartoon:
         self.t.right(90)
         self.t.fd(15)
         self.t.end_fill()
-        self.t.pencolor('#000000')
+        self.t.pencolor("#000000")
 
     def draw_cartoon(self):
         self.draw_eye(-85, 90, 22, 6)
@@ -304,7 +304,6 @@ class Cartoon:
         self.draw_hair(130, 125)
         self.draw_topi()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     cartoon = Cartoon()
-
-

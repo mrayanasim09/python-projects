@@ -1,9 +1,10 @@
-#This code is made by MRayan Asim
-#Packages needed:
-#pip install hijri_converter
+# This code is made by MRayan Asim
+# Packages needed:
+# pip install hijri_converter
 import datetime
 import time
 from hijri_converter import convert
+
 
 def get_day_of_week(date_str):
     try:
@@ -13,17 +14,21 @@ def get_day_of_week(date_str):
     except ValueError:
         return "Invalid date format. Please enter the date in dd-mm-yyyy format."
 
+
 def get_days_until_birthday(date_str):
     try:
         today = datetime.datetime.now().date()
         birth_date = datetime.datetime.strptime(date_str, "%d-%m-%Y").date()
         next_birthday = datetime.date(today.year, birth_date.month, birth_date.day)
         if today > next_birthday:
-            next_birthday = datetime.date(today.year + 1, birth_date.month, birth_date.day)
+            next_birthday = datetime.date(
+                today.year + 1, birth_date.month, birth_date.day
+            )
         days_left = (next_birthday - today).days
         return days_left
     except ValueError:
         return "Invalid date format. Please enter the date in dd-mm-yyyy format."
+
 
 def get_islamic_date(date_str):
     try:
@@ -32,6 +37,7 @@ def get_islamic_date(date_str):
         return hijri_date
     except ValueError:
         return "Invalid date format. Please enter the date in dd-mm-yyyy format."
+
 
 def get_zodiac_sign(day, month):
     if (month == 1 and day >= 20) or (month == 2 and day <= 18):
@@ -59,6 +65,7 @@ def get_zodiac_sign(day, month):
     else:
         return "Capricorn"
 
+
 def calculate_life_path_number(date_str):
     date = datetime.datetime.strptime(date_str, "%d-%m-%Y")
     day = date.day
@@ -70,6 +77,7 @@ def calculate_life_path_number(date_str):
     while total > 9:
         total = sum(int(digit) for digit in str(total))
     return total
+
 
 def get_birthstone(month):
     birthstones = {
@@ -84,9 +92,10 @@ def get_birthstone(month):
         9: "Sapphire",
         10: "Opal",
         11: "Topaz",
-        12: "Turquoise"
+        12: "Turquoise",
     }
     return birthstones.get(month, "Unknown")
+
 
 def get_birth_flower(month):
     birth_flowers = {
@@ -101,11 +110,14 @@ def get_birth_flower(month):
         9: "Aster",
         10: "Marigold",
         11: "Chrysanthemum",
-        12: "Poinsettia"
+        12: "Poinsettia",
     }
     return birth_flowers.get(month, "Unknown")
 
-print("\nHello, this birthday finder is made by MRayan Asim. Hope you will like this! 😊")
+
+print(
+    "\nHello, this birthday finder is made by MRayan Asim. Hope you will like this! 😊"
+)
 time.sleep(3)
 
 # Get user input

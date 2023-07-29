@@ -1,6 +1,6 @@
-#This code is made by MRayan Asim
-#Packages to install:
-#pip install pyautogui
+# This code is made by MRayan Asim
+# Packages to install:
+# pip install pyautogui
 import pyautogui as pt
 import time
 
@@ -12,8 +12,8 @@ time.sleep(5)
 while i < int(limit):
     pt.typewrite(message)
     # the message is written where -
-    # the cursor belongs      
+    # the cursor belongs
 
     pt.press("enter")
 
-    i+=1
+    i += 1

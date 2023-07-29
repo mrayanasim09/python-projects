@@ -1,7 +1,7 @@
-#This is made by MRayan Asim
-#packages needed:
-#pip install numpy
-#pip install  matplotlib.pyplot
+# This is made by MRayan Asim
+# packages needed:
+# pip install numpy
+# pip install  matplotlib.pyplot
 import ast
 import matplotlib.pyplot as plt
 import numpy as np
@@ -26,8 +26,8 @@ x_values = np.linspace(x_start, x_end, num=100)
 y_values = [ast.literal_eval(equation) for x in x_values]
 
 plt.plot(x_values, y_values)
-plt.xlabel('X-axis')
-plt.ylabel('Y-axis')
-plt.title('Graph of ' + equation)
-plt.scatter(x_values, y_values, color='red')
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.title("Graph of " + equation)
+plt.scatter(x_values, y_values, color="red")
 plt.show()

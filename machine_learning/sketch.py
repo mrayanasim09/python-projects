@@ -1,7 +1,8 @@
-#This code is made by MRayan Asim 
-#Packages needed:
-#pip install opencv-python
+# This code is made by MRayan Asim
+# Packages needed:
+# pip install opencv-python
 import cv2
+
 
 def sketch_image(image_path):
     # Read the image
@@ -21,8 +22,9 @@ def sketch_image(image_path):
 
     return sketch
 
+
 # Provide the path to your input image
-input_image_path = r"" #enter the path of the images you want to make skecth of 
+input_image_path = r""  # enter the path of the images you want to make skecth of
 
 # Generate the sketch
 sketch = sketch_image(input_image_path)

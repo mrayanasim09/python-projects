@@ -1,58 +1,61 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 import random
 import time
-print("hello this dice rolling game is made by MRayan Asim hope you will like this!😊") 
+
+print("hello this dice rolling game is made by MRayan Asim hope you will like this!😊")
 time.sleep(3)
+
+
 def roll_dice():
     dice_faces = [
         # Dice face 1
-        '''
+        """
         ----------
         |        |
         |   O    |
         |        |
         ----------
-        ''',
+        """,
         # Dice face 2
-        '''
+        """
         ----------
         | O      |
         |        |
         |      O |
         ----------
-        ''',
+        """,
         # Dice face 3
-        '''
+        """
         ----------
         | O      |
         |   O    |
         |      O |
         ----------
-        ''',
+        """,
         # Dice face 4
-        '''
+        """
         ----------
         | O   O |
         |        |
         | O   O |
         ----------
-        ''',
+        """,
         # Dice face 5
-        '''
+        """
         ----------
         | O   O |
         |   O    |
         | O   O |
         ----------
-        ''',
+        """,
         # Dice face 6
-        '''
+        """
         ----------
         | O O O |
         |        |
         | O O O |
         ----------
-        '''
+        """,
     ]
 
     min_value = 1
@@ -77,9 +80,10 @@ def roll_dice():
         print("Score:", score)
 
         roll_again_input = input("Roll the dice again? (y/n): ")
-        roll_again = roll_again_input.lower() == 'y'
+        roll_again = roll_again_input.lower() == "y"
 
     print("Final score:", score)
     print("Thank you for playing!")
+
 
 roll_dice()
