@@ -24,10 +24,13 @@ jobs:
           pip install black flake8
 
       - name: Format code with black (non-fatal)
-        run: black . || echo "Black formatting failed."
+        run: black --diff . | patch -p1 || echo "Black formatting failed."
 
       - name: Lint code with flake8 (non-fatal)
-        run: flake8 . || echo "Flake8 linting failed."
+        run: flake8 . > flake8_output.txt || echo "Flake8 linting failed."
+
+      - name: Check if any issues found by flake8
+        run: test -s flake8_output.txt || exit 0
 
       - name: Create a new branch
         run: |
