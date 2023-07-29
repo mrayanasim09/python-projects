@@ -37,6 +37,12 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git checkout -b code-quality-improvement
+
+      - name: Pull latest changes from the remote branch
+        run: git pull origin code-quality-improvement
+
+      - name: Apply code formatting and linting fixes
+        run: |
           git add -A
           git commit -m "Apply code formatting and linting fixes"
 
