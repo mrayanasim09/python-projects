@@ -1,4 +1,5 @@
 # This code is made by MRayan Asim
+import sys
 import time
 import random
 
@@ -181,7 +182,7 @@ while True:
                 game_over = False
             elif event.key == pygame.K_ESCAPE:
                 pygame.quit()
-                exit()
+                sys.exit()
     if not game_over:
         break
 

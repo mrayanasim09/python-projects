@@ -94,7 +94,7 @@ while True:
     a = cv2.waitKey(1)
     if a == ord("q"):
         break
-    elif a == ord("s") and first_read:
+    if a == ord("s") and first_read:
         # This will start the detection
         first_read = False
 

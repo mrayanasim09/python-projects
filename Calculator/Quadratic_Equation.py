@@ -64,15 +64,14 @@ def solve_quadratic(a, b, c):
         root1 = (-b + np.sqrt(discriminant)) / (2 * a)
         root2 = (-b - np.sqrt(discriminant)) / (2 * a)
         return root1, root2
-    elif discriminant == 0:
+    if discriminant == 0:
         root = -b / (2 * a)
         return root, root
-    else:
-        real_part = -b / (2 * a)
-        imaginary_part = np.sqrt(-discriminant) / (2 * a)
-        root1 = complex(real_part, imaginary_part)
-        root2 = complex(real_part, -imaginary_part)
-        return root1, root2
+    real_part = -b / (2 * a)
+    imaginary_part = np.sqrt(-discriminant) / (2 * a)
+    root1 = complex(real_part, imaginary_part)
+    root2 = complex(real_part, -imaginary_part)
+    return root1, root2
 
 
 # Factorize quadratic equation into two brackets

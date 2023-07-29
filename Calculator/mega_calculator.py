@@ -144,7 +144,7 @@ print(calculator_10(z), ". the cube of the third number")
 def factorial(number):
     if number < 0:
         raise ValueError("Factorial is not defined for negative numbers")
-    elif number == 0:
+    if number == 0:
         return 1
     else:
         return number * factorial(number - 1)
@@ -347,7 +347,6 @@ def get_coprime_numbers(num):
 def print_coprimes(co_primes, variable):
     if max(co_primes) >= 100:
         print(f"The entered number for {variable} is greater than 100.")
-        pass
     else:
         print(f"The coprime numbers for {variable} are:")
         print(co_primes)
@@ -459,7 +458,7 @@ else:
         z = int(input("Enter your third number: "))
         h = int(input("Enter the number in degree:"))
 
-    if type(x) == str or type(y) == str or type(z) == str or type(h) == str:
+    if type(x) is str or type(y) is str or type(z) is str or type(h) is str:
         print("You entered a invalid number please enter them again")
         x = int(input("Enter the first number: "))
         y = int(input("Enter your second number: "))

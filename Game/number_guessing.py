@@ -21,7 +21,7 @@ while count < math.log(upper - lower + 1, 2):
     if x == guess:
         print("Congratulations you did it in ", count, " try")
         break
-    elif x > guess:
+    if x > guess:
         print("You guessed too small!")
     elif x < guess:
         print("You Guessed too high!")

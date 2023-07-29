@@ -1,4 +1,3 @@
-# This code is made by MRayan Asim
 from tkinter import *
 import numpy as np
 
@@ -172,8 +171,7 @@ class Tic_Tac_Toe:
     def is_grid_occupied(self, logical_position):
         if self.board_status[logical_position[0]][logical_position[1]] == 0:
             return False
-        else:
-            return True
+        return True
 
     def is_winner(self, player):
         player = -1 if player == "X" else 1
@@ -261,7 +259,6 @@ class Tic_Tac_Toe:
             # Check if game is concluded
             if self.is_gameover():
                 self.display_gameover()
-                # print('Done')
         else:  # Play Again
             self.canvas.delete("all")
             self.play_again()

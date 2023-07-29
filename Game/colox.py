@@ -133,12 +133,10 @@ def game(lead_y, lead_X, speed, count):
                 pygame.quit()
 
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_UP]:
-            if lead_y > 40:  # Prevent going beyond top boundary
-                lead_y -= 10
-        if keys[pygame.K_DOWN]:
-            if lead_y < height - 80:  # Prevent going beyond bottom boundary
-                lead_y += 10
+        if keys[pygame.K_UP] and lead_y > 40:  # Prevent going beyond top boundary
+            lead_y -= 10
+        if keys[pygame.K_DOWN] and lead_y < height - 80:  # Prevent going beyond bottom boundary
+            lead_y += 10
         screen.fill((65, 25, 64))
         clock.tick(speed)
 
@@ -154,9 +152,12 @@ def game(lead_y, lead_X, speed, count):
             pygame.draw.rect(screen, startl, [width - 100, 0, 100, 40])
         else:
             pygame.draw.rect(screen, startd, [width - 100, 0, 100, 40])
-        if width - 100 < mouse_pos[0] < width and 0 < mouse_pos[1] < 40:
-            if ev.type == pygame.MOUSEBUTTONDOWN:
-                pygame.quit()
+        if (
+            width - 100 < mouse_pos[0] < width
+            and 0 < mouse_pos[1] < 40
+            and ev.type == pygame.MOUSEBUTTONDOWN
+        ):
+            pygame.quit()
 
         if e_p[0] > 0 and e_p[0] <= width:
             e_p[0] -= 10

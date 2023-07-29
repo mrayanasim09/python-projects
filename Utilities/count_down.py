@@ -2,6 +2,7 @@
 # Packages needed:
 # pip install pygame
 # pip install threading
+import sys
 import threading
 import time
 import pygame
@@ -46,7 +47,7 @@ def countdown_timer(seconds):
 start_input = input("Enter 'start' to begin the countdown: ")
 if start_input.lower() != "start":
     print("Invalid input. Exiting...")
-    quit()
+    sys.exit()
 
 # Get the user input for the countdown duration
 seconds = int(input("Enter the countdown duration in seconds: "))

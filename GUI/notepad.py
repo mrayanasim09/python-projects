@@ -1,4 +1,3 @@
-# This code is made by MRayan Asim
 import os
 from tkinter import *
 from tkinter.messagebox import *
@@ -105,7 +104,6 @@ class Notepad:
 
     def __quitApplication(self):
         self.__root.destroy()
-        # exit()
 
     @staticmethod
     def __showAbout():
@@ -138,7 +136,7 @@ class Notepad:
         self.__thisTextArea.delete(1.0, END)
 
     def __saveFile(self):
-        if self.__file == None:
+        if self.__file is None:
             # Save as new file
             self.__file = asksaveasfilename(
                 initialfile="Untitled.txt",

@@ -12,8 +12,8 @@ def get_wifi_profiles():
     try:
         # Get the Wi-Fi profiles using the 'netsh' command
         result = subprocess.run(
-            ["netsh", "wlan", "show", "profiles"], capture_output=True, text=True
-        )
+            ["netsh", "wlan", "show", "profiles"], capture_output=True, text=True, 
+        check=True)
         output = result.stdout
 
         # Split the output into lines
@@ -40,7 +40,7 @@ def get_wifi_password(profile):
             ["netsh", "wlan", "show", "profile", profile, "key=clear"],
             capture_output=True,
             text=True,
-        )
+        check=True)
         output = result.stdout
 
         # Find the line containing the Wi-Fi password

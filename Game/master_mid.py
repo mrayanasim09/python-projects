@@ -20,7 +20,7 @@ def play_game():
         try:
             # Get the user's guess
             n = int(input("Guess the 4-digit number: "))
-            if not (1000 <= n <= 9999):
+            if not 1000 <= n <= 9999:
                 raise ValueError
         except ValueError:
             print("Please enter a valid 4-digit number!")

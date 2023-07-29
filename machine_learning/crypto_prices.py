@@ -90,8 +90,7 @@ def main():
         # Get user input for the number of days ahead to predict
         num_days_ahead = int(input("Enter the number of days ahead for prediction: "))
 
-        for i in range(len(crypto_symbols)):
-            crypto_symbol = crypto_symbols[i]
+        for i, crypto_symbol in enumerate(crypto_symbols):
             crypto_name = crypto_names[i]
 
             crypto_data = download_crypto_data(crypto_symbol, end_date)

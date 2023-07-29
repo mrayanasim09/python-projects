@@ -195,10 +195,7 @@ def draw_layer_of_the_cake(fill_color, border_color, cursor_size, x, y, width, h
 my_turtle_screen.bgcolor("#FFFDD0")
 
 # # Creating an empty list of different parts of our cake
-parts_of_cake = []
-parts_of_cake.append(["#A020F0", "#000000", 3, 30])
-parts_of_cake.append(["#55FF55", "#000000", 3, 20])
-parts_of_cake.append(["#B87333", "#000000", 3, 60])
+parts_of_cake = [["#A020F0", "#000000", 3, 30], ["#55FF55", "#000000", 3, 20], ["#B87333", "#000000", 3, 60]]
 
 # drawing an plate for our cake using draw_layer_of_the_cake() function
 draw_layer_of_the_cake("#FFC0CB", "#000000", 3, -220, y_coordinate - 70, 400, 10)

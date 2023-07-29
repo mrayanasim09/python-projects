@@ -1,6 +1,3 @@
-# This code is made by MRayan Asim
-# turtle is installed python module but you can install it by:
-# pip install PythonTurtle
 
 from turtle import *
 
@@ -121,7 +118,6 @@ def face():
     begin_fill()
     circle(120, 100)
     seth(180)
-    # print(pos())
     fd(121)
     pendown()
     seth(215)
@@ -185,7 +181,6 @@ def Doraemon():
     seth(-89)
     circle(-1000, 10)
 
-    # print(pos())
 
     seth(180)
     fd(70)
@@ -194,7 +189,6 @@ def Doraemon():
     seth(180)
     fd(70)
 
-    # print(pos())
     seth(100)
     circle(-1000, 9)
 
@@ -203,7 +197,6 @@ def Doraemon():
     seth(230)
     fd(40)
 
-    # print(pos())
 
     circle(-30, 230)
     seth(45)
@@ -276,7 +269,6 @@ def Doraemon():
     fd(90)
     seth(70)
     fillcolor("#ffd200")
-    # print(pos())
     begin_fill()
     circle(-20)
     end_fill()

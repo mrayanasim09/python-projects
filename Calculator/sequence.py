@@ -8,7 +8,7 @@ def fibonacci_sequence(n):
     sequence = []
     if n <= 0:
         return sequence
-    elif n == 1:
+    if n == 1:
         sequence = [0]
     elif n == 2:
         sequence = [0, 1]

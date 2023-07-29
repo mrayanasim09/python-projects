@@ -1,7 +1,3 @@
-# This code is made by MRayan Asim
-# Packages needed:
-# pip install  pillow
-# Drawing Application Using Python
 
 # importing all the necessary Libraries
 
@@ -17,9 +13,7 @@ class Draw:
         # Defining title and Size of the Tkinter Window GUI
         self.root = root
         self.root.title("Paint application by MRayan Asim")
-        #         self.root.geometry("810x530")
         self.root.configure(background="white")
-        #         self.root.resizable(0,0)
 
         # variables for pointer and Eraser
         self.pointer = "black"
@@ -191,7 +185,6 @@ class Draw:
             file_ss = filedialog.asksaveasfilename(defaultextension="jpg")
             # print(file_ss)
             x = self.root.winfo_rootx() + self.background.winfo_x()
-            # print(x, self.background.winfo_x())
             y = self.root.winfo_rooty() + self.background.winfo_y()
             # print(y)
 

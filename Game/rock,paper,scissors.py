@@ -7,14 +7,13 @@ print("this rock paper scissors game is made by MRayan Asim hope you will like t
 def play_game(player_choice, computer_choice):
     if player_choice == computer_choice:
         return "tie"
-    elif (
+    if (
         (player_choice == "rock" and computer_choice == "scissors")
         or (player_choice == "paper" and computer_choice == "rock")
         or (player_choice == "scissors" and computer_choice == "paper")
     ):
         return "player"
-    else:
-        return "computer"
+    return "computer"
 
 
 def rock_paper_scissors():

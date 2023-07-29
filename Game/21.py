@@ -1,4 +1,5 @@
 # this code is made by MRayan Asim
+import sys
 import time
 
 print("This 21 game is made by MRayan Asim hope you will like this! 😊")
@@ -16,7 +17,7 @@ def nearestMultiple(num):
 def lose1():
     print("\n\nYOU LOSE!")
     print("Better luck next time!")
-    exit(0)
+    sys.exit(0)
 
 
 def check(xyz):
@@ -63,7 +64,7 @@ def start1():
 
                     last = xyz[-1]
 
-                    if check(xyz) == True:
+                    if check(xyz) is True:
                         if last == 21:
                             lose1()
                         elif inp > 10:
@@ -111,26 +112,26 @@ def start1():
                         xyz.append(int(input("> ")))
                         i = i + 1
                     last = xyz[-1]
-                    if check(xyz) == True:
+                    if check(xyz) is True:
                         near = nearestMultiple(last)
                         comp = near - last
                         if comp == 4:
                             comp = 3
                         else:
-                            comp = comp
+                            pass
                     else:
                         print("\nYou did not input consecutive integers.")
                         lose1()
             print("\n\nCONGRATULATIONS!!!")
             print("YOU WON!")
-            exit(0)
+            sys.exit(0)
 
         else:
             print("Wrong choice")
 
 
 game = True
-while game == True:
+while game is True:
     print("Player 2 is Computer.")
     print("Do you want to play the 21 number game? (Yes / No)")
     ans = input("> ")
@@ -141,7 +142,7 @@ while game == True:
         nex = input("> ")
         if "y" in ans.lower():
             print("You are quitting the game...")
-            exit(0)
+            sys.exit(0)
         elif "n" in nex.lower():
             print("Continuing...")
         else:

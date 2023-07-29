@@ -47,8 +47,7 @@ def make_human_move(board):
         if row in range(3) and col in range(3) and board[row][col] == " ":
             board[row][col] = "X"
             break
-        else:
-            print("Invalid move. Try again.")
+        print("Invalid move. Try again.")
 
 
 def make_computer_move(board, difficulty):
@@ -97,8 +96,7 @@ def select_difficulty():
         difficulty = input("Select difficulty level (easy/medium/hard): ")
         if difficulty.lower() in ["easy", "medium", "hard"]:
             return difficulty.lower()
-        else:
-            print("Invalid difficulty level. Try again.")
+        print("Invalid difficulty level. Try again.")
 
 
 def play_game():
