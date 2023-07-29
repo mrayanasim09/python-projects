@@ -24,3 +24,11 @@ jobs:
       - name: Run flake8 for Indentation Errors
         run: flake8 --select=E --show-source .
 
+      - name: Create Pull Request
+        if: ${{ failure() }}
+        uses: marvinpinto/action-automatic-pull-request@main
+        with:
+          branch: fix-indentation-errors
+          title: "Fix Python Indentation Errors"
+          body: "This pull request was automatically created to fix Python indentation errors found in the code."
+          token: ${{ secrets.GITHUB_TOKEN }}
