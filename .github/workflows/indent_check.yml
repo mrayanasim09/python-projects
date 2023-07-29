@@ -22,16 +22,20 @@ jobs:
         run: pip install flake8
 
       - name: Run flake8 for Indentation Errors
+        run: flake8 --select=E --show-source --quiet .
+        continue-on-error: true
+        id: lint
+
+      - name: Check flake8 status
         run: |
-          flake8 --select=E --show-source .
-          status=$?
-          if [ $status -eq 0 ]; then
+          if [ ${{ steps.lint.outcome }} == 'success' ]; then
             echo "No indentation errors found."
+            exit 0
           else
+            echo "Indentation errors found. Creating a pull request with the changes..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git checkout -b fix-indentation-errors
             git commit -a -m "Fix Python indentation errors"
             git push origin fix-indentation-errors
-            echo "Indentation errors found. Created a pull request with the changes."
           fi
