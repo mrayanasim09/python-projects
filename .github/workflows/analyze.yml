@@ -1,31 +1,50 @@
-name: Analyze Code Changes
+name: Code Quality Check
 
 on:
-  push:
-    branches:
-      - main  # Change this to your main branch name if different
+  pull_request:
+    types:
+      - synchronize
+      - opened
 
 jobs:
-  analyze_changes:
-    name: Analyze Changes in Last Commit
+  code_quality:
+    name: Code Quality Check
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: List changed files in last commit
-        run: |
-          git diff --name-only HEAD^..HEAD > changed_files.txt
-          cat changed_files.txt
-
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'  # Replace with the version of Python you want to use
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt  # Replace with your project's dependencies file
+      - name: Install black and flake8
+        run: |
+          pip install black flake8
 
-      - name: Run analysis on changed files
-        run: python analyze_changes.py
+      - name: Format code with black
+        run: black .
+
+      - name: Lint code with flake8
+        run: flake8 .
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Apply code formatting and linting fixes"
+
+      - name: Push changes to branch
+        run: git push origin ${{ github.head_ref }}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Apply code formatting and linting fixes"
+          title: "Code Quality Improvement"
+          body: "This pull request applies code formatting and linting fixes to improve code quality."
+          branch: "code-quality-improvement"
