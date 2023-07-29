@@ -28,7 +28,7 @@ jobs:
 
       - name: Check flake8 status
         run: |
-          if [ ${{ steps.lint.outcome }} == 'failure' ]; then
+          if [ ${{ failure() }} == 'true' ]; then
             echo "Indentation errors found. Creating a pull request with the changes..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
