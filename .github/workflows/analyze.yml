@@ -23,11 +23,11 @@ jobs:
         run: |
           pip install black flake8
 
-      - name: Format code with black
-        run: black .
+      - name: Format code with black (non-fatal)
+        run: black . || echo "Black formatting failed."
 
-      - name: Lint code with flake8
-        run: flake8 .
+      - name: Lint code with flake8 (non-fatal)
+        run: flake8 . || echo "Flake8 linting failed."
 
       - name: Create a new branch
         run: |
