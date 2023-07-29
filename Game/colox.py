@@ -218,7 +218,7 @@ def game(lead_y, lead_X, speed, count):
             game_over()
 
         pygame.draw.rect(screen, blue, [e1_p[0], e1_p[1], enemy_size, enemy_size])
-        score1 = smallfont.render("Score: " + str(count), True, white)
+        score1 = smallfont.render(f"Score: {str(count)}", True, white)
         screen.blit(score1, (width - 120, height - 40))
         screen.blit(exit2, (width - 80, 0))
         pygame.display.update()

@@ -6,10 +6,7 @@ def collatz(n):
     steps = 0
     while n != 1:
         output_text.insert(tk.END, str(n) + "\n")
-        if n % 2 == 0:
-            n = n // 2
-        else:
-            n = 3 * n + 1
+        n = n // 2 if n % 2 == 0 else 3 * n + 1
         steps += 1
     output_text.insert(tk.END, "1\n")
     return steps

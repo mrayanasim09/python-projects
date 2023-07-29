@@ -123,8 +123,7 @@ class TaskManagerGUI:
             )
 
     def edit_task(self):
-        selected_task_index = self.task_listbox.curselection()
-        if selected_task_index:
+        if selected_task_index := self.task_listbox.curselection():
             task = self.tasks[selected_task_index[0]]
             edit_window = Toplevel(self.root)
             edit_window.title("Edit Task")
@@ -199,14 +198,12 @@ class TaskManagerGUI:
             )
 
     def delete_task(self):
-        selected_task_index = self.task_listbox.curselection()
-        if selected_task_index:
+        if selected_task_index := self.task_listbox.curselection():
             task = self.tasks[selected_task_index[0]]
-            confirmation = messagebox.askyesno(
+            if confirmation := messagebox.askyesno(
                 "Confirm Deletion",
                 f"Are you sure you want to delete the task:\n\nTitle: {task.title}\nCategory: {task.category}\nDetails: {task.details}\nDue Date: {task.due_date}\nPriority: {task.priority}",
-            )
-            if confirmation:
+            ):
                 self.tasks.pop(selected_task_index[0])
                 self.display_tasks()
         else:

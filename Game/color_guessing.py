@@ -60,7 +60,7 @@ def nextColour():
         label.config(fg=str(colours[1]), text=str(colours[0]))
 
         # update the score.
-        scoreLabel.config(text="Score: " + str(score))
+        scoreLabel.config(text=f"Score: {str(score)}")
 
 
 # Countdown timer function
@@ -73,7 +73,7 @@ def countdown():
         timeleft -= 1
 
         # update the time left label
-        timeLabel.config(text="Time left: " + str(timeleft))
+        timeLabel.config(text=f"Time left: {timeleft}")
 
         # run the function again after 1 second.
         timeLabel.after(1000, countdown)
@@ -104,7 +104,7 @@ scoreLabel.pack()
 
 # add a time left label
 timeLabel = tkinter.Label(
-    root, text="Time left: " + str(timeleft), font=("Helvetica", 12)
+    root, text=f"Time left: {str(timeleft)}", font=("Helvetica", 12)
 )
 
 timeLabel.pack()

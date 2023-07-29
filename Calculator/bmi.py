@@ -4,8 +4,7 @@ def calculate_bmi(weight, height):
     Calculates the Body Mass Index (BMI) based on weight and height.
     Returns the calculated BMI value.
     """
-    bmi = weight / (height**2)
-    return bmi
+    return weight / (height**2)
 
 
 def get_bmi_category(bmi):
@@ -48,18 +47,18 @@ def main():
     print("--------------------")
 
     weight_unit = input("Enter weight unit (lbs or kgs): ")
-    weight = float(input("Enter your weight in {}: ".format(weight_unit)))
+    weight = float(input(f"Enter your weight in {weight_unit}: "))
 
     height_unit = input("Enter height unit (feet or meters): ")
-    height = float(input("Enter your height in {}: ".format(height_unit)))
+    height = float(input(f"Enter your height in {height_unit}: "))
 
     # Convert weight to kg if entered in lbs
     if weight_unit.lower() == "lbs":
-        weight = weight * 0.453592
+        weight *= 0.453592
 
     # Convert height to meters if entered in feet
     if height_unit.lower() == "feet":
-        height = height * 0.3048
+        height *= 0.3048
 
     bmi = calculate_bmi(weight, height)
     category = get_bmi_category(bmi)
@@ -67,7 +66,7 @@ def main():
     print("\nResults")
     print("--------------------")
     print("BMI: {:.2f}".format(bmi))
-    print("Category: {}".format(category))
+    print(f"Category: {category}")
 
     weight_range = get_weight_range(height)
     height_range = get_height_range(weight)

@@ -9,8 +9,7 @@ from hijri_converter import convert
 def get_day_of_week(date_str):
     try:
         date = datetime.datetime.strptime(date_str, "%d-%m-%Y")
-        day_of_week = date.strftime("%A")
-        return day_of_week
+        return date.strftime("%A")
     except ValueError:
         return "Invalid date format. Please enter the date in dd-mm-yyyy format."
 
@@ -24,8 +23,7 @@ def get_days_until_birthday(date_str):
             next_birthday = datetime.date(
                 today.year + 1, birth_date.month, birth_date.day
             )
-        days_left = (next_birthday - today).days
-        return days_left
+        return (next_birthday - today).days
     except ValueError:
         return "Invalid date format. Please enter the date in dd-mm-yyyy format."
 
@@ -33,8 +31,7 @@ def get_days_until_birthday(date_str):
 def get_islamic_date(date_str):
     try:
         date = datetime.datetime.strptime(date_str, "%d-%m-%Y")
-        hijri_date = convert.Gregorian(date.year, date.month, date.day).to_hijri()
-        return hijri_date
+        return convert.Gregorian(date.year, date.month, date.day).to_hijri()
     except ValueError:
         return "Invalid date format. Please enter the date in dd-mm-yyyy format."
 
@@ -148,7 +145,7 @@ birthstone = get_birthstone(birth_month)
 birth_flower = get_birth_flower(birth_month)
 
 # Display the results
-print("You were born on a", day + ".")
+print("You were born on a", f"{day}.")
 print("There are", days_left, "days left until your next birthday.")
 print("According to the Islamic calendar, your birth date is:", islamic_date)
 print("Your zodiac sign is:", zodiac_sign)

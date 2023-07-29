@@ -33,10 +33,7 @@ def shorten_url(url):
     # Initialize the URL shortener
     shortener = pyshorteners.Shortener()
 
-    # Shorten the URL
-    shortened_url = shortener.tinyurl.short(url)
-
-    return shortened_url
+    return shortener.tinyurl.short(url)
 
 
 def is_valid_url(url):

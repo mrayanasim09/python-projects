@@ -53,11 +53,13 @@ class Main(Tkinter.Tk):
         now = (hour, now.tm_min, now.tm_sec)
 
         for n, i in enumerate(now):
-            x, y = self.canvas.coords(self.sticks[n])[0:2]
-            cr = [x, y]
-            cr.append(
-                self.length * math.cos(math.radians(i * 6) - math.radians(90)) + self.x
-            )
+            x, y = self.canvas.coords(self.sticks[n])[:2]
+            cr = [
+                x,
+                y,
+                self.length * math.cos(math.radians(i * 6) - math.radians(90))
+                + self.x,
+            ]
             cr.append(
                 self.length * math.sin(math.radians(i * 6) - math.radians(90)) + self.y
             )

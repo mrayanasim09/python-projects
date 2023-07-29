@@ -3,19 +3,20 @@ def calculate_monthly_mortgage(initial_amount, annual_interest_rate, number_of_m
     monthly_interest_rate = annual_interest_rate / (
         12 * 100
     )  # Convert annual rate to monthly rate
-    monthly_payments = (
+    return (
         initial_amount
-        * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_months)
+        * (
+            monthly_interest_rate
+            * (1 + monthly_interest_rate) ** number_of_months
+        )
         / ((1 + monthly_interest_rate) ** number_of_months - 1)
     )
-    return monthly_payments
 
 
 def get_float_input(prompt):
     while True:
         try:
-            value = float(input(prompt))
-            return value
+            return float(input(prompt))
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
@@ -23,8 +24,7 @@ def get_float_input(prompt):
 def get_int_input(prompt):
     while True:
         try:
-            value = int(input(prompt))
-            return value
+            return int(input(prompt))
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
 

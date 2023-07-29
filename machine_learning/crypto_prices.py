@@ -15,10 +15,9 @@ import datetime
 
 # Download historical cryptocurrency price data from Yahoo Finance
 def download_crypto_data(crypto_symbol, end_date):
-    crypto_data = yf.download(
+    return yf.download(
         crypto_symbol, start="2010-01-01", end=end_date, progress=False
     )
-    return crypto_data
 
 
 # Preprocess the data
@@ -41,8 +40,7 @@ def train_prophet_model(data):
 # Make predictions using the trained model
 def make_predictions(model, num_days_ahead):
     future = model.make_future_dataframe(periods=num_days_ahead)
-    forecast = model.predict(future)
-    return forecast
+    return model.predict(future)
 
 
 def plot_predictions(data, forecast, crypto_name, num_days_ahead):

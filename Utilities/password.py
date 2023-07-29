@@ -22,7 +22,7 @@ try:
                 break
 
 except FileNotFoundError:
-    print("Error: " + pass_doc + " is not found. Please provide the correct file path.")
+    print(f"Error: {pass_doc} is not found. Please provide the correct file path.")
     quit()
 
 if not pass_found:

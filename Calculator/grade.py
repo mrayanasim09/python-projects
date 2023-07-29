@@ -6,19 +6,17 @@ def calculate_grade(marks, total_mark):
     percentage = (marks / total_mark) * 100
 
     if percentage >= 90:
-        grade = "A*"
+        return "A*"
     elif percentage >= 80:
-        grade = "A"
+        return "A"
     elif percentage >= 70:
-        grade = "B"
+        return "B"
     elif percentage >= 60:
-        grade = "C"
+        return "C"
     elif percentage >= 50:
-        grade = "D"
+        return "D"
     else:
-        grade = "F"
-
-    return grade
+        return "F"
 
 
 def get_valid_integer_input(prompt, min_val=0, max_val=None):

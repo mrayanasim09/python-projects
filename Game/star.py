@@ -10,7 +10,7 @@ time.sleep(3)
 # Right Triangle
 def print_right_triangle(rows):
     for i in range(rows):
-        for j in range(i + 1):
+        for _ in range(i + 1):
             print("*", end="")
         print()
 
@@ -18,7 +18,7 @@ def print_right_triangle(rows):
 # Inverted Right Triangle
 def print_inverted_right_triangle(rows):
     for i in range(rows, 0, -1):
-        for j in range(i):
+        for _ in range(i):
             print("*", end="")
         print()
 
@@ -44,20 +44,20 @@ def print_diamond(rows):
 # Butterfly
 def print_butterfly(rows):
     for i in range(rows):
-        for j in range(i + 1):
+        for _ in range(i + 1):
             print("*", end="")
-        for j in range(2 * (rows - i - 1)):
+        for _ in range(2 * (rows - i - 1)):
             print(" ", end="")
-        for j in range(i + 1):
+        for _ in range(i + 1):
             print("*", end="")
         print()
 
     for i in range(rows - 1, -1, -1):
-        for j in range(i + 1):
+        for _ in range(i + 1):
             print("*", end="")
-        for j in range(2 * (rows - i - 1)):
+        for _ in range(2 * (rows - i - 1)):
             print(" ", end="")
-        for j in range(i + 1):
+        for _ in range(i + 1):
             print("*", end="")
         print()
 

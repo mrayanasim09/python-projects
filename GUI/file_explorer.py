@@ -12,7 +12,7 @@ def browseFiles():
     )
 
     # Change label contents
-    label_file_explorer.configure(text="File Opened: " + filename)
+    label_file_explorer.configure(text=f"File Opened: {filename}")
 
 
 # Create the root window

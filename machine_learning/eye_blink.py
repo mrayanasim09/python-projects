@@ -60,23 +60,22 @@ while True:
                     first_read = (
                         True  # Reset first_read to True after detecting the blink
                     )
+            elif first_read:
+                # To ensure if the eyes are present before starting
+                cv2.putText(
+                    img,
+                    "No eyes detected",
+                    (70, 70),
+                    cv2.FONT_HERSHEY_PLAIN,
+                    3,
+                    (0, 0, 255),
+                    2,
+                )
             else:
-                if first_read:
-                    # To ensure if the eyes are present before starting
-                    cv2.putText(
-                        img,
-                        "No eyes detected",
-                        (70, 70),
-                        cv2.FONT_HERSHEY_PLAIN,
-                        3,
-                        (0, 0, 255),
-                        2,
-                    )
-                else:
-                    # This will print on the console and restart the algorithm
-                    print("Blink detected--------------")
-                    cv2.waitKey(3000)
-                    first_read = True
+                # This will print on the console and restart the algorithm
+                print("Blink detected--------------")
+                cv2.waitKey(3000)
+                first_read = True
 
     else:
         cv2.putText(

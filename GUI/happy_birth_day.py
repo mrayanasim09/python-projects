@@ -180,7 +180,7 @@ def draw_layer_of_the_cake(fill_color, border_color, cursor_size, x, y, width, h
     # Starting the cursor to fill color
     my_turtle_cursor.begin_fill()
 
-    for i in range(2):
+    for _ in range(2):
         my_turtle_cursor.forward(width)
         my_turtle_cursor.left(90)
         my_turtle_cursor.forward(height)
@@ -195,11 +195,11 @@ def draw_layer_of_the_cake(fill_color, border_color, cursor_size, x, y, width, h
 my_turtle_screen.bgcolor("#FFFDD0")
 
 # # Creating an empty list of different parts of our cake
-parts_of_cake = []
-parts_of_cake.append(["#A020F0", "#000000", 3, 30])
-parts_of_cake.append(["#55FF55", "#000000", 3, 20])
-parts_of_cake.append(["#B87333", "#000000", 3, 60])
-
+parts_of_cake = [
+    ["#A020F0", "#000000", 3, 30],
+    ["#55FF55", "#000000", 3, 20],
+    ["#B87333", "#000000", 3, 60],
+]
 # drawing an plate for our cake using draw_layer_of_the_cake() function
 draw_layer_of_the_cake("#FFC0CB", "#000000", 3, -220, y_coordinate - 70, 400, 10)
 
@@ -253,7 +253,7 @@ write_happy_inside_circle("#000000", -70, y_coordinate + 240)
 write_birthday_inside_circle("#000000", -80, y_coordinate + 190)
 my_turtle_cursor.penup()
 my_turtle_cursor.goto(-70, y_coordinate + 150)
-my_turtle_cursor.write(name + "!", font=("sans-serif", 26, "bold"))
+my_turtle_cursor.write(f"{name}!", font=("sans-serif", 26, "bold"))
 
 # Calling done function at the end
 turtle.done()

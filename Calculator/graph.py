@@ -23,11 +23,11 @@ x_start = float(input("Enter the starting value of x of which you make the graph
 x_end = float(input("Enter the ending value of x of which you make the graph of: "))
 
 x_values = np.linspace(x_start, x_end, num=100)
-y_values = [ast.literal_eval(equation) for x in x_values]
+y_values = [ast.literal_eval(equation) for _ in x_values]
 
 plt.plot(x_values, y_values)
 plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
-plt.title("Graph of " + equation)
+plt.title(f"Graph of {equation}")
 plt.scatter(x_values, y_values, color="red")
 plt.show()

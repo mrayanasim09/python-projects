@@ -69,7 +69,6 @@ if __name__ == "__main__":
                     height=1,
                     width=7,
                 )
-                button.grid(row=i + 2, column=j)
             else:
                 button = Button(
                     gui,
@@ -81,8 +80,7 @@ if __name__ == "__main__":
                     height=1,
                     width=7,
                 )
-                button.grid(row=i + 2, column=j)
-
+            button.grid(row=i + 2, column=j)
     clear_button = Button(
         gui,
         text="Clear",

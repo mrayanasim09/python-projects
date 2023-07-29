@@ -15,8 +15,7 @@ import datetime
 
 # Download historical gold price data from Yahoo Finance
 def download_gold_data(end_date):
-    gold_data = yf.download("GC=F", start="2010-01-01", end=end_date, progress=False)
-    return gold_data
+    return yf.download("GC=F", start="2010-01-01", end=end_date, progress=False)
 
 
 # Preprocess the data
@@ -38,8 +37,7 @@ def make_prediction(model, num_days_ahead):
     future = model.make_future_dataframe(
         periods=num_days_ahead
     )  # Predict 'num_days_ahead' days ahead
-    forecast = model.predict(future)
-    return forecast
+    return model.predict(future)
 
 
 # Plot the predictions

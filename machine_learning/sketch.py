@@ -17,10 +17,7 @@ def sketch_image(image_path):
     # Apply a Gaussian blur to the inverted image
     blurred_image = cv2.GaussianBlur(inverted_image, (21, 21), 0)
 
-    # Blend the grayscale image and the blurred image using the "color dodge" blend mode
-    sketch = cv2.divide(gray_image, blurred_image, scale=256.0)
-
-    return sketch
+    return cv2.divide(gray_image, blurred_image, scale=256.0)
 
 
 # Provide the path to your input image

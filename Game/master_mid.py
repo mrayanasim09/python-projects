@@ -64,13 +64,9 @@ def get_high_score():
     try:
         with open("highscore.txt", "r") as file:
             high_score = int(file.read())
-    except FileNotFoundError:
+    except (FileNotFoundError, ValueError):
         # If the file doesn't exist, set the high score to a large value
         high_score = float("inf")
-    except ValueError:
-        # If the file contains invalid data, set the high score to a large value
-        high_score = float("inf")
-
     return high_score
 
 
