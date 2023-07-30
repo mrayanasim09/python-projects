@@ -1,5 +1,3 @@
-# README
-
 ## 80+ Python Projects by MRayan Asim 🐍🚀
 
 ![My Logo](https://github.com/mrayanasim09/python-projects/raw/main/MRayan.png)
