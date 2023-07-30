@@ -1,18 +1,20 @@
-# README
-
-### 80+ Python Projects by MRayan Asim 🐍🚀
+# 80+ Python Projects by MRayan Asim 🐍🚀
 
 ![My Logo](https://github.com/mrayanasim09/python-projects/raw/main/MRayan.png)
 
 **Welcome to the Python Projects repository by MRayan Asim! This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥**
 
-[![Give me your feedback](https://img.shields.io/badge/Google%20Forms-Give%20Your%20Feedback-red?style=for-the-badge\&logo=google-forms)](https://forms.gle/SzJ4VA1zWZ3ehqGC6)
+<p align="center">
+  <a href="https://forms.gle/SzJ4VA1zWZ3ehqGC6">
+    <img src="https://img.shields.io/badge/Google%20Forms-Give%20Your%20Feedback-red?style=for-the-badge&logo=google-forms" alt="Give me your feedback">
+  </a>
+</p>
 
-#### Repository Structure 📂
+## Repository Structure 📂
 
 The repository is organized into different categories, each containing specific project folders. This structure allows for easy navigation and helps you find projects that align with your interests. Each project is tagged with appropriate labels to indicate the recommended skill level. Let's take a look at the categories available:
 
-#### Categories 🗂️
+## Categories 🗂️
 
 * [GUI](https://github.com/drik493/python\_projects/tree/main/GUI) 🖥️
 * [Calculator](https://github.com/drik493/python\_projects/tree/main/Calculator) 🧮
@@ -20,11 +22,11 @@ The repository is organized into different categories, each containing specific 
 * [Machine learning](https://github.com/mrayanasim09/python-projects/tree/main/machine\_learning) 🤖📚🧠
 * [Utilities](https://github.com/drik493/python\_projects/tree/main/Utilities) 🛠️
 
-#### Projects 🔥
+## Projects 🔥
 
 Explore the projects in each category to find detailed information, documentation, and code examples. Here's a glimpse of the projects available within each category:
 
-_**GUI 🖥️**_
+## *GUI 🖥️*
 
 * [Form](https://github.com/drik493/python\_projects/blob/main/GUI/Form.py) 📝
 * [A basic GUI calculator](https://github.com/drik493/python\_projects/blob/main/GUI/A\_basic\_gui\_calculator.py) 🧮
@@ -46,7 +48,7 @@ _**GUI 🖥️**_
 * [Search installed applications](GUI/search\_applications.py) 🔍
 * [A GUI calendar ](GUI/clender.py)📅
 
-_**Calculator 🧮**_
+## *Calculator 🧮*
 
 * [Quadratic Equation (with graph)](https://github.com/drik493/python\_projects/blob/main/Calculator/Quadratic\_Equation.py) 📈
 * [A mega calculator with all operations](https://github.com/drik493/python\_projects/blob/main/Calculator/mega\_calculator.py) 🖩
@@ -65,7 +67,7 @@ _**Calculator 🧮**_
 * [Sudoku solver](https://github.com/drik493/python\_projects/blob/main/Calculator/sudukko.py) 🧩
 * [A program to find the ASCII value of characters](Calculator/ASCII%20.py) 💻🔧
 
-_**Games 🎮**_
+## *Games 🎮*
 
 * [2048 game (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/2048.py) 🎲
 * [Snake game (with GUI)](https://github.com/drik493/python\_projects/blob/main/Game/snake\_game.py) 🐍
@@ -83,7 +85,7 @@ _**Games 🎮**_
 * [Dice rolling (With user guess without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/dice.py) 🎲
 * [Number guessing game](https://github.com/drik493/python\_projects/blob/main/Game/number\_guessing.py) 🔢❓
 
-_**Machine Learning 🤖📚🧠**_
+## *Machine Learning 🤖📚🧠*
 
 * [Brightness controller with your hand](machine\_learning/brightness\_controllor.py) 🌞💡🎛️
 * [Eye blink detection (also download the . XML files)](machine\_learning/eye\_blink.py) 👁️🔍😴
@@ -96,7 +98,7 @@ _**Machine Learning 🤖📚🧠**_
 * [A sentiments checker](machine\_learning/sentiments.py) 🤔💬💭
 * [A sketch maker of image ](machine\_learning/sketch.py)🖌️
 
-_**Utilities 🛠️**_
+## *Utilities 🛠️*
 
 * [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python\_projects/blob/main/Utilities/network.py) 🔐
 * [Your own browser](Utilities/browser.py) 🌐
@@ -117,7 +119,7 @@ _**Utilities 🛠️**_
 * [words and letter count of given text](Utilities/word\_count.py) 🔢🔄️
 * [A program to make short forms for the entered words](Utilities/short\_form.py) 🔤🔄
 
-#### Skill Level Tags ⭐
+## Skill Level Tags ⭐
 
 Projects are labeled with the following tags to help you identify their recommended skill level:
 
@@ -125,7 +127,7 @@ Projects are labeled with the following tags to help you identify their recommen
 * Intermediate: Projects that require a moderate level of Python programming knowledge. 🚀
 * Advanced: Projects that involve advanced concepts and techniques in Python. 🧠
 
-#### Installation ⚙️
+## Installation ⚙️
 
 we used these packages in our repository:
 
@@ -210,18 +212,18 @@ _**To view more details that how to use this repository you can go**_ [_**here**
 
 If you encounter any issues running the code, please feel free to report an issue, and I will respond as quickly as possible. 🐞
 
-#### About the Author 👤
+# About the Author 👤
 
 This repository is maintained by MRayan Asim. As a passionate Python enthusiast, MRayan Asim is dedicated to developing practical and innovative projects. Whether you're a beginner or an experienced developer, MRayan Asim strives to provide projects that cater to various skill levels. If you have any questions or suggestions regarding the projects in this repository, feel free to reach out. 🚀\
 [![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-7289DA?style=flat\&logo=discord\&logoColor=white)](https://discord.gg/uRfXYjub) [![Join Our Reddit Community](https://img.shields.io/badge/Join%20the%20Community-Reddit-orange)](https://www.reddit.com/r/Python\_projects\_rayan/) [![Email](https://img.shields.io/badge/Email-mrayanasim09%40gmail.com-%23D14836?logo=gmail)](mailto:mrayanasim09@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-View%20Profile-blue?logo=linkedin)](https://www.linkedin.com/in/mrayan-asim-044836275/) [![GitHub](https://img.shields.io/badge/GitHub-mrayanasim09-blue?logo=github)](https://github.com/mrayanasim09)
 
-#### _If you are thinking about how to start learning programming so you can check out my_ [_roadmap on medium_](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa)
+### *If you are thinking about how to start learning programming so you can check out my* [_roadmap on medium_](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa)
 
 #### License 📝
 
-_**⚠️ DISCLAIMER: For educational purposes only. Code provided under**_ [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/)_**. ⚖️**_
+## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/)_*. ⚖️*
 
-### **Note 📌**
+# **Note 📌**
 
 Do you have an eagerness to contribute and make a mark in the coding community? Fantastic! We embrace and celebrate collaboration. You can contribute in various ways, whether it's enhancing our documentation or optimizing the code itself.
 
@@ -229,6 +231,6 @@ Feeling inspired to be a part of our dynamic community? Begin your journey by fa
 
 Ready to make your mark on our projects? Check out our [**How to Contribute**](CONTRIBUTING.md) guide, and embark on your coding adventure with us!
 
-**Remember, the world of coding is full of wonders, and your journey starts right here! 🌟**\\
+## *Remember, the world of coding is full of wonders, and your journey starts right here! 🌟*
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects) ![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects) ![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects) ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects) ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects\&label=Views\&countColor=%23555555\&style=flat-square) [![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main) [![CodeFactor](https://www.codefactor.io/repository/github/mrayanasim09/python-projects/badge)](https://www.codefactor.io/repository/github/mrayanasim09/python-projects)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects)    ![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects)    ![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects)    ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)    ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects\&label=Views\&countColor=%23555555\&style=flat-square)    [![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main)    [![CodeFactor](https://www.codefactor.io/repository/github/mrayanasim09/python-projects/badge)](https://www.codefactor.io/repository/github/mrayanasim09/python-projects)    [![Backup Status](https://cloudback.it/badge/mrayanasim09/python-projects)](https://cloudback.it)
