@@ -4,7 +4,11 @@
 
 #### Welcome to the **Python Projects repository by MRayan Asim!** This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥
 
-[![Give me your feedback](https://img.shields.io/badge/Google%20Forms-Give%20Your%20Feedback-red?style=for-the-badge\&logo=google-forms)](https://forms.gle/SzJ4VA1zWZ3ehqGC6)
+<p align="center">
+  <a href="https://forms.gle/SzJ4VA1zWZ3ehqGC6">
+    <img src="https://img.shields.io/badge/Google%20Forms-Give%20Your%20Feedback-red?style=for-the-badge&logo=google-forms" alt="Give me your feedback">
+  </a>
+</p>
 
 ### Repository Structure 📂
 
