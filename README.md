@@ -1,7 +1,3 @@
----
-layout: landing
----
-
 # README
 
 ## 80+ Python Projects by MRayan Asim 🐍🚀
