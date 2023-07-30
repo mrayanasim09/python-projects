@@ -1,4 +1,4 @@
-# How\_to\_use
+# How to  use this repository
 
 ### First of all clone the repository :
 
