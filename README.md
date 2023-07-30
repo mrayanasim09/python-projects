@@ -219,9 +219,9 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 
 ### *If you are thinking about how to start learning programming so you can check out my* [_roadmap on medium_](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa)
 
-#### License 📝
+# License 📝
 
-## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/)_*. ⚖️*
+## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/)*. ⚖️*
 
 # **Note 📌**
 
