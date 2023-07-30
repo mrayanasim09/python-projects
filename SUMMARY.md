@@ -1,10 +1,10 @@
 # Table of contents
 
-* [How\_to\_use](README.md)
+* [README](README.md)
+* [How\_to\_use](How\_to\_use.md)
 * [Contributing to python-projects](CONTRIBUTING.md)
-* [Security Policy](security/README.md)
-  * [Contributor Covenant Code of Conduct](security/code\_of\_conduct/README.md)
-    * [README](security/code\_of\_conduct/readme.md)
+* [Contributor Covenant Code of Conduct](code\_of\_conduct.md)
+* [Security Policy](security.md)
 * [.github](.github/README.md)
   * [ISSUE\_TEMPLATE](.github/ISSUE\_TEMPLATE/README.md)
     * [bug\_report](.github/ISSUE\_TEMPLATE/bug\_report.md)

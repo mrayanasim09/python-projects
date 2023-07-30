@@ -4,12 +4,12 @@
 
 Use this section to tell people about which versions of your project are currently being supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version | Supported            |
+| ------- | -------------------- |
+| 5.1.x   | :white\_check\_mark: |
+| 5.0.x   | :x:                  |
+| 4.0.x   | :white\_check\_mark: |
+| < 4.0   | :x:                  |
 
 ## Reporting a Vulnerability
 
@@ -25,14 +25,14 @@ If you discover a security vulnerability in the "python-projects" repository own
 
 When reporting a vulnerability, please include the following information:
 
-- Description: A clear and concise description of the vulnerability.
-- Steps to Reproduce: Provide the steps necessary to reproduce the vulnerability.
-- Expected Behavior: Describe what you expected to happen when following the steps.
-- Actual Behavior: Explain what actually happened when following the steps.
-- Affected Versions: Specify which versions of the project are affected by the vulnerability.
-- Impact: Assess the potential impact of the vulnerability.
+* Description: A clear and concise description of the vulnerability.
+* Steps to Reproduce: Provide the steps necessary to reproduce the vulnerability.
+* Expected Behavior: Describe what you expected to happen when following the steps.
+* Actual Behavior: Explain what actually happened when following the steps.
+* Affected Versions: Specify which versions of the project are affected by the vulnerability.
+* Impact: Assess the potential impact of the vulnerability.
 
-We are committed to maintaining open communication with the security community and will acknowledge your report within [X business days]. Our team will review the vulnerability and may request additional information or clarifications if needed.
+We are committed to maintaining open communication with the security community and will acknowledge your report within \[X business days]. Our team will review the vulnerability and may request additional information or clarifications if needed.
 
 ## Vulnerability Response
 
@@ -53,4 +53,3 @@ Make sure to regularly check the releases page of the "python-projects" reposito
 Please note that older versions of the project may no longer receive security updates and could be vulnerable to known exploits. It is advisable to upgrade to a supported version to maintain a secure environment.
 
 **Note: This security policy template is intended as a starting point and should be tailored to fit your specific project and processes.**
-

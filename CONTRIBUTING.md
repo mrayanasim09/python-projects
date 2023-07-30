@@ -76,7 +76,7 @@ Thank you for contributing to the Python Projects repository. Your contributions
 
 ## Code of Conduct
 
-We expect all contributors to adhere to the [Code of Conduct](security/code\_of\_conduct/) in all interactions related to this project.
+We expect all contributors to adhere to the [Code of Conduct](code\_of\_conduct.md) in all interactions related to this project.
 
 ## License
 
