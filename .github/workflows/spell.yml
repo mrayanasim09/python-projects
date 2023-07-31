@@ -13,23 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          node-version: '14.x'  # Use the version of Node.js required by markdown-spellcheck
-
-      - name: Install markdown-spellcheck
-        run: |
-          npm install -g markdown-spellcheck
+          python-version: '3.x'  # Replace with the version of Python used in your repository
 
       - name: Spellcheck README
         id: spellcheck
         run: |
-          markdown-spellcheck README.md --report
+          codespell --quiet-level=2 README.md
 
       - name: Check for spelling errors
         run: |
-          if grep -q "Spelling Error" ${{ steps.spellcheck.outputs.report_file }}; then
+          if [[ ${{ steps.spellcheck.outputs.code }} -eq 1 ]]; then
             echo "Spelling errors found. Creating pull request..."
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
