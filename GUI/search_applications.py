@@ -63,12 +63,7 @@ e.grid(row=0, column=1)
 # creating a button using the widget
 b = Button(master, text="Show", command=app, bg="Blue")
 b.grid(
-    row=0,
-    column=2,
-    columnspan=2,
-    rowspan=2,
-    padx=5,
-    pady=5,
+    row=0, column=2, columnspan=2, rowspan=2, padx=5, pady=5,
 )
 
 mainloop()
