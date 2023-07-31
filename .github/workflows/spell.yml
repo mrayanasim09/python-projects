@@ -1,0 +1,52 @@
+name: Spellcheck README and Create Pull Request
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name if different
+
+jobs:
+  spellcheck:
+    name: Spellcheck README
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace with the version of Python used in your repository
+
+      - name: Install pyspelling
+        run: |
+          pip install pyspelling
+
+      - name: Spellcheck README
+        id: spellcheck
+        run: |
+          pyspelling --files README.md
+
+      - name: Check for spelling errors
+        run: |
+          if grep -q "Error: " ${{ steps.spellcheck.outputs.log_file }}; then
+            echo "Spelling errors found. Creating pull request..."
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git checkout -b fix-readme-spelling
+            git commit -am "Fix spelling errors in README.md"
+            git push origin fix-readme-spelling
+          else
+            echo "No spelling errors found in README.md."
+          fi
+
+      - name: Create Pull Request
+        if: failure()
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Fix spelling errors in README.md"
+          title: "Fix spelling errors in README.md"
+          body: "This pull request fixes spelling errors in the README.md file."
+          base: main
+          branch: fix-readme-spelling
