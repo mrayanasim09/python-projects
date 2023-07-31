@@ -59,7 +59,7 @@ time.sleep(3)
 
 # Solve quadratic equation
 def solve_quadratic(a, b, c):
-    discriminant = b**2 - 4 * a * c
+    discriminant = b ** 2 - 4 * a * c
     if discriminant > 0:
         root1 = (-b + np.sqrt(discriminant)) / (2 * a)
         root2 = (-b - np.sqrt(discriminant)) / (2 * a)
@@ -120,11 +120,11 @@ num_points = 100
 x = np.linspace(x_start, x_end, num_points)
 
 # Compute y values
-y = a * x**2 + b * x + c
+y = a * x ** 2 + b * x + c
 
 # Find the vertex of the quadratic equation
 vertex_x = -b / (2 * a)
-vertex_y = a * vertex_x**2 + b * vertex_x + c
+vertex_y = a * vertex_x ** 2 + b * vertex_x + c
 
 # Create the plot
 plt.plot(x, y)
