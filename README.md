@@ -224,7 +224,7 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 
 # License 📝
 
-## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/)*. ⚖️*
+## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/)* ⚖️*
 
 # **Note 📌**
 
