@@ -1,0 +1,4 @@
+includes:
+  - "*.md"
+excludes:
+  - "*.py"
