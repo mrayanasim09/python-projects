@@ -1,0 +1,8 @@
+./security.md
+./.github/ISSUE_TEMPLATE/README.md
+./.github/ISSUE_TEMPLATE/bug_report.md
+./SUMMARY.md
+./code_of_conduct.md
+./README.md
+./CONTRIBUTING.md
+./How_to_use.md
