@@ -3,47 +3,25 @@ name: Spellcheck Action
 on:
   push:
     branches:
-      - '*'
+      - main  # Change this to your main branch name if different
 
 jobs:
-  build:
+  spellcheck:
     name: Spellcheck
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Filter Markdown files
-        run: |
-          find . -type f -name '*.md' | grep -Ev '(\.py$|\.yml$)' > files_to_check.txt
-      - name: Spellcheck
-        id: spellcheck
-        uses: rojopolis/spellcheck-github-actions@v0
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          args: spell -d dictionary.txt -i files_to_check.txt
+          python-version: '3.x'  # Replace with the version of Python used in your repository
 
-      - name: Check for errors
+      - name: Install pyspelling
         run: |
-          if [ -s ${{ steps.spellcheck.outputs.log_file }} ]; then
-            echo "Errors found in spelling. Creating pull request."
-            exit 1
-          fi
+          pip install pyspelling
 
-      - name: Commit changes
+      - name: Spellcheck Markdown files
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git commit -am "Spellcheck - Fix spelling errors" || true
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: spellcheck-fixes
-
-      - name: Create pull request
-        if: failure()
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Fix spelling errors"
-          title: "Spellcheck - Fix spelling errors"
-          body: "This pull request fixes spelling errors identified during the spellcheck."
-          branch: spellcheck-fixes
+          pyspelling
