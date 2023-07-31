@@ -211,9 +211,9 @@ pip install mediapipe
 pip install pyshorteners
 ```
 
-_**To view more details that how to use this repository you can go**_ [_**here**_](How\_to\_use.md)
+### *To view more details that how to use this repository you can go* [_**here**_](How\_to\_use.md)
 
-If you encounter any issues running the code, please feel free to report an issue, and I will respond as quickly as possible. 🐞
+If you encounter any issues running the code, please report an issue, and I will respond as quickly as possible. 🐞
 
 # About the Author 👤
 
