@@ -19,6 +19,7 @@
 - [About the Author 👤](#about-the-author-)
 - [License 📝](#license-)
 - [Note 📌](#note-)
+- [FAQ 🗒️](#frequently-asked-questions-faq)
 
 **Welcome to the Python Projects repository by MRayan Asim! This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥**
 
@@ -253,7 +254,7 @@ Excited to play a vital role in securing our projects? Explore the essential ste
 
 Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers a wide array of practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
 
-# Frequently Asked Questions (FAQ)
+# Frequently Asked Questions (FAQ) 🗒️
 
 ## *For common questions and troubleshooting tips, please check our [FAQ](FAQ.md)*
 
