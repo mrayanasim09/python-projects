@@ -223,7 +223,7 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 
 # License 📝
 
-## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/)* ⚖️*
+## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/) ⚖️
 
 # **Note 📌**
 
@@ -237,7 +237,7 @@ Ready to make your mark on our projects? Check out our [**How to Contribute**](C
 
 ## *For common questions and troubleshooting tips, please check our [FAQ](FAQ.md)*
 
-## *Remember, the world of coding is full of wonders, and your journey starts right here! 🌟*
+### *Remember, the world of coding is full of wonders, and your journey starts right here! 🌟*
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects)    ![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects)    ![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects)    ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)    ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects\&label=Views\&countColor=%23555555\&style=flat-square)    [![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main)    [![CodeFactor](https://www.codefactor.io/repository/github/mrayanasim09/python-projects/badge)](https://www.codefactor.io/repository/github/mrayanasim09/python-projects)    [![Backup Status](https://cloudback.it/badge/mrayanasim09/python-projects)](https://cloudback.it)
 
