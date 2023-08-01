@@ -249,6 +249,10 @@ Feeling inspired to be a part of our dynamic community? Begin your journey by fa
 
 Ready to make your mark on our projects? Check out our [**How to Contribute**](CONTRIBUTING.md) guide, and embark on your coding adventure with us!
 
+Excited to play a vital role in securing our projects? Explore the essential steps and best practices in our [**Security Policies**](SECURITY.md) to safeguard our coding community. Join hands with us on this crucial mission!
+
+Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers a wide array of practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
+
 # Frequently Asked Questions (FAQ)
 
 ## *For common questions and troubleshooting tips, please check our [FAQ](FAQ.md)*
