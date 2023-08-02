@@ -37,7 +37,7 @@ constantly==15.1.0
 contourpy==1.0.7
 convertdate==2.4.0
 crypto==1.4.1
-cryptography==41.0.2
+cryptography==41.0.3
 cssselect==1.2.0
 cvzone==1.5.6
 cycler==0.11.0
