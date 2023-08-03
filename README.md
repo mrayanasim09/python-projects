@@ -76,6 +76,7 @@ Explore the projects in each category to find detailed information, documentatio
 * [Integration and differentiation](https://github.com/drik493/python\_projects/blob/main/Calculator/int\_diff.py) ∫
 * [BMI calculator](https://github.com/drik493/python\_projects/blob/main/Calculator/bmi.py) 🏋️
 * [Roman number convertor to decimal number](Calculator/roman\_number.py) 🧠
+* [Time calculator](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/time_calulator.py) ☀️🌙
 * [special theory of relativity calculator](Calculator/special\_relativity\_calculator.py) ⌛📏⚡
 * [Collatz Conjecture (3x+1) (with GUI)](https://github.com/drik493/python\_projects/blob/main/Calculator/conject.py) 📐
 * [Fibonacci sequence](https://github.com/drik493/python\_projects/blob/main/Calculator/sequence.py) 🐇
