@@ -245,17 +245,15 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 
 # **Note 📌**
 
-Do you have an eagerness to contribute and make a mark in the coding community? Fantastic! We embrace and celebrate collaboration. You can contribute in various ways, whether it's enhancing our documentation or optimizing the code itself.
+### Feeling inspired to be a part of our dynamic community? Begin your journey by familiarizing yourself with our [**Code of Conduct**](code\_of\_conduct.md). We believe in a supportive and inclusive environment where everyone can thrive.
 
-Feeling inspired to be a part of our dynamic community? Begin your journey by familiarizing yourself with our [**Code of Conduct**](code\_of\_conduct.md). We believe in a supportive and inclusive environment where everyone can thrive.
+### Ready to make your mark on our projects? Check out our [**How to Contribute**](CONTRIBUTING.md) guide, and embark on your coding adventure with us!
 
-Ready to make your mark on our projects? Check out our [**How to Contribute**](CONTRIBUTING.md) guide, and embark on your coding adventure with us!
+### Excited to play a vital role in securing our projects? Explore the essential steps and best practices in our [**Security Policies**](SECURITY.md) to safeguard our coding community. Join hands with us on this crucial mission!
 
-Excited to play a vital role in securing our projects? Explore the essential steps and best practices in our [**Security Policies**](SECURITY.md) to safeguard our coding community. Join hands with us on this crucial mission!
+### Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers a wide array of practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
 
-Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers a wide array of practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
-
-🔍 To view the requirements for the system and Python version, you can check out the [prerequisites](https://github.com/mrayanasim09/python-projects/blob/main/prerequisites.md) 📋
+###  🔍 To view the requirements for the system and Python version, you can check out the [prerequisites](https://github.com/mrayanasim09/python-projects/blob/main/prerequisites.md) 📋
 
 # Frequently Asked Questions (FAQ) 🗒️
 
