@@ -1,0 +1,33 @@
+name: Check Requirements and Upgrade
+
+on:
+  push:
+    branches:
+      - main  # Change 'main' to the name of your default branch
+
+jobs:
+  check_requirements:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Python and pip
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3 python3-pip
+          python3 -m pip install --upgrade pip
+
+      - name: Check and upgrade requirements
+        run: |
+          pip install -r requirements.txt --upgrade --upgrade-strategy eager
+          pip freeze > updated_requirements.txt
+          echo "Updated requirements:"
+          cat updated_requirements.txt
+
+      - name: Commit and push updated requirements
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Update requirements.txt'
+          file_pattern: 'updated_requirements.txt'
