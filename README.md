@@ -255,6 +255,8 @@ Excited to play a vital role in securing our projects? Explore the essential ste
 
 Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers a wide array of practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
 
+🔍 To view the requirements for the system and Python version, you can check out the [prerequisites](https://github.com/mrayanasim09/python-projects/blob/main/prerequisites.md) 📋
+
 # Frequently Asked Questions (FAQ) 🗒️
 
 ## *For common questions and troubleshooting tips, please check our [FAQ](FAQ.md)*
