@@ -214,7 +214,6 @@ pytube==15.0.0
 pytweening==1.0.7
 pytz==2023.3
 pywhatkit==5.4
-pywin32==301
 pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==25.1.0
@@ -252,10 +251,6 @@ stack-data==0.6.2
 sympy==1.12
 tensorboard==2.13.0
 tensorboard-data-server==0.7.1
-tensorflow==2.13.0
-tensorflow-estimator==2.13.0
-tensorflow-intel==2.13.0
-tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 terminado==0.17.1
 textblob==0.17.1
@@ -303,4 +298,4 @@ xmltodict==0.13.0
 yarl==1.9.2
 yfinance==0.2.23
 zope.interface==6.0
-wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 
