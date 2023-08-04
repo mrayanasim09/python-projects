@@ -60,6 +60,7 @@ Explore the projects in each category to find detailed information, documentatio
 * [spelling correction](GUI/spelling.py) 🔤📏🔍
 * [Figet spinner (use it on windows with space bar)](GUI/spinner.py) ߷
 * [A beautiful design using turtle](GUI/graphics.py) 🐢🎨
+* [A quiz application for asking common questions ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Quiz.py) 👉📜
 * [Pikachu using turtle](GUI/Pikachu.py) (っ◔◡◔)っ
 * [Doraemon using turtle](GUI/doramon.py)🐱‍🚀
 * [Rainbow with turtle ](GUI/rainbow.py)🌈
