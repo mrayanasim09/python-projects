@@ -214,7 +214,7 @@ pytube==15.0.0
 pytweening==1.0.7
 pytz==2023.3
 pywhatkit==5.4
-pywin32==306
+pywin32==301
 pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==25.1.0
