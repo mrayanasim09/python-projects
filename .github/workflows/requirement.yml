@@ -1,33 +1,41 @@
-name: Check Requirements and Upgrade
+name: Python Import Check
 
 on:
   push:
     branches:
-      - main  # Change 'main' to the name of your default branch
+      - main  # Replace with your branch name if needed
 
 jobs:
-  check_requirements:
+  python_import_check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install Python and pip
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3 python3-pip
-          python3 -m pip install --upgrade pip
-
-      - name: Check and upgrade requirements
-        run: |
-          pip install -r requirements.txt --upgrade --upgrade-strategy eager
-          pip freeze > updated_requirements.txt
-          echo "Updated requirements:"
-          cat updated_requirements.txt
-
-      - name: Commit and push updated requirements
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Setup Python
+        uses: actions/setup-python@v2
         with:
-          commit_message: 'Update requirements.txt'
-          file_pattern: 'updated_requirements.txt'
+          python-version: '3.x'  # Use the Python version you want to test with
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check Python imports
+        run: |
+          if python -m py_compile script.py; then
+            echo "Python imports are correct."
+          else
+            echo "Python imports check failed."
+            exit 1
+          fi
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Check Python imports in requirements.txt"
+          title: "Check Python imports in requirements.txt"
+          branch: python-import-check
+          body: |
+            This pull request checks the Python imports in the requirements.txt file.
