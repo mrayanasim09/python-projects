@@ -1,6 +1,7 @@
-#This code is made by MRayan Asim
+# This code is made by MRayan Asim
 import tkinter as tk
 from tkinter import messagebox
+
 
 class QuizGame(tk.Tk):
     def __init__(self):
@@ -48,10 +49,13 @@ class QuizGame(tk.Tk):
         if user_answer.lower() == correct_answer.lower():
             messagebox.showinfo("Correct", "Your answer is correct!")
         else:
-            messagebox.showerror("Incorrect", f"Sorry, the correct answer is {correct_answer}.")
+            messagebox.showerror(
+                "Incorrect", f"Sorry, the correct answer is {correct_answer}."
+            )
 
         self.current_question += 1
         self.load_question()
+
 
 if __name__ == "__main__":
     app = QuizGame()
