@@ -123,6 +123,7 @@ Explore the projects in each category to find detailed information, documentatio
 
 * [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python\_projects/blob/main/Utilities/network.py) 🔐
 * [Your own browser](Utilities/browser.py) 🌐
+* [A site connection checker and timer](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/connectivity.py) 🔗🌐
 * [Count down (timer)](https://github.com/drik493/python\_projects/blob/main/Utilities/count\_down.py) ⏳
 * [Tells basic information of an Instagram account only from user name](Utilities/inta.py) 📸
 * [Transfer file (generate QR code for easy access)](https://github.com/drik493/python\_projects/blob/main/Utilities/transfer.py) 📁
