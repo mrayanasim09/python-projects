@@ -134,7 +134,7 @@ plt.xlabel("x")
 plt.ylabel("y")
 
 # Set the title
-plt.title("Quadratic Equation: y = {}x^2 + {}x + {}".format(a, b, c))
+plt.title(f"Quadratic Equation: y = {a}x^2 + {b}x + {c}")
 
 # Set y-axis at the center
 plt.axhline(0, color="black", linewidth=0.5)
