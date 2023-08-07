@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Community Support
+    url: https://github.com/mrayanasim09/python-projects/discussions/24
+    about: Please ask and answer questions here.
+  - name: GitHub Security Bug Bounty
+    url: https://bounty.github.com/
+    about: Please report security vulnerabilities here.
+  - name: Report issue to discord
+    url: https://discord.gg/zuUNxHzD3F
+    about: Report issue on discord that everyone in the community know about it

@@ -1,0 +1,57 @@
+name: Check Code Lines
+
+on:
+  push:
+    branches:
+      - main  # Change 'main' to the name of your default branch
+
+jobs:
+  check_code_lines:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Count Python lines
+        id: count_python_lines
+        run: |
+          python_lines=$(find . -name '*.py' | xargs cat | wc -l)
+          python_files=$(find . -name '*.py' | wc -l)
+          echo "::set-output name=python_lines::$python_lines"
+          echo "::set-output name=python_files::$python_files"
+
+      - name: Count TXT lines
+        id: count_txt_lines
+        run: |
+          txt_lines=$(find . -name '*.txt' | xargs cat | wc -l)
+          txt_files=$(find . -name '*.txt' | wc -l)
+          echo "::set-output name=txt_lines::$txt_lines"
+          echo "::set-output name=txt_files::$txt_files"
+
+      - name: Count MD lines
+        id: count_md_lines
+        run: |
+          md_lines=$(find . -name '*.md' | xargs cat | wc -l)
+          md_files=$(find . -name '*.md' | wc -l)
+          echo "::set-output name=md_lines::$md_lines"
+          echo "::set-output name=md_files::$md_files"
+
+      - name: Count YAML lines
+        id: count_yaml_lines
+        run: |
+          yaml_lines=$(find . -name '*.yml' | xargs cat | wc -l)
+          yaml_files=$(find . -name '*.yml' | wc -l)
+          echo "::set-output name=yaml_lines::$yaml_lines"
+          echo "::set-output name=yaml_files::$yaml_files"
+
+      - name: Display results
+        run: |
+          echo "Total lines of Python code: ${{ steps.count_python_lines.outputs.python_lines }}"
+          echo "Total lines of Python files: ${{ steps.count_python_lines.outputs.python_files }}"
+          echo "Total lines of TXT code: ${{ steps.count_txt_lines.outputs.txt_lines }}"
+          echo "Total lines of TXT files: ${{ steps.count_txt_lines.outputs.txt_files }}"
+          echo "Total lines of MD code: ${{ steps.count_md_lines.outputs.md_lines }}"
+          echo "Total lines of MD files: ${{ steps.count_md_lines.outputs.md_files }}"
+          echo "Total lines of YAML code: ${{ steps.count_yaml_lines.outputs.yaml_lines }}"
+          echo "Total lines of YAML files: ${{ steps.count_yaml_lines.outputs.yaml_files }}"

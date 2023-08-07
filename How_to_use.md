@@ -1,18 +1,29 @@
-## First of all clone the repository :
-     
-    git clone https://github.com/mrayanasim09/python-projects.git
+# How to  use this repository
 
-## Secondly now install the required packages :
-     
-     pip install -r requirements.txt
+### First of all clone the repository :
 
-## Thirdly now change the directory depends on you :
+```
+git clone https://github.com/mrayanasim09/python-projects.git
+```
 
-    cd <folder_name>
+### Secondly now install the required packages :
 
-## Fourthly run the file you want :
+```
+ pip install -r requirements.txt
+```
 
-     Python <file_name>
+### Thirdly now change the directory depends on you :
 
-## 🗒 NOTE:
+```
+cd <folder_name>
+```
+
+### Fourthly run the file you want :
+
+```
+ Python <file_name>
+```
+
+### 🗒 NOTE:
+
 Some projects need some things to be changed so first view the code if I do not mention enter a specific thing then run it then first full fill it.
