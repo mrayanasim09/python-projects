@@ -1,5 +1,3 @@
-<script src="//code.tidio.co/ytw5wbhm91dwsvp9mv9gdiob6za99eer.js" async></script>
-
 # 80+ Python Projects by MRayan Asim 🐍🚀
 
 <p align="center">
@@ -278,3 +276,5 @@ If you find my Python projects valuable and would like to show your support, con
 
 
 ## *To View full Documentations you can go  [here](https://mrayans.gitbook.io/python--projects/)*
+
+<script src="//code.tidio.co/ytw5wbhm91dwsvp9mv9gdiob6za99eer.js" async></script>
