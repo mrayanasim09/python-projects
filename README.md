@@ -230,20 +230,20 @@ pip install mediapipe
 pip install pyshorteners
 ```
 
-### *To view more details that how to use this repository you can go* [_**here**_](How\_to\_use.md)
+### *To view more details on how to use this repository you can go* [_**here**_](How\_to\_use.md)
 
 If you encounter any issues running the code, please report an issue, and I will respond as quickly as possible. 🐞
 
 # About the Author 👤
 
-This repository is maintained by MRayan Asim. As a passionate Python enthusiast, MRayan Asim is dedicated to developing practical and innovative projects. Whether you're a beginner or an experienced developer, MRayan Asim strives to provide projects that cater to various skill levels. If you have any questions or suggestions regarding the projects in this repository, feel free to reach out. 🚀\
+MRayan Asim maintains this repository. As a passionate Python enthusiast, MRayan Asim is dedicated to developing practical and innovative projects. Whether you're a beginner or an experienced developer, MRayan Asim strives to provide projects that cater to various skill levels. If you have any questions or suggestions regarding the projects in this repository, feel free to reach out. 🚀\
 [![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-7289DA?style=flat\&logo=discord\&logoColor=white)](https://discord.gg/uRfXYjub) [![Join Our Reddit Community](https://img.shields.io/badge/Join%20the%20Community-Reddit-orange)](https://www.reddit.com/r/Python\_projects\_rayan/) [![Email](https://img.shields.io/badge/Email-mrayanasim09%40gmail.com-%23D14836?logo=gmail)](mailto:mrayanasim09@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-View%20Profile-blue?logo=linkedin)](https://www.linkedin.com/in/mrayan-asim-044836275/) [![GitHub](https://img.shields.io/badge/GitHub-mrayanasim09-blue?logo=github)](https://github.com/mrayanasim09)
 
 ### *If you are thinking about how to start learning programming so you can check out my* [_roadmap on medium_](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa)
 
 # License 📝
 
-## *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/) ⚖️
+### *⚠️ DISCLAIMER: For educational purposes only. Code provided under* [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE/) ⚖️
 
 # **Note 📌**
 
@@ -253,7 +253,7 @@ This repository is maintained by MRayan Asim. As a passionate Python enthusiast,
 
 #### Excited to play a vital role in securing our projects? Explore the essential steps and best practices in our [**Security Policies**](SECURITY.md) to safeguard our coding community. Join hands with us on this crucial mission!
 
-#### Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers a wide array of practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
+#### Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers many practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
 
 ###  🔍 To view the requirements for the system and Python version, you can check out the [prerequisites](https://github.com/mrayanasim09/python-projects/blob/main/prerequisites.md) 📋
 
