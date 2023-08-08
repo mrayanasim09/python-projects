@@ -3,7 +3,7 @@
 ### First of all clone the repository :
 
 ```
-git clone https://github.com/mrayanasim09/python-projects.git
+git clone https://github.com/mrayanasim09/python-projects.git && cd python-projects
 ```
 
 ### Secondly now install the required packages :
