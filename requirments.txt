@@ -215,7 +215,6 @@ pytweening==1.0.7
 pytz==2023.3
 pywhatkit==5.4
 pywinpty==2.0.10
-PyYAML==6.0
 pyzmq==25.1.0
 qrcode==7.4.2
 queuelib==1.6.2
