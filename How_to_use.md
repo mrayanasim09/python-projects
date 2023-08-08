@@ -9,7 +9,7 @@ git clone https://github.com/mrayanasim09/python-projects.git && cd python-proje
 ### Secondly now install the required packages :
 
 ```
- pip install -r requirments.txt
+ pip install -r requirements.txt
 ```
 
 ### Thirdly now change the directory depends on you :
