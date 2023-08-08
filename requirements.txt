@@ -1,28 +1,29 @@
-pip install pygame
-pip install googlesearch-python
-pip install qrcode
-pip install pyautogui
-pip install pyttsx3
-pip install winapps
-pip install matplotlib
-pip install tkcalendar
-pip install pyqt5
-pip install pyqtwebengine
-pip install yfinance
-pip install pillow
-pip install openpyxl
-pip install sympy
-pip install pytube
-pip install hijri_converter
-pip install requests
-pip install instaloader
-pip install opencv-python
-pip install textblob
-pip install vaderSentiment
-pip install langdetect
-pip install screen-brightness-control
-pip install numpy
-pip install prophet
-pip install seaborn
-pip install mediapipe  
-pip install pyshorteners
+pygame
+googlesearch-python
+qrcode
+pyautogui
+pyttsx3
+winapps
+matplotlib
+tkcalendar
+pyqt5
+pyqtwebengine
+yfinance
+pillow
+openpyxl
+sympy
+pytube
+hijri_converter
+requests
+instaloader
+opencv-python
+textblob
+vaderSentiment
+langdetect
+screen-brightness-control
+numpy
+prophet
+seaborn
+mediapipe
+pyshorteners
+
