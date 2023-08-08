@@ -3,7 +3,7 @@
 ### First of all clone the repository :
 
 ```
-git clone https://github.com/mrayanasim09/python-projects.git && cd python-projects
+git clone https://github.com/mrayanasim09/python-projects.git && cd python-projects && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ### Secondly now install the required packages :
