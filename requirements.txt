@@ -1,96 +1,28 @@
-absl-py==1.4.0
-appdirs==1.4.4
-attrs==23.1.0
-Babel==2.12.1
-beautifulsoup4==4.12.2
-certifi==2023.7.22
-cffi==1.15.1
-charset-normalizer==3.2.0
-click==8.1.6
-cmdstanpy==1.1.0
-colorama==0.4.6
-comtypes==1.2.0
-contourpy==1.1.0
-convertdate==2.4.0
-cycler==0.11.0
-EasyProcess==1.1
-entrypoint2==1.1
-ephem==4.1.4
-et-xmlfile==1.1.0
-flatbuffers==23.5.26
-fonttools==4.42.0
-frozendict==2.3.8
-googlesearch-python==1.2.3
-hijri-converter==2.3.1
-holidays==0.30
-html5lib==1.1
-idna==3.4
-importlib-resources==6.0.1
-instaloader==4.10
-joblib==1.3.1
-kiwisolver==1.4.4
-langdetect==1.0.9
-LunarCalendar==0.0.9
-lxml==4.9.3
-matplotlib==3.7.2
-mediapipe==0.10.3
-MouseInfo==0.1.3
-mpmath==1.3.0
-mss==9.0.1
-multitasking==0.0.11
-nltk==3.8.1
-numpy==1.25.2
-opencv-contrib-python==4.8.0.74
-opencv-python==4.8.0.74
-openpyxl==3.1.2
-packaging==23.1
-pandas==2.0.3
-Pillow==10.0.0
-plumbum==1.8.2
-prophet==1.1.4
-protobuf==3.20.3
-PyAutoGUI==0.9.54
-pycparser==2.21
-pygame==2.5.0
-PyGetWindow==0.0.9
-PyMeeus==0.5.12
-PyMsgBox==1.0.9
-pyparsing==3.0.9
-pyperclip==1.8.2
-pypiwin32==223
-pypng==0.20220715.0
-PyQt5==5.15.9
-PyQt5-Qt5==5.15.2
-PyQt5-sip==12.12.2
-PyQtWebEngine==5.15.6
-PyQtWebEngine-Qt5==5.15.2
-PyRect==0.2.0
-pyscreenshot==3.1
-PyScreeze==0.1.29
-pyshorteners==1.0.1
-python-dateutil==2.8.2
-pyttsx3==2.90
-pytube==15.0.0
-pytweening==1.0.7
-pytz==2023.3
-pywin32==227
-qrcode==7.4.2
-regex==2023.6.3
-requests==2.31.0
-screen-brightness-control==0.21.0
-seaborn==0.12.2
-six==1.16.0
-sounddevice==0.4.6
-soupsieve==2.4.1
-sympy==1.12
-textblob==0.17.1
-tkcalendar==1.6.1
-tqdm==4.65.1
-typing_extensions==4.7.1
-tzdata==2023.3
-urllib3==2.0.4
-vaderSentiment==3.3.2
-webencodings==0.5.1
-winapps==0.2.0
-WMI==1.5.1
-yfinance==0.2.27
+pip install pygame
+pip install googlesearch-python
+pip install qrcode
+pip install pyautogui
+pip install pyttsx3
+pip install winapps
+pip install matplotlib
+pip install tkcalendar
+pip install pyqt5
+pip install pyqtwebengine
+pip install yfinance
+pip install pillow
+pip install openpyxl
+pip install sympy
+pip install pytube
+pip install hijri_converter
+pip install requests
+pip install instaloader
+pip install opencv-python
+pip install textblob
+pip install vaderSentiment
+pip install langdetect
+pip install screen-brightness-control
+pip install numpy
+pip install prophet
+pip install seaborn
+pip install mediapipe  
+pip install pyshorteners
