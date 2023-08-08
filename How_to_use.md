@@ -26,4 +26,10 @@ cd <folder_name>
 
 ### 🗒 NOTE:
 
-Some projects need some things to be changed so first view the code if I do not mention enter a specific thing then run it then first full fill it.
+Some projects need some things to be changed so first view the code if I do not mention enter a specific thing then run it then first full fill it. 
+to view the code:
+```
+cat <filename>
+```
+
+
