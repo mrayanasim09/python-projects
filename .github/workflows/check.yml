@@ -1,0 +1,29 @@
+name: Clone Repo and Install Requirements
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+        
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        working-directory: ${{ github.workspace }}
+      
+      - name: Check for Errors
+        run: |
+          # Perform any error-checking tasks here
+          # For example, you can run tests or other checks
+          echo "Error checking code goes here"
+        working-directory: ${{ github.workspace }}
