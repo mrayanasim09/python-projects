@@ -273,7 +273,7 @@ If you find my Python projects valuable and would like to show your support, con
   </a>
 </p>
 
-💎 For those who prefer cryptocurrency, you can send some Ether (ETH) to my Ethereum wallet address: **0xEC55fFf7a8387eeaa0Ef886305350Ab3578CE5D3**. Your sponsorship means the world to me and serves as a powerful motivation to keep creating exciting Python projects for everyone to enjoy. 🚀🐍
+💎 For those who prefer cryptocurrency, you can send some Ether (ETH) to my Ethereum wallet address: _**0xEC55fFf7a8387eeaa0Ef886305350Ab3578CE5D3**_. Your sponsorship means the world to me and serves as a powerful motivation to keep creating exciting Python projects for everyone to enjoy. 🚀🐍
 
 🙏 Thank you for your incredible support! Your contributions inspire me to reach new heights and make a positive impact in the coding community. Let's create something amazing together! 🌟
 
