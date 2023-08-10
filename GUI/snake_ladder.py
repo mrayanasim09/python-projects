@@ -234,7 +234,7 @@ def main():
     master = Tk()
     master.title("Snake and Ladder")
     master.geometry("850x600")
-    img_path = r""  # enter the path of the image you can view the image at https://github.com/mrayanasim09/python-projects/blob/main/GUI/ezgif-5-ad15f112d4.gif
+    img_path = "ezgif-5-ad15f112d4.gif"  
     x = GameBoard(master, img_path)
     master.mainloop()
 
