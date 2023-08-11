@@ -285,3 +285,5 @@ If you find my Python projects valuable and would like to show your support, con
 
 <script src="https://cdn.ingest-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
 <script>window.LogRocket && window.LogRocket.init('93y3w1/python-projects');</script>
+
+
