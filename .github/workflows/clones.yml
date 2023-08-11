@@ -1,0 +1,22 @@
+name: Backup On Branch
+
+on:
+  push:
+    branches:
+      - main  # Trigger on the mrayanasim branch
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the Branch
+        uses: actions/checkout@v2
+        with:
+          ref: mrayanasim  # Checkout the main branch
+
+      - name: Upload Main Branch to Backup
+        uses: actions/upload-artifact@v2
+        with:
+          name: repository-backup
+          path: .  # This will upload all files in the main branch

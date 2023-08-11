@@ -2,7 +2,8 @@ class TimeCalculator:
     def __init__(self, hours=0, minutes=0, seconds=0):
         self.total_seconds = self.to_seconds(hours, minutes, seconds)
 
-    def to_seconds(self, hours, minutes, seconds):
+    @staticmethod
+    def to_seconds(hours, minutes, seconds):
         return hours * 3600 + minutes * 60 + seconds
 
     def add_time(self, hours=0, minutes=0, seconds=0):

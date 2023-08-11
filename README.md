@@ -21,7 +21,7 @@
 - [Note 📌](#note-)
 - [FAQ 🗒️](#frequently-asked-questions-faq-%EF%B8%8F)
 
-**Welcome to the Python Projects repository by MRayan Asim! This collection showcases a variety of Python projects developed to inspire and assist developers of all skill levels. Whether you're a beginner or an advanced programmer, you'll find valuable resources, guidance, and practical code examples for your Python-based projects. Let's dive in and explore the possibilities! 💡🔥**
+**🚀 Welcome to the mesmerizing realm of the Python Projects repository, curated by MRayan Asim! Get ready to embark on an exhilarating coding odyssey, where a trove of captivating Python creations awaits to inspire and empower developers of all levels. Whether you're taking your first coding steps or you're a seasoned programmer crafting intricate algorithms, this repository serves as your gateway to a world of endless possibilities. Discover gems that boost your resume's brilliance and engage in student projects that foster learning. Uncover a wealth of resources, expert guidance, and hands-on code examples that breathe life into your Python-based projects. Join us on this thrilling journey as we unveil the extraordinary potential of Python together! 💡🔥**
 
 <p align="center">
   <a href="https://forms.gle/SzJ4VA1zWZ3ehqGC6">
@@ -265,16 +265,23 @@ MRayan Asim maintains this repository. As a passionate Python enthusiast, MRayan
 
 # 🌟 **Sponsor Me and Fuel My Creativity** 🌟
 
-If you find my Python projects valuable and would like to show your support, consider sponsoring me! Your generous contribution empowers me to continue developing innovative and practical projects for the coding community. A simple gesture like buying me a coffee goes a long way in keeping me fueled for more coding sessions. ☕️ [Buy Me a Coffee](https://www.buymeacoffee.com/mrayanasim)
+If you find my Python projects valuable and would like to show your support, consider sponsoring me! Your generous contribution empowers me to continue developing innovative and practical projects for the coding community. A simple gesture like buying me a coffee goes a long way in keeping me fueled for more coding sessions. ☕️ 
 
-💎 For those who prefer cryptocurrency, you can send some Ether (ETH) to my Ethereum wallet address: **0xEC55fFf7a8387eeaa0Ef886305350Ab3578CE5D3**. Your sponsorship means the world to me and serves as a powerful motivation to keep creating exciting Python projects for everyone to enjoy. 🚀🐍
+<p align="center">
+  <a href="https://www.buymeacoffee.com/mrayanasim" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50px">
+  </a>
+</p>
+
+💎 For those who prefer cryptocurrency, you can send some Ether (ETH) to my Ethereum wallet address: _**0xEC55fFf7a8387eeaa0Ef886305350Ab3578CE5D3**_. Your sponsorship means the world to me and serves as a powerful motivation to keep creating exciting Python projects for everyone to enjoy. 🚀🐍
 
 🙏 Thank you for your incredible support! Your contributions inspire me to reach new heights and make a positive impact in the coding community. Let's create something amazing together! 🌟
 
-
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects)    ![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects)    ![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects)    ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)    ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects\&label=Views\&countColor=%23555555\&style=flat-square)    [![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main)    [![CodeFactor](https://www.codefactor.io/repository/github/mrayanasim09/python-projects/badge)](https://www.codefactor.io/repository/github/mrayanasim09/python-projects)    [![Backup Status](https://cloudback.it/badge/mrayanasim09/python-projects)](https://cloudback.it)
-
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects)    ![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects)    ![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects)    ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)    ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects\&label=Views\&countColor=%23555555\&style=flat-square)    [![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main)    [![CodeFactor](https://www.codefactor.io/repository/github/mrayanasim09/python-projects/badge)](https://www.codefactor.io/repository/github/mrayanasim09/python-projects)    [![DeepSource](https://app.deepsource.com/gh/mrayanasim09/python-projects.svg/?label=active+issues&show_trend=true&token=R4sWBGxzRPv6AjY4YoLiE-wT)](https://app.deepsource.com/gh/mrayanasim09/python-projects/?ref=repository-badge)    [![Backup Status](https://cloudback.it/badge/mrayanasim09/python-projects)](https://cloudback.it)  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mrayanasim09/python-projects/main)    ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/mrayanasim09/python-projects/main)    ![GitHub release (with filter)](https://img.shields.io/github/v/release/mrayanasim09/python-projects)
 
 ## *To View full Documentations you can go  [here](https://mrayans.gitbook.io/python--projects/)*
 
 <script src="//code.tidio.co/ytw5wbhm91dwsvp9mv9gdiob6za99eer.js" async></script>
+
+<script src="https://cdn.ingest-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
+<script>window.LogRocket && window.LogRocket.init('93y3w1/python-projects');</script>

@@ -24,7 +24,7 @@ def sketch_image(image_path):
 
 
 # Provide the path to your input image
-input_image_path = r""  # enter the path of the images you want to make skecth of
+input_image_path = "image.jpg"
 
 # Generate the sketch
 sketch = sketch_image(input_image_path)
