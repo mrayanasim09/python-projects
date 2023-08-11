@@ -12,10 +12,10 @@ import atexit
 atexit.register(print_install_message)
 
 setup(
-    name="python-projects",
+    name="python_projects",
     version="0.1",
     description="A collection of Python projects",
-    author="Your Name",
+    author="MRayan Asim",
     author_email="mrayanasim09@gmail.com",
     packages=find_packages(),
 )
