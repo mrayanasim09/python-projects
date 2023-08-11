@@ -1,7 +1,15 @@
 from setuptools import setup, find_packages
 
+def print_install_message():
+    print("***************************************")
+    print("* This package is made by MRayan Asim *")
+    print("***************************************")
+
+import atexit
+atexit.register(print_install_message)
+
 setup(
-    name='python-projects',  # This is the package name users will use for installation
+    name='python-projects',
     version='0.1',
     description='A collection of Python projects',
     author='Your Name',
