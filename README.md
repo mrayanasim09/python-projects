@@ -90,7 +90,7 @@ Explore the projects in each category to find detailed information, documentatio
 
 ## *Games 🎮*
 
-* [2048 game (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/2048.py) 🎲
+* [2048 game (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/blocks.py) 🎲
 * [Snake game (with GUI)](https://github.com/drik493/python\_projects/blob/main/Game/snake\_game.py) 🐍
 * [Hangman](https://github.com/drik493/python\_projects/blob/main/Game/hangman.py) 🪓
 * [Colox (a box colliding game with GUI)](Game/colox.py) 📦❄️
@@ -100,7 +100,7 @@ Explore the projects in each category to find detailed information, documentatio
 * Tick cross [(with GUI)](https://github.com/drik493/python\_projects/blob/main/Game/tick\_cross.py) or [(without GUI)](Game/tick\_cross\_gui.py) ❌⭕
 * [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/rock,paper,scissors.py) ✊🖐✌️
 * [A snake and ladder game ](Game/snake\_ladder.py)and [(also download the images with it)](Game/ezgif-5-ad15f112d4.gif) 🐍🪜
-* [21 or 20 plus game](https://github.com/drik493/python\_projects/blob/main/Game/21.py) 🃏
+* [21 or 20 plus game](https://github.com/drik493/python\_projects/blob/main/Game/twenty-one.py) 🃏
 * [Typing speed test](Game/typing\_speed.py) 🎮
 * [Star patterns (7 types of patterns)](https://github.com/drik493/python\_projects/blob/main/Game/star.py) ✨
 * [Dice rolling (With user guess without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/dice.py) 🎲
