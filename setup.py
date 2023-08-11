@@ -1,10 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='python-projects',
+    name='python-projects',  # This is the package name users will use for installation
     version='0.1',
     description='A collection of Python projects',
-    author='MRayan Asim',
+    author='Your Name',
     author_email='mrayanasim09@gmail.com',
-    packages=['python_projects'],
+    packages=find_packages(),
 )
