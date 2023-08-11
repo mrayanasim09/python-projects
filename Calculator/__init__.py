@@ -1,4 +1,4 @@
-import 12_to_24.py 
+import time.py 
 import ASCII.py
 import Mortgage.py 
 import Quadratic_Equation.py
