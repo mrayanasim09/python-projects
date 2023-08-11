@@ -12,7 +12,7 @@ import atexit
 atexit.register(print_install_message)
 
 setup(
-    name="python_projects",
+    name="100-python-projects",
     version="0.1",
     description="A collection of Python projects",
     author="MRayan Asim",
