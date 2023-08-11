@@ -1,34 +1,35 @@
-name: Publish Package to PyPI
+name: Publish Package to PyPI  # Name of the GitHub Actions workflow
 
 on:
   push:
     tags:
-      - '*'
+      - '*'  # Trigger the workflow on any tag push
 
 jobs:
   build_and_publish:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Run the job on the latest version of Ubuntu
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2  # Checkout the repository
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.x  # Use Python 3.x
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install wheel setuptools twine
+          pip install wheel setuptools twine  # Install required packages for building and publishing
 
       - name: Build distribution package
         run: |
-          python setup.py sdist bdist_wheel
+          python setup.py sdist bdist_wheel  # Build source distribution and wheel distribution
 
       - name: Publish to PyPI
         env:
-          TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+          TWINE_USERNAME: __token__  # PyPI username (usually "__token__" for API tokens)
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}  # PyPI token stored as a secret
         run: |
-          twine upload dist/*
+          twine upload dist/*  # Upload distribution files to PyPI using twine
