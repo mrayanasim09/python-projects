@@ -83,7 +83,7 @@ Explore the projects in each category to find detailed information, documentatio
 * [Fibonacci sequence](https://github.com/drik493/python\_projects/blob/main/Calculator/sequence.py) 🐇
 * [Graph calculator from equation (with graph)](https://github.com/drik493/python\_projects/blob/main/Calculator/graph.py) 📊
 * [Montly Mortgage calculator](Calculator/Mortgage.py) 📈💴
-* [12 hour time into 24 hour time](Calculator/12\_to\_24.py) 🕰️🕛
+* [12 hour time into 24 hour time](Calculator/time.py) 🕰️🕛
 * [Grade calculator](https://github.com/drik493/python\_projects/blob/main/Calculator/grade.py) 🎓
 * [Sudoku solver](https://github.com/drik493/python\_projects/blob/main/Calculator/sudukko.py) 🧩
 * [A program to find the ASCII value of characters](Calculator/ASCII%20.py) 💻🔧
