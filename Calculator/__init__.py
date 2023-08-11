@@ -1,6 +1,6 @@
-import time.py 
+import time.py
 import ASCII.py
-import Mortgage.py 
+import Mortgage.py
 import Quadratic_Equation.py
 import bmi.py
 import conject.py
