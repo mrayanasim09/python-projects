@@ -1,9 +1,7 @@
 name: Publish Package to PyPI
 
 on:
-  push:  # Trigger the workflow on every push
-    branches:
-      - '*'
+  workflow_dispatch:  # Trigger the workflow manually
 
 jobs:
   build_and_publish:
