@@ -98,9 +98,9 @@ Explore the projects in each category to find detailed information, documentatio
 * [Master Mind](https://github.com/drik493/python\_projects/blob/main/Game/master\_mid.py) 🔐
 * [A number details (prime, odd, co-prime, etc)](https://github.com/drik493/python\_projects/blob/main/Game/number\_details.py) 🔢
 * Tick cross [(with GUI)](https://github.com/drik493/python\_projects/blob/main/Game/tick\_cross.py) or [(without GUI)](Game/tick\_cross\_gui.py) ❌⭕
-* [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/rock,paper,scissors.py) ✊🖐✌️
+* [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/rock_paper_scissors.py) ✊🖐✌️
 * [A snake and ladder game ](Game/snake\_ladder.py)and [(also download the images with it)](Game/ezgif-5-ad15f112d4.gif) 🐍🪜
-* [21 or 20 plus game](https://github.com/drik493/python\_projects/blob/main/Game/twenty-one.py) 🃏
+* [21 or 20 plus game](https://github.com/drik493/python\_projects/blob/main/Game/twenty_one.py) 🃏
 * [Typing speed test](Game/typing\_speed.py) 🎮
 * [Star patterns (7 types of patterns)](https://github.com/drik493/python\_projects/blob/main/Game/star.py) ✨
 * [Dice rolling (With user guess without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/dice.py) 🎲
