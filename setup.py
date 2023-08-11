@@ -13,7 +13,7 @@ atexit.register(print_install_message)
 
 setup(
     name="100-python-projects",
-    version="0.1",
+    version="0.2",
     description="A collection of Python projects",
     author="MRayan Asim",
     author_email="mrayanasim09@gmail.com",
