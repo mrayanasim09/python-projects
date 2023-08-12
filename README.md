@@ -21,7 +21,7 @@
 - [Note 📌](#note-)
 - [FAQ 🗒️](#frequently-asked-questions-faq-%EF%B8%8F)
 
-**🚀 Welcome to the mesmerizing realm of the Python Projects repository, curated by MRayan Asim! Get ready to embark on an exhilarating coding odyssey, where a trove of captivating Python creations awaits to inspire and empower developers of all levels. Whether you're taking your first coding steps or you're a seasoned programmer crafting intricate algorithms, this repository serves as your gateway to a world of endless possibilities. Discover gems that boost your resume's brilliance and engage in student projects that foster learning. Uncover a wealth of resources, expert guidance, and hands-on code examples that breathe life into your Python-based projects. Join us on this thrilling journey as we unveil the extraordinary potential of Python together! 💡🔥**
+_**🚀 Welcome to the mesmerizing realm of the Python Projects repository, curated by MRayan Asim! Get ready to embark on an exhilarating coding odyssey, where a trove of captivating Python creations awaits to inspire and empower developers of all levels. Whether you're taking your first coding steps or you're a seasoned programmer crafting intricate algorithms, this repository serves as your gateway to a world of endless possibilities. Discover gems that boost your resume's brilliance and engage in student projects that foster learning. Uncover a wealth of resources, expert guidance, and hands-on code examples that breathe life into your Python-based projects. Join us on this thrilling journey as we unveil the extraordinary potential of Python together! 💡🔥**_
 
 <p align="center">
   <a href="https://forms.gle/SzJ4VA1zWZ3ehqGC6">
