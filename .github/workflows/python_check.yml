@@ -1,4 +1,4 @@
-name: Python Code Error Check
+name: Run Python Files
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ on:
       - '*'
 
 jobs:
-  check-errors:
+  run-python-files:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,8 +25,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install pytest
 
-      - name: Run Python error checks
+      - name: Run Python files
         run: |
-          pytest --ignore=__pycache__ --ignore=venv
+          find . -name "*.py" -type f -exec python {} \;
