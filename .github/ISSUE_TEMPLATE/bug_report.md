@@ -1,44 +1,51 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: Bug Report 🐞
+about: Found a bug? Let us know so we can fix it!
+title: 'Bug: '
+labels: bug
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Bug Description 🐜
 
-**To Reproduce**
-Steps to reproduce the behavior:
+**What happened:**
+A brief description of the issue you encountered.
+
+**Steps to Reproduce:**
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
-4. See the error
+4. Error appears!
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**What you expected:**
+A clear explanation of what you were expecting to happen.
 
-**Screenshots**
-If applicable, could you add screenshots to help explain your problem?
+## Screenshots 📷
 
-**Desktop (please complete the following information):**
+**Screenshots:**
+If applicable, add screenshots to visualize the problem.
+
+## Your Environment 🖥️
+
+**Desktop:**
 - OS: [e.g. iOS]
-- Browser [e.g. chrome, safari]
-- Version [e.g. 22]
+- Browser: [e.g. Chrome, Safari]
+- Version: [e.g. 22]
 
-**Smartphone (please complete the following information):**
-- Device: [e.g. iPhone6]
-- OS: [e.g. iOS8.1]
-- Browser [e.g. stock browser, safari]
-- Version [e.g. 22]
+**Smartphone:**
+- Device: [e.g. iPhone 6]
+- OS: [e.g. iOS 8.1]
+- Browser: [e.g. Safari]
+- Version: [e.g. 22]
 
-**Additional context**
-Please feel free to add any other context about the problem here.
+## Additional Context 📝
+
+**Anything else:**
+Provide any extra information or context that might help us understand the issue better.
 
 ---
 
 **Note to Contributors:**
 
-If you would like to contribute a fix for this bug, please follow the guidelines outlined in [CONTRIBUTING.md](https://github.com/mrayanasim09/python-projects/blob/main/CONTRIBUTING.md). Your contributions are highly appreciated!
+If you're feeling adventurous and want to help fix this bug, follow the guidelines in [CONTRIBUTING.md](https://github.com/mrayanasim09/python-projects/blob/main/CONTRIBUTING.md). We appreciate your contributions! 👏
