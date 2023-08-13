@@ -70,3 +70,4 @@ jobs:
           total_lines=$((steps.count_python_lines.outputs.python_lines + steps.count_txt_lines.outputs.txt_lines + steps.count_md_lines.outputs.md_lines + steps.count_yaml_lines.outputs.yaml_lines + steps.count_xml_lines.outputs.xml_lines))
           echo "Total number of files: $total_files"
           echo "Total number of lines: $total_lines"
+
