@@ -1,7 +1,7 @@
 # 80+ Python Projects by MRayan Asim 🐍🚀
 <p align="center">
   <a href="https://mrayanasim09.github.io/python-projects/">
-    <img src="https://img.shields.io/badge/Visit-My%20Website-blue" alt="Website Badge" width="150" height="30">
+    <img src="https://img.shields.io/badge/Visit-My%20Website-blue" alt="Website Badge" width="150" height="25">
   </a>
 </p>
 
