@@ -5,7 +5,10 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
+  - package-ecosystem: "pip" # Specify the package ecosystem (for Python packages)
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 5 # Limit the number of open pull requests
+    reviewers: # Optional: Add reviewers for the pull requests
+      - "mrayanasim09"
