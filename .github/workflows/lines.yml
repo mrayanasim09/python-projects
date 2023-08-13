@@ -40,8 +40,8 @@ jobs:
       - name: Count YAML lines
         id: count_yaml_lines
         run: |
-          yaml_lines=$(find . -name '*.yml' -o -name '*.yaml' | xargs cat | wc -l)
-          yaml_files=$(find . -name '*.yml' -o -name '*.yaml' | wc -l)
+          yaml_lines=$(find . -name '*.yml' | xargs cat | wc -l)
+          yaml_files=$(find . -name '*.yml' | wc -l)
           echo "::set-output name=yaml_lines::$yaml_lines"
           echo "::set-output name=yaml_files::$yaml_files"
 
@@ -65,7 +65,7 @@ jobs:
           echo "Total lines of YAML files: ${{ steps.count_yaml_lines.outputs.yaml_files }}"
           echo "Total lines of XML code: ${{ steps.count_xml_lines.outputs.xml_lines }}"
           echo "Total lines of XML files: ${{ steps.count_xml_lines.outputs.xml_files }}"
-
+          
           total_files=$((steps.count_python_lines.outputs.python_files + steps.count_txt_lines.outputs.txt_files + steps.count_md_lines.outputs.md_files + steps.count_yaml_lines.outputs.yaml_files + steps.count_xml_lines.outputs.xml_files))
           total_lines=$((steps.count_python_lines.outputs.python_lines + steps.count_txt_lines.outputs.txt_lines + steps.count_md_lines.outputs.md_lines + steps.count_yaml_lines.outputs.yaml_lines + steps.count_xml_lines.outputs.xml_lines))
           echo "Total number of files: $total_files"
