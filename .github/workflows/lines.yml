@@ -1,4 +1,4 @@
- name: Check Code Lines
+name: Check Code Lines
 
 on:
   push:
@@ -56,10 +56,15 @@ jobs:
       - name: Display results
         run: |
           echo "Total lines of Python code: ${{ steps.count_python_lines.outputs.python_lines }}"
+          echo "Total lines of Python files: ${{ steps.count_python_lines.outputs.python_files }}"
           echo "Total lines of TXT code: ${{ steps.count_txt_lines.outputs.txt_lines }}"
+          echo "Total lines of TXT files: ${{ steps.count_txt_lines.outputs.txt_files }}"
           echo "Total lines of MD code: ${{ steps.count_md_lines.outputs.md_lines }}"
+          echo "Total lines of MD files: ${{ steps.count_md_lines.outputs.md_files }}"
           echo "Total lines of YAML code: ${{ steps.count_yaml_lines.outputs.yaml_lines }}"
+          echo "Total lines of YAML files: ${{ steps.count_yaml_lines.outputs.yaml_files }}"
           echo "Total lines of XML code: ${{ steps.count_xml_lines.outputs.xml_lines }}"
+          echo "Total lines of XML files: ${{ steps.count_xml_lines.outputs.xml_files }}"
 
           total_files=$((steps.count_python_lines.outputs.python_files + steps.count_txt_lines.outputs.txt_files + steps.count_md_lines.outputs.md_files + steps.count_yaml_lines.outputs.yaml_files + steps.count_xml_lines.outputs.xml_files))
           total_lines=$((steps.count_python_lines.outputs.python_lines + steps.count_txt_lines.outputs.txt_lines + steps.count_md_lines.outputs.md_lines + steps.count_yaml_lines.outputs.yaml_lines + steps.count_xml_lines.outputs.xml_lines))
