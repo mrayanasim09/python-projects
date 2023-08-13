@@ -1,55 +1,47 @@
-# Security Policy
+# Security Policy 🔒
 
-## Supported Versions
+## Supported Versions 🛡️
 
-Use this section to tell people about which versions of your project are currently being supported with security updates.
+Stay informed about the versions of your project that currently receive security updates.
 
-| Version | Supported            |
-| ------- | -------------------- |
-| 5.1.x   | :white\_check\_mark: |
-| 5.0.x   | :x:                  |
-| 4.0.x   | :white\_check\_mark: |
-| < 4.0   | :x:                  |
+| Version   | Support              |
+| --------- | -------------------- |
+| v0.0.1    | ❌ Not Supported     |
+| v0.0.2    | ❌ Not Supported     |
+| v0.0.3    | ✅ Supported         |
+| v0.0.4    | ✅ Supported         |
 
-## Reporting a Vulnerability
+## Reporting a Vulnerability 🚨
 
-Use this section to tell people how to report a vulnerability.
+Help us enhance security by reporting vulnerabilities in the "python-projects" repository owned by "mrayanasim". To report a vulnerability, create an issue [here](https://github.com/mrayanasim09/python-projects/issues). Your responsible disclosure is crucial.
 
-Tell them where to go, how often they can expect to get an update on a reported vulnerability, what to expect if the vulnerability is accepted or declined, etc.
+When reporting a vulnerability, kindly include:
 
-## Reporting a Vulnerability
+- **Description**: Clear and concise details of the vulnerability.
+- **Steps to Reproduce**: The steps to replicate the vulnerability.
+- **Expected Behavior**: Your anticipated outcome.
+- **Actual Behavior**: The actual outcome experienced.
+- **Affected Versions**: Indicate impacted versions.
+- **Impact**: Assess potential consequences.
 
-Use this section to instruct people on how to report a vulnerability.
+We commit to swift acknowledgment and review of your report within [X business days]. Our team may seek additional information if necessary.
 
-If you discover a security vulnerability in the "python-projects" repository owned by "mrayanasim", please report it to us by creating a new issue [here](https://github.com/mrayanasim09/python-projects/issues) and including detailed information about the vulnerability. We appreciate your responsible disclosure and will address the issue as quickly as possible.
+## Vulnerability Response 🛠️
 
-When reporting a vulnerability, please include the following information:
+Promptly addressing vulnerabilities is a priority. Severity guides our response. Updates on progress and resolution timelines will be provided regularly.
 
-* Description: A clear and concise description of the vulnerability.
-* Steps to Reproduce: Provide the steps necessary to reproduce the vulnerability.
-* Expected Behavior: Describe what you expected to happen when following the steps.
-* Actual Behavior: Explain what actually happened when following the steps.
-* Affected Versions: Specify which versions of the project are affected by the vulnerability.
-* Impact: Assess the potential impact of the vulnerability.
+Accepted vulnerabilities lead to developing patches or security updates. Once ready, a new version will address reported vulnerabilities.
 
-We are committed to maintaining open communication with the security community and will acknowledge your report within \[X business days]. Our team will review the vulnerability and may request additional information or clarifications if needed.
+Out-of-scope vulnerabilities will be explained. Please note that addressing all reports may not be feasible if they fall beyond our project's scope.
 
-## Vulnerability Response
+We value the security community's contribution to safeguarding our users. Thank you for your efforts! 👏
 
-Once a vulnerability is reported, we will evaluate it promptly and prioritize our response based on the severity and impact of the vulnerability. We will strive to provide regular updates on the progress of the vulnerability fix and an estimated timeline for its resolution.
+## Security Updates 🚀
 
-If the vulnerability is accepted, we will work on developing and implementing a patch or a security update. Once the fix is available, we will release a new version that addresses the reported vulnerability.
+Ensure project security by staying updated. Regularly check the "python-projects" releases page owned by "mrayanasim" for updates. Follow the instructions in the release notes for upgrades.
 
-If the vulnerability is deemed out of scope, we will notify you and explain the reason for the decision. Please note that we may not be able to address every reported vulnerability if it falls outside the scope of our project.
+Note that outdated versions may lack security updates and are vulnerable to known exploits. Upgrade to a supported version for security.
 
-We value the security community's contribution to improving the security of our project and appreciate your efforts in keeping our users safe. Thank you for your help!
+**Note: Tailor this security policy template to your project's specific needs.**
 
-## Security Updates
 
-As security vulnerabilities are addressed and fixes become available, we strongly recommend keeping your project up to date with the latest version. This ensures that you have the latest security enhancements and protections.
-
-Make sure to regularly check the releases page of the "python-projects" repository owned by "mrayanasim" for updates and follow the upgrade instructions provided in the release notes.
-
-Please note that older versions of the project may no longer receive security updates and could be vulnerable to known exploits. It is advisable to upgrade to a supported version to maintain a secure environment.
-
-**Note: This security policy template is intended as a starting point and should be tailored to fit your specific project and processes.**
