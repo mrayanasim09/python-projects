@@ -1,0 +1,7 @@
+# Assign the following owners to the entire repository
+* @mrayanasim09 @drik493
+
+# You can also specify ownership for specific files or directories
+# For example:
+# /path/to/file.py @mrayanasim09
+# /specific/directory/* @drik493
