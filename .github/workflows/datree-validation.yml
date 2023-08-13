@@ -1,15 +1,15 @@
-# |=========================== Datree Policy Check ===================================|
-# | This workflow will verify that all committed config files in the PR are valid.    |
-# | If one of the config files is happened to be a K8s config file (manifest),        |
-# | It will also automatically be tested for schema validation and misconfigurations. |
-# | For more info visit: https://github.com/marketplace/datree                        |
-# |===================================================================================|
-
 name: Datree Workflow
 
 on:
+  push:
+    paths:
+      - '**/*.yaml'
+      - '**/*.yml'
   pull_request:
     types: [opened, edited, synchronize, reopened]
+    paths:
+      - '**/*.yaml'
+      - '**/*.yml'
 
 jobs:
   configs-validation:
@@ -18,7 +18,7 @@ jobs:
       DATREE_TOKEN: ${{ secrets.DATREE_TOKEN }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
@@ -29,6 +29,7 @@ jobs:
           files: |
             *.yaml
             *.yml
+
       - name: List all changed files
         run: echo ${{ steps.changed-files.outputs.all_changed_files }}
 
