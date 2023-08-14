@@ -1,6 +1,12 @@
 # 80+ Python Projects by MRayan Asim 🐍🚀
 
 <p align="center">
+  <a href="https://mrayanasim09.github.io/python-projects/">
+    <img src="https://img.shields.io/badge/Visit-My%20Website-blue" alt="Website Badge" width="150" height="25">
+  </a>
+</p>
+
+<p align="center">
   <img src="https://github.com/mrayanasim09/python-projects/raw/main/MRayan.png" alt="My Logo" style="max-width: 100%; max-height: 100%;">
 </p>
 
@@ -21,7 +27,7 @@
 - [Note 📌](#note-)
 - [FAQ 🗒️](#frequently-asked-questions-faq-%EF%B8%8F)
 
-**🚀 Welcome to the mesmerizing realm of the Python Projects repository, curated by MRayan Asim! Get ready to embark on an exhilarating coding odyssey, where a trove of captivating Python creations awaits to inspire and empower developers of all levels. Whether you're taking your first coding steps or you're a seasoned programmer crafting intricate algorithms, this repository serves as your gateway to a world of endless possibilities. Discover gems that boost your resume's brilliance and engage in student projects that foster learning. Uncover a wealth of resources, expert guidance, and hands-on code examples that breathe life into your Python-based projects. Join us on this thrilling journey as we unveil the extraordinary potential of Python together! 💡🔥**
+_**🚀 Welcome to the mesmerizing realm of the Python Projects repository, curated by MRayan Asim! Get ready to embark on an exhilarating coding odyssey, where a trove of captivating Python creations awaits to inspire and empower developers of all levels. Whether you're taking your first coding steps or you're a seasoned programmer crafting intricate algorithms, this repository serves as your gateway to a world of endless possibilities. Discover gems that boost your resume's brilliance and engage in student projects that foster learning. Uncover a wealth of resources, expert guidance, and hands-on code examples that breathe life into your Python-based projects. Join us on this thrilling journey as we unveil the extraordinary potential of Python together! 💡🔥**_
 
 <p align="center">
   <a href="https://forms.gle/SzJ4VA1zWZ3ehqGC6">
@@ -83,14 +89,14 @@ Explore the projects in each category to find detailed information, documentatio
 * [Fibonacci sequence](https://github.com/drik493/python\_projects/blob/main/Calculator/sequence.py) 🐇
 * [Graph calculator from equation (with graph)](https://github.com/drik493/python\_projects/blob/main/Calculator/graph.py) 📊
 * [Montly Mortgage calculator](Calculator/Mortgage.py) 📈💴
-* [12 hour time into 24 hour time](Calculator/12\_to\_24.py) 🕰️🕛
+* [12 hour time into 24 hour time](Calculator/time.py) 🕰️🕛
 * [Grade calculator](https://github.com/drik493/python\_projects/blob/main/Calculator/grade.py) 🎓
 * [Sudoku solver](https://github.com/drik493/python\_projects/blob/main/Calculator/sudukko.py) 🧩
 * [A program to find the ASCII value of characters](Calculator/ASCII%20.py) 💻🔧
 
 ## *Games 🎮*
 
-* [2048 game (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/2048.py) 🎲
+* [2048 game (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/blocks.py) 🎲
 * [Snake game (with GUI)](https://github.com/drik493/python\_projects/blob/main/Game/snake\_game.py) 🐍
 * [Hangman](https://github.com/drik493/python\_projects/blob/main/Game/hangman.py) 🪓
 * [Colox (a box colliding game with GUI)](Game/colox.py) 📦❄️
@@ -98,9 +104,9 @@ Explore the projects in each category to find detailed information, documentatio
 * [Master Mind](https://github.com/drik493/python\_projects/blob/main/Game/master\_mid.py) 🔐
 * [A number details (prime, odd, co-prime, etc)](https://github.com/drik493/python\_projects/blob/main/Game/number\_details.py) 🔢
 * Tick cross [(with GUI)](https://github.com/drik493/python\_projects/blob/main/Game/tick\_cross.py) or [(without GUI)](Game/tick\_cross\_gui.py) ❌⭕
-* [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/rock,paper,scissors.py) ✊🖐✌️
+* [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/rock_paper_scissors.py) ✊🖐✌️
 * [A snake and ladder game ](Game/snake\_ladder.py)and [(also download the images with it)](Game/ezgif-5-ad15f112d4.gif) 🐍🪜
-* [21 or 20 plus game](https://github.com/drik493/python\_projects/blob/main/Game/21.py) 🃏
+* [21 or 20 plus game](https://github.com/drik493/python\_projects/blob/main/Game/twenty_one.py) 🃏
 * [Typing speed test](Game/typing\_speed.py) 🎮
 * [Star patterns (7 types of patterns)](https://github.com/drik493/python\_projects/blob/main/Game/star.py) ✨
 * [Dice rolling (With user guess without GUI)](https://github.com/drik493/python\_projects/blob/main/Game/dice.py) 🎲
@@ -277,7 +283,7 @@ If you find my Python projects valuable and would like to show your support, con
 
 🙏 Thank you for your incredible support! Your contributions inspire me to reach new heights and make a positive impact in the coding community. Let's create something amazing together! 🌟
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects)    ![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects)    ![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects)    ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)    ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects\&label=Views\&countColor=%23555555\&style=flat-square)    [![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main)    [![CodeFactor](https://www.codefactor.io/repository/github/mrayanasim09/python-projects/badge)](https://www.codefactor.io/repository/github/mrayanasim09/python-projects)    [![DeepSource](https://app.deepsource.com/gh/mrayanasim09/python-projects.svg/?label=active+issues&show_trend=true&token=R4sWBGxzRPv6AjY4YoLiE-wT)](https://app.deepsource.com/gh/mrayanasim09/python-projects/?ref=repository-badge)    [![Backup Status](https://cloudback.it/badge/mrayanasim09/python-projects)](https://cloudback.it)  ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mrayanasim09/python-projects/main)    ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/mrayanasim09/python-projects/main)    ![GitHub release (with filter)](https://img.shields.io/github/v/release/mrayanasim09/python-projects)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mrayanasim09/python-projects)    ![GitHub repo size](https://img.shields.io/github/repo-size/mrayanasim09/python-projects)    ![GitHub top language](https://img.shields.io/github/languages/top/mrayanasim09/python-projects)    ![GitHub contributors](https://img.shields.io/github/contributors-anon/mrayanasim09/python-projects)    ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects\&label=Views\&countColor=%23555555\&style=flat-square)    [![codebeat badge](https://codebeat.co/badges/6fdc6dd9-f8b4-4af7-82bf-5dfc44c69273)](https://codebeat.co/projects/github-com-mrayanasim09-python-projects-main)    [![CodeFactor](https://www.codefactor.io/repository/github/mrayanasim09/python-projects/badge)](https://www.codefactor.io/repository/github/mrayanasim09/python-projects)    [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5e95c16a41304ba4bbd6b4f044309dbf)](https://app.codacy.com/gh/mrayanasim09/python-projects/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)    [![DeepSource](https://app.deepsource.com/gh/mrayanasim09/python-projects.svg/?label=active+issues&show_trend=true&token=R4sWBGxzRPv6AjY4YoLiE-wT)](https://app.deepsource.com/gh/mrayanasim09/python-projects/?ref=repository-badge)    [![Backup Status](https://cloudback.it/badge/mrayanasim09/python-projects)](https://cloudback.it)    ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/mrayanasim09/python-projects/main)    ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/mrayanasim09/python-projects/main)     [![CircleCI](https://dl.circleci.com/status-badge/img/gh/mrayanasim09/python-projects/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/mrayanasim09/python-projects/tree/main)    ![GitHub release (with filter)](https://img.shields.io/github/v/release/mrayanasim09/python-projects)    [![CodeQL](https://github.com/mrayanasim09/python-projects/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/mrayanasim09/python-projects/actions/workflows/github-code-scanning/codeql)    [![Python Syntax Error Founder](https://github.com/mrayanasim09/python-projects/actions/workflows/bandit.yml/badge.svg)](https://github.com/mrayanasim09/python-projects/actions/workflows/bandit.yml)   
 
 ## *To View full Documentations you can go  [here](https://mrayans.gitbook.io/python--projects/)*
 
@@ -285,3 +291,5 @@ If you find my Python projects valuable and would like to show your support, con
 
 <script src="https://cdn.ingest-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
 <script>window.LogRocket && window.LogRocket.init('93y3w1/python-projects');</script>
+<meta name="google-site-verification" content="f21tjuRj5a-61XSVmjg7qUpkKkBw3h0qorpxIJXqpCM" />
+

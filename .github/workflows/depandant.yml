@@ -1,0 +1,32 @@
+name: Dependabot Updates
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Dependabot
+        run: |
+          curl https://api.github.com/repos/$GITHUB_REPOSITORY -o repo.json
+          curl -X POST https://api.github.com/repos/$GITHUB_REPOSITORY/dispatches \
+          -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"event_type": "dependabot"}'

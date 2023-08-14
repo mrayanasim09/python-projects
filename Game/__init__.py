@@ -1,0 +1,16 @@
+import blocks
+import color_guessing
+import colox
+import dice
+import hangman
+import master_mid
+import number_details
+import number_guessing
+import rock_paper_scisors
+import snake_game
+import snake_ladder
+import star
+import tick_cross
+import tick_cross_gui
+import twenty_one
+import typing_speed
