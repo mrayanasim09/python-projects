@@ -9,5 +9,7 @@ Thank you to the following individuals and bots for their contributions to the "
 - [dependabot](https://github.com/dependabot)
 - [snyk-bot](https://github.com/snyk-bot)
 - [actions-user](https://github.com/actions-user)
+- [mend bolt for github](https://github.com/apps/mend-bolt-for-github)
+- [datreeio](https://github.com/apps/datreeio)
 
 Your contributions help make this project better! :rocket:
