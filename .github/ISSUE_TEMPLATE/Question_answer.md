@@ -2,8 +2,8 @@
 name: Question or Help Request ❓
 about: Ask a question or request assistance.
 title: 'Question: '
-labels: question
-assignees: ''
+labels: bug, documentation, question
+assignees: mrayanasim09
 
 ---
 

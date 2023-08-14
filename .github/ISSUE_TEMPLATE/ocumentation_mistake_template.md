@@ -1,9 +1,10 @@
 ---
-name: 📚 Report Documentation Mistake
+name: "\U0001F4DA Report Documentation Mistake"
 about: Found an error in the documentation? Let us know so we can improve it!
 title: "[Documentation] Issue Title Here"
-labels: documentation, bug
+labels: bug, documentation
 assignees: mrayanasim09
+
 ---
 
 ## 📝 Description

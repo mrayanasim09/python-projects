@@ -1,5 +1,5 @@
 ---
-name: Bug Report 🐞
+name: "Bug Report \U0001F41E"
 about: Found a bug? Let us know so we can fix it!
 title: 'Bug: '
 labels: bug
