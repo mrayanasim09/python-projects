@@ -143,7 +143,7 @@ Explore the projects in each category to find detailed information, documentatio
 * [Password to hash form (md5)](https://github.com/drik493/python\_projects/blob/main/Utilities/password\_hash.py) 🔒
 * [Hash password cracking (md5 only, using rockyou.txt)](https://github.com/drik493/python\_projects/blob/main/Utilities/password.py) 🚫🔍
 * [Password generator](https://github.com/drik493/python\_projects/blob/main/Utilities/passwrd\_generator.py) 🔐🔢
-* [Birth Day Finder (also zodiac sign, life path number, your birth date according to Islam and birthstone and birth flower)](https://github.com/drik493/python\_projects/blob/main/Utilities/birthday.py) 🎂🎉
+* [Birth Day Finder (zodiac sign, life path number, your birth date according to Islam and birthstone and birth flower)](https://github.com/drik493/python\_projects/blob/main/Utilities/birthday.py) 🎂🎉
 * [words and letter count of given text](Utilities/word\_count.py) 🔢🔄️
 * [A program to make short forms for the entered words](Utilities/short\_form.py) 🔤🔄
 
