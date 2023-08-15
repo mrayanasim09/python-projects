@@ -12,9 +12,9 @@ Fixes #Issue_Number
 
 🛠️ List the changes introduced by this pull request in bullet points:
 
-- 
-- 
-- 
+-
+-
+-
 
 ## Additional Information
 
