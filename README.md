@@ -64,7 +64,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A file explorer](GUI/file_explorer.py) 📂🔎
 - [Youtube video downloader](GUI/youtube_download.py) 📺🔽💾
 - [spelling correction](GUI/spelling.py) 🔤📏🔍
-- [Figet spinner (use it on windows with space bar)](GUI/spinner.py) ߷
+- [Figet spinner (use it on Windows with the space bar)](GUI/spinner.py) ߷
 - [A beautiful design using turtle](GUI/graphics.py) 🐢🎨
 - [A quiz application for asking common questions ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Quiz.py) 👉📜
 - [Pikachu using turtle](GUI/Pikachu.py) (っ ◔◡◔)っ
