@@ -4,12 +4,12 @@
 
 Stay informed about the versions of your project that currently receive security updates.
 
-| Version   | Support              |
-| --------- | -------------------- |
-| v0.0.1    | ❌ Not Supported     |
-| v0.0.2    | ❌ Not Supported     |
-| v0.0.3    | ✅ Supported         |
-| v0.0.4    | ✅ Supported         |
+| Version | Support          |
+| ------- | ---------------- |
+| v0.0.1  | ❌ Not Supported |
+| v0.0.2  | ❌ Not Supported |
+| v0.0.3  | ✅ Supported     |
+| v0.0.4  | ✅ Supported     |
 
 ## Reporting a Vulnerability 🚨
 
@@ -43,5 +43,3 @@ Ensure project security by staying updated. Regularly check the "python-projects
 Note that outdated versions may lack security updates and are vulnerable to known exploits. Upgrade to a supported version for security.
 
 **Note: Tailor this security policy template to your project's specific needs.**
-
-
