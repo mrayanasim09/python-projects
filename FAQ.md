@@ -27,8 +27,9 @@ A: The code in this repository is provided under the [MIT License](LICENSE), whi
 ### Q: How can I get in touch with the author?
 
 A: You can reach out to MRayan Asim through the following channels:
+
 - Email: [mrayanasim09@gmail.com](mailto:mrayanasim09@gmail.com)
-- LinkedIn: [View Profile](https://www.linkedin.com/in/mrayan-asim-044836275/)
+- LinkedIn : [View Profile](https://www.linkedin.com/in/mrayan-asim-044836275/)
 - GitHub: [mrayanasim09](https://github.com/mrayanasim09)
 
 ### Q: I have feedback or suggestions for improving the projects. How can I share them?
@@ -37,7 +38,7 @@ A: We value feedback and suggestions from the community. You can provide your fe
 
 ### Q: How can I stay updated with new projects or changes to existing ones?
 
-A: You can stay updated by watching or starring this repository. Additionally, you can join our [Discord](https://discord.gg/uRfXYjub) or [Reddit Community](https://www.reddit.com/r/Python_projects_rayan/) for discussions and announcements about new projects and updates.
+A: You can stay updated by watching or staring at this repository. Additionally, you can join our [Discord](https://discord.gg/uRfXYjub) or [Reddit Community](https://www.reddit.com/r/Python_projects_rayan/) for discussions and announcements about new projects and updates.
 
 ### Q: Is there any support for the projects if I encounter difficulties?
 
