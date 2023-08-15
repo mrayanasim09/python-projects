@@ -1,4 +1,3 @@
-
 <div align="center">
   <h1>Contributor Covenant Code of Conduct</h1>
 </div>
@@ -50,7 +49,7 @@ Our enforcement process follows these guidelines:
 
 ### 2. Warning
 
-**Impact**: Violation through a single incident or actions.
+**Impact**: Violation through a single incident or action.
 
 **Consequence**: A written warning from leaders, with clear communication about the violation.
 
@@ -73,3 +72,4 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 The enforcement approach is inspired by [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity).
 
 For frequently asked questions about this code of conduct, visit the [FAQ](https://www.contributor-covenant.org/faq). Translations are available [here](https://www.contributor-covenant.org/translations).
+
