@@ -4,7 +4,7 @@ Welcome to python-projects! We appreciate your interest in contributing to this 
 
 ## Issues
 
-If you encounter any issues or have ideas for improvements, please submit an issue in the [issue tracker](https://github.com/mrayanasim09/python-projects/issues). When submitting an issue, provide a clear and detailed description of the problem or suggestion. This will help us understand and address it more effectively.
+If you encounter any issues or have ideas for improvements, please submit an issue in the [issue tracker](https://github.com/mrayanasim09/python-projects/issues). When you submit an issue, please provide a clear and detailed description of the problem or suggestion. This will help us understand and address it more effectively.
 
 ## How to contribute:
 
@@ -32,18 +32,18 @@ Before making any changes, create a new branch to work on your contributions. Th
 
 Now, you can start making your contributions. Here are some ideas on how you can contribute:
 
-* Add new Python projects to the relevant categories.
-* Improve existing projects by fixing bugs or adding new features.
-* Enhance the documentation to make it more informative and user-friendly.
-* Refactor code to improve readability and maintainability.
+- Add new Python projects to the relevant categories.
+- Improve existing projects by fixing bugs or adding new features.
+- Enhance the documentation to make it more informative and user-friendly.
+- Refactor code to improve readability and maintainability.
 
 ### 5. Commit Your Changes
 
 Once you've made your changes, it's time to commit them. Stage the files you want to include in your commit:
 
 ```
-  git add .
-  
+  git add.
+
 ```
 
 Commit the changes with a meaningful commit message that explains the purpose of your changes:
@@ -62,7 +62,7 @@ Push the changes to your forked repository on GitHub:
 
 ### 7. Create a Pull Request
 
-Now, go to the original repository on GitHub [python-projects](https://github.com/mrayanasim09/python-projects) and switch to the branch you just created (my-contribution). Click on the "New Pull Request" button. Ensure that the base repository is set to mrayanasim09/python-projects and the base branch is set to main. Compare your branch (my-contribution) with the main branch of the original repository. Review your changes and click "Create Pull Request."
+Now, go to the original repository on GitHub [python-projects](https://github.com/mrayanasim09/python-projects) and switch to the branch you just created (my-contribution). Click on the "New Pull Request" button. Ensure that the base repository is set to mrayanasim09/python-projects and the base branch is set to main. Compare your branch (my contribution) with the main branch of the original repository. Review your changes and click "Create Pull Request."
 
 ### 8. Collaborate and Iterate
 
@@ -70,16 +70,16 @@ Congratulations! You've submitted a pull request. The repository maintainers and
 
 ### 9. Wait for Review and Merge
 
-Once your pull request is reviewed and approved, it will be merged into the main repository. Your contributions will now be part of the Python Projects by MRayan Asim repository for others to explore and benefit from!
+Once your pull request is reviewed and approved, it will be merged into the central repository. Your contributions will now be part of the Python Projects by MRayan Asim repository for others to explore and benefit from!
 
 Thank you for contributing to the Python Projects repository. Your contributions play a crucial role in creating a valuable resource for Python developers worldwide. Happy coding! 🚀🐍
 
 ## Code of Conduct
 
-We expect all contributors to adhere to the [Code of Conduct](code\_of\_conduct.md) in all interactions related to this project.
+We expect all contributors to adhere to the [Code of Conduct](code_of_conduct.md) in all interactions related to this project.
 
 ## License
 
 By contributing to the python-projects repository, you agree that your contributions will be licensed under the [MIT License](LICENSE/).
 
-Thank you for considering contributing to python-projects. Your efforts are greatly appreciated!
+Thank you for considering contributing to python projects. Your efforts are greatly appreciated!
