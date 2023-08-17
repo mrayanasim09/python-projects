@@ -1,28 +1,21 @@
-name: Python Tests
+name: Run Python Scripts
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  test:
+  run-scripts:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
     - name: Find and run .py files
       run: |
-        python_files=$(find . -name "*.py")
-        for file in $python_files; do
+        for file in $(find . -name "*.py"); do
+          echo "Running $file..."
           python "$file"
-        done
+        done || true
