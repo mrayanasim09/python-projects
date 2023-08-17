@@ -1,8 +1,7 @@
 name: Repository Report
 
 on:
-  schedule:
-    - cron: '0 0 * * *'  # Run daily at midnight
+  workflow_dispatch:  # Manually trigger the workflow
 
 jobs:
   generate-report:
