@@ -23,15 +23,15 @@ jobs:
 
     - name: Generate repository report
       run: |
-        echo "Repository Report" > report.txt
-        echo "Generated on: $(date)" >> report.txt
-        echo "" >> report.txt
+        echo "Repository Report" > $GITHUB_WORKSPACE/report.txt
+        echo "Generated on: $(date)" >> $GITHUB_WORKSPACE/report.txt
+        echo "" >> $GITHUB_WORKSPACE/report.txt
 
-        echo "Project Statistics:" >> report.txt
+        echo "Project Statistics:" >> $GITHUB_WORKSPACE/report.txt
         for project_dir in $(ls -d */); do
           project_name=$(basename "$project_dir")
           cd "$project_dir"
           project_lines=$(find . -name "*.py" | xargs wc -l | tail -1 | awk '{print $1}')
-          echo " - $project_name: $project_lines lines of code" >> ../../report.txt
+          echo " - $project_name: $project_lines lines of code" >> $GITHUB_WORKSPACE/report.txt
           cd ..
         done
