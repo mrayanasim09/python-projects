@@ -1,0 +1,38 @@
+name: Repository Report
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Generate repository report
+      run: |
+        echo "Repository Report" > repository_report.txt
+        echo "Generated on: $(date)" >> repository_report.txt
+        echo "" >> repository_report.txt
+
+        echo "Project Statistics:" >> repository_report.txt
+        for project_dir in $(ls -d */); do
+          project_name=$(basename "$project_dir")
+          cd "$project_dir"
+          project_lines=$(find . -name "*.py" | xargs wc -l | tail -1 | awk '{print $1}')
+          echo " - $project_name: $project_lines lines of code" >> ../../repository_report.txt
+          cd ..
+        done
