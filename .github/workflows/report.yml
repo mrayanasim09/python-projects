@@ -23,15 +23,15 @@ jobs:
 
     - name: Generate repository report
       run: |
-        echo "Repository Report" > repository_report.txt
-        echo "Generated on: $(date)" >> repository_report.txt
-        echo "" >> repository_report.txt
+        echo "Repository Report"
+        echo "Generated on: $(date)"
+        echo ""
 
-        echo "Project Statistics:" >> repository_report.txt
+        echo "Project Statistics:"
         for project_dir in $(ls -d */); do
           project_name=$(basename "$project_dir")
           cd "$project_dir"
           project_lines=$(find . -name "*.py" | xargs wc -l | tail -1 | awk '{print $1}')
-          echo " - $project_name: $project_lines lines of code" >> ../../repository_report.txt
+          echo " - $project_name: $project_lines lines of code"
           cd ..
         done
