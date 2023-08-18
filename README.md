@@ -242,7 +242,7 @@ If you encounter any issues running the code, please report an issue, and I will
 
 # About the Author 👤
 
-MRayan Asim maintains this repository. As a passionate Python enthusiast, MRayan Asim is dedicated to developing practical and innovative projects. Whether you're a beginner or an experienced developer, MRayan Asim strives to provide projects that cater to various skill levels. If you have any questions or suggestions regarding the projects in this repository, feel free to reach out. 🚀\
+_**MRayan Asim maintains this repository. As a passionate Python enthusiast, MRayan Asim is dedicated to developing practical and innovative projects. Whether you're a beginner or an experienced developer, MRayan Asim strives to provide projects that cater to various skill levels. If you have any questions or suggestions regarding the projects in this repository, feel free to reach out. 🚀**_ <br>
 [![Join our Discord](https://img.shields.io/badge/Join%20our%20Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discord.gg/uRfXYjub) [![Join Our Reddit Community](https://img.shields.io/badge/Join%20the%20Community-Reddit-orange)](https://www.reddit.com/r/Python_projects_rayan/) [![Email](https://img.shields.io/badge/Email-mrayanasim09%40gmail.com-%23D14836?logo=gmail)](mailto:mrayanasim09@gmail.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-View%20Profile-blue?logo=linkedin)](https://www.linkedin.com/in/mrayan-asim-044836275/) [![GitHub](https://img.shields.io/badge/GitHub-mrayanasim09-blue?logo=github)](https://github.com/mrayanasim09)
 
 ### _If you are thinking about how to start learning programming so you can check out my_ [_roadmap on medium_](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa)
@@ -271,7 +271,7 @@ MRayan Asim maintains this repository. As a passionate Python enthusiast, MRayan
 
 # 🌟 **Sponsor Me and Fuel My Creativity** 🌟
 
-If you find my Python projects valuable and would like to show your support, consider sponsoring me! Your generous contribution empowers me to continue developing innovative and practical projects for the coding community. A simple gesture like buying me a coffee goes a long way in keeping me fueled for more coding sessions. ☕️
+#### _**If you find my Python projects valuable and would like to show your support, consider sponsoring me! Your generous contribution empowers me to continue developing innovative and practical projects for the coding community. A simple gesture like buying me a coffee goes a long way in keeping me fueled for more coding sessions. ☕️**_
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/mrayanasim" target="_blank">
@@ -279,7 +279,7 @@ If you find my Python projects valuable and would like to show your support, con
   </a>
 </p>
 
-💎 For those who prefer cryptocurrency, you can send some Ether (ETH) to my Ethereum wallet address: _**0xEC55fFf7a8387eeaa0Ef886305350Ab3578CE5D3**_. Your sponsorship means the world to me and serves as a powerful motivation to keep creating exciting Python projects for everyone to enjoy. 🚀🐍
+#### _**💎 For those who prefer cryptocurrency, you can send some Ether (ETH) to my Ethereum wallet address: _**0xEC55fFf7a8387eeaa0Ef886305350Ab3578CE5D3**_. Your sponsorship means the world to me and serves as a powerful motivation to keep creating exciting Python projects for everyone to enjoy. 🚀🐍**_
 
 🙏 Thank you for your incredible support! Your contributions inspire me to reach new heights and make a positive impact in the coding community. Let's create something amazing together! 🌟
 
