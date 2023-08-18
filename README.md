@@ -12,6 +12,7 @@
 
 ## Table of Contents
 
+
 - [Repository Structure 📂](#repository-structure-)
 - [Categories 🗂️](#categories-%EF%B8%8F)
 - [Projects 🔥](#projects-)
