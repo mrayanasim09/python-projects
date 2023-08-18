@@ -287,6 +287,7 @@ If you find my Python projects valuable and would like to show your support, con
 
 ## _To View full Documentations you can go [here](https://mrayans.gitbook.io/python--projects/)_
 
+
 <script src="//code.tidio.co/ytw5wbhm91dwsvp9mv9gdiob6za99eer.js" async></script>
 
 <script src="https://cdn.ingest-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
