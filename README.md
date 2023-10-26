@@ -1,4 +1,4 @@
-# 80+ Python Projects by MRayan Asim 🐍🚀
+# 80+ Python Projects by M.Rayan Asim 🐍🚀
 
 <p align="center">
   <a href="https://mrayanasim09.github.io/python-projects/">
@@ -62,7 +62,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Form](https://github.com/drik493/python_projects/blob/main/GUI/Form.py) 📝
 - [A basic GUI calculator](https://github.com/drik493/python_projects/blob/main/GUI/A_basic_gui_calculator.py) 🧮
 - [A working GUI clock also download the clock image](GUI/clock.py) 🕤
-- [Tick cross (with GUI) ](GUI/tick_cross.py)✔️❌
+- [Tick Tack (with GUI) ](GUI/tick_cross.py)✔️❌
 - [Todo list (with GUI)](GUI/todo.py) ✅📝
 - [Notepad](https://github.com/drik493/python_projects/blob/main/GUI/notepad.py) 📄
 - [A snake and ladder game ](GUI/snake_ladder.py)and [(also download the images with it)](GUI/ezgif-5-ad15f112d4.gif) 🐍🪜
@@ -82,7 +82,7 @@ Explore the projects in each category to find detailed information, documentatio
 
 ## _Calculator 🧮_
 
-- [Quadratic Equation (with graph)](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py) 📈
+- [Quadratic Equation (with Graph)](https://github.com/drik493/python_projects/blob/main/Calculator/Quadratic_Equation.py) 📈
 - [A mega calculator with all operations](https://github.com/drik493/python_projects/blob/main/Calculator/mega_calculator.py) 🖩
 - [A stock analyzer with its short form](Calculator/stock.py) 💵📊📈
 - [Number base converter](https://github.com/drik493/python_projects/blob/main/Calculator/number_base.py) 🔢
@@ -109,8 +109,8 @@ Explore the projects in each category to find detailed information, documentatio
 - [A color guessing game with GUI](Game/color_guessing.py) 🎨🔍🌈
 - [Master Mind](https://github.com/drik493/python_projects/blob/main/Game/master_mid.py) 🔐
 - [A number details (prime, odd, co-prime, etc)](https://github.com/drik493/python_projects/blob/main/Game/number_details.py) 🔢
-- Tick cross [(with GUI)](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py) or [(without GUI)](Game/tick_cross_gui.py) ❌⭕
-- [Rock, paper, and scissors (without GUI)](https://github.com/drik493/python_projects/blob/main/Game/rock_paper_scissors.py) ✊🖐✌️
+- Tick Tack [(with GUI)](https://github.com/drik493/python_projects/blob/main/Game/tick_cross.py) or [(without GUI)](Game/tick_cross_gui.py) ❌⭕
+- [Rock, Paper, and Scissors (without GUI](https://github.com/drik493/python_projects/blob/main/Game/rock_paper_scissors.py) ✊🖐✌️
 - [A snake and ladder game ](Game/snake_ladder.py)and [(also download the images with it)](Game/ezgif-5-ad15f112d4.gif) 🐍🪜
 - [21 or 20 plus game](https://github.com/drik493/python_projects/blob/main/Game/twenty_one.py) 🃏
 - [Typing speed test](Game/typing_speed.py) 🎮
@@ -120,11 +120,11 @@ Explore the projects in each category to find detailed information, documentatio
 
 ## _Machine Learning 🤖📚🧠_
 
-- [Brightness controller with your hand](machine_learning/brightness_controllor.py) 🌞💡🎛️
-- [Eye blink detection (also download the . XML files)](machine_learning/eye_blink.py) 👁️🔍😴
+- [Brightness Controller with Your Hand](machine_learning/brightness_controllor.py) 🌞💡🎛️
+- [Eye Blink Detection (also download the .XML files)](machine_learning/eye_blink.py) 👁️🔍😴
 - [Text to speech](machine_learning/text_to_speech.py) 🔤🔉
-- [A language detector ](machine_learning/lang_dect.py)🔍🌐
-- [A spam message delectation using machine learning ](machine_learning/spam_dect.py)🎁🎉🎈
+- [A Language Detector ](machine_learning/lang_dect.py)🔍🌐
+- [A Spam Message Detection using Machine Learning ](machine_learning/spam_dect.py)🎁🎉🎈
 - [Crypto price predictions (for days ahead of days entered by the user)](machine_learning/crypto_prices.py) 🚀🌕
 - [Gold price predictions (for days ahead of days entered by the user)](machine_learning/gold_price.py) 💰🪙
 - [Your phone camera on your PC ](machine_learning/camera.py)you can check more about it [here](https://www.makeuseof.com/tag/ip-webcam-android-phone-as-a-web-cam/) 📱💻📸
@@ -133,25 +133,25 @@ Explore the projects in each category to find detailed information, documentatio
 
 ## _Utilities 🛠️_
 
-- [Network passwords (only for the networks you have been connected to)](https://github.com/drik493/python_projects/blob/main/Utilities/network.py) 🔐
-- [Your own browser](Utilities/browser.py) 🌐
-- [A site connection checker and timer](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/connectivity.py) 🔗🌐
-- [Count down (timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
+- [Network Passwords (only for the networks you have been connected to)](https://github.com/drik493/python_projects/blob/main/Utilities/network.py) 🔐
+- [Your Own Browser](Utilities/browser.py) 🌐
+- [A Site Connection Checker and Timer](https://github.com/mrayanasim09/python-projects/blob/main/Utilities/connectivity.py) 🔗🌐
+- [Countdown (Timer)](https://github.com/drik493/python_projects/blob/main/Utilities/count_down.py) ⏳
 - [Tells basic information of an Instagram account only from user name](Utilities/inta.py) 📸
-- [Transfer file (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
+- [Transfer File (generate QR code for easy access)](https://github.com/drik493/python_projects/blob/main/Utilities/transfer.py) 📁
 - [Google search (from terminal)](https://github.com/drik493/python_projects/blob/main/Utilities/google.py) 🔍
 - [A password manager with a master key and encryption and decryption of passwords](Utilities/password_manager.py) 🔐
 - [bitcoin mining simulator](Utilities/btc.py) ₿
 - [QR code generator](https://github.com/drik493/python_projects/blob/main/Utilities/url.py) 🔗
-- [Wattsapp spam messages sender (you should click on the message bar of WhatsApp after running it)](Utilities/whatsapp_spam.py) 📧🔁📧🔁📧🔁
+- [WhatsApp spam messages sender (you should click on the message bar of WhatsApp after running it)](Utilities/whatsapp_spam.py) 📧🔁📧🔁📧🔁
 - [Github repository details finder (only with username and name of the repository)](Utilities/github.py) :octocat:
 - [Secret code generator (with decoding support)](https://github.com/drik493/python_projects/blob/main/Utilities/secret_code.py) 🤐
-- [Password to hash form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
-- [Hash password cracking (md5 only, using rockyou.txt)](https://github.com/drik493/python_projects/blob/main/Utilities/password.py) 🚫🔍
-- [Password generator](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py) 🔐🔢
+- [Password to Hash Form (md5)](https://github.com/drik493/python_projects/blob/main/Utilities/password_hash.py) 🔒
+- [Hash Password Cracking (md5 only, using rockyou.txt)](https://github.com/drik493/python_projects/blob/main/Utilities/password.py) 🚫🔍
+- [Password Generator](https://github.com/drik493/python_projects/blob/main/Utilities/passwrd_generator.py) 🔐🔢
 - [Birth Day Finder (zodiac sign, life path number, your birth date according to Islam and birthstone and birth flower)](https://github.com/drik493/python_projects/blob/main/Utilities/birthday.py) 🎂🎉
-- [words and letter count of given text](Utilities/word_count.py) 🔢🔄️
-- [A program to make short forms for the entered words](Utilities/short_form.py) 🔤🔄
+- [Words and Letter Count of Given Tex](Utilities/word_count.py) 🔢🔄️
+- [A Program to Make Short Forms for the Entered Words](Utilities/short_form.py) 🔤🔄
 
 ## Skill Level Tags ⭐
 
