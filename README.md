@@ -293,8 +293,10 @@ _**MRayan Asim maintains this repository. As a passionate Python enthusiast, MRa
 
 ## _To View full Documentations you can go [here](https://mrayans.gitbook.io/python--projects/)_
 <bi>
+<!--
 <script src="//code.tidio.co/ytw5wbhm91dwsvp9mv9gdiob6za99eer.js" async></script>
-
 <script src="https://cdn.ingest-lr.com/LogRocket.min.js" crossorigin="anonymous"></script>
 <script>window.LogRocket && window.LogRocket.init('93y3w1/python-projects');</script>
 <meta name="google-site-verification" content="f21tjuRj5a-61XSVmjg7qUpkKkBw3h0qorpxIJXqpCM" />
+-->
+
