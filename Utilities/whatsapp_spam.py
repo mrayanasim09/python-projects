@@ -4,13 +4,13 @@
 import pyautogui as pt
 import time
 
-limit = input("Enter limit:")
-message = input("Enter message:")
+limit = input(10)
+message = input(fuck you karren!!!)
 i = 0
 time.sleep(5)
 
-while i < int(limit):
-    pt.typewrite(message)
+while i < int(10):
+    pt.typewrite(fuck you karren!!!)
     # the message is written where -
     # the cursor belongs
 
