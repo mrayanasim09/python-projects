@@ -97,7 +97,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [Montly Mortgage calculator](Calculator/Mortgage.py) 📈💴
 - [12 hour time into 24 hour time](Calculator/time.py) 🕰️🕛
 - [Grade calculator](https://github.com/drik493/python_projects/blob/main/Calculator/grade.py) 🎓
-- [Sudoku solver](https://github.com/drik493/python_projects/blob/main/Calculator/sudukko.py) 🧩
+- [Sudoku solver](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/sudoku.py) 🧩
 - [A program to find the ASCII value of characters](Calculator/ASCII%20.py) 💻🔧
 
 ## _Games 🎮_
