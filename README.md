@@ -74,7 +74,7 @@ Explore the projects in each category to find detailed information, documentatio
 - [A beautiful design using turtle](GUI/graphics.py) 🐢🎨
 - [A quiz application for asking common questions ](https://github.com/mrayanasim09/python-projects/blob/main/GUI/Quiz.py) 👉📜
 - [Pikachu using turtle](GUI/Pikachu.py) (っ ◔◡◔)っ
-- [Doraemon using turtle](GUI/doramon.py)🐱‍🚀
+- [Doraemon using turtle](GUI/doraemon.py)🐱‍🚀
 - [Rainbow with turtle ](GUI/rainbow.py)🌈
 - [A happy birthday message to the user with its name](GUI/happy_birth_day.py)🎂
 - [Search installed applications](GUI/search_applications.py) 🔍
