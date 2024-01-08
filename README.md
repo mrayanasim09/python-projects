@@ -263,9 +263,9 @@ _**MRayan Asim maintains this repository. As a passionate Python enthusiast, MRa
 
 #### Ready to make your mark on our projects? Check out our [**How to Contribute**](CONTRIBUTING.md) guide, and embark on your coding adventure with us!
 
-#### Excited to play a vital role in securing our projects? Explore the essential steps and best practices in our [**Security Policies**](SECURITY.md) to safeguard our coding community. Join hands with us on this crucial mission!
+#### Excited to play a vital role in securing our projects? Explore the essential steps and best practices in our [**Security Policies**](security.md) to safeguard our coding community. Join hands with us on this crucial mission!
 
-#### Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers many practical code examples and resources. **[Check out the summary](summary.md)** to explore our diverse collection and embark on your coding adventure with us!
+#### Discover a treasure trove of Python projects! From GUIs to machine learning, this repository offers many practical code examples and resources. **[Check out the summary](SUMMARY.md)** to explore our diverse collection and embark on your coding adventure with us!
 
 ### 🔍 To view the requirements for the system and Python version, you can check out the [prerequisites](https://github.com/mrayanasim09/python-projects/blob/main/prerequisites.md) 📋
 
