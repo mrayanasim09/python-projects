@@ -6,7 +6,7 @@
 # Syntax: pattern  owner1 owner2 ...
 
 # To make a user or team an owner for the entire repo, use '*'
-*  @mrayanasim09 @drik493
+*  @mrayanasim09 @drik-493
 
 # To specify owners for specific directories or files, you can do the following:
 
