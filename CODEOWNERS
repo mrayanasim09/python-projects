@@ -3,20 +3,8 @@
 # This file is used to specify who the "owner" is for different parts of the repository.
 # The owners will be automatically requested for review when a pull request changes any owned files.
 
-# Syntax: pattern  owner1 owner2 ...
-
-# To make a user or team an owner for the entire repo, use '*'
 *  @mrayanasim09 @drik-493
 
-# To specify owners for specific directories or files, you can do the following:
-
-# Frontend related changes
-/frontend/ @mrayanasim09
-
-# Backend related changes
-/backend/ @drik493
 
 # Documentation related changes
 /docs/ @mrayanasim09 @drik-493
-
-# Please modify the above usernames and team names to match your project's collaborators.
