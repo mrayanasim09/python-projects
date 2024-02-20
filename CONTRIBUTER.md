@@ -3,7 +3,7 @@
 Thank you to the following individuals and bots for their contributions to the "python-projects" repository:
 
 - [mrayanasim09](https://github.com/mrayanasim09)
-- [drik493](https://github.com/drik493)
+- [drik493](https://github.com/drik-493)
 - [imgbot](https://github.com/imgbot)
 - [deepsource](https://github.com/deepsource)
 - [dependabot](https://github.com/dependabot)
