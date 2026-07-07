@@ -16,13 +16,13 @@ print("-------------------------------------------------------")
 str2hash = input("Enter password to hash: ")
 
 # Check if user wants MD5 (for educational purposes only)
-use_md5 = input("Use MD5 (insecure)? (y/n): ").lower() == 'y'
+use_md5 = input("Use MD5 (insecure)? (y/n): ").lower() == "y"
 
 if use_md5:
     warnings.warn(
         "MD5 is cryptographically broken and should NOT be used for password hashing. "
         "Use bcrypt instead. This is for educational purposes only.",
-        UserWarning
+        UserWarning,
     )
     # Using MD5 only for educational demonstration
     result = hashlib.md5(str2hash.encode())  # nosec B324
@@ -36,7 +36,7 @@ else:
     print("The bcrypt hash is: ", end="")
     print(hashed.decode())
     print("\nThis is a secure hash. Store this in your database.")
-    
+
     # Demonstrate verification
     print("\nTo verify a password against this hash, use:")
     print("bcrypt.checkpw(password.encode(), hashed_password.encode())")
