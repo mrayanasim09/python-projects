@@ -6,10 +6,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://github.com/mrayanasim09/python-projects/raw/main/MRayan.png" alt="Logo" style="max-width: 200px;">
-</p>
-
 ---
 
 Welcome to the Python Projects repository. This collection features 80+ practical Python projects across multiple categories, designed for developers of all skill levels. Whether you are a beginner or an experienced programmer, you will find projects that help you learn, build, and grow.
