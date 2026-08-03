@@ -1,0 +1,46 @@
+# Include README and LICENSE files
+include README.md
+include LICENSE
+include requirements.txt
+include setup.cfg
+include pyproject.toml
+
+# Include all Python files recursively
+recursive-include Calculator *.py
+recursive-include Game *.py
+recursive-include GUI *.py
+recursive-include Utilities *.py
+recursive-include machine_learning *.py
+
+# Include data files needed by projects
+recursive-include Utilities *.wav
+recursive-include Utilities *.txt
+recursive-include machine_learning *.xml
+recursive-include machine_learning *.jpg
+recursive-include GUI *.png
+recursive-include GUI *.gif
+
+# Include documentation
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+include FAQ.md
+include SUMMARY.md
+include How_to_use.md
+include prerequisites.md
+include PULL_REQUEST_TEMPLATE.md
+include CONTRIBUTER.md
+
+# Exclude cache and build directories
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude .pytest_cache
+global-exclude .coverage
+global-excover *.orig
+prune .git
+prune .github
+prune .circleci
+prune build
+prune dist
+prune *.egg-info

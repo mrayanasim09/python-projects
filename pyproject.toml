@@ -1,0 +1,159 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-projects"
+version = "1.0.0"
+description = "A collection of 80+ practical Python projects for developers of all skill levels"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "MRayan Asim", email = "mrayanasim09@gmail.com"}
+]
+maintainers = [
+    {name = "MRayan Asim", email = "mrayanasim09@gmail.com"}
+]
+keywords = [
+    "python",
+    "projects",
+    "learning",
+    "education",
+    "gui",
+    "games",
+    "calculators",
+    "machine-learning",
+    "utilities"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+    "Topic :: Games/Entertainment",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pygame>=2.5.0",
+    "pyqt5>=5.15.0",
+    "pyqtwebengine>=5.15.0",
+    "tkcalendar>=1.6.0",
+    "pillow>=10.0.0",
+    "opencv-python>=4.8.0",
+    "mediapipe>=0.10.0",
+    "prophet>=1.1.0",
+    "seaborn>=0.13.0",
+    "scikit-learn>=1.3.0",
+    "requests>=2.31.0",
+    "googlesearch-python>=1.2.0",
+    "instaloader>=4.10.0",
+    "pytube>=15.0.0",
+    "qrcode>=7.4.0",
+    "pyautogui>=0.9.54",
+    "pyttsx3>=2.90.0",
+    "pyshorteners>=1.0.1",
+    "matplotlib>=3.8.0",
+    "sympy>=1.12.0",
+    "numpy>=1.26.0",
+    "openpyxl>=3.1.0",
+    "yfinance>=0.2.0",
+    "textblob>=0.17.0",
+    "vaderSentiment>=3.3.0",
+    "langdetect>=1.0.9",
+    "nltk>=3.8.2",
+    "urllib3>=2.5.0",
+    "protobuf>=4.25.8",
+    "zipp>=3.19.1",
+    "holidays>=0.45",
+    "fonttools>=4.43.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "flake8>=6.1.0",
+    "mypy>=1.5.0",
+    "bandit>=1.7.0",
+    "isort>=5.12.0",
+]
+test = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/mrayanasim09/python-projects"
+Documentation = "https://mrayans.gitbook.io/python--projects/"
+Repository = "https://github.com/mrayanasim09/python-projects.git"
+Issues = "https://github.com/mrayanasim09/python-projects/issues"
+Discord = "https://discord.gg/uRfXYjub"
+LinkedIn = "https://linkedin.com/in/mrayan-asim-044836275/"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["Calculator*", "Game*", "GUI*", "Utilities*", "machine_learning*"]
+
+[tool.pytest.ini_options]
+testpaths = ["Utilities"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --cov=Utilities --cov-report=term-missing"
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["Utilities"]
+omit = ["*/test_*.py", "*/__init__.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]

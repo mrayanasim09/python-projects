@@ -115,44 +115,48 @@ def get_birth_flower(month):
     return birth_flowers.get(month, "Unknown")
 
 
-print(
-    "\nHello, this birthday finder is made by MRayan Asim. Hope you will like this! 😊"
-)
-time.sleep(3)
+    print(
+        "\nHello, this birthday finder is made by MRayan Asim. Hope you will like this! 😊"
+    )
+    time.sleep(3)
+    
+    # Get user input
+    date_of_birth = input("Enter your date of birth (dd-mm-yyyy): ")
+    
+    # Call the functions to get the day of the week, days until the next birthday, Islamic date, and zodiac sign
+    day = get_day_of_week(date_of_birth)
+    days_left = get_days_until_birthday(date_of_birth)
+    islamic_date = get_islamic_date(date_of_birth)
+    
+    # Extract the day, month, and year from the date of birth
+    birth_date = datetime.datetime.strptime(date_of_birth, "%d-%m-%Y")
+    birth_month = birth_date.month
+    birth_day = birth_date.day
+    
+    # Calculate the zodiac sign
+    zodiac_sign = get_zodiac_sign(birth_day, birth_month)
+    
+    # Calculate the age
+    current_year = datetime.datetime.now().year
+    age = current_year - birth_date.year
+    
+    # Calculate the life path number
+    life_path_number = calculate_life_path_number(date_of_birth)
+    
+    # Get the birthstone and birth flower
+    birthstone = get_birthstone(birth_month)
+    birth_flower = get_birth_flower(birth_month)
+    
+    # Display the results
+    print("You were born on a", day + ".")
+    print("There are", days_left, "days left until your next birthday.")
+    print("According to the Islamic calendar, your birth date is:", islamic_date)
+    print("Your zodiac sign is:", zodiac_sign)
+    print("Your life path number is:", life_path_number)
+    print("Your birthstone is:", birthstone)
+    print("Your birth flower is:", birth_flower)
+    print("You are currently", age, "years old.")
 
-# Get user input
-date_of_birth = input("Enter your date of birth (dd-mm-yyyy): ")
 
-# Call the functions to get the day of the week, days until the next birthday, Islamic date, and zodiac sign
-day = get_day_of_week(date_of_birth)
-days_left = get_days_until_birthday(date_of_birth)
-islamic_date = get_islamic_date(date_of_birth)
-
-# Extract the day, month, and year from the date of birth
-birth_date = datetime.datetime.strptime(date_of_birth, "%d-%m-%Y")
-birth_month = birth_date.month
-birth_day = birth_date.day
-
-# Calculate the zodiac sign
-zodiac_sign = get_zodiac_sign(birth_day, birth_month)
-
-# Calculate the age
-current_year = datetime.datetime.now().year
-age = current_year - birth_date.year
-
-# Calculate the life path number
-life_path_number = calculate_life_path_number(date_of_birth)
-
-# Get the birthstone and birth flower
-birthstone = get_birthstone(birth_month)
-birth_flower = get_birth_flower(birth_month)
-
-# Display the results
-print("You were born on a", day + ".")
-print("There are", days_left, "days left until your next birthday.")
-print("According to the Islamic calendar, your birth date is:", islamic_date)
-print("Your zodiac sign is:", zodiac_sign)
-print("Your life path number is:", life_path_number)
-print("Your birthstone is:", birthstone)
-print("Your birth flower is:", birth_flower)
-print("You are currently", age, "years old.")
+if __name__ == "__main__":
+    run_birthday_finder()
