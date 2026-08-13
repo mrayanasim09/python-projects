@@ -23,7 +23,7 @@ pyshorteners>=1.0.1
 googlesearch-python>=1.2.3
 
 # === Security pinning (Snyk) ===
-fonttools>=4.43.0
+fonttools>=4.63.0
 holidays>=0.102
 zipp>=3.19.1
 nltk>=3.10.2
