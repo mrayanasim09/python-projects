@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>80+ Python Projects by M.Rayan Asim</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-deep": "#0D0F12",
+                        "on-primary-fixed": "#001d33",
+                        "tertiary-fixed": "#ffddb5",
+                        "surface-elevated": "#1C1F24",
+                        "secondary-container": "#54460a",
+                        "secondary-fixed-dim": "#dbc67e",
+                        "surface-container": "#1e2023",
+                        "on-tertiary": "#402d11",
+                        "secondary-fixed": "#f8e197",
+                        "surface-dim": "#111316",
+                        "primary": "#cee5ff",
+                        "on-primary-fixed-variant": "#034a77",
+                        "outline": "#8b919a",
+                        "surface-container-lowest": "#0c0e11",
+                        "inverse-primary": "#2a6290",
+                        "surface-container-highest": "#333538",
+                        "tertiary-fixed-dim": "#e1c19a",
+                        "surface": "#111316",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#98cbff",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#594325",
+                        "on-tertiary-fixed": "#291801",
+                        "surface-variant": "#333538",
+                        "border-subtle": "#2D3139",
+                        "on-background": "#e2e2e6",
+                        "text-secondary": "#9BA3AF",
+                        "on-secondary-fixed-variant": "#54460a",
+                        "on-secondary-container": "#c9b46e",
+                        "tertiary": "#feddb4",
+                        "on-primary": "#003354",
+                        "tertiary-container": "#e1c19a",
+                        "on-secondary": "#3b2f00",
+                        "outline-variant": "#41474f",
+                        "on-surface": "#e2e2e6",
+                        "surface-bright": "#37393d",
+                        "surface-container-high": "#282a2d",
+                        "secondary": "#dbc67e",
+                        "primary-fixed-dim": "#98cbff",
+                        "success-green": "#2EA043",
+                        "text-primary": "#E1E4E8",
+                        "primary-container": "#98cbff",
+                        "on-surface-variant": "#c1c7d0",
+                        "on-tertiary-container": "#654e2f",
+                        "inverse-on-surface": "#2f3034",
+                        "on-primary-container": "#1a5683",
+                        "on-secondary-fixed": "#221b00",
+                        "inverse-surface": "#e2e2e6",
+                        "error-container": "#93000a",
+                        "background": "#111316",
+                        "surface-container-low": "#1a1c1f",
+                        "on-error": "#690005",
+                        "primary-fixed": "#cfe5ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        <!-- SEO -->
+                        <meta name="description" content="A curated collection of 80+ practical Python projects by M.Rayan Asim — beginner to advanced examples for learning and building." />
+                        <link rel="canonical" href="https://github.com/mrayanasim09/python-projects" />
+                        <!-- Open Graph -->
+                        <head>
+                            <meta charset="utf-8"/>
+                            <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+                            <title>80+ Python Projects by M.Rayan Asim</title>
+                            <!-- SEO -->
+                            <meta name="description" content="A curated collection of 80+ practical Python projects by M.Rayan Asim — beginner to advanced examples for learning and building." />
+                            <link rel="canonical" href="https://github.com/mrayanasim09/python-projects" />
+                            <!-- Open Graph -->
+                            <meta property="og:type" content="website" />
+                            <meta property="og:title" content="80+ Python Projects by M.Rayan Asim" />
+                            <meta property="og:description" content="A curated collection of 80+ practical Python projects — beginner to advanced examples for learning and building." />
+                            <meta property="og:url" content="https://github.com/mrayanasim09/python-projects" />
+                            <!-- Preconnect / Preload fonts -->
+                            <link rel="preconnect" href="https://fonts.googleapis.com">
+                            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap">
+                            <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" crossorigin>
+                            <!-- Local critical CSS (fallback + performance). Replace with a full built Tailwind file in CI/build step. -->
+                            <link rel="stylesheet" href="assets/css/site.css">
+                            <script src="https://unpkg.com/lucide@latest" crossorigin></script>
+                            <script id="tailwind-config">
+                                tailwind.config = {
+                                    darkMode: "class",
+                                    theme: {
+                                        extend: {
+                                            "colors": {
+                                                "surface-deep": "#0D0F12",
+                                                "on-primary-fixed": "#001d33",
+                                                "tertiary-fixed": "#ffddb5",
+                                                "surface-elevated": "#1C1F24",
+                                                "secondary-container": "#54460a",
+                                                "secondary-fixed-dim": "#dbc67e",
+                                                "surface-container": "#1e2023",
+                                                "on-tertiary": "#402d11",
+                                                "secondary-fixed": "#f8e197",
+                                                "surface-dim": "#111316",
+                                                "primary": "#cee5ff",
+                                                "on-primary-fixed-variant": "#034a77",
+                                                "outline": "#8b919a",
+                                                "surface-container-lowest": "#0c0e11",
+                                                "inverse-primary": "#2a6290",
+                                                "surface-container-highest": "#333538",
+                                                "tertiary-fixed-dim": "#e1c19a",
+                                                "surface": "#111316",
+                                                "on-error-container": "#ffdad6",
+                                                "surface-tint": "#98cbff",
+                                                "error": "#ffb4ab",
+                                                "on-tertiary-fixed-variant": "#594325",
+                                                "on-tertiary-fixed": "#291801",
+                                                "surface-variant": "#333538",
+                                                "border-subtle": "#2D3139",
+                                                "on-background": "#e2e2e6",
+                                                "text-secondary": "#9BA3AF",
+                                                "on-secondary-fixed-variant": "#54460a",
+                                                "on-secondary-container": "#c9b46e",
+                                                "tertiary": "#feddb4",
+                                                "on-primary": "#003354",
+                                                "tertiary-container": "#e1c19a",
+                                                "on-secondary": "#3b2f00",
+                                                "outline-variant": "#41474f",
+                                                "on-surface": "#e2e2e6",
+                                                "surface-bright": "#37393d",
+                                                "surface-container-high": "#282a2d",
+                                                "secondary": "#dbc67e",
+                                                "primary-fixed-dim": "#98cbff",
+                                                "success-green": "#2EA043",
+                                                "text-primary": "#E1E4E8",
+                                                "primary-container": "#98cbff",
+                                                "on-surface-variant": "#c1c7d0",
+                                                "on-tertiary-container": "#654e2f",
+                                                "inverse-on-surface": "#2f3034",
+                                                "on-primary-container": "#1a5683",
+                                                "on-secondary-fixed": "#221b00",
+                                                "inverse-surface": "#e2e2e6",
+                                                "error-container": "#93000a",
+                                                "background": "#111316",
+                                                "surface-container-low": "#1a1c1f",
+                                                "on-error": "#690005",
+                                                "primary-fixed": "#cfe5ff"
+                                            },
+                                            "borderRadius": {
+                                                "DEFAULT": "0.25rem",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                            },
+                                            "spacing": {
+                                                "unit": "4px",
+                                                "margin-mobile": "16px",
+                                                "margin-desktop": "48px",
+                                                "stack-md": "16px",
+                                                "stack-lg": "32px",
+                                                "gutter": "24px",
+                                                "stack-sm": "8px"
+                                            },
+                                            "fontFamily": {
+                                                "body-md": ["Inter"],
+                                                "body-sm": ["Inter"],
+                                                "body-lg": ["Inter"],
+                                                "headline-md": ["Sora"],
+                                                "headline-sm": ["Sora"],
+                                                "label-caps": ["JetBrains Mono"],
+                                                "headline-lg-mobile": ["Sora"],
+                                                "headline-lg": ["Sora"],
+                                                "code-block": ["JetBrains Mono"]
+                                            },
+                                            "fontSize": {
+                                                "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "body-sm": ["14px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                                                "body-lg": ["18px", { "lineHeight": "1.7", "fontWeight": "400" }],
+                                                "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                                                "headline-sm": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                                                "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.08em", "fontWeight": "600" }],
+                                                "headline-lg-mobile": ["28px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                                                "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+                                                "code-block": ["14px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                                            }
+                                        },
+                                    }
+                                }
+                            </script>
+<!-- Categories Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto" id="categories">
+<div class="mb-16 text-center fade-in-up">
+<h2 class="font-headline-md text-headline-md text-text-primary mb-4">Project Categories</h2>
+<p class="text-text-secondary font-body-lg max-w-2xl mx-auto">Structured domains to focus your learning.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+<!-- Card 1 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-colors group fade-in-up cursor-pointer">
+<div class="w-10 h-10 mb-6 flex items-center justify-center text-primary">
+<i class="w-6 h-6" data-lucide="monitor"></i>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">GUI</h3>
+<p class="text-body-sm text-text-secondary mb-4">Graphical User Interfaces.</p>
+<div class="text-xs text-text-secondary/60">Tkinter, PyQt5</div>
+</div>
+<!-- Card 2 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-colors group fade-in-up cursor-pointer" style="transition-delay: 100ms;">
+<div class="w-10 h-10 mb-6 flex items-center justify-center text-primary">
+<i class="w-6 h-6" data-lucide="calculator"></i>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Calculator</h3>
+<p class="text-body-sm text-text-secondary mb-4">Math &amp; Logic tools.</p>
+<div class="text-xs text-text-secondary/60">Math, Logic</div>
+</div>
+<!-- Card 3 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-colors group fade-in-up cursor-pointer" style="transition-delay: 200ms;">
+<div class="w-10 h-10 mb-6 flex items-center justify-center text-primary">
+<i class="w-6 h-6" data-lucide="gamepad-2"></i>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Games</h3>
+<p class="text-body-sm text-text-secondary mb-4">Interactive entertainment.</p>
+<div class="text-xs text-text-secondary/60">Pygame, Turtle</div>
+</div>
+<!-- Card 4 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-colors group fade-in-up cursor-pointer" style="transition-delay: 300ms;">
+<div class="w-10 h-10 mb-6 flex items-center justify-center text-primary">
+<i class="w-6 h-6" data-lucide="brain"></i>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Machine Learning</h3>
+<p class="text-body-sm text-text-secondary mb-4">AI &amp; Data Models.</p>
+<div class="text-xs text-text-secondary/60">Scikit, Pandas</div>
+</div>
+<!-- Card 5 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-colors group fade-in-up cursor-pointer" style="transition-delay: 400ms;">
+<div class="w-10 h-10 mb-6 flex items-center justify-center text-primary">
+<i class="w-6 h-6" data-lucide="box"></i>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Utilities</h3>
+<p class="text-body-sm text-text-secondary mb-4">Handy CLI scripts.</p>
+<div class="text-xs text-text-secondary/60">OS, Sys, Requests</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-surface-deep/50" id="projects">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 flex flex-col md:flex-row justify-between items-end gap-6 fade-in-up">
+<div>
+<h2 class="font-headline-md text-headline-md text-text-primary mb-4">Featured Projects</h2>
+<p class="text-text-secondary font-body-lg">A handpicked selection of top scripts and applications.</p>
+</div>
+<a class="text-primary hover:text-primary-fixed-dim items-center gap-2 font-label-caps text-label-caps flex" href="https://github.com/mrayanasim09/python-projects">
+                    View All 80+ <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-all duration-300 flex flex-col justify-between h-full group fade-in-up">
+<div>
+<div class="flex justify-between items-center mb-6">
+<span class="text-text-secondary text-xs font-code-block">Games</span>
+<span class="text-success-green text-xs font-code-block flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-success-green"></span> Beginner</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">Tic Tac Toe</h3>
+<p class="text-body-md text-text-secondary mb-8 leading-relaxed">A classic command-line implementation of the beloved game.</p>
+</div>
+<a class="text-primary font-label-caps text-label-caps flex items-center gap-2 w-max group-hover:gap-3 transition-all" href="https://github.com/mrayanasim09/python-projects">
+                        View code <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Project 2 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-all duration-300 flex flex-col justify-between h-full group fade-in-up" style="transition-delay: 100ms;">
+<div>
+<div class="flex justify-between items-center mb-6">
+<span class="text-text-secondary text-xs font-code-block">Games</span>
+<span class="text-secondary text-xs font-code-block flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Intermediate</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">Snake Game</h3>
+<p class="text-body-md text-text-secondary mb-8 leading-relaxed">Retro snake game built using the Turtle graphics library.</p>
+</div>
+<a class="text-primary font-label-caps text-label-caps flex items-center gap-2 w-max group-hover:gap-3 transition-all" href="https://github.com/mrayanasim09/python-projects">
+                        View code <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Project 3 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-all duration-300 flex flex-col justify-between h-full group fade-in-up" style="transition-delay: 200ms;">
+<div>
+<div class="flex justify-between items-center mb-6">
+<span class="text-text-secondary text-xs font-code-block">Calculator</span>
+<span class="text-error text-xs font-code-block flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-error"></span> Advanced</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">Sudoku Solver</h3>
+<p class="text-body-md text-text-secondary mb-8 leading-relaxed">Backtracking algorithm to automatically solve any valid Sudoku puzzle.</p>
+</div>
+<a class="text-primary font-label-caps text-label-caps flex items-center gap-2 w-max group-hover:gap-3 transition-all" href="https://github.com/mrayanasim09/python-projects">
+                        View code <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Project 4 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-all duration-300 flex flex-col justify-between h-full group fade-in-up" style="transition-delay: 300ms;">
+<div>
+<div class="flex justify-between items-center mb-6">
+<span class="text-text-secondary text-xs font-code-block">Utilities</span>
+<span class="text-success-green text-xs font-code-block flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-success-green"></span> Beginner</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">QR Code Generator</h3>
+<p class="text-body-md text-text-secondary mb-8 leading-relaxed">Simple script to generate scannable QR codes from text or URLs.</p>
+</div>
+<a class="text-primary font-label-caps text-label-caps flex items-center gap-2 w-max group-hover:gap-3 transition-all" href="https://github.com/mrayanasim09/python-projects">
+                        View code <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Project 5 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-all duration-300 flex flex-col justify-between h-full group fade-in-up" style="transition-delay: 400ms;">
+<div>
+<div class="flex justify-between items-center mb-6">
+<span class="text-text-secondary text-xs font-code-block">Machine Learning</span>
+<span class="text-error text-xs font-code-block flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-error"></span> Advanced</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">Spam Message Detection</h3>
+<p class="text-body-md text-text-secondary mb-8 leading-relaxed">NLP model using Naive Bayes to classify SMS messages as spam or ham.</p>
+</div>
+<a class="text-primary font-label-caps text-label-caps flex items-center gap-2 w-max group-hover:gap-3 transition-all" href="https://github.com/mrayanasim09/python-projects">
+                        View code <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+</div>
+<!-- Project 6 -->
+<div class="p-8 rounded-2xl bg-surface hover:bg-surface-elevated transition-all duration-300 flex flex-col justify-between h-full group fade-in-up" style="transition-delay: 500ms;">
+<div>
+<div class="flex justify-between items-center mb-6">
+<span class="text-text-secondary text-xs font-code-block">Machine Learning</span>
+<span class="text-error text-xs font-code-block flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-error"></span> Advanced</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-3">Crypto Price Prediction</h3>
+<p class="text-body-md text-text-secondary mb-8 leading-relaxed">Time-series forecasting script to predict short-term cryptocurrency trends.</p>
+</div>
+<a class="text-primary font-label-caps text-label-caps flex items-center gap-2 w-max group-hover:gap-3 transition-all" href="https://github.com/mrayanasim09/python-projects">
+                        View code <i class="w-4 h-4" data-lucide="arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Skill Levels -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="mb-16 text-center fade-in-up">
+<h2 class="font-headline-md text-headline-md text-text-primary mb-4">Progressive Learning</h2>
+<p class="text-text-secondary font-body-lg max-w-2xl mx-auto">Projects categorized by complexity to match your current skill level.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-2xl bg-surface-elevated/30 hover:bg-surface-elevated transition-colors fade-in-up">
+<h3 class="text-success-green font-headline-sm mb-4">Beginner</h3>
+<p class="text-text-secondary text-body-sm leading-relaxed">Focus on core syntax, loops, functions, and basic I/O. Ideal for those just starting out.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-elevated/30 hover:bg-surface-elevated transition-colors fade-in-up" style="transition-delay: 100ms;">
+<h3 class="text-secondary font-headline-sm mb-4">Intermediate</h3>
+<p class="text-text-secondary text-body-sm leading-relaxed">Involves APIs, basic GUIs, simple data scraping, and object-oriented concepts.</p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-elevated/30 hover:bg-surface-elevated transition-colors fade-in-up" style="transition-delay: 200ms;">
+<h3 class="text-error font-headline-sm mb-4">Advanced</h3>
+<p class="text-text-secondary text-body-sm leading-relaxed">Tackles machine learning models, complex algorithms, databases, and full applications.</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-3xl mx-auto fade-in-up">
+<h2 class="font-headline-md text-headline-md text-text-primary mb-6">Ready to start building?</h2>
+<p class="text-text-secondary font-body-lg mb-12">Join the community, fork the projects, and enhance your Python skills today.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-24">
+<a class="w-full sm:w-auto bg-text-primary text-surface-deep px-8 py-3 rounded-full hover:bg-text-secondary transition-colors font-label-caps text-label-caps font-bold flex items-center justify-center gap-2" href="https://github.com/mrayanasim09/python-projects">
+<i class="w-4 h-4" data-lucide="github"></i> Get the Code
+                </a>
+</div>
+<div class="pt-12">
+<p class="text-xs font-label-caps text-text-secondary mb-6 tracking-widest uppercase">Support the Creator</p>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Buy Me a Coffee</a>
+<a class="text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Patreon</a>
+<a class="text-body-sm text-text-secondary hover:text-primary transition-colors" href="#">Liberapay</a>
+</div>
+<p class="text-xs text-text-secondary/50 font-code-block mt-8 select-all">ETH: 0x0000000000000000000000000000000000000000</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-deep border-t border-border-subtle w-full py-stack-lg">
+<div class="max-w-7xl mx-auto px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-gutter text-text-secondary font-body-sm text-body-sm">
+<div class="text-center md:text-left">
+<p>© 2024 Python Projects. Licensed under MIT.</p>
+</div>
+<div class="flex gap-6">
+<a class="hover:text-primary transition-colors" href="#">Twitter</a>
+<a class="hover:text-primary transition-colors" href="https://github.com/mrayanasim09/python-projects">GitHub</a>
+<a class="hover:text-primary transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+<script>
+    // Initialize Lucide icons (add accessibility attributes)
+    lucide.createIcons({ attributes: { 'aria-hidden': 'true', 'focusable': 'false' } });
+
+    // Scroll reveal logic
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+    });
+</script>
+</body></html>

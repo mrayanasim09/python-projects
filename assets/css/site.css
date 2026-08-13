@@ -1,0 +1,42 @@
+/* Minimal critical styles and accessibility helpers.
+   This file is intended as a local critical CSS fallback while a full Tailwind build is added in CI.
+*/
+:root{
+  --focus-ring: 3px solid rgba(152,203,255,0.6);
+}
+/* Basic reset for selection */
+::selection{ background: #98cbff; color: #001d33; }
+
+/* Screen-reader only helper */
+.sr-only{ position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* Focus styles for keyboard users */
+:focus{ outline: none; }
+:focus-visible{ outline: var(--focus-ring); outline-offset: 2px; }
+
+/* Make interactive elements clearly focusable */
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible{ outline: var(--focus-ring); outline-offset: 2px; }
+
+/* Glass panel helper (keeps original design) */
+.glass-panel{ background: rgba(17,19,22,0.7); backdrop-filter: blur(16px); }
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; animation: none !important; }
+}
+
+/* Basic responsive container spacing used by the page (small subset) */
+.px-margin-mobile{ padding-left:16px; padding-right:16px; }
+.md\:px-margin-desktop{ padding-left:48px; padding-right:48px; }
+
+/* Fade-in-up helper kept for progressive enhancement */
+.fade-in-up{ opacity:0; transform:translateY(20px); transition: opacity .8s ease-out, transform .8s ease-out; }
+.fade-in-up.visible{ opacity:1; transform:none; }
+
+/* Ensure icons (inline svgs) can't receive focus by default */
+svg[aria-hidden="true"]{ pointer-events:none; }
+
+/* Small utilities used in the page */
+.select-all{ user-select: all; }
+
+/* Accessibility note: color contrast should be verified with real content and user themes. */
