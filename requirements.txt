@@ -6,7 +6,8 @@ mangum>=0.17.0
 # === Utility packages (buildable on Vercel Linux) ===
 qrcode>=7.4
 matplotlib>=3.7.0
-yfinance>=0.2.0
+yfinance>=0.2.29
+pyautogui>=0.9.55
 pillow>=10.0.0
 openpyxl>=3.1.0
 sympy>=1.12

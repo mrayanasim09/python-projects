@@ -6,10 +6,7 @@ import os
 app = FastAPI(title="Python Projects API")
 
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"],
 )
 
 
@@ -23,14 +20,20 @@ async def projects():
     base = os.path.dirname(os.path.dirname(__file__))
     items = []
     for name in sorted(os.listdir(base)):
-        if name.startswith('.') or name in (
-            '__pycache__', '.git', 'api', '.venv', '.venv3', 'public', 'assets'
+        if name.startswith(".") or name in (
+            "__pycache__",
+            ".git",
+            "api",
+            ".venv",
+            ".venv3",
+            "public",
+            "assets",
         ):
             continue
         path = os.path.join(base, name)
         if os.path.isdir(path):
             items.append({"name": name, "type": "directory"})
-        elif os.path.isfile(path) and name.endswith('.py'):
+        elif os.path.isfile(path) and name.endswith(".py"):
             items.append({"name": name, "type": "file"})
     return {"projects": items}
 

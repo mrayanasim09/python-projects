@@ -26,7 +26,7 @@ def get_wifi_profiles():
             capture_output=True,
             text=True,
             shell=False,  # nosec B603
-            check=True
+            check=True,
         )
         output = result.stdout
 
@@ -63,7 +63,7 @@ def get_wifi_password(profile):
     """
     if not profile:
         return None
-    
+
     try:
         # Use full path to netsh.exe for security
         # shell=False is explicit (default in subprocess.run)
@@ -72,7 +72,7 @@ def get_wifi_password(profile):
             capture_output=True,
             text=True,
             shell=False,  # nosec B603
-            check=True
+            check=True,
         )
         output = result.stdout
 
@@ -97,10 +97,10 @@ def get_wifi_password(profile):
 def main():
     """Main function to display Wi-Fi profiles and passwords."""
     # Check if running on Windows
-    if not sys.platform.startswith('win'):
+    if not sys.platform.startswith("win"):
         print("Error: This tool only works on Windows operating systems.")
         return
-    
+
     # Get Wi-Fi profiles
     profiles = get_wifi_profiles()
 
@@ -116,8 +116,10 @@ def main():
         password = get_wifi_password(profile)
         print("{:<30} | {:<}".format(profile, password or ""))
     print("=" * 50)
-    
-    print("\nNote: This information is retrieved from your system's saved Wi-Fi profiles.")
+
+    print(
+        "\nNote: This information is retrieved from your system's saved Wi-Fi profiles."
+    )
     print("Keep this information secure and do not share it with others.")
 
 

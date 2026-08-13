@@ -51,8 +51,12 @@ snake_segments = []
 snake_length = 1
 
 # Spawn the first food
-food_x = round(random.randrange(0, window_width - segment_size) / 20.0) * 20.0  # nosec B311
-food_y = round(random.randrange(0, window_height - segment_size) / 20.0) * 20.0  # nosec B311
+food_x = (
+    round(random.randrange(0, window_width - segment_size) / 20.0) * 20.0
+)  # nosec B311
+food_y = (
+    round(random.randrange(0, window_height - segment_size) / 20.0) * 20.0
+)  # nosec B311
 
 # Game over flag
 game_over = False
@@ -87,8 +91,12 @@ while not game_over:
         # Play eat sound effect
         eat_sound.play()
         # Spawn new food
-        food_x = round(random.randrange(0, window_width - segment_size) / 20.0) * 20.0  # nosec B311
-        food_y = round(random.randrange(0, window_height - segment_size) / 20.0) * 20.0  # nosec B311
+        food_x = (
+            round(random.randrange(0, window_width - segment_size) / 20.0) * 20.0
+        )  # nosec B311
+        food_y = (
+            round(random.randrange(0, window_height - segment_size) / 20.0) * 20.0
+        )  # nosec B311
 
     # Create new segment and add to snake's body
     snake_segments.append((snake_head_x, snake_head_y))
@@ -171,11 +179,15 @@ while True:
                 snake_length = 1
                 # Spawn new food
                 food_x = (
-                    round(random.randrange(0, window_width - segment_size) / 20.0)  # nosec B311
+                    round(
+                        random.randrange(0, window_width - segment_size) / 20.0
+                    )  # nosec B311
                     * 20.0
                 )
                 food_y = (
-                    round(random.randrange(0, window_height - segment_size) / 20.0)  # nosec B311
+                    round(
+                        random.randrange(0, window_height - segment_size) / 20.0
+                    )  # nosec B311
                     * 20.0
                 )
                 game_over = False
