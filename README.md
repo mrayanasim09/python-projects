@@ -1,14 +1,14 @@
-# 80+ Python Projects by M.Rayan Asim
+# 82 Python Projects by Muhammad Rayan Asim
 
 <p align="center">
-  <a href="https://mrayanasim09.github.io/python-projects/">
+  <a href="https://82-python-projects.vercel.app/">
     <img src="https://img.shields.io/badge/Visit-Website-blue" alt="Website">
   </a>
 </p>
 
 ---
 
-Welcome to the Python Projects repository. This collection features 80+ practical Python projects across multiple categories, designed for developers of all skill levels. Whether you are a beginner or an experienced programmer, you will find projects that help you learn, build, and grow.
+Welcome to the Python Projects repository. Explore 82 practical Python projects across different categories to learn, build, and improve your skills.
 
 ---
 
@@ -199,27 +199,12 @@ This project is licensed under the [MIT License](LICENSE/) for educational purpo
 - [Security Policies](security.md)
 - [Project Summary](SUMMARY.md)
 - [System Prerequisites](prerequisites.md)
-- [Full Documentation](https://mrayans.gitbook.io/python--projects/)
 
 ---
 
 ## Frequently Asked Questions
 
 For common questions and troubleshooting, see the [FAQ](FAQ.md).
-
----
-
-## Support This Project
-
-If you find these projects valuable, consider supporting the work:
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/mrayanasim" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40px">
-  </a>
-</p>
-
-**Crypto:** ETH address: `0xEC55fFf7a8387eeaa0Ef886305350Ab3578CE5D3`
 
 ---
 

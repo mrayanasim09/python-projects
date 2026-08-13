@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>82 Python Projects by Rayan Asim</title>
+  <meta name="description" content="A collection of 82 practical Python projects by Rayan Asim — from beginner tools and games to machine learning models."/>
+  <link rel="canonical" href="https://python-projects-rqac.vercel.app/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="82 Python Projects by Rayan Asim"/>
+  <meta property="og:description" content="A collection of 82 practical Python projects — from beginner tools and games to machine learning models."/>
+  <meta property="og:url" content="https://python-projects-rqac.vercel.app/"/>
+
+  <!-- Fonts: Inter only -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d0f12;
+      --bg-card:     #13161b;
+      --bg-card-hover: #181c22;
+      --border:      #1f2430;
+      --border-hover:#2a3144;
+      --text-primary:#e4e8f0;
+      --text-secondary:#7c8799;
+      --text-muted:  #4a5568;
+      --accent:      #4f8ef7;
+      --accent-dim:  #3a72d8;
+      --accent-glow: rgba(79,142,247,0.15);
+      --green:       #34d399;
+      --yellow:      #fbbf24;
+      --red:         #f87171;
+      --radius-sm:   6px;
+      --radius-md:   12px;
+      --radius-lg:   16px;
+      --radius-xl:   20px;
+      --font: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Scroll progress bar ── */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--accent), #818cf8);
+      z-index: 1000;
+      transition: width 0.1s linear;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13,15,18,0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo span {
+      color: var(--accent);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-primary); }
+    .nav-cta {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--bg) !important;
+      background: var(--accent);
+      padding: 6px 16px;
+      border-radius: 100px;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--accent-dim) !important; color: #fff !important; }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    section { padding: 96px 0; }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 120px 0 96px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      background: rgba(79,142,247,0.1);
+      border: 1px solid rgba(79,142,247,0.2);
+      padding: 5px 12px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+    .hero-badge .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--accent) 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 520px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      background: var(--accent);
+      padding: 11px 24px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--accent-dim); transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: transparent;
+      border: 1px solid var(--border-hover);
+      padding: 11px 24px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, transform 0.15s;
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      flex-wrap: wrap;
+      margin-top: 64px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .stat-item {
+      flex: 1;
+      min-width: 140px;
+      padding: 28px 24px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+
+    /* ── Section headers ── */
+    .section-header {
+      margin-bottom: 48px;
+    }
+    .section-header.center { text-align: center; }
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 480px;
+    }
+    .section-header.center .section-desc { margin: 0 auto; }
+
+    /* ── Search + filter ── */
+    .filter-bar {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .search-wrap {
+      position: relative;
+    }
+    .search-wrap svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      width: 16px; height: 16px;
+      pointer-events: none;
+    }
+    #project-search {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      color: var(--text-primary);
+      font-family: var(--font);
+      font-size: 14px;
+      padding: 11px 16px 11px 40px;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    #project-search::placeholder { color: var(--text-muted); }
+    #project-search:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+    .filter-pills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.18s;
+      font-family: var(--font);
+    }
+    .pill:hover { border-color: var(--border-hover); color: var(--text-primary); }
+    .pill.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ── Project grid ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      cursor: default;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .project-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-category {
+      font-size: 11px;
+      font-weight: 500;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 9px;
+      border-radius: 100px;
+    }
+    .badge-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+    }
+    .badge-beginner { color: var(--green); background: rgba(52,211,153,0.1); }
+    .badge-beginner .badge-dot { background: var(--green); }
+    .badge-intermediate { color: var(--yellow); background: rgba(251,191,36,0.1); }
+    .badge-intermediate .badge-dot { background: var(--yellow); }
+    .badge-advanced { color: var(--red); background: rgba(248,113,113,0.1); }
+    .badge-advanced .badge-dot { background: var(--red); }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+    }
+    .card-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      flex: 1;
+    }
+    .card-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .tag {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+      border-radius: var(--radius-sm);
+    }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      margin-top: 4px;
+      transition: gap 0.15s;
+    }
+    .card-link:hover { gap: 10px; }
+    .no-results {
+      text-align: center;
+      padding: 64px 24px;
+      color: var(--text-secondary);
+      font-size: 15px;
+      display: none;
+    }
+    .no-results svg { margin: 0 auto 16px; opacity: 0.3; }
+
+    /* ── Categories ── */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .cat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .cat-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 0 0 1px var(--accent), 0 8px 24px var(--accent-glow);
+    }
+    .cat-icon {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-md);
+      background: var(--accent-glow);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .cat-icon svg { width: 18px; height: 18px; }
+    .cat-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .cat-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ── Skill levels ── */
+    .levels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .level-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      transition: border-color 0.2s;
+    }
+    .level-card:hover { border-color: var(--border-hover); }
+    .level-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .level-card.beginner .level-title { color: var(--green); }
+    .level-card.intermediate .level-title { color: var(--yellow); }
+    .level-card.advanced .level-title { color: var(--red); }
+    .level-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ── CTA ── */
+    .cta-section {
+      text-align: center;
+      padding: 96px 0;
+    }
+    .cta-section h2 {
+      font-size: clamp(24px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .cta-section p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+
+    /* ── GitHub stats ── */
+    .gh-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+    .gh-stat {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .gh-stat svg { width: 16px; height: 16px; opacity: 0.6; }
+    .gh-stat strong { color: var(--text-primary); font-weight: 600; }
+    .gh-stat.loading strong { color: var(--text-muted); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--text-primary); }
+
+    /* ── Fade-in on scroll ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Divider ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      section { padding: 64px 0; }
+      .hero { padding: 80px 0 64px; }
+      .stat-item { min-width: 120px; padding: 20px 16px; }
+      .stat-num { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div id="progress-bar" role="progressbar" aria-label="Page scroll progress"></div>
+
+<!-- Nav -->
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Python Projects home">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"/><path d="M7 7h.01"/></svg>
+      Python<span>Projects</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#levels">Skill Levels</a></li>
+      <li><a href="https://github.com/mrayanasim09/python-projects" target="_blank" rel="noopener" class="nav-cta">GitHub ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-badge fade-up">
+      <span class="dot"></span>
+      Open Source · MIT License
+    </div>
+    <h1 class="fade-up">
+      82 Python Projects<br/>
+      <span class="highlight">Built to Learn From</span>
+    </h1>
+    <p class="hero-sub fade-up">
+      A collection of practical Python projects by Rayan Asim — from simple scripts and games to machine learning models.
+    </p>
+    <div class="hero-actions fade-up">
+      <a href="https://github.com/mrayanasim09/python-projects" target="_blank" rel="noopener" class="btn-primary" id="hero-github-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        View on GitHub
+      </a>
+      <a href="#projects" class="btn-secondary" id="hero-explore-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Explore Projects
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-bar fade-up" aria-label="Project statistics">
+      <div class="stat-item">
+        <div class="stat-num" id="stat-projects">82</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Categories</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" id="stat-stars">—</div>
+        <div class="stat-label">GitHub Stars</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" id="stat-forks">—</div>
+        <div class="stat-label">Forks</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<hr class="divider"/>
+
+<!-- Categories -->
+<section id="categories">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-label">Browse by topic</div>
+      <h2 class="section-title">Project Categories</h2>
+      <p class="section-desc">Click any category to filter the projects below.</p>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card fade-up" data-filter="GUI" id="cat-gui" role="button" tabindex="0" aria-label="Filter by GUI">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <div class="cat-name">GUI</div>
+        <div class="cat-sub">Tkinter · PyQt5</div>
+      </div>
+      <div class="cat-card fade-up" data-filter="Calculator" id="cat-calculator" role="button" tabindex="0" aria-label="Filter by Calculator">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M8 18h.01M12 18h.01"/></svg></div>
+        <div class="cat-name">Calculator</div>
+        <div class="cat-sub">Math · Logic</div>
+      </div>
+      <div class="cat-card fade-up" data-filter="Games" id="cat-games" role="button" tabindex="0" aria-label="Filter by Games">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="2"/></svg></div>
+        <div class="cat-name">Games</div>
+        <div class="cat-sub">Pygame · Turtle</div>
+      </div>
+      <div class="cat-card fade-up" data-filter="Machine Learning" id="cat-ml" role="button" tabindex="0" aria-label="Filter by Machine Learning">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></svg></div>
+        <div class="cat-name">Machine Learning</div>
+        <div class="cat-sub">Scikit · Pandas</div>
+      </div>
+      <div class="cat-card fade-up" data-filter="Utilities" id="cat-utilities" role="button" tabindex="0" aria-label="Filter by Utilities">
+        <div class="cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="cat-name">Utilities</div>
+        <div class="cat-sub">OS · Sys · Requests</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header fade-up" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:32px;">
+      <div>
+        <div class="section-label">Featured</div>
+        <h2 class="section-title" style="margin-bottom:0;">Featured Projects</h2>
+      </div>
+      <a href="https://github.com/mrayanasim09/python-projects" target="_blank" rel="noopener" id="view-all-link" style="font-size:13px; font-weight:500; color:var(--accent); text-decoration:none; display:flex; align-items:center; gap:6px; white-space:nowrap;">
+        View all 82 on GitHub
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </div>
+
+    <!-- Search + filter -->
+    <div class="filter-bar fade-up">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" id="project-search" placeholder="Search projects…" autocomplete="off" aria-label="Search projects"/>
+      </div>
+      <div class="filter-pills" role="group" aria-label="Filter by category">
+        <button class="pill active" data-category="All" id="filter-all">All</button>
+        <button class="pill" data-category="Games" id="filter-games">Games</button>
+        <button class="pill" data-category="Calculator" id="filter-calculator">Calculator</button>
+        <button class="pill" data-category="Utilities" id="filter-utilities">Utilities</button>
+        <button class="pill" data-category="Machine Learning" id="filter-ml">Machine Learning</button>
+        <button class="pill" data-category="GUI" id="filter-gui">GUI</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- Tic Tac Toe -->
+      <article class="project-card fade-up" data-category="Games" data-title="Tic Tac Toe" data-tags="python turtle logic">
+        <div class="card-meta">
+          <span class="card-category">Games</span>
+          <span class="badge badge-beginner"><span class="badge-dot"></span>Beginner</span>
+        </div>
+        <h3 class="card-title">Tic Tac Toe</h3>
+        <p class="card-desc">Classic command-line two-player game with win detection and board rendering.</p>
+        <div class="card-tags">
+          <span class="tag">python</span>
+          <span class="tag">logic</span>
+          <span class="tag">cli</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/Game/tick_cross.py" target="_blank" rel="noopener" id="link-ttt">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- Snake Game -->
+      <article class="project-card fade-up" data-category="Games" data-title="Snake Game" data-tags="python turtle game">
+        <div class="card-meta">
+          <span class="card-category">Games</span>
+          <span class="badge badge-intermediate"><span class="badge-dot"></span>Intermediate</span>
+        </div>
+        <h3 class="card-title">Snake Game</h3>
+        <p class="card-desc">Retro snake game built using the Turtle graphics library with score tracking.</p>
+        <div class="card-tags">
+          <span class="tag">turtle</span>
+          <span class="tag">OOP</span>
+          <span class="tag">game loop</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/Game/snake_game.py" target="_blank" rel="noopener" id="link-snake">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- Sudoku Solver -->
+      <article class="project-card fade-up" data-category="Calculator" data-title="Sudoku Solver" data-tags="python algorithm backtracking recursion">
+        <div class="card-meta">
+          <span class="card-category">Calculator</span>
+          <span class="badge badge-advanced"><span class="badge-dot"></span>Advanced</span>
+        </div>
+        <h3 class="card-title">Sudoku Solver</h3>
+        <p class="card-desc">Backtracking algorithm that automatically solves any valid 9×9 Sudoku puzzle.</p>
+        <div class="card-tags">
+          <span class="tag">backtracking</span>
+          <span class="tag">recursion</span>
+          <span class="tag">algorithm</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/Calculator/sudoku.py" target="_blank" rel="noopener" id="link-sudoku">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- QR Code Generator -->
+      <article class="project-card fade-up" data-category="Utilities" data-title="QR Code Generator" data-tags="python qrcode pillow utility">
+        <div class="card-meta">
+          <span class="card-category">Utilities</span>
+          <span class="badge badge-beginner"><span class="badge-dot"></span>Beginner</span>
+        </div>
+        <h3 class="card-title">QR Code Generator</h3>
+        <p class="card-desc">Generate scannable QR codes from any text or URL and export as an image file.</p>
+        <div class="card-tags">
+          <span class="tag">qrcode</span>
+          <span class="tag">pillow</span>
+          <span class="tag">cli</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/Utilities/url.py" target="_blank" rel="noopener" id="link-qr">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- Spam Detection -->
+      <article class="project-card fade-up" data-category="Machine Learning" data-title="Spam Message Detection" data-tags="python nlp naive bayes textblob sklearn">
+        <div class="card-meta">
+          <span class="card-category">Machine Learning</span>
+          <span class="badge badge-advanced"><span class="badge-dot"></span>Advanced</span>
+        </div>
+        <h3 class="card-title">Spam Message Detection</h3>
+        <p class="card-desc">NLP model using Naive Bayes to classify SMS messages as spam or ham with high accuracy.</p>
+        <div class="card-tags">
+          <span class="tag">NLP</span>
+          <span class="tag">sklearn</span>
+          <span class="tag">textblob</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/spam_dect.py" target="_blank" rel="noopener" id="link-spam">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- Crypto Price Prediction -->
+      <article class="project-card fade-up" data-category="Machine Learning" data-title="Crypto Price Prediction" data-tags="python prophet yfinance timeseries forecasting">
+        <div class="card-meta">
+          <span class="card-category">Machine Learning</span>
+          <span class="badge badge-advanced"><span class="badge-dot"></span>Advanced</span>
+        </div>
+        <h3 class="card-title">Crypto Price Prediction</h3>
+        <p class="card-desc">Time-series forecasting using Prophet to predict short-term cryptocurrency price trends.</p>
+        <div class="card-tags">
+          <span class="tag">prophet</span>
+          <span class="tag">yfinance</span>
+          <span class="tag">forecasting</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/crypto_prices.py" target="_blank" rel="noopener" id="link-crypto">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- Sentiment Analyser -->
+      <article class="project-card fade-up" data-category="Machine Learning" data-title="Sentiment Analyser" data-tags="python vader nlp sentiment">
+        <div class="card-meta">
+          <span class="card-category">Machine Learning</span>
+          <span class="badge badge-intermediate"><span class="badge-dot"></span>Intermediate</span>
+        </div>
+        <h3 class="card-title">Sentiment Analyser</h3>
+        <p class="card-desc">Analyse the emotional tone of any text using VADER sentiment scoring.</p>
+        <div class="card-tags">
+          <span class="tag">VADER</span>
+          <span class="tag">NLP</span>
+          <span class="tag">analysis</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/machine_learning/sentiments.py" target="_blank" rel="noopener" id="link-sentiment">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- GUI Calculator -->
+      <article class="project-card fade-up" data-category="GUI" data-title="GUI Calculator" data-tags="python tkinter gui calculator">
+        <div class="card-meta">
+          <span class="card-category">GUI</span>
+          <span class="badge badge-beginner"><span class="badge-dot"></span>Beginner</span>
+        </div>
+        <h3 class="card-title">GUI Calculator</h3>
+        <p class="card-desc">A fully functional desktop calculator built with Tkinter — clean layout, keyboard support.</p>
+        <div class="card-tags">
+          <span class="tag">tkinter</span>
+          <span class="tag">GUI</span>
+          <span class="tag">events</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/GUI/A_basic_gui_calculator.py" target="_blank" rel="noopener" id="link-gui-calc">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <!-- URL Shortener -->
+      <article class="project-card fade-up" data-category="Utilities" data-title="URL Shortener" data-tags="python requests pyshorteners api utility">
+        <div class="card-meta">
+          <span class="card-category">Utilities</span>
+          <span class="badge badge-beginner"><span class="badge-dot"></span>Beginner</span>
+        </div>
+        <h3 class="card-title">URL Shortener</h3>
+        <p class="card-desc">Instantly shorten any long URL using the pyshorteners library with multiple provider options.</p>
+        <div class="card-tags">
+          <span class="tag">pyshorteners</span>
+          <span class="tag">API</span>
+          <span class="tag">requests</span>
+        </div>
+        <a class="card-link" href="https://github.com/mrayanasim09/python-projects/blob/main/Utilities/short_form.py" target="_blank" rel="noopener" id="link-url">
+          View code
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+    </div>
+
+    <!-- No results state -->
+    <div class="no-results" id="no-results" aria-live="polite">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6M11 8v6"/></svg>
+      <p>No projects match your search.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- Skill Levels -->
+<section id="levels">
+  <div class="container">
+    <div class="section-header center fade-up">
+      <div class="section-label">Find your level</div>
+      <h2 class="section-title">Progressive Learning</h2>
+      <p class="section-desc">Projects organized from beginner to advanced.</p>
+    </div>
+    <div class="levels-grid">
+      <div class="level-card beginner fade-up">
+        <div class="level-title">Beginner</div>
+        <p class="level-desc">Core syntax, loops, and basic logic. Great for anyone starting out with Python.</p>
+      </div>
+      <div class="level-card intermediate fade-up">
+        <div class="level-title">Intermediate</div>
+        <p class="level-desc">GUIs, API calls, data scraping, and object-oriented programming.</p>
+      </div>
+      <div class="level-card advanced fade-up">
+        <div class="level-title">Advanced</div>
+        <p class="level-desc">Machine learning models, algorithms, and complex applications.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="fade-up">
+      <h2>Ready to start building?</h2>
+      <p>Fork the repository on GitHub, grab any project, and start learning.</p>
+      <div class="hero-actions">
+        <a href="https://github.com/mrayanasim09/python-projects" target="_blank" rel="noopener" class="btn-primary" id="cta-github-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          Get the Code
+        </a>
+        <a href="#projects" class="btn-secondary" id="cta-filter-btn">Browse Projects</a>
+      </div>
+
+      <!-- GitHub live stats -->
+      <div class="gh-stats" id="gh-stats-section" aria-label="Live GitHub stats">
+        <div class="gh-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span><strong id="gh-stars-cta">—</strong> stars</span>
+        </div>
+        <div class="gh-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"/><path d="M12 12v3"/></svg>
+          <span><strong id="gh-forks-cta">—</strong> forks</span>
+        </div>
+        <div class="gh-stat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <span>Updated <strong id="gh-updated-cta">—</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2026 M.Rayan Asim · MIT License</p>
+    <div class="footer-links">
+      <a href="https://github.com/mrayanasim09/python-projects" target="_blank" rel="noopener" id="footer-github">GitHub</a>
+      <a href="https://github.com/mrayanasim09/python-projects/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" id="footer-contribute">Contribute</a>
+      <a href="https://github.com/mrayanasim09/python-projects/blob/main/LICENSE" target="_blank" rel="noopener" id="footer-license">License</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Scroll progress bar ──────────────────────────────────
+  const bar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = total > 0 ? (scrolled / total * 100) + '%' : '0%';
+  }, { passive: true });
+
+  // ── Fade-in on scroll ────────────────────────────────────
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+      if (el.isIntersecting) {
+        el.target.classList.add('visible');
+        observer.unobserve(el.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ── Project data for filtering ───────────────────────────
+  const cards = Array.from(document.querySelectorAll('.project-card'));
+  const searchInput = document.getElementById('project-search');
+  const pills = document.querySelectorAll('.pill');
+  const noResults = document.getElementById('no-results');
+  let activeCategory = 'All';
+
+  function filterProjects() {
+    const query = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+    cards.forEach(card => {
+      const category = card.dataset.category;
+      const title = card.dataset.title.toLowerCase();
+      const tags = card.dataset.tags.toLowerCase();
+      const matchCat = activeCategory === 'All' || category === activeCategory;
+      const matchSearch = !query || title.includes(query) || tags.includes(query) || category.toLowerCase().includes(query);
+      const show = matchCat && matchSearch;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeCategory = pill.dataset.category;
+      filterProjects();
+    });
+  });
+  searchInput.addEventListener('input', filterProjects);
+
+  // Category cards → filter projects
+  document.querySelectorAll('.cat-card').forEach(cat => {
+    const handleFilter = () => {
+      const f = cat.dataset.filter;
+      activeCategory = f;
+      pills.forEach(p => p.classList.remove('active'));
+      const match = document.querySelector(`.pill[data-category="${f}"]`);
+      if (match) match.classList.add('active');
+      filterProjects();
+      document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    };
+    cat.addEventListener('click', handleFilter);
+    cat.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handleFilter(); } });
+  });
+
+  // ── GitHub stats (lazy, non-blocking) ───────────────────
+  function formatNum(n) {
+    return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
+  }
+  function timeAgo(dateStr) {
+    const diff = (Date.now() - new Date(dateStr)) / 1000;
+    if (diff < 3600) return Math.round(diff / 60) + 'm ago';
+    if (diff < 86400) return Math.round(diff / 3600) + 'h ago';
+    if (diff < 2592000) return Math.round(diff / 86400) + 'd ago';
+    return Math.round(diff / 2592000) + 'mo ago';
+  }
+
+  // Only fetch when the CTA section enters the viewport
+  const ghObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      ghObserver.disconnect();
+      fetch('https://api.github.com/repos/mrayanasim09/python-projects')
+        .then(r => r.ok ? r.json() : null)
+        .then(data => {
+          if (!data) return;
+          const stars = formatNum(data.stargazers_count);
+          const forks = formatNum(data.forks_count);
+          const updated = timeAgo(data.pushed_at);
+          // Hero stats
+          document.getElementById('stat-stars').textContent = stars;
+          document.getElementById('stat-forks').textContent = forks;
+          // CTA section
+          document.getElementById('gh-stars-cta').textContent = stars;
+          document.getElementById('gh-forks-cta').textContent = forks;
+          document.getElementById('gh-updated-cta').textContent = updated;
+        })
+        .catch(() => {}); // silently fail — stats are non-critical
+    }
+  }, { threshold: 0.1 });
+  ghObserver.observe(document.getElementById('gh-stats-section'));
+</script>
+</body>
+</html>
