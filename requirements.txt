@@ -27,5 +27,5 @@ fonttools>=4.63.0
 holidays>=0.102
 zipp>=3.19.1
 nltk>=3.10.2
-protobuf>=4.25.8
+protobuf>=7.35.1
 urllib3>=2.5.0
