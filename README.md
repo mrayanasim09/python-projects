@@ -161,7 +161,7 @@ The repository is organized into categories, each containing specific project fo
 Install the required packages using pip:
 
 ```shell
-pip install pygame googlesearch-python qrcode pyautogui pyttsx3 winapps matplotlib tkcalendar pyqt5 pyqtwebengine yfinance pillow openpyxl sympy pytube hijri_converter requests instaloader opencv-python textblob vaderSentiment langdetect screen-brightness-control numpy prophet seaborn mediapipe pyshorteners
+pip install pygame googlesearch-python qrcode pyautogui pyttsx3 winapps matplotlib tkcalendar pyqt5 pyqtwebengine yfinance pillow openpyxl sympy pytube hijri_converter requests instaloader opencv-python textblob vaderSentiment langdetect screen-brightness-control numpy prophet seaborn mediapipe pyshorteners 
 ```
 
 For detailed usage instructions, see [How to Use](How_to_use.md).
