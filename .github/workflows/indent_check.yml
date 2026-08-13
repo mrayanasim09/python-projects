@@ -3,7 +3,7 @@ name: Python Indentation Check and Pull Request
 on:
   push:
     branches:
-      - main  # Change this to your main branch name if different
+      - main
 
 jobs:
   indent_check_and_pr:
@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # Replace with the version of Python used in your repository
+          python-version: '3.x'
 
       - name: Install flake8 and black
         run: |
@@ -25,21 +25,17 @@ jobs:
       - name: Run flake8 for Indentation Errors
         id: check_indentation
         run: |
+          set -e
           if flake8 --select=E --show-source --quiet .; then
-            echo "No indentation errors found."
+            echo "result=success" >> $GITHUB_OUTPUT
           else
-            echo "Indentation errors found. Fixing the errors..."
+            echo "result=failure" >> $GITHUB_OUTPUT
             black .
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
             git add .
+            git commit -m "Fix Python indentation errors" || true
           fi
-
-      - name: Commit and push changes
-        if: steps.check_indentation.outputs.result == 'failure'
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m "Fix Python indentation errors" || true
-          git push origin HEAD
 
       - name: Create Pull Request
         if: steps.check_indentation.outputs.result == 'failure'
