@@ -1,7 +1,7 @@
 # 82 Python Projects by Muhammad Rayan Asim
 
 <p align="center">
-  <a href="https://mrayanasim09.github.io/python-projects/">
+  <a href="https://82-python-projects.vercel.app/">
     <img src="https://img.shields.io/badge/Visit-Website-blue" alt="Website">
   </a>
 </p>
