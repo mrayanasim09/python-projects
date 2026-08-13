@@ -176,10 +176,8 @@ MRayan Asim maintains this repository as a dedicated Python enthusiast focused o
 
 **Connect with me:**
 
-[![Discord](https://img.shields.io/badge/Discord-Join-7289DA?logo=discord)](https://discord.gg/uRfXYjub)
-[![Reddit](https://img.shields.io/badge/Reddit-Community-orange?logo=reddit)](https://www.reddit.com/r/Python_projects_rayan/)
 [![Email](https://img.shields.io/badge/Email-mrayanasim09%40gmail.com-D14836?logo=gmail)](mailto:mrayanasim09@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/mrayan-asim-044836275/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?logo=linkedin)](https://www.linkedin.com/in/muhammad-rayyan-asim-044836275/)
 [![GitHub](https://img.shields.io/badge/GitHub-mrayanasim09-blue?logo=github)](https://github.com/mrayanasim09)
 
 For a programming learning roadmap, read my [guide on Medium](https://mrayanasim09.medium.com/how-to-start-learning-programming-from-beginners-to-advance-14248dcc7afa).
