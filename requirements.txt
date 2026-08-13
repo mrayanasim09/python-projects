@@ -1,31 +1,39 @@
-# === Web API (required for Vercel deployment) ===
+pygame
+googlesearch-python
+qrcode
+pyautogui
+pyttsx3
+winapps
+matplotlib
+tkcalendar
+pyqt5
+pyqtwebengine
+yfinance
+pillow
+openpyxl
+sympy
+pytube
+hijri_converter
+requests
+instaloader
+opencv-python
+textblob
+vaderSentiment
+langdetect
+screen-brightness-control
+numpy
+prophet
+seaborn
+mediapipe
+pyshorteners
+
 fastapi>=0.95.0
 uvicorn>=0.22.0
-mangum>=0.17.0
 
-# === Utility packages (buildable on Vercel Linux) ===
-qrcode>=7.4
-matplotlib>=3.7.0
-yfinance>=0.2.29
-pyautogui>=0.9.55
-pillow>=10.0.0
-openpyxl>=3.1.0
-sympy>=1.12
-hijri_converter>=2.3.1
-requests>=2.31.0
-instaloader>=4.10.0
-textblob>=0.17.1
-vaderSentiment>=3.3.2
-langdetect>=1.0.9
-numpy>=1.24.0
-seaborn>=0.12.0
-pyshorteners>=1.0.1
-googlesearch-python>=1.2.3
-
-# === Security pinning (Snyk) ===
-fonttools>=4.63.0
-holidays>=0.102
-zipp>=3.19.1
-nltk>=3.10.2
-protobuf>=7.35.1
-urllib3>=2.5.0
+fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
+holidays>=0.45 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=4.1.0 # not directly required, pinned by Snyk to avoid a vulnerability
+nltk>=3.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
+protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
+starlette>=0.49.1 # not directly required, pinned by Snyk to avoid a vulnerability
