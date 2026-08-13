@@ -72,7 +72,10 @@ rgb = random.choice(color_list)  # nosec B311
 
 # enemy position
 e_p = [width, random.randint(50, height - 50)]  # nosec B311
-e1_p = [random.randint(width, width + 100), random.randint(50, height - 100)]  # nosec B311
+e1_p = [
+    random.randint(width, width + 100),
+    random.randint(50, height - 100),
+]  # nosec B311
 
 
 # function for game_over
