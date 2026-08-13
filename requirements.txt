@@ -27,6 +27,9 @@ seaborn
 mediapipe
 pyshorteners
 
+fastapi>=0.95.0
+uvicorn>=0.22.0
+
 fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
 holidays>=0.45 # not directly required, pinned by Snyk to avoid a vulnerability
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability

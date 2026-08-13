@@ -3,4 +3,4 @@ name = "python-projects"
 version = "0.0.0"
 
 [tool.vercel]
-entrypoint = "GUI.search_applications:app"
+entrypoint = "api.app:app"
