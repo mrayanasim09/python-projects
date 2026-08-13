@@ -25,6 +25,6 @@ googlesearch-python>=1.2.3
 fonttools>=4.43.0
 holidays>=0.45
 zipp>=3.19.1
-nltk>=3.8.2
+nltk>=3.10.2
 protobuf>=4.25.8
 urllib3>=2.5.0
