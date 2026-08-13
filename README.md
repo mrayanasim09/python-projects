@@ -1,4 +1,4 @@
-# 80+ Python Projects by M.Rayan Asim
+# 80+ Python Projects by Muhammad Rayan Asim
 
 <p align="center">
   <a href="https://mrayanasim09.github.io/python-projects/">
