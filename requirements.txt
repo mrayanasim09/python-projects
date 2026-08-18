@@ -9,7 +9,7 @@
 #   pip install -e ".[gui,ml,dev]" # Multiple extras at once
 
 fastapi>=0.141.1
-uvicorn>=0.22.0
+uvicorn>=0.52.3
 
 # Snyk-pinned transitive security patches
 fonttools>=4.63.0
