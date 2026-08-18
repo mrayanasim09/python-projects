@@ -40,7 +40,7 @@ gui = [
     "hijri-converter>=2.3.1",
 ]
 games = [
-    "pygame>=2.5.0",
+    "pygame>=2.6.1",
 ]
 ml = [
     "opencv-python>=4.8.0",
