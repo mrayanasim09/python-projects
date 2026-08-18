@@ -8,7 +8,7 @@
 #   pip install -e ".[dev]"        # Dev tools (pytest, ruff, mypy)
 #   pip install -e ".[gui,ml,dev]" # Multiple extras at once
 
-fastapi>=0.95.0
+fastapi>=0.141.1
 uvicorn>=0.22.0
 
 # Snyk-pinned transitive security patches
