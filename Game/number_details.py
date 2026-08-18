@@ -1,9 +1,7 @@
 # This code is made by MRayan Asim
 import time
 
-print(
-    "Hello this number checker program is made by MRayan Asim hope you will like it 😊"
-)
+print("Hello this number checker program is made by MRayan Asim hope you will like it 😊")
 time.sleep(5)
 
 

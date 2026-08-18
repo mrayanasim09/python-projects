@@ -205,9 +205,7 @@ draw_layer_of_the_cake("#FFC0CB", "#000000", 3, -220, y_coordinate - 70, 400, 10
 
 # Drawing different parts of our cake
 for parts in parts_of_cake:
-    draw_layer_of_the_cake(
-        parts[0], parts[1], parts[2], -135, y_coordinate - 60, 240, parts[3]
-    )
+    draw_layer_of_the_cake(parts[0], parts[1], parts[2], -135, y_coordinate - 60, 240, parts[3])
     y_coordinate += parts[3]
 
 

@@ -22,18 +22,12 @@ def draw_fractal_tree(length):
         fractal_turtle.pencolor("yellow")  # Setting Pencolor as yellow
         fractal_turtle.forward(length)  # moving the turtle forward by 'length'
         fractal_turtle.left(30)  # moving the turtle 30 degrees towards the left
-        draw_fractal_tree(
-            3 * length / 4
-        )  # drawing a fractal on the left with 3/4th of its length
+        draw_fractal_tree(3 * length / 4)  # drawing a fractal on the left with 3/4th of its length
         fractal_turtle.right(60)  # moving the turtle 60 degrees towards the right
-        draw_fractal_tree(
-            3 * length / 4
-        )  # drawing a fractal on the right with 3/4th of its length
+        draw_fractal_tree(3 * length / 4)  # drawing a fractal on the right with 3/4th of its length
         fractal_turtle.left(30)  # moving the turtle 30 degrees towards the left
         fractal_turtle.pensize(2)
-        fractal_turtle.backward(
-            length
-        )  # returning the turtle back to its original position
+        fractal_turtle.backward(length)  # returning the turtle back to its original position
 
 
 draw_fractal_tree(20)  # drawing the fractal tree 20 times

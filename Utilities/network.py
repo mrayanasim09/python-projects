@@ -57,7 +57,7 @@ def get_wifi_password(profile):
     """
     Get the Wi-Fi password for a specific profile.
     Returns the password string or None if not found.
-    
+
     Args:
         profile: The Wi-Fi profile name
     """
@@ -117,9 +117,7 @@ def main():
         print("{:<30} | {:<}".format(profile, password or ""))
     print("=" * 50)
 
-    print(
-        "\nNote: This information is retrieved from your system's saved Wi-Fi profiles."
-    )
+    print("\nNote: This information is retrieved from your system's saved Wi-Fi profiles.")
     print("Keep this information secure and do not share it with others.")
 
 

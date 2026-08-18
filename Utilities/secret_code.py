@@ -20,7 +20,7 @@ def save_secret_code(secret_word, secret_code):
 # Function to load secret codes and words from file
 def load_secret_codes():
     secret_codes = {}
-    with open("secret_code.txt", "r") as file:
+    with open("secret_code.txt") as file:
         for line in file:
             line = line.strip()
             if line:
@@ -32,9 +32,7 @@ def load_secret_codes():
 
 
 # Main program
-print(
-    "Hello! This secret code generator is made by MRayan Asim. Hope you will like it! 😊"
-)
+print("Hello! This secret code generator is made by MRayan Asim. Hope you will like it! 😊")
 time.sleep(3)
 
 # Ask the user for input

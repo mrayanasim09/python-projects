@@ -1,40 +1,22 @@
-pygame
-googlesearch-python
-qrcode
-pyautogui
-pyttsx3
-winapps
-matplotlib
-tkcalendar
-pyqt5
-pyqtwebengine
-yfinance
-pillow
-openpyxl
-sympy
-pytube
-hijri_converter
-requests
-instaloader
-opencv-python
-textblob
-vaderSentiment
-langdetect
-screen-brightness-control
-numpy
-prophet
-seaborn
-mediapipe
-pyshorteners
+# Core API / Vercel runtime dependencies only.
+# All other dependencies are declared as optional extras in pyproject.toml:
+#
+#   pip install -e ".[gui]"        # GUI apps (PyQt5, Pillow, …)
+#   pip install -e ".[games]"      # Games (pygame)
+#   pip install -e ".[ml]"         # Machine learning (OpenCV, mediapipe, …)
+#   pip install -e ".[automation]" # Desktop automation (pyautogui, qrcode)
+#   pip install -e ".[dev]"        # Dev tools (pytest, ruff, mypy)
+#   pip install -e ".[gui,ml,dev]" # Multiple extras at once
 
 fastapi>=0.95.0
 uvicorn>=0.22.0
 
-fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
-holidays>=0.45 # not directly required, pinned by Snyk to avoid a vulnerability
-zipp>=4.1.0 # not directly required, pinned by Snyk to avoid a vulnerability
-nltk>=3.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
-protobuf>=4.25.8 # not directly required, pinned by Snyk to avoid a vulnerability
-urllib3>=2.5.0 # not directly required, pinned by Snyk to avoid a vulnerability
-starlette>=0.49.1 # not directly required, pinned by Snyk to avoid a vulnerability
-soupsieve>=2.8.4 # not directly required, pinned by Snyk to avoid a vulnerability
+# Snyk-pinned transitive security patches
+fonttools>=4.43.0
+holidays>=0.45
+zipp>=4.1.0
+nltk>=3.10.0
+protobuf>=4.25.8
+urllib3>=2.5.0
+starlette>=0.49.1
+soupsieve>=2.8.4

@@ -1,9 +1,10 @@
 # This code is made by MRayan Asim
 # Packages needed:
 # pip install bcrypt
-import bcrypt
 import hashlib
 import warnings
+
+import bcrypt
 
 print("************** PASSWORD CRACKER ******************")
 
@@ -20,7 +21,7 @@ if len(input_hash) == 32:  # MD5 length
         UserWarning,
     )
     try:
-        with open(pass_doc, "r", errors="ignore") as pass_file:
+        with open(pass_doc, errors="ignore") as pass_file:
             for word in pass_file:
                 word = word.strip()
                 # Using MD5 only for cracking existing MD5 hashes (educational)
@@ -32,11 +33,7 @@ if len(input_hash) == 32:  # MD5 length
                     break
 
     except FileNotFoundError:
-        print(
-            "Error: "
-            + pass_doc
-            + " is not found. Please provide the correct file path."
-        )
+        print("Error: " + pass_doc + " is not found. Please provide the correct file path.")
         quit()
 
     if not pass_found:
@@ -44,7 +41,7 @@ if len(input_hash) == 32:  # MD5 length
 
 elif input_hash.startswith("$2b$") or input_hash.startswith("$2a$"):  # bcrypt
     try:
-        with open(pass_doc, "r", errors="ignore") as pass_file:
+        with open(pass_doc, errors="ignore") as pass_file:
             for word in pass_file:
                 word = word.strip()
                 if bcrypt.checkpw(word.encode(), input_hash.encode()):
@@ -52,11 +49,7 @@ elif input_hash.startswith("$2b$") or input_hash.startswith("$2a$"):  # bcrypt
                     pass_found = True
                     break
     except FileNotFoundError:
-        print(
-            "Error: "
-            + pass_doc
-            + " is not found. Please provide the correct file path."
-        )
+        print("Error: " + pass_doc + " is not found. Please provide the correct file path.")
         quit()
     except Exception as e:
         print(f"Error checking password: {e}")

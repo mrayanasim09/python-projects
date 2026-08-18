@@ -4,9 +4,10 @@
 # Python 3 code to demonstrate password hashing
 # NOTE: MD5 is insecure for passwords. This script now uses bcrypt by default.
 
-import bcrypt
 import hashlib
 import warnings
+
+import bcrypt
 
 print("************** PASSWORD HASHING TOOL ******************")
 print("Note: MD5 is INSECURE for passwords. Using bcrypt (recommended).")

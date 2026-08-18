@@ -6,18 +6,17 @@
 # pip install yfinance
 # pip install seaborn
 # pip install prophet
-import yfinance as yf
+import datetime
+
 import matplotlib.pyplot as plt
 import seaborn as sns
+import yfinance as yf
 from prophet import Prophet
-import datetime
 
 
 # Download historical cryptocurrency price data from Yahoo Finance
 def download_crypto_data(crypto_symbol, end_date):
-    crypto_data = yf.download(
-        crypto_symbol, start="2010-01-01", end=end_date, progress=False
-    )
+    crypto_data = yf.download(crypto_symbol, start="2010-01-01", end=end_date, progress=False)
     return crypto_data
 
 

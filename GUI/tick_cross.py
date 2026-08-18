@@ -2,6 +2,7 @@
 # Packages needed:
 # pip install numpy
 from tkinter import *
+
 import numpy as np
 
 size_of_board = 600
@@ -198,20 +199,10 @@ class Tic_Tac_Toe:
                 return True
 
         # Diagonals
-        if (
-            self.board_status[0][0]
-            == self.board_status[1][1]
-            == self.board_status[2][2]
-            == player
-        ):
+        if self.board_status[0][0] == self.board_status[1][1] == self.board_status[2][2] == player:
             return True
 
-        if (
-            self.board_status[0][2]
-            == self.board_status[1][1]
-            == self.board_status[2][0]
-            == player
-        ):
+        if self.board_status[0][2] == self.board_status[1][1] == self.board_status[2][0] == player:
             return True
 
         return False

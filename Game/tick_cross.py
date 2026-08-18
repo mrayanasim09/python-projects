@@ -59,9 +59,7 @@ def make_computer_move(board, difficulty):
         elif difficulty == "medium":
             # Check for winning moves
             for cell in empty_cells:
-                temp_board = [
-                    row[:] for row in board
-                ]  # Create a temporary board for simulation
+                temp_board = [row[:] for row in board]  # Create a temporary board for simulation
                 temp_board[cell[0]][cell[1]] = "O"
                 if check_winner(temp_board) == "O":
                     row, col = cell

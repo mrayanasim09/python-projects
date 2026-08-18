@@ -1,10 +1,8 @@
 # This code is made by MRayan Asim
-import random
 import math
+import random
 
-print(
-    "Hello this number guessing  program is made by MRayan Asim hope you will like it 😊"
-)
+print("Hello this number guessing  program is made by MRayan Asim hope you will like it 😊")
 
 lower = int(input("Enter Lower(mininum) limit:- "))
 upper = int(input("Enter Upper(maxinum) limit:- "))

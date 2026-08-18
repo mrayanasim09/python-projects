@@ -2,11 +2,12 @@
 # Packages needed :
 # pip install pygame
 import http.server
+import os
 import socket
 import socketserver
 import webbrowser
+
 import pyqrcode
-import os
 
 # Set the directory path to the desired location
 directory_path = r""  # enter the path of file for qr code

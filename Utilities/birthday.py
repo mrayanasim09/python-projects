@@ -3,6 +3,7 @@
 # pip install hijri_converter
 import datetime
 import time
+
 from hijri_converter import convert
 
 
@@ -21,9 +22,7 @@ def get_days_until_birthday(date_str):
         birth_date = datetime.datetime.strptime(date_str, "%d-%m-%Y").date()
         next_birthday = datetime.date(today.year, birth_date.month, birth_date.day)
         if today > next_birthday:
-            next_birthday = datetime.date(
-                today.year + 1, birth_date.month, birth_date.day
-            )
+            next_birthday = datetime.date(today.year + 1, birth_date.month, birth_date.day)
         days_left = (next_birthday - today).days
         return days_left
     except ValueError:
@@ -115,9 +114,7 @@ def get_birth_flower(month):
     return birth_flowers.get(month, "Unknown")
 
 
-print(
-    "\nHello, this birthday finder is made by MRayan Asim. Hope you will like this! 😊"
-)
+print("\nHello, this birthday finder is made by MRayan Asim. Hope you will like this! 😊")
 time.sleep(3)
 
 # Get user input

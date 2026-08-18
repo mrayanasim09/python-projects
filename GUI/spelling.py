@@ -2,6 +2,7 @@
 # Packages needed:
 # pip install textblob
 from tkinter import *
+
 from textblob import TextBlob
 
 # Function to clear both the text entry boxes
@@ -46,9 +47,7 @@ if __name__ == "__main__":
     root.title("Spell Corrector")
 
     # Create Welcome to Spell Corrector Application: label
-    headlabel = Label(
-        root, text="Welcome to Spell Corrector Application", fg="black", bg="red"
-    )
+    headlabel = Label(root, text="Welcome to Spell Corrector Application", fg="black", bg="red")
 
     # Create a "Input Word": label
     label1 = Label(root, text="Input Word", fg="black", bg="dark green")

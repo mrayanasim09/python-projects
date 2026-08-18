@@ -3,8 +3,9 @@
 # pip install pytube
 import tkinter as tk
 from tkinter import *
+from tkinter import filedialog, messagebox
+
 from pytube import YouTube
-from tkinter import messagebox, filedialog
 
 
 # Defining CreateWidgets() function
@@ -30,14 +31,10 @@ def Widgets():
     destination_label = Label(root, text="Destination :", bg="salmon", pady=5, padx=9)
     destination_label.grid(row=3, column=0, pady=5, padx=5)
 
-    root.destinationText = Entry(
-        root, width=27, textvariable=download_Path, font="Arial 14"
-    )
+    root.destinationText = Entry(root, width=27, textvariable=download_Path, font="Arial 14")
     root.destinationText.grid(row=3, column=1, pady=5, padx=5)
 
-    browse_B = Button(
-        root, text="Browse", command=Browse, width=10, bg="bisque", relief=GROOVE
-    )
+    browse_B = Button(root, text="Browse", command=Browse, width=10, bg="bisque", relief=GROOVE)
     browse_B.grid(row=3, column=2, pady=1, padx=1)
 
     Download_B = Button(

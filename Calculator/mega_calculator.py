@@ -5,10 +5,11 @@
 # pip install sympy
 import ast
 import math
-import matplotlib.pyplot as plt
 import time
-from sympy import symbols
+
+import matplotlib.pyplot as plt
 import sympy
+from sympy import symbols
 
 print("Hello! This calculator is made by MRayan Asim. Hope you will like this! 😊")
 time.sleep(3)
@@ -229,16 +230,12 @@ while True:
         print("We cannot take square root of a negative number")
         z = int(input("Enter a positive number for the third number: "))
 
-print(
-    round_to_3_decimal_places(math.pow(x, 1 / 3)), ", the cube root of the first number"
-)
+print(round_to_3_decimal_places(math.pow(x, 1 / 3)), ", the cube root of the first number")
 print(
     round_to_3_decimal_places(math.pow(y, 1 / 3)),
     ", the cube root of the second number",
 )
-print(
-    round_to_3_decimal_places(math.pow(z, 1 / 3)), ", the cube root of the third number"
-)
+print(round_to_3_decimal_places(math.pow(z, 1 / 3)), ", the cube root of the third number")
 print(round(x * (math.pi / 180), 3), ", the answer of the first number in radians")
 print(round(y * (math.pi / 180), 3), ", the answer of the second number in radians")
 print(round(z * (math.pi / 180), 3), ", the answer of the third number in radians")
@@ -289,7 +286,7 @@ def is_even(number):
 def is_prime(number):
     if number < 2:
         return False
-    for i in range(2, int(number ** 0.5) + 1):
+    for i in range(2, int(number**0.5) + 1):
         if number % i == 0:
             return False
     return True
@@ -498,9 +495,7 @@ if g.lower() == "graph" or g.lower() == "both":
     try:
         x_values = input("Enter x-values (comma-separated): ")
         x_values = [float(x) for x in x_values.split(",")]
-        y_values = [
-            ast.literal_eval(equation, {"math": math, "x": x}) for x in x_values
-        ]
+        y_values = [ast.literal_eval(equation, {"math": math, "x": x}) for x in x_values]
         plt.plot(x_values, y_values, color="red")
         plt.xlabel("X-axis")
         plt.ylabel("Y-axis")
@@ -516,10 +511,7 @@ if g.lower() == "function" or g.lower() == "both":
         x_values = input("Enter values of x for the function (comma-separated): ")
         x_values = [float(x) for x in x_values.split(",")]
         x = symbols("x")
-        y_values = [
-            ast.literal_eval(p, {"math": math, "x": x, "sin": math.sin})
-            for x in x_values
-        ]
+        y_values = [ast.literal_eval(p, {"math": math, "x": x, "sin": math.sin}) for x in x_values]
         plt.plot(x_values, y_values, color="blue")
         plt.xlabel("X-axis")
         plt.ylabel("Y-axis")
@@ -542,9 +534,7 @@ if g.lower() == "function" or g.lower() == "both":
 
     def integrate_equation(equation, var, lower, upper):
         integrated_equation = sympy.integrate(equation, var)
-        result = integrated_equation.subs(var, upper) - integrated_equation.subs(
-            var, lower
-        )
+        result = integrated_equation.subs(var, upper) - integrated_equation.subs(var, lower)
         return integrated_equation, result
 
     var = sympy.Symbol("x")

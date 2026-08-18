@@ -4,10 +4,11 @@
 # pip install requests
 # pip install qrcode
 import re
-import pyshorteners
-import requests
-import qrcode
 import time
+
+import pyshorteners
+import qrcode
+import requests
 
 # Default timeout for HTTP requests (seconds)
 DEFAULT_TIMEOUT = 10
@@ -48,7 +49,7 @@ def shorten_url(url):
 def is_valid_url(url, timeout=DEFAULT_TIMEOUT):
     """
     Check if a URL exists and is accessible.
-    
+
     Args:
         url: The URL to check
         timeout: Request timeout in seconds (default: 10)

@@ -1,8 +1,8 @@
 # This code is made by MRayan Asim
 import os
 from tkinter import *
-from tkinter.messagebox import *
 from tkinter.filedialog import *
+from tkinter.messagebox import *
 
 
 class Notepad:
@@ -54,9 +54,7 @@ class Notepad:
         top = (screenHeight / 2) - (self.__thisHeight / 2)
 
         # For top and bottom
-        self.__root.geometry(
-            "%dx%d+%d+%d" % (self.__thisWidth, self.__thisHeight, left, top)
-        )
+        self.__root.geometry("%dx%d+%d+%d" % (self.__thisWidth, self.__thisHeight, left, top))
 
         # To make the textarea auto resizable
         self.__root.grid_rowconfigure(0, weight=1)
@@ -127,7 +125,7 @@ class Notepad:
             self.__thisTextArea.delete(1.0, END)
 
             try:
-                file = open(self.__file, "r")
+                file = open(self.__file)
                 self.__thisTextArea.insert(1.0, file.read())
                 file.close()
             except Exception as e:

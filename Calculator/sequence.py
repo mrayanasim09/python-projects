@@ -20,9 +20,7 @@ def fibonacci_sequence(n):
     return sequence
 
 
-print(
-    "Hello! This program of Fibonacci series is made by MRayan Asim. Hope you will like this! 😊"
-)
+print("Hello! This program of Fibonacci series is made by MRayan Asim. Hope you will like this! 😊")
 
 # Get user input
 num_terms = int(input("Enter the number of terms in the Fibonacci sequence: "))

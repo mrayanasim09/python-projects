@@ -10,7 +10,7 @@ DEFAULT_TIMEOUT = 10
 def analyze_github_repository(owner, repo, timeout=DEFAULT_TIMEOUT):
     """
     Analyze a GitHub repository and display its statistics.
-    
+
     Args:
         owner: GitHub repository owner
         repo: Repository name

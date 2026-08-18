@@ -26,22 +26,16 @@ def get_valid_integer_input(prompt, min_val=0, max_val=None):
         try:
             val = int(input(prompt))
             if val < min_val:
-                print(
-                    f"Value should be greater than or equal to {min_val}. Please try again."
-                )
+                print(f"Value should be greater than or equal to {min_val}. Please try again.")
             elif max_val is not None and val > max_val:
-                print(
-                    f"Value should be less than or equal to {max_val}. Please try again."
-                )
+                print(f"Value should be less than or equal to {max_val}. Please try again.")
             else:
                 return val
         except ValueError:
             print("Invalid input. Please enter a valid integer.")
 
 
-print(
-    "Hello! This program of grade calculator is made by MRayan Asim. Hope you will like this! 😊"
-)
+print("Hello! This program of grade calculator is made by MRayan Asim. Hope you will like this! 😊")
 time.sleep(3)
 
 num_subjects = get_valid_integer_input("Enter the number of subjects: ", min_val=1)

@@ -1,20 +1,3 @@
-import A_basic_gui_calculator
-import Form
-import Pikachu
-import Quiz
-import clender
-import clock
-import doraemon
-import file_explorer
-import graphics
-import happy_birth_day
-import notepad
-import paint
-import rainbow
-import search_applications
-import snake_ladder
-import spelling
-import spinner
-import tick_cross
-import todo
-import youtube_download
+# GUI package
+# Submodules are imported explicitly by consumers or tests — not auto-imported here
+# because several scripts launch GUI/interactive sessions on import.

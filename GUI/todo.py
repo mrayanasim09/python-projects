@@ -1,42 +1,128 @@
 # This code is made by MRayan Asim
-from tkinter import (
-    Tk,
-    Label,
-    Entry,
-    Button,
-    Listbox,
-    Scrollbar,
-    END,
-    Toplevel,
-    messagebox,
-)
+from __future__ import annotations
+
 import json
+import os
+import tempfile
+from dataclasses import asdict, dataclass
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from tkinter import Tk
 
 
+# ---------------------------------------------------------------------------
+# Domain model — fully decoupled from Tkinter
+# ---------------------------------------------------------------------------
+
+
+@dataclass
 class Task:
-    def __init__(self, title, category, details, due_date, priority):
-        self.title = title
-        self.category = category
-        self.details = details
-        self.due_date = due_date
-        self.priority = priority
+    """Represents a single to-do task (UI-independent domain model)."""
+
+    title: str
+    category: str
+    details: str
+    due_date: str
+    priority: str
+
+    def to_dict(self) -> dict[str, str]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict[str, str]) -> Task:
+        return cls(
+            title=data.get("title", ""),
+            category=data.get("category", ""),
+            details=data.get("details", ""),
+            due_date=data.get("due_date", ""),
+            priority=data.get("priority", ""),
+        )
+
+
+class TaskStore:
+    """Manages a list of Tasks with atomic JSON persistence."""
+
+    def __init__(self, filepath: str = "tasks.json") -> None:
+        self._filepath = filepath
+        self._tasks: list[Task] = []
+
+    # ------------------------------------------------------------------
+    # CRUD
+    # ------------------------------------------------------------------
+
+    def add(self, task: Task) -> None:
+        self._tasks.append(task)
+
+    def delete(self, index: int) -> None:
+        self._tasks.pop(index)
+
+    def update(self, index: int, task: Task) -> None:
+        self._tasks[index] = task
+
+    def get_all(self) -> list[Task]:
+        return list(self._tasks)
+
+    def __len__(self) -> int:
+        return len(self._tasks)
+
+    # ------------------------------------------------------------------
+    # Persistence — atomic writes prevent data loss on crash
+    # ------------------------------------------------------------------
+
+    def save(self) -> None:
+        """Atomically write tasks to the JSON file."""
+        data = [t.to_dict() for t in self._tasks]
+        dir_name = os.path.dirname(os.path.abspath(self._filepath)) or "."
+        with tempfile.NamedTemporaryFile(
+            mode="w", dir=dir_name, suffix=".tmp", delete=False, encoding="utf-8"
+        ) as tmp:
+            json.dump(data, tmp, indent=2)
+            tmp_path = tmp.name
+        os.replace(tmp_path, self._filepath)
+
+    def load(self) -> None:
+        """Load tasks from the JSON file, silently ignoring a missing file."""
+        try:
+            with open(self._filepath, encoding="utf-8") as f:
+                data = json.load(f)
+            self._tasks = [Task.from_dict(item) for item in data]
+        except FileNotFoundError:
+            self._tasks = []
+        except (json.JSONDecodeError, KeyError) as exc:
+            # Corrupt file — start fresh but warn
+            self._tasks = []
+            raise ValueError(f"Could not parse tasks file: {exc}") from exc
+
+
+# ---------------------------------------------------------------------------
+# GUI
+# ---------------------------------------------------------------------------
 
 
 class TaskManagerGUI:
-    def __init__(self, root):
+    def __init__(self, root: Tk) -> None:
+        from tkinter import (
+            Button,
+            Entry,
+            Label,
+            Listbox,
+            Scrollbar,
+        )
+
         self.root = root
         self.root.title("Task Manager")
+        self.store = TaskStore()
 
-        # Set window size and position
-        window_width = 600
-        window_height = 400
+        # Centre the window
+        window_width, window_height = 600, 400
         screen_width = root.winfo_screenwidth()
         screen_height = root.winfo_screenheight()
         x = (screen_width // 2) - (window_width // 2)
         y = (screen_height // 2) - (window_height // 2)
         root.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
-        # Task input fields
+        # Input fields
         self.title_label = Label(root, text="Title:", fg="blue")
         self.title_entry = Entry(root)
         self.category_label = Label(root, text="Category:", fg="blue")
@@ -48,7 +134,7 @@ class TaskManagerGUI:
         self.priority_label = Label(root, text="Priority:", fg="blue")
         self.priority_entry = Entry(root)
 
-        # Task listbox and scrollbar
+        # Listbox + scrollbar
         self.task_listbox = Listbox(root, height=10)
         self.scrollbar = Scrollbar(root)
 
@@ -63,15 +149,15 @@ class TaskManagerGUI:
             root, text="Delete Task", command=self.delete_task, bg="red", fg="white"
         )
         self.view_button = Button(
-            root, text="View Tasks", command=self.view_tasks, bg="blue", fg="white"
+            root, text="View Tasks", command=self.display_tasks, bg="blue", fg="white"
         )
         self.save_button = Button(
             root, text="Save", command=self.save_tasks, bg="purple", fg="white"
         )
 
-        # Grid layout
+        # Layout
         self.title_label.grid(row=0, column=0, padx=5, pady=5, sticky="w")
-        self.title_entry.grid(row=0, column=1, padx=5, pady=5)
+        self.title_entry.grid(row=0, column=0 + 1, padx=5, pady=5)
         self.category_label.grid(row=1, column=0, padx=5, pady=5, sticky="w")
         self.category_entry.grid(row=1, column=1, padx=5, pady=5)
         self.details_label.grid(row=2, column=0, padx=5, pady=5, sticky="w")
@@ -80,204 +166,154 @@ class TaskManagerGUI:
         self.due_date_entry.grid(row=3, column=1, padx=5, pady=5)
         self.priority_label.grid(row=4, column=0, padx=5, pady=5, sticky="w")
         self.priority_entry.grid(row=4, column=1, padx=5, pady=5)
-
-        self.task_listbox.grid(
-            row=0, column=2, rowspan=5, padx=5, pady=5, sticky="nsew"
-        )
+        self.task_listbox.grid(row=0, column=2, rowspan=5, padx=5, pady=5, sticky="nsew")
         self.scrollbar.grid(row=0, column=3, rowspan=5, sticky="ns")
-
         self.add_button.grid(row=5, column=0, padx=5, pady=5)
         self.edit_button.grid(row=5, column=1, padx=5, pady=5)
         self.delete_button.grid(row=5, column=2, padx=5, pady=5)
         self.view_button.grid(row=6, column=0, padx=5, pady=5)
         self.save_button.grid(row=6, column=1, padx=5, pady=5)
 
-        # Configure scrollbar to work with the task listbox
         self.task_listbox.config(yscrollcommand=self.scrollbar.set)
         self.scrollbar.config(command=self.task_listbox.yview)
 
-        # Create a list to store tasks
-        self.tasks = []
-
-        # Load tasks from file
-        self.load_tasks()
-
-        # Handle application exit event
+        self._load_tasks()
         self.root.protocol("WM_DELETE_WINDOW", self.exit_application)
 
-    def add_task(self):
-        title = self.title_entry.get()
-        category = self.category_entry.get()
-        details = self.details_entry.get()
-        due_date = self.due_date_entry.get()
-        priority = self.priority_entry.get()
+    # ------------------------------------------------------------------
+    # Actions
+    # ------------------------------------------------------------------
 
-        if title and category and details and due_date and priority:
-            task = Task(title, category, details, due_date, priority)
-            self.tasks.append(task)
-            self.clear_entry_fields()
+    def add_task(self) -> None:
+        from tkinter import messagebox
+
+        fields = self._read_fields()
+        if all(fields.values()):
+            self.store.add(Task(**fields))
+            self._clear_fields()
             self.display_tasks()
         else:
-            messagebox.showwarning(
-                "Incomplete Fields", "Please fill in all the task details."
-            )
+            messagebox.showwarning("Incomplete Fields", "Please fill in all the task details.")
 
-    def edit_task(self):
-        selected_task_index = self.task_listbox.curselection()
-        if selected_task_index:
-            task = self.tasks[selected_task_index[0]]
-            edit_window = Toplevel(self.root)
-            edit_window.title("Edit Task")
-            edit_window.geometry(
-                "+%d+%d" % (self.root.winfo_x() + 50, self.root.winfo_y() + 50)
-            )
+    def edit_task(self) -> None:
+        from tkinter import END, Button, Entry, Label, Toplevel, messagebox
 
-            title_label = Label(edit_window, text="Title:", fg="blue")
-            title_label.grid(row=0, column=0, padx=5, pady=5, sticky="w")
-            title_entry = Entry(edit_window)
-            title_entry.insert(END, task.title)
-            title_entry.grid(row=0, column=1, padx=5, pady=5)
-
-            category_label = Label(edit_window, text="Category:", fg="blue")
-            category_label.grid(row=1, column=0, padx=5, pady=5, sticky="w")
-            category_entry = Entry(edit_window)
-            category_entry.insert(END, task.category)
-            category_entry.grid(row=1, column=1, padx=5, pady=5)
-
-            details_label = Label(edit_window, text="Details:", fg="blue")
-            details_label.grid(row=2, column=0, padx=5, pady=5, sticky="w")
-            details_entry = Entry(edit_window)
-            details_entry.insert(END, task.details)
-            details_entry.grid(row=2, column=1, padx=5, pady=5)
-
-            due_date_label = Label(edit_window, text="Due Date:", fg="blue")
-            due_date_label.grid(row=3, column=0, padx=5, pady=5, sticky="w")
-            due_date_entry = Entry(edit_window)
-            due_date_entry.insert(END, task.due_date)
-            due_date_entry.grid(row=3, column=1, padx=5, pady=5)
-
-            priority_label = Label(edit_window, text="Priority:", fg="blue")
-            priority_label.grid(row=4, column=0, padx=5, pady=5, sticky="w")
-            priority_entry = Entry(edit_window)
-            priority_entry.insert(END, task.priority)
-            priority_entry.grid(row=4, column=1, padx=5, pady=5)
-
-            update_button = Button(
-                edit_window,
-                text="Update",
-                command=lambda: self.update_task(
-                    task,
-                    title_entry.get(),
-                    category_entry.get(),
-                    details_entry.get(),
-                    due_date_entry.get(),
-                    priority_entry.get(),
-                    edit_window,
-                ),
-                bg="green",
-                fg="white",
-            )
-            update_button.grid(row=5, column=0, columnspan=2, padx=5, pady=5)
-
-        else:
+        sel = self.task_listbox.curselection()
+        if not sel:
             messagebox.showwarning("No Task Selected", "Please select a task to edit.")
+            return
+        index = sel[0]
+        task = self.store.get_all()[index]
+        edit_win = Toplevel(self.root)
+        edit_win.title("Edit Task")
+        edit_win.geometry(f"+{self.root.winfo_x() + 50}+{self.root.winfo_y() + 50}")
 
-    def update_task(
-        self, task, title, category, details, due_date, priority, edit_window
-    ):
-        if title and category and details and due_date and priority:
-            task.title = title
-            task.category = category
-            task.details = details
-            task.due_date = due_date
-            task.priority = priority
-            edit_window.destroy()
-            self.display_tasks()
-        else:
-            messagebox.showwarning(
-                "Incomplete Fields", "Please fill in all the task details."
+        entries: dict[str, Entry] = {}
+        for row, (field, value) in enumerate(task.to_dict().items()):
+            Label(edit_win, text=f"{field.replace('_', ' ').title()}:", fg="blue").grid(
+                row=row, column=0, padx=5, pady=5, sticky="w"
             )
+            entry = Entry(edit_win)
+            entry.insert(END, value)
+            entry.grid(row=row, column=1, padx=5, pady=5)
+            entries[field] = entry
 
-    def delete_task(self):
-        selected_task_index = self.task_listbox.curselection()
-        if selected_task_index:
-            task = self.tasks[selected_task_index[0]]
-            confirmation = messagebox.askyesno(
-                "Confirm Deletion",
-                f"Are you sure you want to delete the task:\n\nTitle: {task.title}\nCategory: {task.category}\nDetails: {task.details}\nDue Date: {task.due_date}\nPriority: {task.priority}",
-            )
-            if confirmation:
-                self.tasks.pop(selected_task_index[0])
+        def _save() -> None:
+            updated = {k: e.get() for k, e in entries.items()}
+            if all(updated.values()):
+                self.store.update(index, Task(**updated))
+                edit_win.destroy()
                 self.display_tasks()
-        else:
-            messagebox.showwarning(
-                "No Task Selected", "Please select a task to delete."
-            )
+            else:
+                messagebox.showwarning("Incomplete Fields", "Please fill in all the task details.")
 
-    def view_tasks(self):
-        self.display_tasks()
+        Button(edit_win, text="Update", command=_save, bg="green", fg="white").grid(
+            row=len(entries), column=0, columnspan=2, padx=5, pady=5
+        )
 
-    def display_tasks(self):
+    def delete_task(self) -> None:
+        from tkinter import messagebox
+
+        sel = self.task_listbox.curselection()
+        if not sel:
+            messagebox.showwarning("No Task Selected", "Please select a task to delete.")
+            return
+        index = sel[0]
+        task = self.store.get_all()[index]
+        if messagebox.askyesno(
+            "Confirm Deletion",
+            f"Delete task:\n\nTitle: {task.title}\nCategory: {task.category}\n"
+            f"Details: {task.details}\nDue Date: {task.due_date}\nPriority: {task.priority}",
+        ):
+            self.store.delete(index)
+            self.display_tasks()
+
+    def display_tasks(self) -> None:
+        from tkinter import END
+
         self.task_listbox.delete(0, END)
-        for task in self.tasks:
+        for task in self.store.get_all():
             self.task_listbox.insert(
                 END,
-                f"Title: {task.title} | Category: {task.category} | Details: {task.details} | Due Date: {task.due_date} | Priority: {task.priority}",
+                f"Title: {task.title} | Category: {task.category} | "
+                f"Details: {task.details} | Due: {task.due_date} | Priority: {task.priority}",
             )
 
-    def clear_entry_fields(self):
-        self.title_entry.delete(0, END)
-        self.category_entry.delete(0, END)
-        self.details_entry.delete(0, END)
-        self.due_date_entry.delete(0, END)
-        self.priority_entry.delete(0, END)
+    def save_tasks(self) -> None:
+        from tkinter import messagebox
 
-    def save_tasks(self):
         try:
-            with open("tasks.json", "w") as file:
-                task_list = [
-                    {
-                        "title": task.title,
-                        "category": task.category,
-                        "details": task.details,
-                        "due_date": task.due_date,
-                        "priority": task.priority,
-                    }
-                    for task in self.tasks
-                ]
-                json.dump(task_list, file)
+            self.store.save()
             messagebox.showinfo("Save Successful", "Tasks saved successfully.")
-        except IOError:
-            messagebox.showerror(
-                "Error", "An error occurred while saving tasks to file."
-            )
+        except OSError as exc:
+            messagebox.showerror("Error", f"Could not save tasks: {exc}")
 
-    def load_tasks(self):
-        try:
-            with open("tasks.json", "r") as file:
-                task_list = json.load(file)
-                for task_data in task_list:
-                    title = task_data.get("title", "")
-                    category = task_data.get("category", "")
-                    details = task_data.get(
-                        "details", ""
-                    )  # Set default value if 'details' key is missing
-                    due_date = task_data.get("due_date", "")
-                    priority = task_data.get("priority", "")
-                    task = Task(title, category, details, due_date, priority)
-                    self.tasks.append(task)
-                self.display_tasks()
-        except IOError:
-            messagebox.showwarning(
-                "File Not Found",
-                "Tasks file not found. New file will be created when saving tasks.",
-            )
-
-    def exit_application(self):
+    def exit_application(self) -> None:
         self.save_tasks()
         self.root.destroy()
 
+    # ------------------------------------------------------------------
+    # Helpers
+    # ------------------------------------------------------------------
 
-root = Tk()
-task_manager = TaskManagerGUI(root)
-root.mainloop()
+    def _read_fields(self) -> dict[str, str]:
+        return {
+            "title": self.title_entry.get(),
+            "category": self.category_entry.get(),
+            "details": self.details_entry.get(),
+            "due_date": self.due_date_entry.get(),
+            "priority": self.priority_entry.get(),
+        }
+
+    def _clear_fields(self) -> None:
+        from tkinter import END
+
+        for entry in (
+            self.title_entry,
+            self.category_entry,
+            self.details_entry,
+            self.due_date_entry,
+            self.priority_entry,
+        ):
+            entry.delete(0, END)
+
+    def _load_tasks(self) -> None:
+        from tkinter import messagebox
+
+        try:
+            self.store.load()
+        except ValueError as exc:
+            messagebox.showwarning("Load Warning", str(exc))
+        self.display_tasks()
+
+
+def main() -> None:
+    from tkinter import Tk
+
+    root = Tk()
+    TaskManagerGUI(root)
+    root.mainloop()
+
+
+if __name__ == "__main__":
+    main()

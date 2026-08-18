@@ -6,8 +6,9 @@
 # importing all the necessary Libraries
 
 from tkinter import *
-from tkinter.ttk import Scale
 from tkinter import colorchooser, filedialog, messagebox
+from tkinter.ttk import Scale
+
 import PIL.ImageGrab as ImageGrab
 
 
@@ -138,16 +139,12 @@ class Draw:
         )
         self.pointer_frame.place(x=0, y=320, height=200, width=70)
 
-        self.pointer_size = Scale(
-            self.pointer_frame, orient=VERTICAL, from_=48, to=0, length=168
-        )
+        self.pointer_size = Scale(self.pointer_frame, orient=VERTICAL, from_=48, to=0, length=168)
         self.pointer_size.set(1)
         self.pointer_size.grid(row=0, column=1, padx=15)
 
         # Defining a background color for the Canvas
-        self.background = Canvas(
-            self.root, bg="white", bd=5, relief=GROOVE, height=470, width=680
-        )
+        self.background = Canvas(self.root, bg="white", bd=5, relief=GROOVE, height=470, width=680)
         self.background.place(x=80, y=40)
 
         # Bind the background Canvas with mouse click

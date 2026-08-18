@@ -2,9 +2,10 @@
 # Packages needed:
 # pip install tkcalendar
 import tkinter as tk
-from tkinter import ttk
-from tkcalendar import Calendar
 from datetime import date
+from tkinter import ttk
+
+from tkcalendar import Calendar
 
 
 def get_selected_date():
@@ -110,9 +111,7 @@ clear_button = ttk.Button(
 clear_button.grid(row=2, column=1, pady=10)
 
 # Create a button to toggle between dark and light themes
-toggle_theme_button = ttk.Button(
-    frame, text="Toggle Theme", command=toggle_theme, cursor="hand2"
-)
+toggle_theme_button = ttk.Button(frame, text="Toggle Theme", command=toggle_theme, cursor="hand2")
 toggle_theme_button.grid(row=3, column=0, columnspan=2, pady=10)
 
 # Create styles for dark and light frames

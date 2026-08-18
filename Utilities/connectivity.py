@@ -1,8 +1,9 @@
 # This code is made by MRayan Asim
 # Packages needed:
 # pip install requests
-import requests
 import time
+
+import requests
 
 # Default timeout for HTTP requests (seconds)
 DEFAULT_TIMEOUT = 10
@@ -11,7 +12,7 @@ DEFAULT_TIMEOUT = 10
 def check_website_connectivity(url, timeout=DEFAULT_TIMEOUT):
     """
     Check if a website is reachable and measure response time.
-    
+
     Args:
         url: The website URL to check
         timeout: Request timeout in seconds (default: 10)
@@ -27,9 +28,7 @@ def check_website_connectivity(url, timeout=DEFAULT_TIMEOUT):
             print(f"The website {url} is reachable.")
             print(f"Response time: {speed:.2f} seconds")
         else:
-            print(
-                f"Error: The website {url} returned a status code {response.status_code}."
-            )
+            print(f"Error: The website {url} returned a status code {response.status_code}.")
     except requests.Timeout:
         print(f"Error: Connection to {url} timed out after {timeout} seconds.")
     except requests.ConnectionError:

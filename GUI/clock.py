@@ -1,77 +1,100 @@
 # This code is made by MRayan Asim
+from __future__ import annotations
+
+import datetime
+import math
+import os
+
 try:
     import tkinter as Tkinter
 except ImportError:
-    import Tkinter
+    import Tkinter  # type: ignore[no-redef]
 
-import math
-import time
-import os
+
+def hand_coords(
+    value: int,
+    max_value: int,
+    cx: float,
+    cy: float,
+    length: float,
+) -> tuple[float, float]:
+    """
+    Compute the tip (x, y) of a clock hand as polar coordinates.
+
+    Args:
+        value:      Current time unit (e.g. seconds 0–59, or scaled minutes/hours).
+        max_value:  Full-scale value that maps to 360°  (e.g. 60 for seconds).
+        cx, cy:     Centre of the clock face.
+        length:     Length of the hand in pixels.
+
+    Returns:
+        (x, y) coordinates of the hand tip.
+    """
+    angle_deg = value * (360 / max_value) - 90  # 0 at top, clockwise
+    angle_rad = math.radians(angle_deg)
+    x = cx + length * math.cos(angle_rad)
+    y = cy + length * math.sin(angle_rad)
+    return x, y
 
 
 class Main(Tkinter.Tk):
-    def __init__(self):
+    def __init__(self) -> None:
         Tkinter.Tk.__init__(self)
-        self.x = 150
-        self.y = 150
+        self.cx = 150
+        self.cy = 150
         self.length = 50
-        self.create_all_functions()
+        self._create_all_widgets()
 
-    def create_all_functions(self):
-        self.create_canvas_for_shapes()
-        self.create_background()
-        self.create_sticks()
+    def _create_all_widgets(self) -> None:
+        self._create_canvas()
+        self._create_background()
+        self._create_hands()
 
-    def create_background(self):
-        file_name = "download.png"  # you can replace it with your image name or you can download the image you can check out it at https://github.com/mrayanasim09/python-projects/blob/main/GUI/download.png
-        script_directory = os.path.dirname(os.path.abspath(__file__))
-        file_path = os.path.join(script_directory, file_name)
-        self.image = Tkinter.PhotoImage(file=file_path)
-        self.canvas.create_image(150, 150, image=self.image)
-
-    def create_canvas_for_shapes(self):
+    def _create_canvas(self) -> None:
         self.canvas = Tkinter.Canvas(self, bg="black")
         self.canvas.pack(expand="yes", fill="both")
 
-    def create_sticks(self):
-        self.sticks = []
+    def _create_background(self) -> None:
+        # Image file lives alongside this script
+        file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "download.png")
+        self.image = Tkinter.PhotoImage(file=file_path)
+        self.canvas.create_image(self.cx, self.cy, image=self.image)
+
+    def _create_hands(self) -> None:
+        self.hands = []
         for _ in range(3):
-            store = self.canvas.create_line(
-                self.x,
-                self.y,
-                self.x + self.length,
-                self.y + self.length,
+            line = self.canvas.create_line(
+                self.cx,
+                self.cy,
+                self.cx + self.length,
+                self.cy + self.length,
                 width=2,
                 fill="red",
             )
-            self.sticks.append(store)
+            self.hands.append(line)
 
-    def update_class(self):
-        now = time.localtime()
-        t = time.strptime(str(now.tm_hour), "%H")
-        hour = int(time.strftime("%I", t)) * 5
-        now = (hour, now.tm_min, now.tm_sec)
+    def update_hands(self) -> None:
+        """Reposition all three clock hands based on the current time."""
+        now = datetime.datetime.now()
 
-        for n, i in enumerate(now):
-            x, y = self.canvas.coords(self.sticks[n])[0:2]
-            cr = [x, y]
-            cr.append(
-                self.length * math.cos(math.radians(i * 6) - math.radians(90)) + self.x
-            )
-            cr.append(
-                self.length * math.sin(math.radians(i * 6) - math.radians(90)) + self.y
-            )
-            self.canvas.coords(self.sticks[n], tuple(cr))
+        # Convert 24-hour to 12-hour scale mapped to 60 units (like minutes)
+        hour_value = (now.hour % 12) * 5 + now.minute // 12
+        time_values = (hour_value, now.minute, now.second)
+
+        for hand_line, value in zip(self.hands, time_values, strict=False):
+            x0, y0 = self.canvas.coords(hand_line)[0:2]
+            tip_x, tip_y = hand_coords(value, 60, self.cx, self.cy, self.length)
+            self.canvas.coords(hand_line, x0, y0, tip_x, tip_y)
 
 
 if __name__ == "__main__":
     root = Main()
 
-    def main_loop():
+    def main_loop() -> None:
         root.update()
         root.update_idletasks()
-        root.update_class()
-        root.after(1000, main_loop)  # Call the main loop function after 1 second
+        root.update_hands()
+        root.after(1000, main_loop)
 
     main_loop()
     root.mainloop()

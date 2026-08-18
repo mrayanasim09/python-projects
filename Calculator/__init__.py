@@ -1,17 +1,3 @@
-import time
-import ASCII
-import Mortgage
-import Quadratic_Equation
-import bmi
-import conject
-import grade
-import graph
-import int_diff
-import mega_calculator
-import number_base
-import roman_number
-import sequence
-import special_relativity_calculator
-import stock
-import sudoku
-import time_calculator
+# Calculator package
+# Submodules are imported explicitly by consumers or tests — not auto-imported here
+# because several scripts launch GUI/interactive sessions on import.

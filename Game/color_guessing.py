@@ -1,7 +1,7 @@
 # This code is made by MRayan Asim
 # Packages needed:
-import tkinter
 import random
+import tkinter
 
 # list of possible colour.
 colours = [
@@ -93,7 +93,7 @@ root.geometry("375x200")
 # add an instructions label
 instructions = tkinter.Label(
     root,
-    text="Type in the colour" "of the words, and not the word text!",
+    text="Type in the colourof the words, and not the word text!",
     font=("Helvetica", 12),
 )
 instructions.pack()
@@ -103,9 +103,7 @@ scoreLabel = tkinter.Label(root, text="Press enter to start", font=("Helvetica",
 scoreLabel.pack()
 
 # add a time left label
-timeLabel = tkinter.Label(
-    root, text="Time left: " + str(timeleft), font=("Helvetica", 12)
-)
+timeLabel = tkinter.Label(root, text="Time left: " + str(timeleft), font=("Helvetica", 12))
 
 timeLabel.pack()
 

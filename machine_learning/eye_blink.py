@@ -57,9 +57,7 @@ while True:
                         (255, 255, 255),
                         2,
                     )
-                    first_read = (
-                        True  # Reset first_read to True after detecting the blink
-                    )
+                    first_read = True  # Reset first_read to True after detecting the blink
             else:
                 if first_read:
                     # To ensure if the eyes are present before starting

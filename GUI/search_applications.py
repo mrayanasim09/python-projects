@@ -2,6 +2,7 @@
 # Packages needed:
 # pip install winapps
 from tkinter import *
+
 import winapps
 
 
@@ -40,18 +41,10 @@ Label(master, text="Uninstall string :", bg="light grey").grid(row=6, sticky=W)
 
 # Creating label for class variable
 # name using widget Entry
-Label(master, text="", textvariable=name, bg="light grey").grid(
-    row=2, column=1, sticky=W
-)
-Label(master, text="", textvariable=version, bg="light grey").grid(
-    row=3, column=1, sticky=W
-)
-Label(master, text="", textvariable=Install_date, bg="light grey").grid(
-    row=4, column=1, sticky=W
-)
-Label(master, text="", textvariable=publisher, bg="light grey").grid(
-    row=5, column=1, sticky=W
-)
+Label(master, text="", textvariable=name, bg="light grey").grid(row=2, column=1, sticky=W)
+Label(master, text="", textvariable=version, bg="light grey").grid(row=3, column=1, sticky=W)
+Label(master, text="", textvariable=Install_date, bg="light grey").grid(row=4, column=1, sticky=W)
+Label(master, text="", textvariable=publisher, bg="light grey").grid(row=5, column=1, sticky=W)
 Label(master, text="", textvariable=uninstall_string, bg="light grey").grid(
     row=6, column=1, sticky=W
 )
@@ -63,7 +56,12 @@ e.grid(row=0, column=1)
 # creating a button using the widget
 b = Button(master, text="Show", command=app, bg="Blue")
 b.grid(
-    row=0, column=2, columnspan=2, rowspan=2, padx=5, pady=5,
+    row=0,
+    column=2,
+    columnspan=2,
+    rowspan=2,
+    padx=5,
+    pady=5,
 )
 
 mainloop()

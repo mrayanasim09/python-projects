@@ -4,7 +4,7 @@ def calculate_bmi(weight, height):
     Calculates the Body Mass Index (BMI) based on weight and height.
     Returns the calculated BMI value.
     """
-    bmi = weight / (height ** 2)
+    bmi = weight / (height**2)
     return bmi
 
 
@@ -28,8 +28,8 @@ def get_weight_range(height):
     Provides a suggested weight range based on the height.
     Returns a tuple containing the lower and upper weight limits.
     """
-    lower_limit = 18.5 * (height ** 2)
-    upper_limit = 24.9 * (height ** 2)
+    lower_limit = 18.5 * (height**2)
+    upper_limit = 24.9 * (height**2)
     return lower_limit, upper_limit
 
 
@@ -48,10 +48,10 @@ def main():
     print("--------------------")
 
     weight_unit = input("Enter weight unit (lbs or kgs): ")
-    weight = float(input("Enter your weight in {}: ".format(weight_unit)))
+    weight = float(input(f"Enter your weight in {weight_unit}: "))
 
     height_unit = input("Enter height unit (feet or meters): ")
-    height = float(input("Enter your height in {}: ".format(height_unit)))
+    height = float(input(f"Enter your height in {height_unit}: "))
 
     # Convert weight to kg if entered in lbs
     if weight_unit.lower() == "lbs":
@@ -66,21 +66,21 @@ def main():
 
     print("\nResults")
     print("--------------------")
-    print("BMI: {:.2f}".format(bmi))
-    print("Category: {}".format(category))
+    print(f"BMI: {bmi:.2f}")
+    print(f"Category: {category}")
 
     weight_range = get_weight_range(height)
     height_range = get_height_range(weight)
 
-    print("\nSuggested Weight Range for Height {:.2f} meters".format(height))
+    print(f"\nSuggested Weight Range for Height {height:.2f} meters")
     print("--------------------")
-    print("Lower Limit: {:.2f} kg".format(weight_range[0]))
-    print("Upper Limit: {:.2f} kg".format(weight_range[1]))
+    print(f"Lower Limit: {weight_range[0]:.2f} kg")
+    print(f"Upper Limit: {weight_range[1]:.2f} kg")
 
-    print("\nSuggested Height Range for Weight {:.2f} kg".format(weight))
+    print(f"\nSuggested Height Range for Weight {weight:.2f} kg")
     print("--------------------")
-    print("Lower Limit: {:.2f} meters".format(height_range[0]))
-    print("Upper Limit: {:.2f} meters".format(height_range[1]))
+    print(f"Lower Limit: {height_range[0]:.2f} meters")
+    print(f"Upper Limit: {height_range[1]:.2f} meters")
 
 
 if __name__ == "__main__":

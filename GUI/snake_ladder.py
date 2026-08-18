@@ -2,9 +2,10 @@
 # Packages needed:
 # pip install pillow
 import random
-from tkinter import *
-from PIL import Image, ImageTk
 import time
+from tkinter import *
+
+from PIL import Image, ImageTk
 
 
 # Function for generating a random number on the dice
@@ -99,9 +100,7 @@ class GameBoard:
             pass
         else:
             # Screen
-            self.canvas.create_rectangle(
-                810, 150, 760, 100, fill="white", outline="black"
-            )
+            self.canvas.create_rectangle(810, 150, 760, 100, fill="white", outline="black")
             self.canvas.pack(fill=BOTH, expand=1)
             # Button
             self.diceRoll = Button(
@@ -199,9 +198,7 @@ class GameBoard:
                 self.x += 35
                 self.y -= 105
             self.player.append(
-                self.canvas.create_circle(
-                    self.x, self.y, 15, fill=self.color[i], outline=""
-                )
+                self.canvas.create_circle(self.x, self.y, 15, fill=self.color[i], outline="")
             )
             self.position.append([self.x, self.y])
             self.m.append(1)

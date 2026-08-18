@@ -62,7 +62,7 @@ def play_game():
 
 def get_high_score():
     try:
-        with open("highscore.txt", "r") as file:
+        with open("highscore.txt") as file:
             high_score = int(file.read())
     except FileNotFoundError:
         # If the file doesn't exist, set the high score to a large value

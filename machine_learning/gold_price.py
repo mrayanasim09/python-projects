@@ -6,11 +6,12 @@
 # pip install yfinance
 # pip install seaborn
 # pip install prophet
-import yfinance as yf
+import datetime
+
 import matplotlib.pyplot as plt
 import seaborn as sns
+import yfinance as yf
 from prophet import Prophet
-import datetime
 
 
 # Download historical gold price data from Yahoo Finance

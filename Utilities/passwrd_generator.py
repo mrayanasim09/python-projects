@@ -1,7 +1,9 @@
 # This code is made by MRayan Asim
-import random
+# Packages needed: none (uses stdlib only)
+import secrets
 
-passlen = int(input("enter the length of password: "))
-s = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
-p = "".join(random.sample(s, passlen))  # nosec B311
-print(p)
+CHARSET = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+
+passlen = int(input("Enter the length of password: "))
+password = "".join(secrets.choice(CHARSET) for _ in range(passlen))
+print(password)

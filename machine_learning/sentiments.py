@@ -1,10 +1,10 @@
 # This code is made by MRayan Asim
 # Packages needed:
 # pip install vaderSentiment
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-
 # import all methods and classes from the tkinter
 from tkinter import *
+
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 # Function for clearing the
@@ -82,9 +82,7 @@ if __name__ == "__main__":
     # create a Submit Button and place into the root window
     # when user press the button, the command or
     # function affiliated to that button is executed
-    check = Button(
-        gui, text="Check Sentiment", fg="Black", bg="Red", command=detect_sentiment
-    )
+    check = Button(gui, text="Check Sentiment", fg="Black", bg="Red", command=detect_sentiment)
 
     # Create a negative : label
     negative = Label(gui, text="sentence was rated as: ", bg="light green")

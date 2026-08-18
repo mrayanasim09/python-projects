@@ -1,9 +1,10 @@
 # This code is made by MRayan Asim
 # to install these packages:
 # pip install openpyxl
-import openpyxl
 from tkinter import *
 from tkinter.messagebox import *
+
+import openpyxl
 
 # Declare global variables
 name_field = None

@@ -12,9 +12,10 @@ print(
 3- the password would save in passwrods.json they will be coded so to decode go to get passwords option on the code for this you need to remember the name of the website you want to get the password 
 """
 )
+import getpass
 import json
 import os
-import getpass
+
 from cryptography.fernet import Fernet
 
 PASSWORD_FILE = os.getenv("PASSWORD_FILE", "passwords.json")
