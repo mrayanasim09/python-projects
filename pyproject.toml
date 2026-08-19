@@ -59,7 +59,7 @@ ml = [
 ]
 automation = [
     "pyautogui>=0.9.54",
-    "qrcode>=7.4.2",
+    "qrcode>=8.2",
 ]
 dev = [
     "pytest>=8.0.0",
