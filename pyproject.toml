@@ -22,7 +22,7 @@ dependencies = [
     "zipp>=4.1.0",
     "nltk>=3.10.3",
     "protobuf>=7.35.1",
-    "urllib3>=2.5.0",
+    "urllib3>=2.7.0",
     "starlette>=1.6.0",
     "soupsieve>=2.8.4",
 ]
