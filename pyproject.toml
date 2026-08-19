@@ -37,7 +37,7 @@ gui = [
     "googlesearch-python>=1.2.3",
     "openpyxl>=3.1.2",
     "sympy>=1.12",
-    "hijri-converter>=2.3.1",
+    "hijri-converter>=2.3.2.post1",
 ]
 games = [
     "pygame>=2.5.0",
