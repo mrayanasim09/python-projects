@@ -29,7 +29,7 @@ dependencies = [
 
 [project.optional-dependencies]
 gui = [
-    "PyQt5>=5.15.9",
+    "PyQt5>=5.15.11",
     "PyQtWebEngine>=5.15.6",
     "pillow>=10.0.0",
     "tkcalendar>=1.6.1",
