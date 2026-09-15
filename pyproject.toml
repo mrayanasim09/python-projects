@@ -62,7 +62,7 @@ automation = [
     "qrcode>=8.2",
 ]
 dev = [
-    "pytest>=8.0.0",
+    "pytest>=9.1.1",
     "pytest-cov>=4.1.0",
     "ruff>=0.16.3",
     "mypy>=1.9.0",
