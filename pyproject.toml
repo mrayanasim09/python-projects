@@ -18,7 +18,7 @@ dependencies = [
     "uvicorn>=0.52.3",
     # Snyk-pinned transitive security patches
     "fonttools>=4.63.0",
-    "holidays>=0.45",
+    "holidays>=0.104",
     "zipp>=4.1.0",
     "nltk>=3.10.3",
     "protobuf>=7.35.1",
