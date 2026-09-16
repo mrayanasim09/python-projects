@@ -44,7 +44,7 @@ games = [
 ]
 ml = [
     "opencv-python>=4.8.0",
-    "mediapipe>=0.10.0",
+    "mediapipe>=1.0.1",
     "scikit-learn>=1.7.2",
     "numpy>=1.26.0",
     "textblob>=0.17.1",
