@@ -63,7 +63,7 @@ automation = [
 ]
 dev = [
     "pytest>=9.1.1",
-    "pytest-cov>=4.1.0",
+    "pytest-cov>=7.1.0",
     "ruff>=0.16.3",
     "mypy>=1.9.0",
 ]
